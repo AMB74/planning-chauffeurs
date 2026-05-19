@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planning Chauffeurs</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --rouge: #E8263A;
+    --rouge-light: #fdecea;
+    --gris-fonce: #1a1a1a;
+    --gris-moyen: #5c5c5c;
+    --gris-clair: #f4f4f4;
+    --gris-border: #e0e0e0;
+    --blanc: #ffffff;
+    --accent-section: #1a1a1a;
+    --vert-check: #2ecc71;
+    --bleu-renfort: #1565C0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f8f6;
+    color: var(--gris-fonce);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* ── PAGE WRAPPER ── */
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px 48px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2.5px solid var(--rouge);
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+  }
+  .header-left {}
+  .breadcrumb {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gris-moyen);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .breadcrumb span { color: var(--rouge); font-weight: 500; }
+  .header-day {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--gris-fonce);
+  }
+  .header-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--gris-moyen);
+    margin-top: 2px;
+  }
+  .header-societe {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+  }
+  .societe-nom {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--gris-fonce);
+    text-transform: uppercase;
+  }
+  .societe-detail {
+    font-size: 9px;
+    color: var(--gris-moyen);
+    margin-top: 2px;
+  }
+
+  /* ── SECTION (MASSIF) ── */
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .section-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gris-moyen);
+    margin-bottom: 2px;
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-section);
+  }
+  .section-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    background: var(--gris-fonce);
+    color: var(--blanc);
+    border-radius: 20px;
+    padding: 2px 9px;
+    font-weight: 500;
+  }
+  .chevron {
+    margin-left: auto;
+    font-size: 14px;
+    color: var(--gris-moyen);
+    transition: transform 0.2s;
+  }
+  .section.collapsed .chevron { transform: rotate(-90deg); }
+  .section.collapsed .table-wrapper { display: none; }
+
+  /* ── TABLE ── */
+  .table-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1.5px solid var(--gris-border);
+    background: var(--blanc);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead tr {
+    background: var(--gris-clair);
+    border-bottom: 1.5px solid var(--gris-border);
+  }
+  th {
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gris-moyen);
+    padding: 8px 10px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--gris-border);
+    position: relative;
+    transition: background 0.15s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #fafafa; }
+
+  /* Barre latérale rouge pour lignes avec pilote */
+  tbody tr.has-pilote td:first-child {
+    border-left: 3px solid var(--rouge);
+  }
+  tbody tr.no-pilote td:first-child {
+    border-left: 3px solid transparent;
+  }
+
+  td {
+    padding: 9px 10px;
+    vertical-align: top;
+    color: var(--gris-fonce);
+  }
+
+  /* Colonne check */
+  td.check {
+    width: 24px;
+    text-align: center;
+    color: var(--gris-border);
+    font-size: 12px;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
+  tr.has-pilote td.check { color: var(--rouge); }
+
+  /* PILOTE */
+  td.pilote {
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 70px;
+  }
+  td.pilote.empty { color: #bbb; font-weight: 400; font-style: italic; }
+
+  /* RENFORTS */
+  td.renforts {
+    color: var(--bleu-renfort);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  td.renforts.empty { color: #ccc; }
+
+  /* TYPE */
+  td.type {
+    white-space: nowrap;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 2px 6px;
+    border: 1px solid;
+  }
+  .badge-bagages      { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
+  .badge-bagages-trf  { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
+  .badge-transfert    { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
+  .badge-rdv          { background: #F3E5F5; color: #6A1B9A; border-color: #CE93D8; }
+  .badge-sans         { background: #f4f4f4; color: #888; border-color: #ddd; }
+  .badge-default      { background: #f4f4f4; color: #555; border-color: #ddd; }
+
+  /* DÉTAILS */
+  td.details {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--rouge);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  td.details.empty { color: #ccc; }
+
+  /* TRANSFERT */
+  td.transfert {
+    font-size: 11.5px;
+    color: var(--gris-moyen);
+    max-width: 160px;
+  }
+
+  /* DÉPART */
+  td.depart {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 180px;
+  }
+
+  /* CLIENT */
+  td.client {
+    font-weight: 600;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  /* NBRE */
+  td.nbre {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--gris-fonce);
+    white-space: nowrap;
+  }
+
+  /* ARRIVÉE */
+  td.arrivee {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gris-fonce);
+  }
+
+  /* ── EMPTY STATE ── */
+  .empty-dash { color: #ccc; }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 32px;
+    border-top: 1px solid var(--gris-border);
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gris-moyen);
+    font-size: 10.5px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    @page { size: A4 portrait; margin: 8mm 10mm; }
+
+    body { background: white; font-size: 10px; }
+    .page { padding: 0; max-width: 100%; }
+    .header { padding-bottom: 6px; margin-bottom: 10px; }
+    .header-day { font-size: 18px; }
+    .header-date { font-size: 11px; }
+    .breadcrumb { font-size: 9px; }
+    .header-logo { font-size: 9px; padding: 3px 7px; }
+
+    .section { margin-bottom: 12px; }
+    .section-header { cursor: default; margin-bottom: 5px; }
+    .section-label { font-size: 8px; }
+    .section-title { font-size: 12px; }
+    .section-count { font-size: 10px; padding: 1px 7px; }
+    .chevron { display: none; }
+    .section.collapsed .table-wrapper { display: block !important; }
+
+    .table-wrapper { border-radius: 0; border: 1px solid #ccc; }
+
+    /* Toutes les colonnes visibles */
+    .col-type { display: table-cell; }
+    .col-transfert { display: table-cell; }
+
+    /* Texte compact mais lisible */
+    td.transfert  { font-size: 7.5px; max-width: 90px;  word-break: break-word; white-space: normal; color: #555; }
+    td.depart     { font-size: 7.5px; max-width: 90px;  word-break: break-word; white-space: normal; }
+    td.arrivee    { font-size: 7.5px; max-width: 90px;  word-break: break-word; white-space: normal; }
+    td.client     { font-size: 7.5px; max-width: 80px;  word-break: break-word; white-space: normal; letter-spacing: 0; }
+    td.pilote     { font-size: 8px;   min-width: 40px; }
+    td.renforts   { font-size: 7.5px; white-space: normal; }
+    td.details    { font-size: 7.5px; white-space: normal; }
+    td.nbre       { font-size: 7.5px; }
+    td.check      { font-size: 9px; width: 14px; padding-left: 2px; padding-right: 2px; }
+    .badge        { font-size: 7px; padding: 1px 3px; }
+
+    th { font-size: 8px; padding: 4px 5px; white-space: nowrap; }
+    td { padding: 4px 5px; font-size: 9.5px; }
+
+    /* Compresser les colonnes larges */
+    td.depart, td.arrivee { max-width: 110px; font-size: 9px; word-break: break-word; }
+    td.client { font-size: 9px; max-width: 90px; word-break: break-word; white-space: normal; }
+    td.details { font-size: 9px; }
+    td.renforts { font-size: 9px; }
+    td.pilote { font-size: 9.5px; min-width: 50px; }
+    td.nbre { font-size: 9px; }
+    td.check { font-size: 10px; width: 16px; padding-left: 3px; padding-right: 2px; }
+
+    .badge { font-size: 7.5px; padding: 1px 3px; }
+    tbody tr:hover { background: white; }
+    .footer { margin-top: 10px; font-size: 9px; }
+    .btn-print { display: none; }
+
+    /* Éviter les coupures de section entre pages */
+    .section { break-inside: avoid-page; }
+    thead { display: table-header-group; }
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 700px) {
+    body { font-size: 12px; }
+    .page { padding: 14px 10px 32px; }
+    .header-day { font-size: 20px; }
+    th { font-size: 8.5px; padding: 6px 6px; }
+    td { padding: 7px 6px; font-size: 11px; }
+    /* Masquer colonnes secondaires sur mobile */
+    .col-transfert, .col-type { display: none; }
+    .badge { font-size: 8px; }
+    .section-title { font-size: 13px; }
+  }
+
+  /* ── BOUTON PRINT ── */
+  .btn-print {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--rouge);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(232,38,58,0.3);
+    transition: all 0.2s;
+    z-index: 100;
+  }
+  .btn-print:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,38,58,0.4); }
+  @media print { .btn-print { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="breadcrumb">Planning Chauffeurs › <span>Semaine en cours</span></div>
+      <div class="header-day">DIMANCHE &nbsp;22 JUIN &nbsp;<span style="font-weight:300; color:var(--gris-moyen); font-size:18px;">Semaine 52</span></div>
+    </div>
+    <div class="header-societe">
+      <div class="societe-nom">ALTITUDE MONT-BLANC</div>
+      <div class="societe-detail">62 passage du Nant Devant · 74110 MONTRIOND</div>
+      <div class="societe-detail">SIREN : 481 563 567</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 0 · RDV & RÉASSORT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section" id="s0">
+    <div class="section-header" onclick="toggleSection('s0')">
+      <div>
+        <div class="section-label">Massifs (from Arrivée)</div>
+        <div class="section-title">0. RDV &amp; RÉASSORT</div>
+      </div>
+      <div class="section-count">4</div>
+      <div class="chevron">▾</div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Pilote</th>
+            <th>Renforts</th>
+            <th class="col-type">Type</th>
+            <th>Détails</th>
+            <th class="col-transfert">Transfert</th>
+            <th>Départ</th>
+            <th>Client / AEM</th>
+            <th>Nbre</th>
+            <th>Arrivée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Adrien</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-default">–</span></td>
+            <td class="details">9H15</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">GARE SNCF CHAMONIX</td>
+            <td class="client">GAY MAXIME</td>
+            <td class="nbre">7+1</td>
+            <td class="arrivee">RDV THOLLON</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Charlie</td>
+            <td class="renforts">Mélody</td>
+            <td class="col-type"><span class="badge badge-bagages">PAIN</span></td>
+            <td class="details">Dès 7H</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">CHEZ PINPIN</td>
+            <td class="client">–</td>
+            <td class="nbre">55</td>
+            <td class="arrivee">CHEZ PINPIN</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Charlie</td>
+            <td class="renforts">Adrien, Jean</td>
+            <td class="col-type"><span class="badge badge-rdv">RDV PRARION</span></td>
+            <td class="details">8H</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">PRARION LES HOUCHES</td>
+            <td class="client">–</td>
+            <td class="nbre">–</td>
+            <td class="arrivee">PRARION LES HOUCHES</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Serge</td>
+            <td class="renforts">Jean-Marc</td>
+            <td class="col-type"><span class="badge badge-default">–</span></td>
+            <td class="details">9H45</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">GARE SNCF CHAMONIX</td>
+            <td class="client">LIBOSSART ERIC</td>
+            <td class="nbre">9+1</td>
+            <td class="arrivee">PARKING DE PONT VALSAVA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 1 · MONT-BLANC -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section" id="s1">
+    <div class="section-header" onclick="toggleSection('s1')">
+      <div>
+        <div class="section-label">Massifs (from Arrivée)</div>
+        <div class="section-title">1. MONT-BLANC</div>
+      </div>
+      <div class="section-count">45</div>
+      <div class="chevron">▾</div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Pilote</th>
+            <th>Renforts</th>
+            <th class="col-type">Type</th>
+            <th>Détails</th>
+            <th class="col-transfert">Transfert</th>
+            <th>Départ</th>
+            <th>Client / AEM</th>
+            <th>Nbre</th>
+            <th>Arrivée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Adrien</td>
+            <td class="renforts">Mélody</td>
+            <td class="col-type"><span class="badge badge-default">–</span></td>
+            <td class="details">BG&gt;Prarion</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">AUBERGE DE SALVAGNY</td>
+            <td class="client">NORTIER GENEVIEVE</td>
+            <td class="nbre">12+1</td>
+            <td class="arrivee">RDV PLANPRAZ</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Mélody</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages-trf">BAGAGES + TRF</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert">Transfert HBG &gt; LA VILLETTE</td>
+            <td class="depart">CHALET NANT ROUGE</td>
+            <td class="client">VIGNERON</td>
+            <td class="nbre">6</td>
+            <td class="arrivee">HOTEL SAINT ANTOINE***</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Mélody</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-transfert">TRANSFERT</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert">Transfert HBG &gt; LA VILLETTE</td>
+            <td class="depart">CHALET DES CONTAMINES</td>
+            <td class="client">JOSEP</td>
+            <td class="nbre">2</td>
+            <td class="arrivee">RDV PRARION</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Jorick</td>
+            <td class="renforts">Mélody, Aur</td>
+            <td class="col-type"><span class="badge badge-bagages">BAGAGES !!</span></td>
+            <td class="details">GTA 2 · 07H45</td>
+            <td class="transfert col-transfert">HBG &gt; ND GORGE</td>
+            <td class="depart">CHALET DES CONTAMINES</td>
+            <td class="client">PEUTET JEAN MARC</td>
+            <td class="nbre">9+1</td>
+            <td class="arrivee">REFUGE PLAN MYA</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Mélody</td>
+            <td class="renforts">Jorick</td>
+            <td class="col-type"><span class="badge badge-transfert">TRANSFERT</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert">Transfert HBG &gt; LA VILLETTE</td>
+            <td class="depart">HOTEL LA GELINOTTE</td>
+            <td class="client">ROUVIERE BERTRA…</td>
+            <td class="nbre">12+1</td>
+            <td class="arrivee">RDV PRARION</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Charlie</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages-trf">BAGAGES + TRF</span></td>
+            <td class="details">9H30 &gt; Bell…</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">RDV PRARION</td>
+            <td class="client">GODEFROY JULIEN</td>
+            <td class="nbre">7+1</td>
+            <td class="arrivee">CHALET DES CONTAMINES</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Mélody</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages">BAGAGES</span></td>
+            <td class="details">10H00 RDV FLÉGÈRE</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">–</td>
+            <td class="client">CHERVET PATRICK</td>
+            <td class="nbre">11+1</td>
+            <td class="arrivee">HOTEL LE DAHU**</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Jorick</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages-trf">BAGAGES + TRF</span></td>
+            <td class="details">16H30</td>
+            <td class="transfert col-transfert">Transfert ND GORGE &gt; HBG</td>
+            <td class="depart">REFUGE LES MOTTETS</td>
+            <td class="client">PIQUEREL</td>
+            <td class="nbre">1</td>
+            <td class="arrivee">CHALET DES CONTAMINES</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Jorick</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages-trf">BAGAGES + TRF</span></td>
+            <td class="details">16H30</td>
+            <td class="transfert col-transfert">Transfert ND GORGE &gt; HBG</td>
+            <td class="depart">CHAMBRES DU SOLEIL</td>
+            <td class="client">FERNANDEZ</td>
+            <td class="nbre">2</td>
+            <td class="arrivee">HOTEL LE CHRISTIANIA**</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 3 · GTA 1 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section" id="s3">
+    <div class="section-header" onclick="toggleSection('s3')">
+      <div>
+        <div class="section-label">Massifs (from Arrivée)</div>
+        <div class="section-title">3. GTA 1</div>
+      </div>
+      <div class="section-count">1</div>
+      <div class="chevron">▾</div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Pilote</th>
+            <th>Renforts</th>
+            <th class="col-type">Type</th>
+            <th>Détails</th>
+            <th class="col-transfert">Transfert</th>
+            <th>Départ</th>
+            <th>Client / AEM</th>
+            <th>Nbre</th>
+            <th>Arrivée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="no-pilote">
+            
+            <td class="pilote empty">–</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-sans">SANS BAGAGE</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">RDV THOLLON</td>
+            <td class="client">GAY MAXIME</td>
+            <td class="nbre">13+1</td>
+            <td class="arrivee">LA FERME DU NOYER</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 5 · VANOISE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section" id="s5">
+    <div class="section-header" onclick="toggleSection('s5')">
+      <div>
+        <div class="section-label">Massifs (from Arrivée)</div>
+        <div class="section-title">5. VANOISE</div>
+      </div>
+      <div class="section-count">2</div>
+      <div class="chevron">▾</div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Pilote</th>
+            <th>Renforts</th>
+            <th class="col-type">Type</th>
+            <th>Détails</th>
+            <th class="col-transfert">Transfert</th>
+            <th>Départ</th>
+            <th>Client / AEM</th>
+            <th>Nbre</th>
+            <th>Arrivée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="no-pilote">
+            
+            <td class="pilote empty">–</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-default">AUTONOME</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">AUBERGE DE BELLECOMBE</td>
+            <td class="client">STOPPA FLORIAN</td>
+            <td class="nbre">5+1</td>
+            <td class="arrivee">REFUGE DES BARMETTES</td>
+          </tr>
+          <tr class="has-pilote">
+            
+            <td class="pilote">Aurore</td>
+            <td class="renforts empty">–</td>
+            <td class="col-type"><span class="badge badge-bagages">BAGAGES</span></td>
+            <td class="details empty">–</td>
+            <td class="transfert col-transfert empty">–</td>
+            <td class="depart">HOTEL LA TURRA***</td>
+            <td class="client">GIARD</td>
+            <td class="nbre">2</td>
+            <td class="arrivee">AUBERGE DE BELLECOMBE</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Généré le 22/06 · Planning chauffeurs</span>
+    <span>ALTITUDE MONT-BLANC · Confidentiel</span>
+  </div>
+
+</div>
+
+<!-- Bouton impression -->
+<button class="btn-print" onclick="window.print()">🖨 Imprimer / PDF</button>
+
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('collapsed');
+  }
+</script>
+
+</body>
+</html>
