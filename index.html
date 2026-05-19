@@ -52,8 +52,8 @@
   .chauffeur-card:hover { border-color: var(--rouge); box-shadow: 0 4px 16px rgba(232,38,58,0.12); transform: translateY(-2px); }
 
   .chauffeur-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--rouge); color: white; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .chauffeur-nom { font-size: 14px; font-weight: 600; }
-  .chauffeur-prenom { font-size: 12px; color: var(--gris-moyen); }
+  .chauffeur-nom    { font-size: 11px; color: var(--gris-moyen); margin-top: 2px; text-transform: uppercase; }
+  .chauffeur-prenom { font-size: 15px; font-weight: 700; letter-spacing: 0.02em; color: var(--gris-fonce); }
   .chauffeur-vehicule { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); margin-top: 4px; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
   .plaque { background: var(--gris-clair); border: 1px solid var(--gris-border); border-radius: 3px; padding: 1px 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.05em; }
 
@@ -198,47 +198,47 @@
   <div class="chauffeurs-grid">
     <div class="chauffeur-card" onclick="afficherChauffeur('Aurore')">
       <div class="chauffeur-avatar">AU</div>
-      <div><div class="chauffeur-nom">VALANCE</div><div class="chauffeur-prenom">Aurore</div>
+      <div><div class="chauffeur-prenom">AURORE</div><div class="chauffeur-nom">Valance</div>
       <div class="chauffeur-vehicule">🚐 TRAFIC &nbsp;<span class="plaque">GN-881-PK</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Bertrand')">
       <div class="chauffeur-avatar">BE</div>
-      <div><div class="chauffeur-nom">AUMOITTE</div><div class="chauffeur-prenom">Bertrand</div>
+      <div><div class="chauffeur-prenom">BERTRAND</div><div class="chauffeur-nom">Aumoitte</div>
       <div class="chauffeur-vehicule">🚐 TRAFIC &nbsp;<span class="plaque">FM-024-VV</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Charlie')">
       <div class="chauffeur-avatar">CH</div>
-      <div><div class="chauffeur-nom">DESMONT</div><div class="chauffeur-prenom">Charlie</div>
+      <div><div class="chauffeur-prenom">CHARLIE</div><div class="chauffeur-nom">Desmont</div>
       <div class="chauffeur-vehicule">🚐 MASTER &nbsp;<span class="plaque">GQ-609-ZB</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Damian')">
       <div class="chauffeur-avatar">DA</div>
-      <div><div class="chauffeur-nom">TESAURO</div><div class="chauffeur-prenom">Damian</div>
+      <div><div class="chauffeur-prenom">DAMIAN</div><div class="chauffeur-nom">Tesauro</div>
       <div class="chauffeur-vehicule">🚐 FIAT FULLBACK &nbsp;<span class="plaque">EP-096-RC</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Ivan')">
       <div class="chauffeur-avatar">IV</div>
-      <div><div class="chauffeur-nom">VILA</div><div class="chauffeur-prenom">Ivan</div>
+      <div><div class="chauffeur-prenom">IVAN</div><div class="chauffeur-nom">Vila</div>
       <div class="chauffeur-vehicule">🚐 MASTER &nbsp;<span class="plaque">GT-479-YM</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Jean-Marc')">
       <div class="chauffeur-avatar">JM</div>
-      <div><div class="chauffeur-nom">LONNE-PEYRET</div><div class="chauffeur-prenom">Jean-Marc</div>
+      <div><div class="chauffeur-prenom">JEAN-MARC</div><div class="chauffeur-nom">Lonne-Peyret</div>
       <div class="chauffeur-vehicule">🚐 TRAFIC &nbsp;<span class="plaque">HB-471-JL</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Laurent')">
       <div class="chauffeur-avatar">LA</div>
-      <div><div class="chauffeur-nom">GOUGAIN</div><div class="chauffeur-prenom">Laurent</div>
+      <div><div class="chauffeur-prenom">LAURENT</div><div class="chauffeur-nom">Gougain</div>
       <div class="chauffeur-vehicule">🚐 MOVANO &nbsp;<span class="plaque">GD-485-GB</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Oscar')">
       <div class="chauffeur-avatar">OS</div>
-      <div><div class="chauffeur-nom">TESAURO</div><div class="chauffeur-prenom">Oscar</div>
+      <div><div class="chauffeur-prenom">OSCAR</div><div class="chauffeur-nom">Tesauro</div>
       <div class="chauffeur-vehicule">🚐 <span style="color:#aaa;">LOCATION</span></div></div>
     </div>
     <div class="chauffeur-card" onclick="afficherChauffeur('Serge')">
       <div class="chauffeur-avatar">SE</div>
-      <div><div class="chauffeur-nom">DECLERC</div><div class="chauffeur-prenom">Serge</div>
+      <div><div class="chauffeur-prenom">SERGE</div><div class="chauffeur-nom">Declerckk</div>
       <div class="chauffeur-vehicule">🚐 TRAFIC &nbsp;<span class="plaque">HK-583-DV</span></div></div>
     </div>
   </div>
@@ -313,7 +313,7 @@ const CHAUFFEURS = {
   'Jean-Marc': { nom:'LONNE-PEYRET',  vehicule:'TRAFIC',        plaque:'HB-471-JL' },
   'Laurent':   { nom:'GOUGAIN',       vehicule:'MOVANO',        plaque:'GD-485-GB' },
   'Oscar':     { nom:'TESAURO',       vehicule:'LOCATION',      plaque:null },
-  'Serge':     { nom:'DECLERC',       vehicule:'TRAFIC',        plaque:'HK-583-DV' },
+  'Serge':     { nom:'DECLERCKK',       vehicule:'TRAFIC',        plaque:'HK-583-DV' },
 };
 
 // ── DONNÉES PLANNING ──
