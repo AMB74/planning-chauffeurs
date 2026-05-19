@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "semaine": "SEMAINE 1",
+    "date_affichee": "DIMANCHE 22 JUIN",
+    "numero_semaine": "Semaine 52",
+    "genere_le": "22/06/2026"
+  },
+  "chauffeurs": [
+    { "prenom": "Aurore",    "nom": "VALANCE",      "vehicule": "TRAFIC",        "plaque": "GN-881-PK" },
+    { "prenom": "Bertrand",  "nom": "AUMOITTE",     "vehicule": "TRAFIC",        "plaque": "FM-024-VV" },
+    { "prenom": "Charlie",   "nom": "DESMONT",      "vehicule": "MASTER",        "plaque": "GQ-609-ZB" },
+    { "prenom": "Damian",    "nom": "TESAURO",      "vehicule": "FIAT FULLBACK", "plaque": "EP-096-RC" },
+    { "prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM" },
+    { "prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL" },
+    { "prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB" },
+    { "prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": null },
+    { "prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV" }
+  ],
+  "sections": [
+    {
+      "id": "s0",
+      "label": "Massifs (from Arrivée)",
+      "titre": "0. RDV & RÉASSORT",
+      "lignes": [
+        {
+          "pilote": "Adrien",
+          "renforts": "",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "–",
+          "transfert": "–",
+          "details": "9H15",
+          "depart": "GARE SNCF CHAMONIX",
+          "client": "GAY MAXIME",
+          "nbre": "7+1",
+          "arrivee": "RDV THOLLON"
+        },
+        {
+          "pilote": "Charlie",
+          "renforts": "Mélody",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "PAIN",
+          "transfert": "–",
+          "details": "Dès 7H",
+          "depart": "CHEZ PINPIN",
+          "client": "–",
+          "nbre": "55",
+          "arrivee": "CHEZ PINPIN"
+        },
+        {
+          "pilote": "Charlie",
+          "renforts": "Adrien, Jean",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "RDV PRARION",
+          "transfert": "–",
+          "details": "8H",
+          "depart": "PRARION LES HOUCHES",
+          "client": "–",
+          "nbre": "–",
+          "arrivee": "PRARION LES HOUCHES"
+        },
+        {
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "–",
+          "transfert": "–",
+          "details": "9H45",
+          "depart": "GARE SNCF CHAMONIX",
+          "client": "LIBOSSART ERIC",
+          "nbre": "9+1",
+          "arrivee": "PARKING DE PONT VALSAVA"
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "label": "Massifs (from Arrivée)",
+      "titre": "1. MONT-BLANC",
+      "lignes": [
+        {
+          "pilote": "Adrien",
+          "renforts": "Mélody",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "–",
+          "transfert": "–",
+          "details": "BG>Prarion",
+          "depart": "AUBERGE DE SALVAGNY",
+          "client": "NORTIER GENEVIEVE",
+          "nbre": "12+1",
+          "arrivee": "RDV PLANPRAZ"
+        },
+        {
+          "pilote": "Mélody",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES + TRF",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES + TRF",
+          "transfert": "Transfert HBG > LA VILLETTE",
+          "details": "–",
+          "depart": "CHALET NANT ROUGE",
+          "client": "VIGNERON",
+          "nbre": "6",
+          "arrivee": "HOTEL SAINT ANTOINE***"
+        },
+        {
+          "pilote": "Mélody",
+          "renforts": "",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "TRANSFERT",
+          "transfert": "Transfert HBG > LA VILLETTE",
+          "details": "–",
+          "depart": "CHALET DES CONTAMINES",
+          "client": "JOSEP",
+          "nbre": "2",
+          "arrivee": "RDV PRARION"
+        },
+        {
+          "pilote": "Jorick",
+          "renforts": "Mélody, Aur",
+          "bagages_transfert": "BAGAGES",
+          "renforts_col": "",
+          "alerte": "!!",
+          "type": "BAGAGES !!",
+          "transfert": "HBG > ND GORGE",
+          "details": "GTA 2 · 07H45",
+          "depart": "CHALET DES CONTAMINES",
+          "client": "PEUTET JEAN MARC",
+          "nbre": "9+1",
+          "arrivee": "REFUGE PLAN MYA"
+        },
+        {
+          "pilote": "Mélody",
+          "renforts": "Jorick",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "TRANSFERT",
+          "transfert": "Transfert HBG > LA VILLETTE",
+          "details": "–",
+          "depart": "HOTEL LA GELINOTTE",
+          "client": "ROUVIERE BERTRA…",
+          "nbre": "12+1",
+          "arrivee": "RDV PRARION"
+        },
+        {
+          "pilote": "Charlie",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES + TRF",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES + TRF",
+          "transfert": "–",
+          "details": "9H30 > Bell…",
+          "depart": "RDV PRARION",
+          "client": "GODEFROY JULIEN",
+          "nbre": "7+1",
+          "arrivee": "CHALET DES CONTAMINES"
+        },
+        {
+          "pilote": "Mélody",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "10H00 RDV FLÉGÈRE",
+          "depart": "–",
+          "client": "CHERVET PATRICK",
+          "nbre": "11+1",
+          "arrivee": "HOTEL LE DAHU**"
+        },
+        {
+          "pilote": "Jorick",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES + TRF",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES + TRF",
+          "transfert": "Transfert ND GORGE > HBG",
+          "details": "16H30",
+          "depart": "REFUGE LES MOTTETS",
+          "client": "PIQUEREL",
+          "nbre": "1",
+          "arrivee": "CHALET DES CONTAMINES"
+        },
+        {
+          "pilote": "Jorick",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES + TRF",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES + TRF",
+          "transfert": "Transfert ND GORGE > HBG",
+          "details": "16H30",
+          "depart": "CHAMBRES DU SOLEIL",
+          "client": "FERNANDEZ",
+          "nbre": "2",
+          "arrivee": "HOTEL LE CHRISTIANIA**"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "Massifs (from Arrivée)",
+      "titre": "3. GTA 1",
+      "lignes": [
+        {
+          "pilote": "",
+          "renforts": "",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "SANS BAGAGE",
+          "transfert": "–",
+          "details": "–",
+          "depart": "RDV THOLLON",
+          "client": "GAY MAXIME",
+          "nbre": "13+1",
+          "arrivee": "LA FERME DU NOYER"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "label": "Massifs (from Arrivée)",
+      "titre": "5. VANOISE",
+      "lignes": [
+        {
+          "pilote": "",
+          "renforts": "",
+          "bagages_transfert": "",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "AUTONOME",
+          "transfert": "–",
+          "details": "–",
+          "depart": "AUBERGE DE BELLECOMBE",
+          "client": "STOPPA FLORIAN",
+          "nbre": "5+1",
+          "arrivee": "REFUGE DES BARMETTES"
+        },
+        {
+          "pilote": "Aurore",
+          "renforts": "",
+          "bagages_transfert": "BAGAGES",
+          "renforts_col": "",
+          "alerte": "",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "depart": "HOTEL LA TURRA***",
+          "client": "GIARD",
+          "nbre": "2",
+          "arrivee": "AUBERGE DE BELLECOMBE"
+        }
+      ]
+    }
+  ]
+}
