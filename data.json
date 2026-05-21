@@ -6,15 +6,60 @@
     "genere_le": "22/06/2026"
   },
   "chauffeurs": [
-    { "prenom": "Aurore",    "nom": "VALANCE",      "vehicule": "TRAFIC",        "plaque": "GN-881-PK" },
-    { "prenom": "Bertrand",  "nom": "AUMOITTE",     "vehicule": "TRAFIC",        "plaque": "FM-024-VV" },
-    { "prenom": "Charlie",   "nom": "DESMONT",      "vehicule": "MASTER",        "plaque": "GQ-609-ZB" },
-    { "prenom": "Damian",    "nom": "TESAURO",      "vehicule": "FIAT FULLBACK", "plaque": "EP-096-RC" },
-    { "prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM" },
-    { "prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL" },
-    { "prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB" },
-    { "prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": null },
-    { "prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV" }
+    {
+      "prenom": "Aurore",
+      "nom": "VALANCE",
+      "vehicule": "TRAFIC",
+      "plaque": "GN-881-PK"
+    },
+    {
+      "prenom": "Bertrand",
+      "nom": "AUMOITTE",
+      "vehicule": "TRAFIC",
+      "plaque": "FM-024-VV"
+    },
+    {
+      "prenom": "Charlie",
+      "nom": "DESMONT",
+      "vehicule": "MASTER",
+      "plaque": "GQ-609-ZB"
+    },
+    {
+      "prenom": "Damian",
+      "nom": "TESAURO",
+      "vehicule": "FIAT FULLBACK",
+      "plaque": "EP-096-RC"
+    },
+    {
+      "prenom": "Ivan",
+      "nom": "VILA",
+      "vehicule": "MASTER",
+      "plaque": "GT-479-YM"
+    },
+    {
+      "prenom": "Jean-Marc",
+      "nom": "LONNE-PEYRET",
+      "vehicule": "TRAFIC",
+      "plaque": "HB-471-JL"
+    },
+    {
+      "prenom": "Laurent",
+      "nom": "GOUGAIN",
+      "vehicule": "MOVANO",
+      "plaque": "GD-485-GB"
+    },
+    {
+      "prenom": "Oscar",
+      "nom": "TESAURO",
+      "vehicule": "LOCATION",
+      "plaque": null
+    },
+    {
+      "prenom": "Serge",
+      "nom": "DECLERCK",
+      "vehicule": "TRAFIC",
+      "plaque": "HK-583-DV"
+    }
   ],
   "sections": [
     {
@@ -34,7 +79,8 @@
           "depart": "GARE SNCF CHAMONIX",
           "client": "GAY MAXIME",
           "nbre": "7+1",
-          "arrivee": "RDV THOLLON"
+          "arrivee": "RDV THOLLON",
+          "heure_rdv": ""
         },
         {
           "pilote": "Charlie",
@@ -48,7 +94,8 @@
           "depart": "CHEZ PINPIN",
           "client": "–",
           "nbre": "55",
-          "arrivee": "CHEZ PINPIN"
+          "arrivee": "CHEZ PINPIN",
+          "heure_rdv": ""
         },
         {
           "pilote": "Charlie",
@@ -62,7 +109,8 @@
           "depart": "PRARION LES HOUCHES",
           "client": "–",
           "nbre": "–",
-          "arrivee": "PRARION LES HOUCHES"
+          "arrivee": "PRARION LES HOUCHES",
+          "heure_rdv": ""
         },
         {
           "pilote": "Serge",
@@ -76,7 +124,8 @@
           "depart": "GARE SNCF CHAMONIX",
           "client": "LIBOSSART ERIC",
           "nbre": "9+1",
-          "arrivee": "PARKING DE PONT VALSAVA"
+          "arrivee": "PARKING DE PONT VALSAVA",
+          "heure_rdv": ""
         }
       ]
     },
@@ -97,7 +146,8 @@
           "depart": "AUBERGE DE SALVAGNY",
           "client": "NORTIER GENEVIEVE",
           "nbre": "12+1",
-          "arrivee": "RDV PLANPRAZ"
+          "arrivee": "RDV PLANPRAZ",
+          "heure_rdv": ""
         },
         {
           "pilote": "Mélody",
@@ -111,7 +161,8 @@
           "depart": "CHALET NANT ROUGE",
           "client": "VIGNERON",
           "nbre": "6",
-          "arrivee": "HOTEL SAINT ANTOINE***"
+          "arrivee": "HOTEL SAINT ANTOINE***",
+          "heure_rdv": ""
         },
         {
           "pilote": "Mélody",
@@ -125,7 +176,8 @@
           "depart": "CHALET DES CONTAMINES",
           "client": "JOSEP",
           "nbre": "2",
-          "arrivee": "RDV PRARION"
+          "arrivee": "RDV PRARION",
+          "heure_rdv": ""
         },
         {
           "pilote": "Jorick",
@@ -139,7 +191,8 @@
           "depart": "CHALET DES CONTAMINES",
           "client": "PEUTET JEAN MARC",
           "nbre": "9+1",
-          "arrivee": "REFUGE PLAN MYA"
+          "arrivee": "REFUGE PLAN MYA",
+          "heure_rdv": ""
         },
         {
           "pilote": "Mélody",
@@ -153,7 +206,8 @@
           "depart": "HOTEL LA GELINOTTE",
           "client": "ROUVIERE BERTRA…",
           "nbre": "12+1",
-          "arrivee": "RDV PRARION"
+          "arrivee": "RDV PRARION",
+          "heure_rdv": ""
         },
         {
           "pilote": "Charlie",
@@ -167,7 +221,8 @@
           "depart": "RDV PRARION",
           "client": "GODEFROY JULIEN",
           "nbre": "7+1",
-          "arrivee": "CHALET DES CONTAMINES"
+          "arrivee": "CHALET DES CONTAMINES",
+          "heure_rdv": ""
         },
         {
           "pilote": "Mélody",
@@ -181,7 +236,8 @@
           "depart": "–",
           "client": "CHERVET PATRICK",
           "nbre": "11+1",
-          "arrivee": "HOTEL LE DAHU**"
+          "arrivee": "HOTEL LE DAHU**",
+          "heure_rdv": ""
         },
         {
           "pilote": "Jorick",
@@ -195,7 +251,8 @@
           "depart": "REFUGE LES MOTTETS",
           "client": "PIQUEREL",
           "nbre": "1",
-          "arrivee": "CHALET DES CONTAMINES"
+          "arrivee": "CHALET DES CONTAMINES",
+          "heure_rdv": ""
         },
         {
           "pilote": "Jorick",
@@ -209,7 +266,8 @@
           "depart": "CHAMBRES DU SOLEIL",
           "client": "FERNANDEZ",
           "nbre": "2",
-          "arrivee": "HOTEL LE CHRISTIANIA**"
+          "arrivee": "HOTEL LE CHRISTIANIA**",
+          "heure_rdv": ""
         }
       ]
     },
@@ -230,7 +288,8 @@
           "depart": "RDV THOLLON",
           "client": "GAY MAXIME",
           "nbre": "13+1",
-          "arrivee": "LA FERME DU NOYER"
+          "arrivee": "LA FERME DU NOYER",
+          "heure_rdv": ""
         }
       ]
     },
@@ -251,7 +310,8 @@
           "depart": "AUBERGE DE BELLECOMBE",
           "client": "STOPPA FLORIAN",
           "nbre": "5+1",
-          "arrivee": "REFUGE DES BARMETTES"
+          "arrivee": "REFUGE DES BARMETTES",
+          "heure_rdv": ""
         },
         {
           "pilote": "Aurore",
@@ -265,7 +325,8 @@
           "depart": "HOTEL LA TURRA***",
           "client": "GIARD",
           "nbre": "2",
-          "arrivee": "AUBERGE DE BELLECOMBE"
+          "arrivee": "AUBERGE DE BELLECOMBE",
+          "heure_rdv": ""
         }
       ]
     }
