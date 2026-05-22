@@ -69,18 +69,19 @@ def main():
         if not lignes:
             print(f"Champs disponibles : {list(f.keys())[:10]}")
         lignes.append({
-            "pilote":    get_text(f, "PILOTE_NOM"),
-            "renforts":  get_text(f, "RENFORTS_NOM"),
-            "alerte":    get_text(f, "!!"),
-            "type":      get_text(f, "TYPE PRESTATION") or "–",
-            "transfert": get_text(f, "TRANSFERT") or "–",
-            "details":   get_text(f, "DÉTAILS") or "–",
-            "heure_rdv": get_text(f, "HEURE RDV"),
-            "depart":    get_text(f, "DEPART_NOM") or "–",
-            "client":    get_text(f, "CLIENT /AEM") or "–",
-            "nbre":      get_text(f, "Nombre ajusté") or "–",
-            "arrivee":   get_text(f, "ARRIVEE_NOM") or "–",
-        })
+    "pilote":    get_text(f, "PILOTE_NOM"),
+    "renforts":  get_text(f, "RENFORTS_NOM"),
+    "alerte":    get_text(f, "!!"),
+    "type":      get_text(f, "TYPE (from DÉPART) 2") or "–",
+    "transfert": get_text(f, "TRANSFERT") or "–",
+    "details":   get_text(f, "DÉTAILS") or "–",
+    "heure_rdv": get_text(f, "HEURE RDV"),
+    "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
+    "client":    get_text(f, "CLIENT /AEM") or "–",
+    "nbre":      get_text(f, "Nombre ajusté") or "–",
+    "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
+    "stockes":   get_text(f, "Stockés  →  NBRE") or "–",
+})
 
     data = {
         "meta": {
