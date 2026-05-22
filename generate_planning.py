@@ -50,7 +50,6 @@ def get_text(fields, key):
     return str(val) if val else ""
 
 def fetch_all_records():
-    """Récupère tous les enregistrements Airtable (gère la pagination)."""
     records = []
     offset = None
     fields_param = "&".join(f"fields%5B%5D={urllib.parse.quote(f)}" for f in FIELDS)
@@ -60,13 +59,19 @@ def fetch_all_records():
         if offset:
             url += f"&offset={offset}"
 
+        print(f"URL : {url}")
+        print(f"Token (5 premiers cars) : {AIRTABLE_TOKEN[:5]}")
+
         req = urllib.request.Request(
             url,
             headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
         )
-        print(f"URL appelée : https://api.airtable.com/v0/{AIRTABLE_BASE}/{urllib.parse.quote(TABLE_NAME)}")
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read())
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            print(f"Erreur HTTP {e.code}: {e.read().decode()}")
+            raise
 
         records.extend(data.get("records", []))
         offset = data.get("offset")
