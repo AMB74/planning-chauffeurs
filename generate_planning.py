@@ -79,6 +79,7 @@ def fetch_all_records():
 def main():
     print(f"Récupération de la table '{TABLE_NAME}'...")
     records = fetch_all_records()
+    print(f"Premier enregistrement : {records[0]['fields'] if records else 'Aucun'}")
     print(f"{len(records)} enregistrements récupérés.")
 
     now = datetime.now()
