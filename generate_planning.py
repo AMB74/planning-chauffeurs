@@ -33,7 +33,7 @@ def fetch_records():
     url = (
         f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
         f"{urllib.parse.quote(TABLE_NAME)}"
-        f"?maxRecords=200&view=2.%20Attribution%20CHAUFFEURS"
+        f"?maxRecords=200"
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
@@ -69,19 +69,19 @@ def main():
         if not lignes:
             print(f"Champs disponibles : {list(f.keys())[:10]}")
         lignes.append({
-    "pilote":    get_text(f, "PILOTE_NOM"),
-    "renforts":  get_text(f, "RENFORTS_NOM"),
-    "alerte":    get_text(f, "!!"),
-    "type":      get_text(f, "TYPE (from DÉPART) 2") or "–",
-    "transfert": get_text(f, "TRANSFERT") or "–",
-    "details":   get_text(f, "DÉTAILS") or "–",
-    "heure_rdv": get_text(f, "HEURE RDV"),
-    "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
-    "client":    get_text(f, "CLIENT /AEM") or "–",
-    "nbre":      get_text(f, "Nombre ajusté") or "–",
-    "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
-    "stockes":   get_text(f, "Stockés  →  NBRE") or "–",
-})
+            "pilote":    get_text(f, "PILOTE_NOM"),
+            "renforts":  get_text(f, "RENFORTS_NOM"),
+            "alerte":    get_text(f, "!!"),
+            "type":      get_text(f, "TYPE (from DÉPART) 2") or "–",
+            "transfert": get_text(f, "TRANSFERT") or "–",
+            "details":   get_text(f, "DÉTAILS") or "–",
+            "heure_rdv": get_text(f, "HEURE RDV"),
+            "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
+            "client":    get_text(f, "CLIENT /AEM") or "–",
+            "nbre":      get_text(f, "Nombre ajusté") or "–",
+            "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
+            "stockes":   get_text(f, "Stockés  →  NBRE") or "–",
+        })
 
     data = {
         "meta": {
