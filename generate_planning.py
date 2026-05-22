@@ -64,6 +64,7 @@ def fetch_all_records():
             url,
             headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
         )
+        print(f"URL appelée : https://api.airtable.com/v0/{AIRTABLE_BASE}/{urllib.parse.quote(TABLE_NAME)}")
         with urllib.request.urlopen(req) as resp:
             data = json.loads(resp.read())
 
