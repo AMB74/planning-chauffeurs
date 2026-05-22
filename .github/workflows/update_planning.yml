@@ -1,0 +1,42 @@
+name: Mise à jour planning chauffeurs
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # Chaque nuit à 2h00 heure de Paris (1h UTC)
+  workflow_dispatch:        # Permet de lancer manuellement depuis GitHub
+
+jobs:
+  update-planning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Générer data.json depuis Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_BASE:  ${{ secrets.AIRTABLE_BASE }}
+        run: python generate_planning.py
+
+      - name: Archiver l'ancien data.json
+        run: |
+          mkdir -p archive
+          DATE=$(date +%Y-%m-%d)
+          if [ -f archive/data-$DATE.json ]; then
+            echo "Archive du jour déjà existante, on écrase."
+          fi
+          cp data.json archive/data-$DATE.json || echo "Pas d'ancien fichier à archiver."
+
+      - name: Commit et push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json archive/
+          git diff --staged --quiet || git commit -m "Update planning $(date +%d/%m/%Y)"
+          git push
