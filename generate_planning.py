@@ -5,28 +5,9 @@ import urllib.parse
 from datetime import datetime
 
 # ── CONFIGURATION ──────────────────────────────────────────
-AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]   # injecté par GitHub Actions
-AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]    # ex: appXXXXXXXXXXXXXX
+AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
+AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
 TABLE_NAME      = "SEMAINE 1"
-
-# Champs à récupérer (noms exacts Airtable)
-FIELDS = [
-    "BAGAGES + TRANSFERT",
-    "RENFORTS",
-    "!!",
-    "TYPE PRESTATION",
-    "TRANSFERT",
-    "DÉTAILS",
-    "HEURE RDV",
-    "DÉPART",
-    "CLIENT /AEM",
-    "Nombre ajusté",
-    "ARRIVÉE",
-    "PILOTE_NOM",
-    "RENFORTS_NOM",
-    "DEPART_NOM",
-    "ARRIVEE_NOM",
-]
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
@@ -41,67 +22,52 @@ CHAUFFEURS = [
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
 ]
 
-# ── HELPERS ────────────────────────────────────────────────
 def get_text(fields, key):
-    """Extrait une valeur texte simple, gère les listes (lookup)."""
     val = fields.get(key, "")
     if isinstance(val, list):
         return ", ".join(str(v) for v in val if v)
     return str(val) if val else ""
 
-def fetch_all_records():
-    records = []
-    offset = None
-    fields_param = "&".join(f"fields%5B%5D={urllib.parse.quote(f)}" for f in FIELDS)
-
-    while True:
-        url = f"https://api.airtable.com/v0/{AIRTABLE_BASE}/{urllib.parse.quote(TABLE_NAME)}?{fields_param}"
-        if offset:
-            url += f"&offset={offset}"
-
-        print(f"URL : {url}")
-        print(f"Token (5 premiers cars) : {AIRTABLE_TOKEN[:5]}")
-
-        req = urllib.request.Request(
-            url,
-            headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
-        )
-        try:
-            with urllib.request.urlopen(req) as resp:
-                data = json.loads(resp.read())
-        except urllib.error.HTTPError as e:
-            print(f"Erreur HTTP {e.code}: {e.read().decode()}")
-            raise
-
-        records.extend(data.get("records", []))
-        offset = data.get("offset")
-        if not offset:
-            break
-
+def fetch_records():
+    # Récupère max 100 enregistrements en une seule requête (sans pagination)
+    url = (
+        f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
+        f"{urllib.parse.quote(TABLE_NAME)}"
+        f"?maxRecords=200"
+    )
+    print(f"Appel Airtable : {url[:80]}...")
+    req = urllib.request.Request(
+        url,
+        headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        body = resp.read().decode("utf-8")
+    data = json.loads(body)
+    if "error" in data:
+        raise Exception(f"Erreur Airtable : {data['error']}")
+    records = data.get("records", [])
+    print(f"{len(records)} enregistrements reçus.")
     return records
 
-# ── MAIN ───────────────────────────────────────────────────
 def main():
-    print(f"Récupération de la table '{TABLE_NAME}'...")
-    records = fetch_all_records()
-    print(f"Premier enregistrement : {records[0]['fields'] if records else 'Aucun'}")
-    print(f"{len(records)} enregistrements récupérés.")
+    print(f"Récupération de '{TABLE_NAME}'...")
+    records = fetch_records()
 
     now = datetime.now()
-
-    # Noms des jours/mois en français
     JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
     MOIS  = ["Janvier","Février","Mars","Avril","Mai","Juin",
              "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
-    date_affichee   = f"{JOURS[now.weekday()]} {now.day} {MOIS[now.month-1]}"
-    numero_semaine  = f"Semaine {now.isocalendar()[1]}"
-    genere_le       = now.strftime("%d/%m/%Y")
+    date_affichee  = f"{JOURS[now.weekday()]} {now.day} {MOIS[now.month-1]}"
+    numero_semaine = f"Semaine {now.isocalendar()[1]}"
+    genere_le      = now.strftime("%d/%m/%Y")
 
-    # Construction des lignes
     lignes = []
     for rec in records:
         f = rec.get("fields", {})
+        # Debug : affiche le premier enregistrement
+        if not lignes:
+            print(f"Champs disponibles : {list(f.keys())[:10]}")
         lignes.append({
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  get_text(f, "RENFORTS_NOM"),
@@ -110,13 +76,12 @@ def main():
             "transfert": get_text(f, "TRANSFERT") or "–",
             "details":   get_text(f, "DÉTAILS") or "–",
             "heure_rdv": get_text(f, "HEURE RDV"),
-            "depart":    get_text(f, "DEPART_NOM") or get_text(f, "DÉPART") or "–",
+            "depart":    get_text(f, "DEPART_NOM") or "–",
             "client":    get_text(f, "CLIENT /AEM") or "–",
             "nbre":      get_text(f, "Nombre ajusté") or "–",
-            "arrivee":   get_text(f, "ARRIVEE_NOM") or get_text(f, "ARRIVÉE") or "–",
+            "arrivee":   get_text(f, "ARRIVEE_NOM") or "–",
         })
 
-    # Structure finale
     data = {
         "meta": {
             "semaine":        "SEMAINE 1",
@@ -125,19 +90,16 @@ def main():
             "genere_le":      genere_le,
         },
         "chauffeurs": CHAUFFEURS,
-        "sections": [
-            {
-                "id":     "s1",
-                "label":  "SEMAINE 1",
-                "titre":  "Planning de la semaine",
-                "lignes": lignes,
-            }
-        ]
+        "sections": [{
+            "id":     "s1",
+            "label":  "SEMAINE 1",
+            "titre":  "Planning de la semaine",
+            "lignes": lignes,
+        }]
     }
 
-    # Écriture du fichier
-    with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    with open("data.json", "w", encoding="utf-8") as fout:
+        json.dump(data, fout, ensure_ascii=False, indent=2)
 
     print(f"data.json généré avec {len(lignes)} lignes.")
 
