@@ -33,7 +33,7 @@ def fetch_records():
     url = (
         f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
         f"{urllib.parse.quote(TABLE_NAME)}"
-        f"?maxRecords=200"
+        f"?maxRecords=200&view=2.%20Attribution%20CHAUFFEURS"
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
