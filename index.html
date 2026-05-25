@@ -280,7 +280,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
   </div>
 </div>
 
-<button class="btn-print" onclick="setTimeout(function(){ window.print(); }, 100)">🖨 Imprimer / PDF</button>
+<button class="btn-print" onclick="imprimerPage()">🖨 Imprimer / PDF</button>
 
 <script>
 // ── DONNÉES GLOBALES (chargées depuis data.json) ──
@@ -498,6 +498,37 @@ function toggleSection(id) {
 }
 
 // ── DÉMARRAGE ──
+function imprimerPage() {
+  // Compatibilité Android Chrome
+  const ua = navigator.userAgent.toLowerCase();
+  if (ua.includes('android')) {
+    // Sur Android, on ouvre une nouvelle fenêtre avec le contenu imprimable
+    const contenu = document.querySelector('#page-planning').style.display !== 'none'
+      ? document.getElementById('planning-general-contenu').innerHTML
+      : document.getElementById('ch-contenu').innerHTML;
+    const w = window.open('', '_blank');
+    w.document.write(`<!DOCTYPE html><html><head>
+      <meta charset="UTF-8">
+      <title>Planning Chauffeurs</title>
+      <style>
+        body { font-family: sans-serif; font-size: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 4px 6px; font-size: 9px; text-align: left; }
+        thead tr { background: #f4f4f4; }
+        tr.valide { background: #f0faf0; text-decoration: line-through; }
+        td.check, th.check { display: none; }
+        .section { margin-bottom: 16px; }
+        .section-title { font-size: 13px; font-weight: bold; margin-bottom: 6px; }
+      </style>
+      </head><body>${contenu}</body></html>`);
+    w.document.close();
+    w.focus();
+    setTimeout(() => { w.print(); }, 300);
+  } else {
+    setTimeout(() => { window.print(); }, 100);
+  }
+}
+
 chargerDonnees();
 </script>
 </body>
