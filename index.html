@@ -369,8 +369,16 @@ function badgeClass(type) {
 function ligneHTML(l, prenom) { return ligneHTMLWithHr(l, prenom, true); }
 
 function getLigneId(l) {
-  // Identifiant unique basé sur le contenu de la ligne
-  return btoa(encodeURIComponent([l.pilote, l.client, l.depart, l.arrivee, l.nbre].join('|'))).slice(0, 24);
+  // Identifiant unique basé sur TOUTES les données de la ligne
+  const str = [l.pilote, l.renforts, l.client, l.depart, l.arrivee, l.nbre, l.details, l.transfert, l.type, l.heure_rdv].join('||');
+  // Hash simple mais fiable
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const chr = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return 'lid_' + Math.abs(hash).toString(36);
 }
 
 function isValide(lid) {
