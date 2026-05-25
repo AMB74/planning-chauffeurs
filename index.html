@@ -443,7 +443,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     <div class="table-wrapper"><table>
       <thead><tr>
         <th class="check">✓</th><th>Pilote</th><th>Renforts</th><th class="col-type">Type</th><th>Détails</th>
-        <th>Transfert</th><th${colHrClass}>Heure RDV</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
+        <th>RDV / Transfert</th><th${colHrClass}>Heure RDV</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('')}</tbody>
     </table></div>
