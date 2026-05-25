@@ -160,7 +160,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
   td { padding: 7px 6px; font-size: 11px; }
   td.transfert { min-width: 180px; white-space: normal; word-break: break-word; }
   td.depart, td.arrivee { max-width: none; white-space: nowrap; }
-  td.client { white-space: nowrap; }
+  td.client { white-space: normal; word-break: break-word; }
 }
 
 /* ── IMPRESSION ── */
@@ -420,7 +420,7 @@ function ligneHTMLWithHr(l, prenom, showHr) {
     <td class="${trfCls}">${trfTxt}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv : '–'}</td>
     <td class="depart">${l.depart || '–'}</td>
-    <td class="client">${l.client || '–'}</td>
+    <td class="client">${(l.client || '–').replace(/\n/g, '<br>')}</td>
     <td class="nbre">${l.nbre || '–'}</td>
     <td class="arrivee">${l.arrivee || '–'}</td>
     <td class="${(l.stockes && l.stockes !== '–') ? 'stockes' : 'stockes empty'}">${l.stockes || '–'}</td>
