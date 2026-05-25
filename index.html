@@ -148,9 +148,13 @@ td.stockes.empty { color: #ddd; text-align: center; }
   .page { padding: 14px 10px 32px; }
   .header-day, .header-chauffeur-nom { font-size: 18px; }
   .chauffeurs-grid { grid-template-columns: 1fr; }
-  th { font-size: 8.5px; padding: 6px 6px; }
+  .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 900px; }
+  th { font-size: 8.5px; padding: 6px 6px; white-space: nowrap; }
   td { padding: 7px 6px; font-size: 11px; }
-  .col-type { display: none; }
+  td.transfert { max-width: none; white-space: nowrap; }
+  td.depart, td.arrivee { max-width: none; white-space: nowrap; }
+  td.client { white-space: nowrap; }
 }
 
 /* ── IMPRESSION ── */
