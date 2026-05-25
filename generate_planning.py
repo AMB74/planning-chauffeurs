@@ -102,7 +102,7 @@ def main():
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  get_text(f, "RENFORTS_NOM"),
             "alerte":    get_text(f, "!!"),
-            "type":      get_text(f, "TYPE (from DÉPART) 2") or "–",
+            "type":      get_text(f, "TYPE (from ARRIVÉE) 2") or "–",
             "transfert": get_text(f, "TRANSFERT") or "–",
             "details":   get_text(f, "DÉTAILS") or "–",
             "heure_rdv": get_text(f, "HEURE RDV"),
