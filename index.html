@@ -326,6 +326,7 @@ async function chargerDonnees() {
     // Masquer le loader, afficher l'accueil
     document.getElementById('loading').style.display  = 'none';
     document.getElementById('page-accueil').style.display = 'block';
+    restaurerSections();
 
   } catch (err) {
     document.getElementById('loading').innerHTML =
@@ -494,39 +495,170 @@ function afficherChauffeur(prenom) {
 
 function toggleSection(id) {
   const el = document.getElementById(id);
-  if (el) el.classList.toggle('collapsed');
+  if (!el) return;
+  el.classList.toggle('collapsed');
+  // Mémoriser l'état
+  try {
+    const collapsed = el.classList.contains('collapsed');
+    if (collapsed) localStorage.setItem('sec_' + id, '1');
+    else localStorage.removeItem('sec_' + id);
+  } catch(e) {}
 }
 
-// ── DÉMARRAGE ──
+function restaurerSections() {
+  try {
+    document.querySelectorAll('.section').forEach(el => {
+      if (localStorage.getItem('sec_' + el.id) === '1') {
+        el.classList.add('collapsed');
+      }
+    });
+  } catch(e) {}
+}
+
+// ── CSS IMPRESSION COMPLET (avec couleurs) ──
+const PRINT_CSS = `
+  @page { size: A4 landscape; margin: 8mm 10mm; }
+  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 9px; }
+  .page { padding: 0; max-width: 100%; }
+  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #E8263A; padding-bottom: 8px; margin-bottom: 12px; }
+  .header-day { font-size: 16px; font-weight: 600; }
+  .societe-nom { font-size: 9px; font-weight: 600; text-transform: uppercase; }
+  .societe-detail { font-size: 8px; color: #666; }
+  .breadcrumb { font-size: 8px; color: #888; margin-bottom: 4px; }
+  .section { margin-bottom: 12px; break-inside: avoid-page; }
+  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .section-title { font-size: 12px; font-weight: 600; }
+  .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
+  .chevron, .btn-print, .btn-retour, .btn-general, .legende, .badge-maj, td.check, th.check { display: none !important; }
+  .section.collapsed .table-wrapper { display: block !important; }
+  .table-wrapper { border: 1px solid #ccc; border-radius: 0; overflow: visible; }
+  table { width: 100%; border-collapse: collapse; min-width: 0; }
+  thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  th { font-size: 7.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #666; padding: 4px 5px; white-space: nowrap; border-bottom: 1px solid #ccc; }
+  td { padding: 3px 5px; font-size: 8px; vertical-align: top; border-bottom: 1px solid #eee; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tbody tr.valide td { text-decoration: line-through; color: #888; }
+  tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; }
+  tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
+  td.pilote { font-weight: 600; white-space: nowrap; }
+  td.renforts { color: #1565C0; font-size: 7.5px; }
+  td.details { color: #E8263A; font-weight: 500; font-family: monospace; }
+  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; }
+  td.nbre { text-align: center; font-family: monospace; font-weight: 500; }
+  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; }
+  td.client { font-weight: 600; text-transform: uppercase; font-size: 7.5px; }
+  td.transfert { font-size: 7px; color: #555; max-width: 100px; white-space: normal; word-break: break-word; }
+  td.depart, td.arrivee { font-size: 7.5px; font-weight: 500; max-width: 100px; white-space: normal; word-break: break-word; }
+  .badge { display: inline-block; font-size: 6.5px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 4px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .badge-bagages     { background: #FFF8E1 !important; color: #F57F17; border-color: #FFE082; }
+  .badge-bagages-trf { background: #E8F5E9 !important; color: #2E7D32; border-color: #A5D6A7; }
+  .badge-transfert   { background: #E3F2FD !important; color: #1565C0; border-color: #90CAF9; }
+  .badge-rdv         { background: #F3E5F5 !important; color: #6A1B9A; border-color: #CE93D8; }
+  .badge-default     { background: #f4f4f4 !important; color: #555; border-color: #ddd; }
+  .footer { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: space-between; color: #999; font-size: 8px; font-family: monospace; }
+`;
+
+function getHeaderHTML() {
+  const pagePlanning = document.getElementById('page-planning').style.display !== 'none';
+  const pageChauffeur = document.getElementById('page-chauffeur').style.display !== 'none';
+  if (pagePlanning) return document.querySelector('#page-planning .header').outerHTML;
+  if (pageChauffeur) return document.querySelector('#page-chauffeur .header').outerHTML;
+  return '';
+}
+
+function getFooterHTML() {
+  const pagePlanning = document.getElementById('page-planning').style.display !== 'none';
+  if (pagePlanning) return document.querySelector('#page-footer')?.outerHTML || '';
+  return document.querySelector('#ch-footer')?.parentElement?.outerHTML || '';
+}
+
+function ouvrirFenetreImpression(contenuHTML) {
+  const w = window.open('', '_blank');
+  if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
+  w.document.write(`<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>${PRINT_CSS}</style>
+  </head><body>
+    <div class="page">
+      ${getHeaderHTML()}
+      ${contenuHTML}
+    </div>
+    <script>window.onload = function(){ setTimeout(function(){ window.print(); }, 400); }<\/script>
+  </body></html>`);
+  w.document.close();
+}
+
+// ── MODAL IMPRESSION ──
 function imprimerPage() {
-  // Compatibilité Android Chrome
-  const ua = navigator.userAgent.toLowerCase();
-  if (ua.includes('android')) {
-    // Sur Android, on ouvre une nouvelle fenêtre avec le contenu imprimable
-    const contenu = document.querySelector('#page-planning').style.display !== 'none'
-      ? document.getElementById('planning-general-contenu').innerHTML
-      : document.getElementById('ch-contenu').innerHTML;
-    const w = window.open('', '_blank');
-    w.document.write(`<!DOCTYPE html><html><head>
-      <meta charset="UTF-8">
-      <title>Planning Chauffeurs</title>
-      <style>
-        body { font-family: sans-serif; font-size: 10px; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { border: 1px solid #ccc; padding: 4px 6px; font-size: 9px; text-align: left; }
-        thead tr { background: #f4f4f4; }
-        tr.valide { background: #f0faf0; text-decoration: line-through; }
-        td.check, th.check { display: none; }
-        .section { margin-bottom: 16px; }
-        .section-title { font-size: 13px; font-weight: bold; margin-bottom: 6px; }
-      </style>
-      </head><body>${contenu}</body></html>`);
-    w.document.close();
-    w.focus();
-    setTimeout(() => { w.print(); }, 300);
-  } else {
-    setTimeout(() => { window.print(); }, 100);
+  // Récupérer les sections visibles
+  const pagePlanning  = document.getElementById('page-planning').style.display !== 'none';
+  const pageChauffeur = document.getElementById('page-chauffeur').style.display !== 'none';
+  const conteneurId   = pagePlanning ? 'planning-general-contenu' : 'ch-contenu';
+  const sections      = document.querySelectorAll(`#${conteneurId} .section`);
+
+  if (sections.length === 0) {
+    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML);
+    return;
   }
+
+  // Construire le modal de choix
+  const joursOptions = Array.from(sections).map((s, i) => {
+    const titre = s.querySelector('.section-title')?.textContent || `Jour ${i+1}`;
+    const label = s.querySelector('[style*="background:var(--rouge)"]')?.textContent || '';
+    return `<label style="display:flex;align-items:center;gap:8px;padding:8px 12px;border:1.5px solid #e0e0e0;border-radius:8px;cursor:pointer;font-size:13px;">
+      <input type="checkbox" value="${i}" style="width:16px;height:16px;accent-color:#E8263A;" checked>
+      <span style="background:#E8263A;color:white;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;">${label}</span>
+      <span style="font-weight:500;">${titre}</span>
+    </label>`;
+  }).join('');
+
+  const modal = document.createElement('div');
+  modal.id = 'modal-print';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = `
+    <div style="background:white;border-radius:16px;padding:24px;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+      <div style="font-size:16px;font-weight:600;margin-bottom:6px;">🖨 Choisir quoi imprimer</div>
+      <div style="font-size:12px;color:#888;margin-bottom:16px;">Sélectionnez les jours à inclure</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;" id="modal-jours">${joursOptions}</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=true)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout cocher</button>
+        <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=false)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout décocher</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <button onclick="fermerModal()" style="flex:1;padding:10px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:13px;">Annuler</button>
+        <button onclick="lancerImpression('${conteneurId}')" style="flex:2;padding:10px;border:none;border-radius:8px;background:#E8263A;color:white;cursor:pointer;font-size:13px;font-weight:600;">Imprimer</button>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+}
+
+function fermerModal() {
+  const m = document.getElementById('modal-print');
+  if (m) m.remove();
+}
+
+function lancerImpression(conteneurId) {
+  const cases = document.querySelectorAll('#modal-jours input:checked');
+  const indices = Array.from(cases).map(c => parseInt(c.value));
+  fermerModal();
+
+  const sections = document.querySelectorAll(`#${conteneurId} .section`);
+  let html = '';
+  sections.forEach((s, i) => {
+    if (indices.includes(i)) {
+      // Forcer l'affichage même si collapsed
+      const clone = s.cloneNode(true);
+      clone.classList.remove('collapsed');
+      html += clone.outerHTML;
+    }
+  });
+  ouvrirFenetreImpression(html);
 }
 
 chargerDonnees();
