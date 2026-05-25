@@ -92,8 +92,8 @@ body {
 .section.collapsed .table-wrapper { display: none; }
 
 /* ── TABLEAU ── */
-.table-wrapper { border-radius: 8px; overflow: hidden; border: 1.5px solid var(--gris-border); background: var(--blanc); }
-table { width: 100%; border-collapse: collapse; }
+.table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
+table { width: 100%; min-width: 900px; border-collapse: collapse; }
 thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
 th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
 tbody tr { border-bottom: 1px solid var(--gris-border); transition: background 0.15s; }
@@ -103,6 +103,12 @@ tbody tr.has-pilote td:first-child { border-left: 3px solid var(--rouge); }
 tbody tr.no-pilote td:first-child { border-left: 3px solid transparent; }
 tbody tr.hl-pilote { background: #fff5f5; }
 tbody tr.hl-renfort { background: #f0f4ff; }
+tbody tr.valide { background: #f0faf0 !important; opacity: 0.75; }
+tbody tr.valide td { text-decoration: line-through; color: #888; }
+tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; font-weight: 600; }
+td.check { width: 32px; text-align: center; padding: 9px 6px; vertical-align: middle; }
+td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; border-radius: 4px; }
+th.check { width: 32px; text-align: center; padding: 8px 6px; }
 td { padding: 9px 10px; vertical-align: top; }
 td.pilote { font-weight: 600; white-space: nowrap; min-width: 70px; }
 td.pilote.empty { color: #bbb; font-weight: 400; font-style: italic; }
@@ -172,7 +178,8 @@ td.stockes.empty { color: #ddd; text-align: center; }
   .section-title { font-size: 12px; }
   .chevron { display: none; }
   .section.collapsed .table-wrapper { display: block !important; }
-  .table-wrapper { border-radius: 0; border: 1px solid #ccc; }
+  .table-wrapper { border-radius: 0; border: 1px solid #ccc; overflow: visible; }
+  table { min-width: 0; width: 100%; }
   .col-type { display: none; }
   th { font-size: 8px; padding: 4px 5px; }
   td { padding: 4px 5px; font-size: 9px; }
@@ -190,6 +197,8 @@ td.stockes.empty { color: #ddd; text-align: center; }
   tbody tr:hover { background: white; }
   tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tbody tr.valide { background: #f0faf0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  td.check, th.check { display: none; }
 }
 </style>
 </head>
@@ -359,16 +368,43 @@ function badgeClass(type) {
 
 function ligneHTML(l, prenom) { return ligneHTMLWithHr(l, prenom, true); }
 
+function getLigneId(l) {
+  // Identifiant unique basé sur le contenu de la ligne
+  return btoa(encodeURIComponent([l.pilote, l.client, l.depart, l.arrivee, l.nbre].join('|'))).slice(0, 24);
+}
+
+function isValide(lid) {
+  try { return localStorage.getItem('valide_' + lid) === '1'; } catch(e) { return false; }
+}
+
+function toggleValide(lid) {
+  try {
+    const val = isValide(lid) ? null : '1';
+    if (val) localStorage.setItem('valide_' + lid, val);
+    else localStorage.removeItem('valide_' + lid);
+    // Mettre à jour toutes les lignes avec cet ID sur la page
+    document.querySelectorAll(`tr[data-lid="${lid}"]`).forEach(tr => {
+      const cb = tr.querySelector('input[type="checkbox"]');
+      if (val) { tr.classList.add('valide'); if(cb) cb.checked = true; }
+      else { tr.classList.remove('valide'); if(cb) cb.checked = false; }
+    });
+  } catch(e) {}
+}
+
 function ligneHTMLWithHr(l, prenom, showHr) {
   const isPilote  = prenom && l.pilote  && l.pilote.toLowerCase().includes(prenom.toLowerCase());
   const isRenfort = prenom && l.renforts && l.renforts.toLowerCase().includes(prenom.toLowerCase());
+  const lid = getLigneId(l);
+  const valide = isValide(lid);
   const rowCls = (l.pilote ? 'has-pilote' : 'no-pilote')
     + (isPilote  ? ' hl-pilote'  : '')
-    + (isRenfort ? ' hl-renfort' : '');
+    + (isRenfort ? ' hl-renfort' : '')
+    + (valide    ? ' valide'     : '');
   const trfTxt = (l.transfert && l.transfert !== '–') ? l.transfert : '–';
   const trfCls = (l.transfert && l.transfert !== '–') ? 'transfert' : 'transfert empty';
   const typeDisplay = l.type || '–';
-  return `<tr class="${rowCls}">
+  return `<tr class="${rowCls}" data-lid="${lid}">
+    <td class="check"><input type="checkbox" ${valide ? 'checked' : ''} onchange="toggleValide('${lid}')"></td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
     <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
@@ -398,7 +434,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     </div>
     <div class="table-wrapper"><table>
       <thead><tr>
-        <th>Pilote</th><th>Renforts</th><th class="col-type">Type</th><th>Détails</th>
+        <th class="check">✓</th><th>Pilote</th><th>Renforts</th><th class="col-type">Type</th><th>Détails</th>
         <th>Transfert</th><th${colHrClass}>Heure RDV</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('')}</tbody>
