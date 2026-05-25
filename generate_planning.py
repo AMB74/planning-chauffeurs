@@ -8,6 +8,7 @@ from datetime import datetime
 AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
 TABLE_NAME      = "SEMAINE 1"
+VIEW_NAME       = "2. Attribution CHAUFFEURS"
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
@@ -22,6 +23,10 @@ CHAUFFEURS = [
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
 ]
 
+JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
+MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
+             "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+
 def get_text(fields, key):
     val = fields.get(key, "")
     if isinstance(val, list):
@@ -29,11 +34,11 @@ def get_text(fields, key):
     return str(val) if val else ""
 
 def fetch_records():
-    # Récupère max 100 enregistrements en une seule requête (sans pagination)
     url = (
         f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
         f"{urllib.parse.quote(TABLE_NAME)}"
         f"?maxRecords=200"
+        f"&view={urllib.parse.quote(VIEW_NAME)}"
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
@@ -49,26 +54,37 @@ def fetch_records():
     print(f"{len(records)} enregistrements reçus.")
     return records
 
+def format_date_fr(date_str):
+    """Convertit '2026-05-25' en 'LUNDI 25 MAI'"""
+    try:
+        d = datetime.strptime(date_str, "%Y-%m-%d")
+        return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+    except:
+        return date_str
+
 def main():
-    print(f"Récupération de '{TABLE_NAME}'...")
+    print(f"Récupération de '{TABLE_NAME}' vue '{VIEW_NAME}'...")
     records = fetch_records()
 
     now = datetime.now()
-    JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
-    MOIS  = ["Janvier","Février","Mars","Avril","Mai","Juin",
-             "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
-
-    date_affichee  = f"{JOURS[now.weekday()]} {now.day} {MOIS[now.month-1]}"
+    date_affichee  = f"{JOURS_FR[now.weekday()]} {now.day} {MOIS_FR[now.month-1]}"
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
-    lignes = []
+    # ── Grouper les lignes par DATE PRESTATION ──
+    from collections import OrderedDict
+    dates = OrderedDict()  # clé = "2026-05-25", valeur = liste de lignes
+
     for rec in records:
         f = rec.get("fields", {})
-        # Debug : affiche le premier enregistrement
-        if not lignes:
-            print(f"Champs disponibles : {list(f.keys())[:10]}")
-        lignes.append({
+        if not dates:
+            print(f"Champs disponibles : {list(f.keys())[:12]}")
+
+        date_prestation = get_text(f, "DATE PRESTATION")  # ex: "2026-05-25"
+        if not date_prestation:
+            date_prestation = "Sans date"
+
+        ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  get_text(f, "RENFORTS_NOM"),
             "alerte":    get_text(f, "!!"),
@@ -80,7 +96,33 @@ def main():
             "client":    get_text(f, "CLIENT /AEM") or "–",
             "nbre":      get_text(f, "Nombre ajusté") or "–",
             "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
-            "stockes":   get_text(f, "Stockés  →  NBRE") or "–",
+            "stockes":   get_text(f, "NBRE") or "–",
+        }
+
+        if date_prestation not in dates:
+            dates[date_prestation] = []
+        dates[date_prestation].append(ligne)
+
+    # ── Construire les sections (1 section = 1 jour) ──
+    sections = []
+    for i, (date_str, lignes) in enumerate(sorted(dates.items())):
+        if date_str == "Sans date":
+            titre = "Sans date"
+            label = "–"
+        else:
+            titre = format_date_fr(date_str)
+            # ex: "25/05" pour le label court
+            try:
+                d = datetime.strptime(date_str, "%Y-%m-%d")
+                label = d.strftime("%d/%m")
+            except:
+                label = date_str
+
+        sections.append({
+            "id":     f"s{i}",
+            "label":  label,
+            "titre":  titre,
+            "lignes": lignes,
         })
 
     data = {
@@ -91,18 +133,13 @@ def main():
             "genere_le":      genere_le,
         },
         "chauffeurs": CHAUFFEURS,
-        "sections": [{
-            "id":     "s1",
-            "label":  "SEMAINE 1",
-            "titre":  "Planning de la semaine",
-            "lignes": lignes,
-        }]
+        "sections":   sections,
     }
 
     with open("data.json", "w", encoding="utf-8") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=2)
 
-    print(f"data.json généré avec {len(lignes)} lignes.")
+    print(f"data.json généré : {len(sections)} jours, {len(records)} lignes total.")
 
 if __name__ == "__main__":
     main()
