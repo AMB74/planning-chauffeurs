@@ -27,6 +27,20 @@ JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
              "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
+def format_client(val):
+    """Sépare le nom du client et le numéro de téléphone sur deux lignes.
+    Ex: 'GAY MAXIME ( - 06 65 04 67 53)' → 'GAY MAXIME\n(- 06 65 04 67 53)'
+    """
+    if not val:
+        return "–"
+    # Sépare sur la parenthèse ouvrante
+    if ' (' in val:
+        parts = val.split(' (', 1)
+        nom = parts[0].strip()
+        tel = '(' + parts[1].strip()
+        return f"{nom}\n{tel}"
+    return val
+
 def get_text(fields, key):
     val = fields.get(key, "")
     if isinstance(val, list):
@@ -93,7 +107,7 @@ def main():
             "details":   get_text(f, "DÉTAILS") or "–",
             "heure_rdv": get_text(f, "HEURE RDV"),
             "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
-            "client":    get_text(f, "CLIENT /AEM") or "–",
+            "client":    format_client(get_text(f, "CLIENT /AEM")),
             "nbre":      get_text(f, "Nombre ajusté") or "–",
             "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
             "stockes":   get_text(f, "NBRE") or "–",
