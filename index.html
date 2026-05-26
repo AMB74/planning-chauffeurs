@@ -429,11 +429,12 @@ function ligneHTMLWithHr(l, prenom, showHr) {
 }
 
 function sectionHTML(s, lignes, idx, prenom) {
-  const sid = (prenom ? 'ch' : 'pg') + '-s' + idx;
+  const sid = 'sec-s' + idx;
+  const domId = (prenom ? 'ch' : 'pg') + '-s' + idx;
   const hasHeurerdv = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
   const colHrClass = hasHeurerdv ? '' : ' style="display:none"';
-  return `<div class="section" id="${sid}">
-    <div class="section-header" onclick="toggleSection('${sid}')">
+  return `<div class="section" id="${domId}" data-sid="${sid}">
+    <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
       <div style="display:flex;align-items:center;gap:10px;">
         <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
         <div class="section-title">${s.titre}</div>
@@ -493,22 +494,23 @@ function afficherChauffeur(prenom) {
   showPage('page-chauffeur');
 }
 
-function toggleSection(id) {
-  const el = document.getElementById(id);
+function toggleSection(domId, sid) {
+  const el = document.getElementById(domId);
   if (!el) return;
+  const key = sid || domId;
   el.classList.toggle('collapsed');
-  // Mémoriser l'état
   try {
     const collapsed = el.classList.contains('collapsed');
-    if (collapsed) localStorage.setItem('sec_' + id, '1');
-    else localStorage.removeItem('sec_' + id);
+    if (collapsed) localStorage.setItem('sec_' + key, '1');
+    else localStorage.removeItem('sec_' + key);
   } catch(e) {}
 }
 
 function restaurerSections() {
   try {
     document.querySelectorAll('.section').forEach(el => {
-      if (localStorage.getItem('sec_' + el.id) === '1') {
+      const key = el.dataset.sid || el.id;
+      if (localStorage.getItem('sec_' + key) === '1') {
         el.classList.add('collapsed');
       }
     });
