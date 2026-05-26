@@ -465,6 +465,7 @@ function retourAccueil() { showPage('page-accueil'); }
 
 function afficherPlanning() {
   showPage('page-planning');
+  restaurerSections();
 }
 
 function afficherChauffeur(prenom) {
@@ -492,6 +493,7 @@ function afficherChauffeur(prenom) {
   }
   document.getElementById('ch-contenu').innerHTML = html;
   showPage('page-chauffeur');
+  restaurerSections();
 }
 
 function toggleSection(domId, sid) {
