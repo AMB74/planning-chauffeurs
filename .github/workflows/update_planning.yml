@@ -2,41 +2,81 @@ name: Mise à jour planning chauffeurs
 
 on:
   schedule:
-    - cron: '0 1 * * *'   # Chaque nuit à 2h00 heure de Paris (1h UTC)
-  workflow_dispatch:        # Permet de lancer manuellement depuis GitHub
+    - cron: '30 14 * * *'   # Chaque jour à 16h30 heure de Paris (14h30 UTC)
+  workflow_dispatch:          # Permet de lancer manuellement depuis GitHub
+
+permissions:
+  contents: write
 
 jobs:
   update-planning:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Vérifier la période active (15 mai - 15 novembre)
+        id: check_period
+        run: |
+          MONTH=$(date +%-m)
+          DAY=$(date +%-d)
+          ACTIVE=false
+          if [ $MONTH -gt 5 ] && [ $MONTH -lt 11 ]; then
+            ACTIVE=true
+          elif [ $MONTH -eq 5 ] && [ $DAY -ge 15 ]; then
+            ACTIVE=true
+          elif [ $MONTH -eq 11 ] && [ $DAY -le 15 ]; then
+            ACTIVE=true
+          fi
+          echo "active=$ACTIVE" >> $GITHUB_OUTPUT
+          echo "Période active : $ACTIVE (mois=$MONTH jour=$DAY)"
+
       - name: Récupérer le dépôt
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configurer Python
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Générer data.json depuis Airtable
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           AIRTABLE_BASE:  ${{ secrets.AIRTABLE_BASE }}
         run: python generate_planning.py
 
       - name: Archiver l'ancien data.json
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           mkdir -p archive
           DATE=$(date +%Y-%m-%d)
-          if [ -f archive/data-$DATE.json ]; then
-            echo "Archive du jour déjà existante, on écrase."
-          fi
           cp data.json archive/data-$DATE.json || echo "Pas d'ancien fichier à archiver."
 
       - name: Commit et push
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json archive/
           git diff --staged --quiet || git commit -m "Update planning $(date +%d/%m/%Y)"
+          git push
+
+  keepalive:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+      - name: Keepalive
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Touch keepalive file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo $(date +%Y-%m-%d) > .keepalive
+          git add .keepalive
+          git commit -m "keepalive $(date +%Y-%m-%d)" || echo "Rien à commiter"
           git push
