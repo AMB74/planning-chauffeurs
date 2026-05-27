@@ -299,12 +299,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "TAXI CVT",
+          "pilote": "Serge",
+          "renforts": "Charlie",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "–",
+          "details": "13h aéroport - 10 pax\n",
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER MARTIAL\n",
@@ -362,7 +362,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
