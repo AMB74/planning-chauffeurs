@@ -299,15 +299,15 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
-          "renforts": "Charlie",
+          "pilote": "",
+          "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "13h aéroport - 10 pax\n",
+          "details": "13H GVA > HBG - 10pax\n",
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
-          "client": "TREKKER MARTIAL\n",
+          "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "11+1",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
@@ -362,7 +362,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Charlie",
+          "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -370,7 +370,7 @@
           "details": "–",
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
-          "client": "TREKKER MARTIAL\n",
+          "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "11+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
@@ -425,7 +425,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -433,7 +433,7 @@
           "details": "–",
           "heure_rdv": "",
           "depart": "HOTEL L'UNION",
-          "client": "TREKKER MARTIAL\n",
+          "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "11+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
@@ -488,15 +488,15 @@
           "stockes": "–"
         },
         {
-          "pilote": "0. AUCUN",
+          "pilote": "",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "–",
+          "details": "8:30 Dolonne > Bonatti \n",
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
-          "client": "TREKKER MARTIAL\n",
+          "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "11+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
@@ -551,15 +551,15 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
+          "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "–",
+          "details": "8H30 DOLONNE > Visaille\n",
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
-          "client": "TREKKER MARTIAL\n",
+          "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "11+1",
           "arrivee": "BASE CAMP LODGE HOTEL",
           "stockes": "–"
