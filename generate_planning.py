@@ -105,7 +105,7 @@ def main():
 
         ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
-            "renforts":  get_text(f, "RENFORTS_NOM"),
+            "renforts":  ", ".join(filter(None, [get_text(f, "RENFORTS_NOM"), get_text(f, "TAXIS (from TAXI)")])),
             "alerte":    get_text(f, "!!"),
             "type":      get_text(f, "TYPE (from ARRIVÉE) 2") or "–",
             "transfert": get_text(f, "TRANSFERT") or "–",
