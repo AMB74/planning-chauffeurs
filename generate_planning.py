@@ -85,18 +85,23 @@ def main():
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
-    # ── Grouper les lignes par DATE PRESTATION ──
+    # ── Grouper les lignes par DATE PRESTATION puis MASSIF ──
     from collections import OrderedDict
-    dates = OrderedDict()  # clé = "2026-05-25", valeur = liste de lignes
+    # Structure : { date_str: { massif: [lignes] } }
+    dates = OrderedDict()
 
     for rec in records:
         f = rec.get("fields", {})
         if not dates:
             print(f"Champs disponibles : {list(f.keys())[:12]}")
 
-        date_prestation = get_text(f, "DATE PRESTATION")  # ex: "2026-05-25"
+        date_prestation = get_text(f, "DATE PRESTATION")
         if not date_prestation:
             date_prestation = "Sans date"
+
+        massif = get_text(f, "MASSIFS (from SÉJOUR)")
+        if not massif:
+            massif = "Autres"
 
         ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
@@ -114,30 +119,65 @@ def main():
         }
 
         if date_prestation not in dates:
-            dates[date_prestation] = []
-        dates[date_prestation].append(ligne)
+            dates[date_prestation] = OrderedDict()
+        if massif not in dates[date_prestation]:
+            dates[date_prestation][massif] = []
+        dates[date_prestation][massif].append(ligne)
 
-    # ── Construire les sections (1 section = 1 jour) ──
+    # Ordre fixe des massifs selon N° géo
+    ORDRE_MASSIFS = [
+        "1. RDV & TRANSFERT",
+        "0. BAGAGES",
+        "CHABLAIS",
+        "GTA 1",
+        "MONT-BLANC",
+        "GTA 2",
+        "VANOISE",
+        "BEAUFORTAIN",
+        "ARAVIS / GLIERES",
+        "GRAND PARADIS",
+        "CHAMONIX - ZERMATT / CERVIN / VALAIS",
+        "GRANDS COMBINS",
+        "MONT-ROSE",
+        "DOLOMITES",
+        "VERCORS & DEVOLUY",
+        "OBERLAND",
+        "DENTS BLANCHES",
+        "Autres",
+    ]
+
+    def sort_massif(m):
+        try:
+            return ORDRE_MASSIFS.index(m)
+        except ValueError:
+            return len(ORDRE_MASSIFS)
+
+    # ── Construire les sections (1 section = 1 jour + 1 massif) ──
     sections = []
-    for i, (date_str, lignes) in enumerate(sorted(dates.items())):
-        if date_str == "Sans date":
-            titre = "Sans date"
-            label = "–"
-        else:
-            titre = format_date_fr(date_str)
-            # ex: "25/05" pour le label court
-            try:
-                d = datetime.strptime(date_str, "%Y-%m-%d")
-                label = d.strftime("%d/%m")
-            except:
-                label = date_str
+    idx = 0
+    for date_str in sorted(dates.keys()):
+        massifs = dates[date_str]
+        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+            if date_str == "Sans date":
+                titre = f"Sans date — {massif}"
+                label = "–"
+            else:
+                try:
+                    d = datetime.strptime(date_str, "%Y-%m-%d")
+                    jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                    label = d.strftime("%d/%m")
+                except:
+                    jour = date_str
+                    label = date_str
+                titre = f"{jour} — {massif}"
 
-        sections.append({
-            "id":     f"s{i}",
-            "label":  label,
-            "titre":  titre,
-            "lignes": lignes,
-        })
+            sections.append({
+                "id":     f"s{idx}",
+                "label":  label,
+                "titre":  titre,
+                "lignes": lignes,
+            })
+            idx += 1
 
     data = {
         "meta": {
@@ -153,7 +193,7 @@ def main():
     with open("data.json", "w", encoding="utf-8") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=2)
 
-    print(f"data.json généré : {len(sections)} jours, {len(records)} lignes total.")
+    print(f"data.json généré : {len(sections)} sections, {len(records)} lignes total.")
 
 if __name__ == "__main__":
     main()
