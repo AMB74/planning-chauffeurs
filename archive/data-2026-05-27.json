@@ -441,7 +441,7 @@
           "heure_rdv": "",
           "depart": "REFUGE MONTE BIANCO",
           "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-          "nbre": "8",
+          "nbre": "8+1",
           "arrivee": "CHAMBRES DU SOLEIL ",
           "stockes": "–"
         },
@@ -490,7 +490,7 @@
           "heure_rdv": "",
           "depart": "CHAMBRES DU SOLEIL ",
           "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-          "nbre": "8",
+          "nbre": "8+1",
           "arrivee": "HOTEL LA GELINOTTE",
           "stockes": "–"
         },
@@ -504,7 +504,7 @@
           "heure_rdv": "",
           "depart": "CHAMBRES DU SOLEIL ",
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
-          "nbre": "10",
+          "nbre": "10+1",
           "arrivee": "HOTEL LA GELINOTTE",
           "stockes": "–"
         },
@@ -518,7 +518,7 @@
           "heure_rdv": "",
           "depart": "CHAMBRES DU SOLEIL ",
           "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-          "nbre": "7",
+          "nbre": "7+1",
           "arrivee": "CHALET DES CONTAMINES",
           "stockes": "–"
         }
