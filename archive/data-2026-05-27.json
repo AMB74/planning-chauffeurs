@@ -299,8 +299,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Charlie",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -362,7 +362,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -425,7 +425,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -488,7 +488,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
@@ -551,7 +551,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
