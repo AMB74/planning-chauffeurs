@@ -308,7 +308,7 @@
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER MARTIAL\n",
-          "nbre": "12+1",
+          "nbre": "11+1",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
         }
@@ -371,7 +371,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER MARTIAL\n",
-          "nbre": "12+1",
+          "nbre": "11+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
         }
@@ -434,7 +434,7 @@
           "heure_rdv": "",
           "depart": "HOTEL L'UNION",
           "client": "TREKKER MARTIAL\n",
-          "nbre": "12+1",
+          "nbre": "11+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         }
@@ -497,7 +497,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL\n",
-          "nbre": "12+1+1",
+          "nbre": "11+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         }
@@ -560,7 +560,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL\n",
-          "nbre": "12+1+1",
+          "nbre": "11+1",
           "arrivee": "BASE CAMP LODGE HOTEL",
           "stockes": "–"
         }
