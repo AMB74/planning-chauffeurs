@@ -176,7 +176,7 @@
           "pilote": "Jean-Marc",
           "renforts": "Serge",
           "alerte": "BAGAGES",
-          "type": "RENDEZ-VOUS",
+          "type": "BAGAGES AMB",
           "transfert": "Transfert HBG > LA VILLETTE",
           "details": "–",
           "heure_rdv": "08H00",
@@ -187,24 +187,10 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "08H00",
-          "depart": "RDV PRARION",
-          "client": "GAY MAXIME\n(- 06 65 04 67 53)",
-          "nbre": "14+1",
-          "arrivee": "–",
-          "stockes": "–"
-        },
-        {
           "pilote": "Jean-Marc",
           "renforts": "Serge",
           "alerte": "BAGAGES",
-          "type": "RENDEZ-VOUS",
+          "type": "BAGAGES AMB",
           "transfert": "Transfert HBG > LA VILLETTE",
           "details": "–",
           "heure_rdv": "07H30",
@@ -212,20 +198,6 @@
           "client": "GAY MAXIME\n(- 06 65 04 67 53)",
           "nbre": "9+1",
           "arrivee": "RDV PRARION",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "08H00",
-          "depart": "RDV PRARION",
-          "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
-          "nbre": "4+1",
-          "arrivee": "–",
           "stockes": "–"
         }
       ]
