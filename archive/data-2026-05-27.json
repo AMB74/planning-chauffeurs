@@ -65,7 +65,7 @@
     {
       "id": "s0",
       "label": "27/05",
-      "titre": "MERCREDI 27 MAI",
+      "titre": "MERCREDI 27 MAI — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -100,7 +100,7 @@
     {
       "id": "s1",
       "label": "28/05",
-      "titre": "JEUDI 28 MAI",
+      "titre": "JEUDI 28 MAI — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -135,7 +135,7 @@
     {
       "id": "s2",
       "label": "29/05",
-      "titre": "VENDREDI 29 MAI",
+      "titre": "VENDREDI 29 MAI — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -170,7 +170,7 @@
     {
       "id": "s3",
       "label": "30/05",
-      "titre": "SAMEDI 30 MAI",
+      "titre": "SAMEDI 30 MAI — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -205,7 +205,7 @@
     {
       "id": "s4",
       "label": "31/05",
-      "titre": "DIMANCHE 31 MAI",
+      "titre": "DIMANCHE 31 MAI — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -254,7 +254,7 @@
     {
       "id": "s5",
       "label": "01/06",
-      "titre": "LUNDI 1 JUIN",
+      "titre": "LUNDI 1 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Serge",
@@ -303,7 +303,7 @@
     {
       "id": "s6",
       "label": "02/06",
-      "titre": "MARDI 2 JUIN",
+      "titre": "MARDI 2 JUIN — Autres",
       "lignes": [
         {
           "pilote": "0. AUCUN",
@@ -352,11 +352,11 @@
     {
       "id": "s7",
       "label": "03/06",
-      "titre": "MERCREDI 3 JUIN",
+      "titre": "MERCREDI 3 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "Jean-Marc",
-          "renforts": "Serge",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Gare COURMAYEUR > MONTE BIANCO",
@@ -369,8 +369,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
-          "renforts": "Serge",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Gare COURMAYEUR > MONTE BIANCO",
@@ -383,8 +383,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
-          "renforts": "Serge",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Gare COURMAYEUR > MONTE BIANCO",
@@ -401,10 +401,10 @@
     {
       "id": "s8",
       "label": "04/06",
-      "titre": "JEUDI 4 JUIN",
+      "titre": "JEUDI 4 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "Serge",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -418,7 +418,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -432,7 +432,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -450,7 +450,7 @@
     {
       "id": "s9",
       "label": "05/06",
-      "titre": "VENDREDI 5 JUIN",
+      "titre": "VENDREDI 5 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
