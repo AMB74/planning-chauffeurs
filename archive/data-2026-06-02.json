@@ -367,11 +367,11 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "!! Caisses PN à récupérer aux Gaillands\n",
+          "details": "!! recup PN aux Gaillands\n14 BG dont 1 cabas\n\n",
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER MARTIAL 0685023700\n",
-          "nbre": "12+1",
+          "nbre": "13+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
         }
@@ -425,16 +425,16 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "–",
+          "details": "14 BG dont 1 cabas\n",
           "heure_rdv": "",
           "depart": "HOTEL L'UNION",
           "client": "TREKKER MARTIAL 0685023700\n",
-          "nbre": "12+1",
+          "nbre": "13+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         },
@@ -507,11 +507,11 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "8:30 Dolonne > Bonatti \n",
+          "details": "8:30 Dolonne > Bonatti \n14 BG dont 1 cabas\n",
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL 0685023700\n",
-          "nbre": "12+1",
+          "nbre": "13+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         }
@@ -565,16 +565,16 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
-          "renforts": "Serge",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
-          "details": "8H30 DOLONNE > Visaille\n",
+          "details": "8H30 DOLONNE > Visaille\n14 BG dont 1 cabas\n",
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL 0685023700\n",
-          "nbre": "12+1",
+          "nbre": "13+1",
           "arrivee": "BASE CAMP LODGE HOTEL",
           "stockes": "–"
         }
