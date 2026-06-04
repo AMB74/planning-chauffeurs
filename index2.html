@@ -245,8 +245,7 @@ function ligneHTML(l, showHr) {
   </tr>`;
 }
 
-function tableauHTML(lignes) {
-  const hasHr = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+function tableauHTML(lignes, hasHr) {
   const colHr = hasHr ? '' : ' style="display:none"';
   return `<div class="table-wrapper"><table>
     <thead><tr>
@@ -262,10 +261,13 @@ function sectionHTML(s, idx) {
   const sid   = 'sec2-s' + idx;
   const groupes = s.groupes_massifs || [{ massif: '', lignes: s.lignes }];
   const totalLignes = groupes.reduce((n, g) => n + g.lignes.length, 0);
+  const toutesLignes = groupes.flatMap(g => g.lignes);
+  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+
   const bodyHTML = groupes.map(g => {
     const labelMassif = (g.massif && groupes.length > 1)
       ? `<div class="massif-label">▸ ${g.massif}</div>` : '';
-    return `<div class="massif-groupe">${labelMassif}${tableauHTML(g.lignes)}</div>`;
+    return `<div class="massif-groupe">${labelMassif}${tableauHTML(g.lignes, hasHr)}</div>`;
   }).join('');
   return `<div class="section" id="${domId}" data-sid="${sid}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
