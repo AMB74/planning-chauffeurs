@@ -3,12 +3,16 @@ import json
 import urllib.request
 import urllib.parse
 from datetime import datetime
+from collections import OrderedDict
 
 # ── CONFIGURATION ──────────────────────────────────────────
-AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
-AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
-TABLE_NAME      = "SEMAINE 1"
-VIEW_NAME       = "2. Attribution CHAUFFEURS"
+AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
+AIRTABLE_BASE  = os.environ["AIRTABLE_BASE"]
+
+TABLES = [
+    {"table": "SEMAINE 1", "view": "2. Attribution CHAUFFEURS", "output": "data.json",  "meta_semaine": "SEMAINE 1"},
+    {"table": "SEMAINE 2", "view": "2. Attribution CHAUFFEURS", "output": "data2.json", "meta_semaine": "SEMAINE 2"},
+]
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
@@ -27,13 +31,36 @@ JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
              "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
+ORDRE_MASSIFS = [
+    "1. RDV & TRANSFERT",
+    "0. BAGAGES",
+    "CHABLAIS",
+    "GTA 1",
+    "MONT-BLANC",
+    "GTA 2",
+    "VANOISE",
+    "BEAUFORTAIN",
+    "ARAVIS / GLIERES",
+    "GRAND PARADIS",
+    "CHAMONIX - ZERMATT / CERVIN / VALAIS",
+    "GRANDS COMBINS",
+    "MONT-ROSE",
+    "DOLOMITES",
+    "VERCORS & DEVOLUY",
+    "OBERLAND",
+    "DENTS BLANCHES",
+    "Autres",
+]
+
+def sort_massif(m):
+    try:
+        return ORDRE_MASSIFS.index(m)
+    except ValueError:
+        return len(ORDRE_MASSIFS)
+
 def format_client(val):
-    """Sépare le nom du client et le numéro de téléphone sur deux lignes.
-    Ex: 'GAY MAXIME ( - 06 65 04 67 53)' → 'GAY MAXIME\n(- 06 65 04 67 53)'
-    """
     if not val:
         return "–"
-    # Sépare sur la parenthèse ouvrante
     if ' (' in val:
         parts = val.split(' (', 1)
         nom = parts[0].strip()
@@ -47,12 +74,12 @@ def get_text(fields, key):
         return ", ".join(str(v) for v in val if v)
     return str(val) if val else ""
 
-def fetch_records():
+def fetch_records(table_name, view_name):
     url = (
         f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
-        f"{urllib.parse.quote(TABLE_NAME)}"
+        f"{urllib.parse.quote(table_name)}"
         f"?maxRecords=200"
-        f"&view={urllib.parse.quote(VIEW_NAME)}"
+        f"&view={urllib.parse.quote(view_name)}"
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
@@ -68,32 +95,18 @@ def fetch_records():
     print(f"{len(records)} enregistrements reçus.")
     return records
 
-def format_date_fr(date_str):
-    """Convertit '2026-05-25' en 'LUNDI 25 MAI'"""
-    try:
-        d = datetime.strptime(date_str, "%Y-%m-%d")
-        return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
-    except:
-        return date_str
+def generate_data(table_name, view_name, output_file, meta_semaine, now):
+    print(f"\n── Génération {output_file} depuis '{table_name}' vue '{view_name}'...")
+    records = fetch_records(table_name, view_name)
 
-def main():
-    print(f"Récupération de '{TABLE_NAME}' vue '{VIEW_NAME}'...")
-    records = fetch_records()
-
-    now = datetime.now()
     date_affichee  = f"{JOURS_FR[now.weekday()]} {now.day} {MOIS_FR[now.month-1]}"
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
-    # ── Grouper les lignes par DATE PRESTATION puis MASSIF ──
-    from collections import OrderedDict
-    # Structure : { date_str: { massif: [lignes] } }
     dates = OrderedDict()
 
     for rec in records:
         f = rec.get("fields", {})
-        if not dates:
-            print(f"Champs disponibles : {list(f.keys())[:12]}")
 
         date_prestation = get_text(f, "DATE PRESTATION")
         if not date_prestation:
@@ -124,35 +137,6 @@ def main():
             dates[date_prestation][massif] = []
         dates[date_prestation][massif].append(ligne)
 
-    # Ordre fixe des massifs selon N° géo
-    ORDRE_MASSIFS = [
-        "1. RDV & TRANSFERT",
-        "0. BAGAGES",
-        "CHABLAIS",
-        "GTA 1",
-        "MONT-BLANC",
-        "GTA 2",
-        "VANOISE",
-        "BEAUFORTAIN",
-        "ARAVIS / GLIERES",
-        "GRAND PARADIS",
-        "CHAMONIX - ZERMATT / CERVIN / VALAIS",
-        "GRANDS COMBINS",
-        "MONT-ROSE",
-        "DOLOMITES",
-        "VERCORS & DEVOLUY",
-        "OBERLAND",
-        "DENTS BLANCHES",
-        "Autres",
-    ]
-
-    def sort_massif(m):
-        try:
-            return ORDRE_MASSIFS.index(m)
-        except ValueError:
-            return len(ORDRE_MASSIFS)
-
-    # ── Construire les sections (1 section = 1 jour + 1 massif) ──
     sections = []
     idx = 0
     for date_str in sorted(dates.keys()):
@@ -181,7 +165,7 @@ def main():
 
     data = {
         "meta": {
-            "semaine":        "SEMAINE 1",
+            "semaine":        meta_semaine,
             "date_affichee":  date_affichee.upper(),
             "numero_semaine": numero_semaine,
             "genere_le":      genere_le,
@@ -190,10 +174,21 @@ def main():
         "sections":   sections,
     }
 
-    with open("data.json", "w", encoding="utf-8") as fout:
+    with open(output_file, "w", encoding="utf-8") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=2)
 
-    print(f"data.json généré : {len(sections)} sections, {len(records)} lignes total.")
+    print(f"{output_file} généré : {len(sections)} sections, {len(records)} lignes total.")
+
+def main():
+    now = datetime.now()
+    for cfg in TABLES:
+        generate_data(
+            table_name   = cfg["table"],
+            view_name    = cfg["view"],
+            output_file  = cfg["output"],
+            meta_semaine = cfg["meta_semaine"],
+            now          = now,
+        )
 
 if __name__ == "__main__":
     main()
