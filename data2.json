@@ -171,6 +171,20 @@
           "nbre": "10+1",
           "arrivee": "RDV PRARION",
           "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "16H29 ND GORGE > CENTRE HOUCHES\n",
+          "heure_rdv": "",
+          "depart": "BASE CAMP LODGE HOTEL",
+          "client": "TREKKER MARTIAL 0685023700\n",
+          "nbre": "12+1",
+          "arrivee": "HOTEL DU BOIS***",
+          "stockes": "–"
         }
       ]
     },
@@ -234,6 +248,20 @@
           "nbre": "13+1",
           "arrivee": "AUBERGE MONT BLANC",
           "stockes": "1"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "8H30 HBG > COL MONTET\n",
+          "heure_rdv": "",
+          "depart": "HOTEL DU BOIS***",
+          "client": "TREKKER MARTIAL 0685023700\n",
+          "nbre": "12+1",
+          "arrivee": "HOTEL DU BOIS***",
+          "stockes": "–"
         }
       ]
     },
@@ -324,6 +352,20 @@
           "client": "TREKKER LAURA\n",
           "nbre": "6+1",
           "arrivee": "HOTEL DU BOIS***",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "TRANSFERT AMB",
+          "transfert": "–",
+          "details": "11:00 HBG > GVA - 10pax\n",
+          "heure_rdv": "",
+          "depart": "HOTEL DU BOIS***",
+          "client": "TREKKER MARTIAL 0685023700\n",
+          "nbre": "12+1",
+          "arrivee": "GVA AÉROPORT",
           "stockes": "–"
         }
       ]
