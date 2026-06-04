@@ -14,7 +14,6 @@ TABLES = [
     {"table": "SEMAINE 2", "view": "2. Attribution CHAUFFEURS", "output": "data2.json", "meta_semaine": "SEMAINE 2"},
 ]
 
-# Liste fixe des chauffeurs
 CHAUFFEURS = [
     {"prenom": "Aurore",    "nom": "VALANCE",      "vehicule": "TRAFIC",        "plaque": "GN-881-PK"},
     {"prenom": "Bertrand",  "nom": "AUMOITTE",     "vehicule": "TRAFIC",        "plaque": "FM-024-VV"},
@@ -103,6 +102,7 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
+    # Structure : { date_str: { massif: [lignes] } }
     dates = OrderedDict()
 
     for rec in records:
@@ -129,6 +129,7 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
             "nbre":      get_text(f, "Nombre ajusté") or "–",
             "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
             "stockes":   get_text(f, "NBRE") or "–",
+            "massif":    massif,
         }
 
         if date_prestation not in dates:
@@ -137,31 +138,44 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
             dates[date_prestation][massif] = []
         dates[date_prestation][massif].append(ligne)
 
+    # 1 section = 1 jour, avec sous-groupes massif à l'intérieur
     sections = []
     idx = 0
     for date_str in sorted(dates.keys()):
         massifs = dates[date_str]
-        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
-            if date_str == "Sans date":
-                titre = f"Sans date — {massif}"
-                label = "–"
-            else:
-                try:
-                    d = datetime.strptime(date_str, "%Y-%m-%d")
-                    jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
-                    label = d.strftime("%d/%m")
-                except:
-                    jour = date_str
-                    label = date_str
-                titre = f"{jour} — {massif}"
 
-            sections.append({
-                "id":     f"s{idx}",
-                "label":  label,
-                "titre":  titre,
-                "lignes": lignes,
-            })
-            idx += 1
+        if date_str == "Sans date":
+            titre = "Sans date"
+            label = "–"
+            lignes_groupees = []
+            for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+                lignes_groupees.append({"massif": massif, "lignes": lignes})
+        else:
+            try:
+                d = datetime.strptime(date_str, "%Y-%m-%d")
+                jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                label = d.strftime("%d/%m")
+            except:
+                jour = date_str
+                label = date_str
+            titre = jour
+            lignes_groupees = []
+            for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+                lignes_groupees.append({"massif": massif, "lignes": lignes})
+
+        # Toutes les lignes à plat pour la compatibilité chauffeur
+        toutes_lignes = []
+        for groupe in lignes_groupees:
+            toutes_lignes.extend(groupe["lignes"])
+
+        sections.append({
+            "id":              f"s{idx}",
+            "label":           label,
+            "titre":           titre,
+            "groupes_massifs": lignes_groupees,
+            "lignes":          toutes_lignes,
+        })
+        idx += 1
 
     data = {
         "meta": {
