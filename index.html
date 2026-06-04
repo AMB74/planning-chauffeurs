@@ -333,8 +333,7 @@ function ligneHTML(l, prenom, showHr) {
   </tr>`;
 }
 
-function tableauHTML(lignes, prenom) {
-  const hasHr = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+function tableauHTML(lignes, prenom, hasHr) {
   const colHr = hasHr ? '' : ' style="display:none"';
   return `<div class="table-wrapper"><table>
     <thead><tr>
@@ -365,10 +364,13 @@ function sectionHTML(s, idx, prenom) {
 
   const totalLignes = groupesFiltres.reduce((n, g) => n + g.lignes.length, 0);
 
+  const toutesLignes = groupesFiltres.flatMap(g => g.lignes);
+  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+
   const bodyHTML = groupesFiltres.map(g => {
     const labelMassif = (g.massif && groupesFiltres.length > 1)
       ? `<div class="massif-label">▸ ${g.massif}</div>` : '';
-    return `<div class="massif-groupe">${labelMassif}${tableauHTML(g.lignes, prenom)}</div>`;
+    return `<div class="massif-groupe">${labelMassif}${tableauHTML(g.lignes, prenom, hasHr)}</div>`;
   }).join('');
 
   return `<div class="section" id="${domId}" data-sid="${sid}">
