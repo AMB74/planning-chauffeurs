@@ -114,6 +114,21 @@
               "arrivee": "HOTEL LA GELINOTTE",
               "stockes": "–",
               "massif": "Autres"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES AMB",
+              "transfert": "–",
+              "details": "8H30 DOLONNE > Visaille\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DOLONNE",
+              "client": "TREKKER MARTIAL 0685023700\n",
+              "nbre": "12+1",
+              "arrivee": "BASE CAMP LODGE HOTEL",
+              "stockes": "–",
+              "massif": "Autres"
             }
           ]
         }
@@ -161,6 +176,21 @@
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
           "nbre": "10+1",
           "arrivee": "HOTEL LA GELINOTTE",
+          "stockes": "–",
+          "massif": "Autres"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "8H30 DOLONNE > Visaille\n",
+          "heure_rdv": "",
+          "depart": "HOTEL DOLONNE",
+          "client": "TREKKER MARTIAL 0685023700\n",
+          "nbre": "12+1",
+          "arrivee": "BASE CAMP LODGE HOTEL",
           "stockes": "–",
           "massif": "Autres"
         }
