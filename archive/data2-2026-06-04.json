@@ -65,7 +65,7 @@
     {
       "id": "s0",
       "label": "05/06",
-      "titre": "VENDREDI 5 JUIN — MONT-BLANC",
+      "titre": "VENDREDI 5 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
@@ -94,14 +94,7 @@
           "nbre": "8+1",
           "arrivee": "HOTEL LA GELINOTTE",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s1",
-      "label": "05/06",
-      "titre": "VENDREDI 5 JUIN — Autres",
-      "lignes": [
+        },
         {
           "pilote": "",
           "renforts": "",
@@ -119,9 +112,9 @@
       ]
     },
     {
-      "id": "s2",
+      "id": "s1",
       "label": "06/06",
-      "titre": "SAMEDI 6 JUIN — MONT-BLANC",
+      "titre": "SAMEDI 6 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
@@ -164,14 +157,7 @@
           "nbre": "7+1",
           "arrivee": "RDV PRARION",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "label": "06/06",
-      "titre": "SAMEDI 6 JUIN — Autres",
-      "lignes": [
+        },
         {
           "pilote": "",
           "renforts": "",
@@ -189,9 +175,9 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s2",
       "label": "07/06",
-      "titre": "DIMANCHE 7 JUIN — MONT-BLANC",
+      "titre": "DIMANCHE 7 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
@@ -227,6 +213,20 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "10H00",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "RDV MONTROC",
+          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
+          "nbre": "13+1",
+          "arrivee": "AUBERGE MONT BLANC",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "10H00",
           "details": "RDV boulangerie\n",
           "heure_rdv": "",
           "depart": "RDV MONTROC",
@@ -238,31 +238,24 @@
       ]
     },
     {
-      "id": "s5",
-      "label": "07/06",
-      "titre": "DIMANCHE 7 JUIN — Autres",
+      "id": "s3",
+      "label": "08/06",
+      "titre": "LUNDI 8 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
-          "transfert": "10H00",
+          "transfert": "–",
           "details": "–",
           "heure_rdv": "",
-          "depart": "RDV MONTROC",
+          "depart": "AUBERGE MONT BLANC",
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "13+1",
-          "arrivee": "AUBERGE MONT BLANC",
+          "arrivee": "AUBERGE MAYA-JOIE",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "label": "08/06",
-      "titre": "LUNDI 8 JUIN — MONT-BLANC",
-      "lignes": [
+        },
         {
           "pilote": "",
           "renforts": "",
@@ -304,27 +297,6 @@
           "nbre": "14+1",
           "arrivee": "GITE BON ABRI",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "label": "08/06",
-      "titre": "LUNDI 8 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "AUBERGE MONT BLANC",
-          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-          "nbre": "13+1",
-          "arrivee": "AUBERGE MAYA-JOIE",
-          "stockes": "–"
         },
         {
           "pilote": "",
@@ -357,9 +329,9 @@
       ]
     },
     {
-      "id": "s8",
+      "id": "s4",
       "label": "09/06",
-      "titre": "MARDI 9 JUIN — MONT-BLANC",
+      "titre": "MARDI 9 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
@@ -373,6 +345,20 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "14+1",
           "arrivee": "REFUGE BONATTI",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "AUBERGE MAYA-JOIE",
+          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
+          "nbre": "13+1",
+          "arrivee": "REFUGE ELENA",
           "stockes": "–"
         },
         {
@@ -401,27 +387,6 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "AUBERGE MAYA-JOIE",
-          "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s9",
-      "label": "09/06",
-      "titre": "MARDI 9 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "AUBERGE MAYA-JOIE",
-          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-          "nbre": "13+1",
-          "arrivee": "REFUGE ELENA",
           "stockes": "–"
         },
         {
@@ -455,10 +420,24 @@
       ]
     },
     {
-      "id": "s10",
+      "id": "s5",
       "label": "10/06",
-      "titre": "MERCREDI 10 JUIN — MONT-BLANC",
+      "titre": "MERCREDI 10 JUIN — Autres",
       "lignes": [
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "!! Transfert Visaille ?\n",
+          "heure_rdv": "",
+          "depart": "REFUGE ELENA",
+          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
+          "nbre": "13+1",
+          "arrivee": "REFUGE MONTE BIANCO",
+          "stockes": "–"
+        },
         {
           "pilote": "",
           "renforts": "",
@@ -500,27 +479,6 @@
           "nbre": "9+1",
           "arrivee": "REFUGE BONATTI",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s11",
-      "label": "10/06",
-      "titre": "MERCREDI 10 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "!! Transfert Visaille ?\n",
-          "heure_rdv": "",
-          "depart": "REFUGE ELENA",
-          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-          "nbre": "13+1",
-          "arrivee": "REFUGE MONTE BIANCO",
-          "stockes": "–"
         },
         {
           "pilote": "",
@@ -553,10 +511,24 @@
       ]
     },
     {
-      "id": "s12",
+      "id": "s6",
       "label": "11/06",
-      "titre": "JEUDI 11 JUIN — MONT-BLANC",
+      "titre": "JEUDI 11 JUIN — Autres",
       "lignes": [
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "REFUGE MONTE BIANCO",
+          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
+          "nbre": "13+1",
+          "arrivee": "REFUGE LES MOTTETS",
+          "stockes": "–"
+        },
         {
           "pilote": "",
           "renforts": "",
@@ -598,27 +570,6 @@
           "nbre": "14+1",
           "arrivee": "REFUGE LES MOTTETS",
           "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s13",
-      "label": "11/06",
-      "titre": "JEUDI 11 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "REFUGE MONTE BIANCO",
-          "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-          "nbre": "13+1",
-          "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–"
         },
         {
           "pilote": "",
@@ -651,9 +602,9 @@
       ]
     },
     {
-      "id": "s14",
+      "id": "s7",
       "label": "12/06",
-      "titre": "VENDREDI 12 JUIN — MONT-BLANC",
+      "titre": "VENDREDI 12 JUIN — Autres",
       "lignes": [
         {
           "pilote": "",
@@ -667,6 +618,20 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "REFUGE LES MOTTETS",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES AMB",
+          "transfert": "09H00",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "RDV PLANPRAZ",
+          "client": "LAMARCHE\n",
+          "nbre": "2",
+          "arrivee": "PENSION EN PLEIN AIR",
           "stockes": "–"
         },
         {
@@ -695,27 +660,6 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "14+1",
           "arrivee": "CHALET DES CONTAMINES",
-          "stockes": "–"
-        }
-      ]
-    },
-    {
-      "id": "s15",
-      "label": "12/06",
-      "titre": "VENDREDI 12 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES AMB",
-          "transfert": "09H00",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RDV PLANPRAZ",
-          "client": "LAMARCHE\n",
-          "nbre": "2",
-          "arrivee": "PENSION EN PLEIN AIR",
           "stockes": "–"
         },
         {
