@@ -113,7 +113,7 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
             date_prestation = "Sans date"
 
         massif = get_text(f, "MASSIFS (from SÉJOUR)")
-        if not massif:
+        if not massif or massif.startswith("rec"):
             massif = "Autres"
 
         ligne = {
