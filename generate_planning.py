@@ -82,9 +82,12 @@ def fetch_records(table_name, view_name):
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
-        url,
-        headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
-    )
+    url,
+    headers={
+        "Authorization": f"Bearer {AIRTABLE_TOKEN}",
+        "Accept": "application/json",
+    }
+)
     with urllib.request.urlopen(req, timeout=30) as resp:
         body = resp.read().decode("utf-8")
     data = json.loads(body)
