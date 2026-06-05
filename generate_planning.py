@@ -74,20 +74,22 @@ def get_text(fields, key):
     return str(val) if val else ""
 
 def fetch_records(table_name, view_name):
+    params = urllib.parse.urlencode({
+        "maxRecords": 200,
+        "view": view_name,
+    }, quote_via=urllib.parse.quote)
     url = (
         f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
-        f"{urllib.parse.quote(table_name)}"
-        f"?maxRecords=200"
-        f"&view={urllib.parse.quote(view_name, safe='')}"
+        f"{urllib.parse.quote(table_name, safe='')}?{params}"
     )
     print(f"Appel Airtable : {url[:80]}...")
     req = urllib.request.Request(
-    url,
-    headers={
-        "Authorization": f"Bearer {AIRTABLE_TOKEN}",
-        "Accept": "application/json",
-    }
-)
+        url,
+        headers={
+            "Authorization": f"Bearer {AIRTABLE_TOKEN}",
+            "Accept": "application/json",
+        }
+    )
     with urllib.request.urlopen(req, timeout=30) as resp:
         body = resp.read().decode("utf-8")
     data = json.loads(body)
