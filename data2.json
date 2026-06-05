@@ -210,7 +210,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "09H30",
-              "details": "!! PAIN !!\n!! Transfert Flégère > Col des Montets\n",
+              "details": "PAIN\n!! Transfert Flégère > Col des Montets\n",
               "heure_rdv": "08H45 PRARION\n+TRANSFERT AEM",
               "depart": "RDV FLÉGÈRE",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -289,7 +289,7 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "09H30",
-          "details": "!! PAIN !!\n!! Transfert Flégère > Col des Montets\n",
+          "details": "PAIN\n!! Transfert Flégère > Col des Montets\n",
           "heure_rdv": "08H45 PRARION\n+TRANSFERT AEM",
           "depart": "RDV FLÉGÈRE",
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -1203,36 +1203,6 @@
               "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–",
               "massif": "Autres"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES AMB",
-              "transfert": "–",
-              "details": "8:30 Dolonne > Bonatti\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DOLONNE",
-              "client": "TREKKER LAURA\n",
-              "nbre": "6+1",
-              "arrivee": "HOTEL DOLONNE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES AMB",
-              "transfert": "–",
-              "details": "8:30 Dolonne > Bonatti\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DOLONNE",
-              "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-              "nbre": "14+1",
-              "arrivee": "HOTEL DOLONNE",
-              "stockes": "–",
-              "massif": "Autres"
             }
           ]
         }
@@ -1295,36 +1265,6 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "14+1",
           "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–",
-          "massif": "Autres"
-        },
-        {
-          "pilote": "0. AUCUN",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "8:30 Dolonne > Bonatti\n",
-          "heure_rdv": "",
-          "depart": "HOTEL DOLONNE",
-          "client": "TREKKER LAURA\n",
-          "nbre": "6+1",
-          "arrivee": "HOTEL DOLONNE",
-          "stockes": "–",
-          "massif": "Autres"
-        },
-        {
-          "pilote": "0. AUCUN",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "BAGAGES AMB",
-          "transfert": "–",
-          "details": "8:30 Dolonne > Bonatti\n",
-          "heure_rdv": "",
-          "depart": "HOTEL DOLONNE",
-          "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-          "nbre": "14+1",
-          "arrivee": "HOTEL DOLONNE",
           "stockes": "–",
           "massif": "Autres"
         }
