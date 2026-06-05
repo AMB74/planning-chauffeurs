@@ -71,8 +71,8 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -86,8 +86,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -101,8 +101,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -116,8 +116,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -135,8 +135,8 @@
       ],
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -150,8 +150,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -165,8 +165,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -180,8 +180,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -205,8 +205,8 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "09H30",
@@ -220,8 +220,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "Transfert HBG > LA VILLETTE",
@@ -235,8 +235,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "Transfert HBG > LA VILLETTE",
@@ -250,8 +250,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "Transfert HBG > LA VILLETTE",
@@ -265,8 +265,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -284,8 +284,8 @@
       ],
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "09H30",
@@ -299,8 +299,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -314,8 +314,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -329,8 +329,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -344,8 +344,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -369,7 +369,7 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -384,7 +384,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -399,7 +399,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -414,7 +414,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -429,8 +429,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Jean-Marc, Serge",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -448,7 +448,7 @@
       ],
       "lignes": [
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -463,7 +463,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -478,7 +478,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -493,7 +493,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -508,8 +508,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "0. AUCUN",
+          "renforts": "Jean-Marc, Serge",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -533,8 +533,8 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -548,8 +548,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -563,8 +563,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -578,8 +578,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -593,8 +593,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -608,8 +608,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -623,8 +623,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "TRANSFERT AMB",
               "transfert": "–",
@@ -642,8 +642,8 @@
       ],
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -657,8 +657,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -672,8 +672,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -687,8 +687,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -702,8 +702,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -717,8 +717,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -732,8 +732,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "TRANSFERT AMB",
           "transfert": "–",
@@ -757,7 +757,7 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -772,8 +772,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -787,7 +787,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -802,8 +802,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -817,7 +817,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -832,7 +832,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -851,7 +851,7 @@
       ],
       "lignes": [
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
@@ -866,8 +866,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -881,7 +881,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
@@ -896,8 +896,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -911,7 +911,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -926,7 +926,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -951,8 +951,8 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -966,8 +966,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -981,8 +981,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -996,7 +996,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -1011,8 +1011,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Charlie, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -1026,8 +1026,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Charlie, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "–",
@@ -1045,8 +1045,8 @@
       ],
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Jean-Marc, Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -1060,8 +1060,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Jean-Marc, Laurent",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -1075,8 +1075,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Jean-Marc, Laurent",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -1090,7 +1090,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
@@ -1105,8 +1105,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Charlie, Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -1120,8 +1120,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Charlie, Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "–",
@@ -1145,7 +1145,7 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1160,7 +1160,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
@@ -1175,7 +1175,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1190,7 +1190,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1205,7 +1205,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
@@ -1220,7 +1220,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES AMB",
@@ -1239,7 +1239,7 @@
       ],
       "lignes": [
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1254,7 +1254,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
@@ -1269,7 +1269,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1284,7 +1284,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1299,7 +1299,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
@@ -1314,7 +1314,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES AMB",
@@ -1339,7 +1339,7 @@
           "massif": "Autres",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1354,7 +1354,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1369,8 +1369,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1384,8 +1384,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1399,8 +1399,8 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
               "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1414,7 +1414,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1429,7 +1429,7 @@
               "massif": "Autres"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES AMB",
@@ -1448,7 +1448,7 @@
       ],
       "lignes": [
         {
-          "pilote": "",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1463,7 +1463,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1478,8 +1478,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1493,8 +1493,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1508,8 +1508,8 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -1523,7 +1523,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
@@ -1538,7 +1538,7 @@
           "massif": "Autres"
         },
         {
-          "pilote": "",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES AMB",
