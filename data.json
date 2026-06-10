@@ -65,74 +65,7 @@
     {
       "id": "s0",
       "label": "05/06",
-      "titre": "VENDREDI 5 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "8H30 DOLONNE > Visaille\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DOLONNE",
-              "client": "TREKKER MARTIAL 0685023700\n",
-              "nbre": "13+1",
-              "arrivee": "BASE CAMP LODGE HOTEL",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Serge",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "CHAMBRES DU SOLEIL ",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
-              "nbre": "10+1",
-              "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Serge",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "CHAMBRES DU SOLEIL ",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "7+1",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Serge",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHAMBRES DU SOLEIL ",
-              "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "8+1",
-              "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "VENDREDI 5 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Serge",
@@ -146,8 +79,7 @@
           "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "13+1",
           "arrivee": "BASE CAMP LODGE HOTEL",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -161,8 +93,7 @@
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
           "nbre": "10+1",
           "arrivee": "HOTEL LA GELINOTTE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -176,8 +107,7 @@
           "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
           "nbre": "7+1",
           "arrivee": "CHALET DES CONTAMINES",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -191,97 +121,14 @@
           "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
           "nbre": "8+1",
           "arrivee": "HOTEL LA GELINOTTE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s1",
       "label": "06/06",
-      "titre": "SAMEDI 6 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Transfert HBG > LA VILLETTE",
-              "details": "–",
-              "heure_rdv": "07H30",
-              "depart": "CHALET DES CONTAMINES",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "7+1",
-              "arrivee": "TRAFIC 471 code 9009",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Transfert HBG > LA VILLETTE",
-              "details": "–",
-              "heure_rdv": "08H00",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
-              "nbre": "10+1",
-              "arrivee": "TRAFIC 471 code 9009",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Transfert HBG > LA VILLETTE",
-              "details": "7 car 1 bagage en moins\n",
-              "heure_rdv": "08H00",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "7+1",
-              "arrivee": "TRAFIC 471 code 9009",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "09H30",
-              "details": "PAIN\n!! Transfert Flégère > Col des Montets\n",
-              "heure_rdv": "",
-              "depart": "RDV FLÉGÈRE",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "CHALET ALPIN DU TOUR",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Serge",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "16H29 ND GORGE > CENTRE HOUCHES\n",
-              "heure_rdv": "",
-              "depart": "BASE CAMP LODGE HOTEL",
-              "client": "TREKKER MARTIAL 0685023700\n",
-              "nbre": "12+1",
-              "arrivee": "HOTEL DU BOIS***",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "SAMEDI 6 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Serge",
@@ -295,8 +142,7 @@
           "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
           "nbre": "7+1",
           "arrivee": "TRAFIC 471 code 9009",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -310,8 +156,7 @@
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
           "nbre": "10+1",
           "arrivee": "TRAFIC 471 code 9009",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -325,8 +170,7 @@
           "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
           "nbre": "7+1",
           "arrivee": "TRAFIC 471 code 9009",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -340,8 +184,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "CHALET ALPIN DU TOUR",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -355,97 +198,14 @@
           "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "12+1",
           "arrivee": "HOTEL DU BOIS***",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s2",
       "label": "07/06",
-      "titre": "DIMANCHE 7 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "Jean-Marc, Serge",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "8H30 HBG > COL MONTET\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "TREKKER MARTIAL 0685023700\n",
-              "nbre": "12+1",
-              "arrivee": "HOTEL DU BOIS***",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "10H00",
-              "details": "PAIN\n",
-              "heure_rdv": "",
-              "depart": "RDV MONTROC",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "10H00",
-              "details": "PAIN\nRDV boulangerie\n",
-              "heure_rdv": "",
-              "depart": "RDV MONTROC",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "1",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "10H00",
-              "details": "PAIN\n",
-              "heure_rdv": "",
-              "depart": "RDV MONTROC",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "13+1",
-              "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET ALPIN DU TOUR",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "LA GRANDE OURSE",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "DIMANCHE 7 JUIN — Autres",
       "lignes": [
         {
           "pilote": "0. AUCUN",
@@ -459,8 +219,7 @@
           "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "12+1",
           "arrivee": "HOTEL DU BOIS***",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -474,8 +233,7 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "AUBERGE MONT BLANC",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -489,8 +247,7 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "AUBERGE MONT BLANC",
-          "stockes": "1",
-          "massif": "Autres"
+          "stockes": "1"
         },
         {
           "pilote": "Charlie",
@@ -504,8 +261,7 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "13+1",
           "arrivee": "AUBERGE MONT BLANC",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -519,127 +275,14 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "LA GRANDE OURSE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s3",
       "label": "08/06",
-      "titre": "LUNDI 8 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "GVA aéroport  13:00\n",
-              "heure_rdv": "",
-              "depart": "GVA AÉROPORT",
-              "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-              "nbre": "14+1",
-              "arrivee": "HOTEL DU BOIS***",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "Prendre Trafic Laurent\nGVA Aeroport  9:30\n",
-              "heure_rdv": "",
-              "depart": "GVA AÉROPORT",
-              "client": "TREKKER LAURA\n",
-              "nbre": "6+1",
-              "arrivee": "HOTEL DU BOIS***",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "TRANSFERT",
-              "transfert": "–",
-              "details": "11:00 HBG > GVA - 10pax\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "TREKKER MARTIAL 0685023700\n",
-              "nbre": "12+1",
-              "arrivee": "GVA AÉROPORT",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "Récup. Master 609\n",
-              "heure_rdv": "",
-              "depart": "LA GRANDE OURSE",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "RELAIS ARPETTE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE MONT BLANC",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "13+1",
-              "arrivee": "AUBERGE MAYA-JOIE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE MONT BLANC",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "GITE BON ABRI",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE MONT BLANC",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "GITE BON ABRI",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "LUNDI 8 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Serge",
@@ -653,8 +296,7 @@
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
           "nbre": "14+1",
           "arrivee": "HOTEL DU BOIS***",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -668,8 +310,7 @@
           "client": "TREKKER LAURA\n",
           "nbre": "6+1",
           "arrivee": "HOTEL DU BOIS***",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -683,8 +324,7 @@
           "client": "TREKKER MARTIAL 0685023700\n",
           "nbre": "12+1",
           "arrivee": "GVA AÉROPORT",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -698,8 +338,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "RELAIS ARPETTE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -713,8 +352,7 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "13+1",
           "arrivee": "AUBERGE MAYA-JOIE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -728,8 +366,7 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "GITE BON ABRI",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -743,112 +380,14 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "GITE BON ABRI",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s4",
       "label": "09/06",
-      "titre": "MARDI 9 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "PAIN\n+ PN Gailland\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-              "nbre": "14+1",
-              "arrivee": "HOTEL L'UNION",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "PAIN\n+ PN Gailland\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "TREKKER LAURA\n",
-              "nbre": "6+1",
-              "arrivee": "HOTEL L'UNION",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 : MONTE BIANCO\n",
-              "heure_rdv": "",
-              "depart": "GITE BON ABRI",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "REFUGE BONATTI",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 : MONTE BIANCO\n",
-              "heure_rdv": "",
-              "depart": "GITE BON ABRI",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "REFUGE BONATTI",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "RELAIS ARPETTE",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "AUBERGE MAYA-JOIE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE MAYA-JOIE",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "13+1",
-              "arrivee": "REFUGE ELENA",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "MARDI 9 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Charlie",
@@ -862,8 +401,7 @@
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
           "nbre": "14+1",
           "arrivee": "HOTEL L'UNION",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -877,8 +415,7 @@
           "client": "TREKKER LAURA\n",
           "nbre": "6+1",
           "arrivee": "HOTEL L'UNION",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -892,8 +429,7 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "REFUGE BONATTI",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -907,8 +443,7 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "REFUGE BONATTI",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -922,8 +457,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "AUBERGE MAYA-JOIE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -937,112 +471,14 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "13+1",
           "arrivee": "REFUGE ELENA",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s5",
       "label": "10/06",
-      "titre": "MERCREDI 10 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Charlie, Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "Laurent -> trafic 8pl pr transferts\n",
-              "heure_rdv": "",
-              "depart": "HOTEL L'UNION",
-              "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-              "nbre": "14+1",
-              "arrivee": "HOTEL DOLONNE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "Charlie, Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "Laurent -> trafic 8pl pr transferts\n",
-              "heure_rdv": "",
-              "depart": "HOTEL L'UNION",
-              "client": "TREKKER LAURA\n",
-              "nbre": "6+1",
-              "arrivee": "HOTEL DOLONNE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 : MONTE BIANCO\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE MAYA-JOIE",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "REFUGE BONATTI",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Jean-Marc, Laurent",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "!! 16h Transfert Visaille\n",
-              "heure_rdv": "",
-              "depart": "REFUGE ELENA",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "11+1",
-              "arrivee": "REFUGE MONTE BIANCO",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Jean-Marc, Laurent",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "J-1 BON ABRI\n!! 16h Transfert Visaille\n",
-              "heure_rdv": "",
-              "depart": "REFUGE BONATTI",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "REFUGE MONTE BIANCO",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "Jean-Marc, Laurent",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "J-1 : BON ABRI\n!! 16h Transfert Visaille\n",
-              "heure_rdv": "",
-              "depart": "REFUGE BONATTI",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "REFUGE MONTE BIANCO",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "MERCREDI 10 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -1056,8 +492,7 @@
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
           "nbre": "14+1",
           "arrivee": "HOTEL DOLONNE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -1071,8 +506,7 @@
           "client": "TREKKER LAURA\n",
           "nbre": "6+1",
           "arrivee": "HOTEL DOLONNE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Jean-Marc",
@@ -1086,8 +520,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "REFUGE BONATTI",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -1101,8 +534,7 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "11+1",
           "arrivee": "REFUGE MONTE BIANCO",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -1116,8 +548,7 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "REFUGE MONTE BIANCO",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Charlie",
@@ -1131,82 +562,14 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "REFUGE MONTE BIANCO",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s6",
       "label": "11/06",
-      "titre": "JEUDI 11 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "J-1 : MAYA JOIE\n\n",
-              "heure_rdv": "",
-              "depart": "REFUGE BONATTI",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "REFUGE MONTE BIANCO",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "REFUGE MONTE BIANCO",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "REFUGE LES MOTTETS",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE MONTE BIANCO",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "11+1",
-              "arrivee": "REFUGE LES MOTTETS",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "REFUGE MONTE BIANCO",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "REFUGE LES MOTTETS",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "JEUDI 11 JUIN — Autres",
       "lignes": [
         {
           "pilote": "0. AUCUN",
@@ -1220,8 +583,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "REFUGE MONTE BIANCO",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1235,8 +597,7 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1250,8 +611,7 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "11+1",
           "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1265,127 +625,14 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     },
     {
       "id": "s7",
       "label": "12/06",
-      "titre": "VENDREDI 12 JUIN",
-      "groupes_massifs": [
-        {
-          "massif": "Autres",
-          "lignes": [
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "09H00",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PLANPRAZ",
-              "client": "LAMARCHE\n",
-              "nbre": "2",
-              "arrivee": "PENSION EN PLEIN AIR",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Ivan",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DOLONNE",
-              "client": "TREKKER LAURA\n",
-              "nbre": "6+1",
-              "arrivee": "REFUGE DE LA GITTAZ",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Ivan",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DOLONNE",
-              "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-              "nbre": "14+1",
-              "arrivee": "HOTEL L'AUTANTIC***",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Ivan",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "REFUGE MONTE BIANCO",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "9+1",
-              "arrivee": "REFUGE LES MOTTETS",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "REFUGE LES MOTTETS",
-              "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
-              "nbre": "13+1",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "HOTEL GELINOTTE : Récupérer une tablette oubliée par 1 client \n",
-              "heure_rdv": "",
-              "depart": "REFUGE LES MOTTETS",
-              "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-              "nbre": "11+1",
-              "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–",
-              "massif": "Autres"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "Jean-Marc",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "16H30 Transfert ND GORGE > HBG",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "REFUGE LES MOTTETS",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "13+1",
-              "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–",
-              "massif": "Autres"
-            }
-          ]
-        }
-      ],
+      "titre": "VENDREDI 12 JUIN — Autres",
       "lignes": [
         {
           "pilote": "Jean-Marc",
@@ -1399,8 +646,7 @@
           "client": "LAMARCHE\n",
           "nbre": "2",
           "arrivee": "PENSION EN PLEIN AIR",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Ivan",
@@ -1414,8 +660,7 @@
           "client": "TREKKER LAURA\n",
           "nbre": "6+1",
           "arrivee": "REFUGE DE LA GITTAZ",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Ivan",
@@ -1429,8 +674,7 @@
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
           "nbre": "14+1",
           "arrivee": "HOTEL L'AUTANTIC***",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Ivan",
@@ -1444,8 +688,7 @@
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
           "nbre": "9+1",
           "arrivee": "REFUGE LES MOTTETS",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1459,8 +702,7 @@
           "client": "BERTELLE LAURENT\n(06 87 57 56 30 - )",
           "nbre": "13+1",
           "arrivee": "CHALET DES CONTAMINES",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1474,8 +716,7 @@
           "client": "DEVOS REMY\n(06 85 40 02 01 - )",
           "nbre": "11+1",
           "arrivee": "HOTEL LA GELINOTTE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         },
         {
           "pilote": "Serge",
@@ -1489,8 +730,7 @@
           "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
           "nbre": "13+1",
           "arrivee": "HOTEL LA GELINOTTE",
-          "stockes": "–",
-          "massif": "Autres"
+          "stockes": "–"
         }
       ]
     }
