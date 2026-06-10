@@ -54,7 +54,7 @@ def fetch_records():
             f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
             f"{urllib.parse.quote(TABLE_NAME)}"
             f"?pageSize=100"
-            f"&view={VIEW_NAME}"
+            f"&view={urllib.parse.quote(VIEW_NAME, safe='')}"
         )
         if offset:
             url += f"&offset={offset}"
