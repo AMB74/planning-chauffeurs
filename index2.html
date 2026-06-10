@@ -249,7 +249,7 @@ function tableauHTML(lignes, hasHr) {
   const colHr = hasHr ? '' : ' style="display:none"';
   return `<div class="table-wrapper"><table>
     <thead><tr>
-      <th class="check">✓</th><th>Pilote</th><th>Renforts</th><th>Type</th><th>Détails</th>
+      <th class="check">✓</th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th>Type</th><th>Détails</th>
       <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th>
     </tr></thead>
     <tbody>${lignes.map(l => ligneHTML(l, hasHr)).join('')}</tbody>
