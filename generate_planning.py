@@ -3,17 +3,14 @@ import json
 import urllib.request
 import urllib.parse
 from datetime import datetime
-from collections import OrderedDict
 
 # ── CONFIGURATION ──────────────────────────────────────────
-AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
-AIRTABLE_BASE  = os.environ["AIRTABLE_BASE"]
+AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
+AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
+TABLE_NAME      = "SEMAINE 1"
+VIEW_NAME       = "2. Attribution CHAUFFEURS"
 
-TABLES = [
-    {"table": "SEMAINE 1", "view": "2. Attribution CHAUFFEURS", "output": "data.json",  "meta_semaine": "SEMAINE 1"},
-    {"table": "SEMAINE 2", "view": "2. Attribution CHAUFFEURS", "output": "data2.json", "meta_semaine": "SEMAINE 2"},
-]
-
+# Liste fixe des chauffeurs
 CHAUFFEURS = [
     {"prenom": "Aurore",    "nom": "VALANCE",      "vehicule": "TRAFIC",        "plaque": "GN-881-PK"},
     {"prenom": "Bertrand",  "nom": "AUMOITTE",     "vehicule": "TRAFIC",        "plaque": "FM-024-VV"},
@@ -30,36 +27,13 @@ JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
              "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
-ORDRE_MASSIFS = [
-    "1. RDV & TRANSFERT",
-    "0. BAGAGES",
-    "CHABLAIS",
-    "GTA 1",
-    "MONT-BLANC",
-    "GTA 2",
-    "VANOISE",
-    "BEAUFORTAIN",
-    "ARAVIS / GLIERES",
-    "GRAND PARADIS",
-    "CHAMONIX - ZERMATT / CERVIN / VALAIS",
-    "GRANDS COMBINS",
-    "MONT-ROSE",
-    "DOLOMITES",
-    "VERCORS & DEVOLUY",
-    "OBERLAND",
-    "DENTS BLANCHES",
-    "Autres",
-]
-
-def sort_massif(m):
-    try:
-        return ORDRE_MASSIFS.index(m)
-    except ValueError:
-        return len(ORDRE_MASSIFS)
-
 def format_client(val):
+    """Sépare le nom du client et le numéro de téléphone sur deux lignes.
+    Ex: 'GAY MAXIME ( - 06 65 04 67 53)' → 'GAY MAXIME\n(- 06 65 04 67 53)'
+    """
     if not val:
         return "–"
+    # Sépare sur la parenthèse ouvrante
     if ' (' in val:
         parts = val.split(' (', 1)
         nom = parts[0].strip()
@@ -73,52 +47,77 @@ def get_text(fields, key):
         return ", ".join(str(v) for v in val if v)
     return str(val) if val else ""
 
-def fetch_records(table_name, view_name):
-    params = urllib.parse.urlencode({
-        "maxRecords": 200,
-        "view": view_name,
-    }, quote_via=urllib.parse.quote)
-    url = (
-        f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
-        f"{urllib.parse.quote(table_name, safe='')}?{params}"
-    )
-    print(f"Appel Airtable : {url[:80]}...")
-    req = urllib.request.Request(
-        url,
-        headers={
-            "Authorization": f"Bearer {AIRTABLE_TOKEN}",
-            "Accept": "application/json",
-        }
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = resp.read().decode("utf-8")
-    data = json.loads(body)
-    if "error" in data:
-        raise Exception(f"Erreur Airtable : {data['error']}")
-    records = data.get("records", [])
-    print(f"{len(records)} enregistrements reçus.")
+def fetch_records():
+    records = []
+    offset = None
+    page = 0
+    max_pages = 20  # sécurité anti-boucle infinie
+
+    while page < max_pages:
+        url = (
+            f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
+            f"{urllib.parse.quote(TABLE_NAME)}"
+            f"?pageSize=100"
+            f"&view={urllib.parse.quote(VIEW_NAME)}"
+        )
+        if offset:
+            url += f"&offset={urllib.parse.quote(offset)}"
+
+        print(f"Page {page+1} — {len(records)} enregistrements récupérés jusqu'ici...")
+        req = urllib.request.Request(
+            url,
+            headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = resp.read().decode("utf-8")
+        data = json.loads(body)
+        if "error" in data:
+            raise Exception(f"Erreur Airtable : {data['error']}")
+
+        batch = data.get("records", [])
+        records.extend(batch)
+        offset = data.get("offset")
+        page += 1
+
+        if not offset:
+            break
+
+    print(f"{len(records)} enregistrements récupérés au total ({page} page(s)).")
     return records
 
-def generate_data(table_name, view_name, output_file, meta_semaine, now):
-    print(f"\n── Génération {output_file} depuis '{table_name}' vue '{view_name}'...")
-    records = fetch_records(table_name, view_name)
+def format_date_fr(date_str):
+    """Convertit '2026-05-25' en 'LUNDI 25 MAI'"""
+    try:
+        d = datetime.strptime(date_str, "%Y-%m-%d")
+        return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+    except:
+        return date_str
 
+def main():
+    print(f"Récupération de '{TABLE_NAME}' vue '{VIEW_NAME}'...")
+    records = fetch_records()
+
+    now = datetime.now()
     date_affichee  = f"{JOURS_FR[now.weekday()]} {now.day} {MOIS_FR[now.month-1]}"
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
+    # ── Grouper les lignes par DATE PRESTATION puis MASSIF ──
+    from collections import OrderedDict
     # Structure : { date_str: { massif: [lignes] } }
     dates = OrderedDict()
 
     for rec in records:
         f = rec.get("fields", {})
+        if not dates:
+            print(f"Champs disponibles : {list(f.keys())[:12]}")
 
         date_prestation = get_text(f, "DATE PRESTATION")
         if not date_prestation:
             date_prestation = "Sans date"
 
         massif = get_text(f, "MASSIFS (from SÉJOUR)")
-        if not massif or massif.startswith("rec"):
+        if not massif:
             massif = "Autres"
 
         ligne = {
@@ -134,7 +133,6 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
             "nbre":      get_text(f, "Nombre ajusté") or "–",
             "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
             "stockes":   get_text(f, "NBRE") or "–",
-            "massif":    massif,
         }
 
         if date_prestation not in dates:
@@ -143,48 +141,64 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
             dates[date_prestation][massif] = []
         dates[date_prestation][massif].append(ligne)
 
-    # 1 section = 1 jour, avec sous-groupes massif à l'intérieur
+    # Ordre fixe des massifs selon N° géo
+    ORDRE_MASSIFS = [
+        "1. RDV & TRANSFERT",
+        "0. BAGAGES",
+        "CHABLAIS",
+        "GTA 1",
+        "MONT-BLANC",
+        "GTA 2",
+        "VANOISE",
+        "BEAUFORTAIN",
+        "ARAVIS / GLIERES",
+        "GRAND PARADIS",
+        "CHAMONIX - ZERMATT / CERVIN / VALAIS",
+        "GRANDS COMBINS",
+        "MONT-ROSE",
+        "DOLOMITES",
+        "VERCORS & DEVOLUY",
+        "OBERLAND",
+        "DENTS BLANCHES",
+        "Autres",
+    ]
+
+    def sort_massif(m):
+        try:
+            return ORDRE_MASSIFS.index(m)
+        except ValueError:
+            return len(ORDRE_MASSIFS)
+
+    # ── Construire les sections (1 section = 1 jour + 1 massif) ──
     sections = []
     idx = 0
     for date_str in sorted(dates.keys()):
         massifs = dates[date_str]
+        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+            if date_str == "Sans date":
+                titre = f"Sans date — {massif}"
+                label = "–"
+            else:
+                try:
+                    d = datetime.strptime(date_str, "%Y-%m-%d")
+                    jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                    label = d.strftime("%d/%m")
+                except:
+                    jour = date_str
+                    label = date_str
+                titre = f"{jour} — {massif}"
 
-        if date_str == "Sans date":
-            titre = "Sans date"
-            label = "–"
-            lignes_groupees = []
-            for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
-                lignes_groupees.append({"massif": massif, "lignes": lignes})
-        else:
-            try:
-                d = datetime.strptime(date_str, "%Y-%m-%d")
-                jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
-                label = d.strftime("%d/%m")
-            except:
-                jour = date_str
-                label = date_str
-            titre = jour
-            lignes_groupees = []
-            for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
-                lignes_groupees.append({"massif": massif, "lignes": lignes})
-
-        # Toutes les lignes à plat pour la compatibilité chauffeur
-        toutes_lignes = []
-        for groupe in lignes_groupees:
-            toutes_lignes.extend(groupe["lignes"])
-
-        sections.append({
-            "id":              f"s{idx}",
-            "label":           label,
-            "titre":           titre,
-            "groupes_massifs": lignes_groupees,
-            "lignes":          toutes_lignes,
-        })
-        idx += 1
+            sections.append({
+                "id":     f"s{idx}",
+                "label":  label,
+                "titre":  titre,
+                "lignes": lignes,
+            })
+            idx += 1
 
     data = {
         "meta": {
-            "semaine":        meta_semaine,
+            "semaine":        "SEMAINE 1",
             "date_affichee":  date_affichee.upper(),
             "numero_semaine": numero_semaine,
             "genere_le":      genere_le,
@@ -193,21 +207,10 @@ def generate_data(table_name, view_name, output_file, meta_semaine, now):
         "sections":   sections,
     }
 
-    with open(output_file, "w", encoding="utf-8") as fout:
+    with open("data.json", "w", encoding="utf-8") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=2)
 
-    print(f"{output_file} généré : {len(sections)} sections, {len(records)} lignes total.")
-
-def main():
-    now = datetime.now()
-    for cfg in TABLES:
-        generate_data(
-            table_name   = cfg["table"],
-            view_name    = cfg["view"],
-            output_file  = cfg["output"],
-            meta_semaine = cfg["meta_semaine"],
-            now          = now,
-        )
+    print(f"data.json généré : {len(sections)} sections, {len(records)} lignes total.")
 
 if __name__ == "__main__":
     main()
