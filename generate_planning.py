@@ -8,7 +8,7 @@ from datetime import datetime
 AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
 TABLE_NAME      = "SEMAINE 1"
-VIEW_NAME       = "viwnvv8Dfnlj2oRoH?blocks=hide"
+VIEW_NAME       = "viwnvv8Dfnlj2oRoH"
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
@@ -28,12 +28,8 @@ MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
              "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
 def format_client(val):
-    """Sépare le nom du client et le numéro de téléphone sur deux lignes.
-    Ex: 'GAY MAXIME ( - 06 65 04 67 53)' → 'GAY MAXIME\n(- 06 65 04 67 53)'
-    """
     if not val:
         return "–"
-    # Sépare sur la parenthèse ouvrante
     if ' (' in val:
         parts = val.split(' (', 1)
         nom = parts[0].strip()
@@ -51,17 +47,17 @@ def fetch_records():
     records = []
     offset = None
     page = 0
-    max_pages = 20  # sécurité anti-boucle infinie
+    max_pages = 20
 
     while page < max_pages:
         url = (
             f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
             f"{urllib.parse.quote(TABLE_NAME)}"
             f"?pageSize=100"
-            f"&view={urllib.parse.quote(VIEW_NAME)}"
+            f"&view={VIEW_NAME}"
         )
         if offset:
-            url += f"&offset={urllib.parse.quote(offset)}"
+            url += f"&offset={offset}"
 
         print(f"Page {page+1} — {len(records)} enregistrements récupérés jusqu'ici...")
         req = urllib.request.Request(
@@ -77,6 +73,7 @@ def fetch_records():
         batch = data.get("records", [])
         records.extend(batch)
         offset = data.get("offset")
+        print(f"Offset reçu : {repr(offset)}")
         page += 1
 
         if not offset:
@@ -86,7 +83,6 @@ def fetch_records():
     return records
 
 def format_date_fr(date_str):
-    """Convertit '2026-05-25' en 'LUNDI 25 MAI'"""
     try:
         d = datetime.strptime(date_str, "%Y-%m-%d")
         return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
@@ -102,9 +98,7 @@ def main():
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
-    # ── Grouper les lignes par DATE PRESTATION puis MASSIF ──
     from collections import OrderedDict
-    # Structure : { date_str: { massif: [lignes] } }
     dates = OrderedDict()
 
     for rec in records:
@@ -141,7 +135,6 @@ def main():
             dates[date_prestation][massif] = []
         dates[date_prestation][massif].append(ligne)
 
-    # Ordre fixe des massifs selon N° géo
     ORDRE_MASSIFS = [
         "1. RDV & TRANSFERT",
         "0. BAGAGES",
@@ -169,7 +162,6 @@ def main():
         except ValueError:
             return len(ORDRE_MASSIFS)
 
-    # ── Construire les sections (1 section = 1 jour + 1 massif) ──
     sections = []
     idx = 0
     for date_str in sorted(dates.keys()):
