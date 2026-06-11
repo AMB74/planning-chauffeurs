@@ -306,7 +306,7 @@ async function chargerDonnees() {
     SECTIONS = data.sections || [];
 
     // Mettre à jour les éléments de date/meta
-    const dateHtml = `${META.date_affichee || ''}&nbsp;<span style="font-weight:300;color:var(--gris-moyen);font-size:18px;">${META.numero_semaine || ''}</span>`;
+    const dateHtml = `${META.date_affichee || ''}`;
     document.getElementById('acc-date').innerHTML = dateHtml;
     document.getElementById('pg-date').innerHTML  = dateHtml;
     document.getElementById('acc-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
