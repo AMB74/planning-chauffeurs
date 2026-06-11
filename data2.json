@@ -1,8 +1,8 @@
 {
   "meta": {
     "semaine": "SEMAINE 2",
-    "date_affichee": "JEUDI 11 JUIN",
-    "numero_semaine": "Semaine 24",
+    "date_affichee": "SEMAINE DU SAMEDI 20 JUIN",
+    "numero_semaine": "Semaine 25",
     "genere_le": "11/06/2026"
   },
   "chauffeurs": [
@@ -187,8 +187,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Laurent",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -201,22 +201,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES",
-          "transfert": "Transfert HBG > LA VILLETTE",
-          "details": "–",
-          "heure_rdv": "08H00",
-          "depart": "HOTEL LA GELINOTTE",
-          "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-          "nbre": "13+1",
-          "arrivee": "RDV PRARION",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -229,7 +215,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -243,7 +229,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -257,7 +243,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -271,7 +257,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -285,12 +271,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Laurent",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "16H30 ND GORGE > La Couronne\n",
+          "details": "16H30 ND GORGE > La Couronne \n",
           "heure_rdv": "",
           "depart": "HOTEL L'AUTANTIC***",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
@@ -299,35 +285,21 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Charlie",
+          "renforts": "Charlie",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "16H30 Transfert ND GORGE > HBG",
-          "details": "–",
+          "details": "\n",
           "heure_rdv": "",
           "depart": "REFUGE LES MOTTETS",
           "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-          "nbre": "8+1",
-          "arrivee": "CHALET DES CONTAMINES",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES",
-          "transfert": "16H30 Transfert ND GORGE > HBG",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "REFUGE LES MOTTETS",
-          "client": "ALTITUDE ENCADREMENT\n(- )",
-          "nbre": "1+1",
+          "nbre": "9+1",
           "arrivee": "HOTEL LA GELINOTTE",
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Jean-Marc",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -348,7 +320,7 @@
       "titre": "DIMANCHE 14 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "PAIN",
