@@ -8,7 +8,7 @@ from datetime import datetime
 AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
 TABLE_NAME      = "SEMAINE 1"
-VIEW_NAME = "🚫 Extraction Github 🚫"
+VIEW_NAME       = "viwnvv8Dfnlj2oRoH"
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
@@ -54,7 +54,7 @@ def fetch_records():
             f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
             f"{urllib.parse.quote(TABLE_NAME)}"
             f"?pageSize=100"
-            f"&view={urllib.parse.quote(VIEW_NAME, safe='')}"
+            f"&view={VIEW_NAME}"
         )
         if offset:
             url += f"&offset={offset}"
@@ -94,7 +94,10 @@ def main():
     records = fetch_records()
 
     now = datetime.now()
-    date_affichee  = f"{JOURS_FR[now.weekday()]} {now.day} {MOIS_FR[now.month-1]}"
+    # Trouver le samedi de la semaine en cours
+    days_until_saturday = (5 - now.weekday()) % 7
+    saturday = now + __import__('datetime').timedelta(days=days_until_saturday)
+    date_affichee  = f"SEMAINE du SAMEDI {saturday.day} {MOIS_FR[saturday.month-1]}"
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
