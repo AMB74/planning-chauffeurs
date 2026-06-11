@@ -174,7 +174,7 @@ async function chargerDonnees() {
     const data = await resp.json();
     META     = data.meta || {};
     SECTIONS = data.sections || [];
-    const dateHtml = `${META.date_affichee || ''}&nbsp;<span style="font-weight:300;color:var(--gris-moyen);font-size:18px;">${META.numero_semaine || ''}</span>`;
+    const dateHtml = `${META.date_affichee || ''}`;
     document.getElementById('pg-date').innerHTML = dateHtml;
     document.getElementById('pg-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
     document.getElementById('pg-footer').textContent = 'Généré le ' + (META.genere_le || '') + ' · Planning semaine de travail';
