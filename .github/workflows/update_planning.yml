@@ -2,8 +2,8 @@ name: Mise à jour planning chauffeurs
 
 on:
   schedule:
-    - cron: '30 14 * * *' # Chaque jour à 16h30 heure de Paris (14h30 UTC)
-  workflow_dispatch: # Permet de lancer manuellement depuis GitHub
+    - cron: '30 14 * * *'   # Chaque jour à 16h30 heure de Paris (14h30 UTC)
+  workflow_dispatch:          # Permet de lancer manuellement depuis GitHub
 
 permissions:
   contents: write
@@ -41,42 +41,44 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Générer data.json et data2.json depuis Airtable
+      - name: Générer data.json depuis Airtable (SEMAINE 1)
         if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
-          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
+          AIRTABLE_BASE:  ${{ secrets.AIRTABLE_BASE }}
         run: python generate_planning.py
 
-      - name: Archiver les anciens fichiers
+      - name: Générer data2.json depuis Airtable (SEMAINE 2)
+        if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_BASE:  ${{ secrets.AIRTABLE_BASE }}
+        run: python generate_planning2.py
+
+      - name: Archiver l'ancien data.json
         if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           mkdir -p archive
           DATE=$(date +%Y-%m-%d)
-          cp data.json archive/data-$DATE.json || echo "Pas d'ancien data.json à archiver."
-          cp data2.json archive/data2-$DATE.json || echo "Pas d'ancien data2.json à archiver."
+          cp data.json archive/data-$DATE.json || echo "Pas d'ancien fichier à archiver."
 
       - name: Commit et push
         if: steps.check_period.outputs.active == 'true' || github.event_name == 'workflow_dispatch'
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json data2.json archive/
           git diff --staged --quiet || git commit -m "Update planning $(date +%d/%m/%Y)"
-          git pull --rebase origin main
           git push
 
   keepalive:
     runs-on: ubuntu-latest
-    needs: update-planning
     if: github.event_name == 'schedule'
-
     steps:
       - name: Keepalive
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Touch keepalive file
         run: |
           git config user.name "github-actions[bot]"
