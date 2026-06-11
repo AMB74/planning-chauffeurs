@@ -88,8 +88,23 @@ def main():
 
     now = datetime.now()
     # Trouver le samedi de la semaine suivante
-    days_until_saturday = (5 - now.weekday()) % 7 + 7
-    saturday = now + __import__('datetime').timedelta(days=days_until_saturday)
+    # Trouver le samedi de la semaine des données Airtable
+    from datetime import timedelta
+    dates_prestation = []
+    for rec in records:
+        d = rec.get("fields", {}).get("DATE PRESTATION", "")
+        if d:
+            try:
+                dates_prestation.append(datetime.strptime(d, "%Y-%m-%d"))
+            except:
+                pass
+    if dates_prestation:
+        premiere_date = min(dates_prestation)
+        days_until_saturday = (5 - premiere_date.weekday()) % 7
+        saturday = premiere_date + timedelta(days=days_until_saturday)
+    else:
+        days_until_saturday = (5 - now.weekday()) % 7 + 7
+        saturday = now + timedelta(days=days_until_saturday)
     date_affichee  = f"SEMAINE du SAMEDI {saturday.day} {MOIS_FR[saturday.month-1]}"
     numero_semaine = f"Semaine {(now.isocalendar()[1] % 52) + 1}"
     genere_le      = now.strftime("%d/%m/%Y")
