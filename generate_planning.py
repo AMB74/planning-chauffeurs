@@ -8,7 +8,7 @@ from datetime import datetime
 AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
 TABLE_NAME      = "SEMAINE 1"
-VIEW_NAME = "🚫 Extraction Github 🚫"
+VIEW_NAME = "Extraction Github"
 
 # Liste fixe des chauffeurs
 CHAUFFEURS = [
