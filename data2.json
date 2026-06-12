@@ -187,7 +187,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Laurent",
+          "pilote": "Serge",
           "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -201,8 +201,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -216,7 +216,7 @@
         },
         {
           "pilote": "Serge",
-          "renforts": "Laurent",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -286,7 +286,7 @@
         },
         {
           "pilote": "Laurent",
-          "renforts": "Serge",
+          "renforts": "Jean-Marc, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -300,7 +300,7 @@
         },
         {
           "pilote": "Laurent",
-          "renforts": "Jean-Marc",
+          "renforts": "Jean-Marc, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -314,7 +314,7 @@
         },
         {
           "pilote": "Laurent",
-          "renforts": "",
+          "renforts": "Jean-Marc, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -622,7 +622,7 @@
       "lignes": [
         {
           "pilote": "",
-          "renforts": "Jean-Marc, Laurent",
+          "renforts": "Jean-Marc, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -649,7 +649,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -663,7 +663,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -677,8 +677,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
-          "renforts": "Oscar",
+          "pilote": "Laurent",
+          "renforts": "AEM",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
@@ -705,8 +705,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Laurent",
-          "renforts": "",
+          "pilote": "",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "TRANSFERT",
           "transfert": "–",
