@@ -91,7 +91,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER LAURA\n",
-          "nbre": "6",
+          "nbre": "6+1",
           "arrivee": "REFUGE DE LA GITTAZ",
           "stockes": "–"
         },
@@ -105,7 +105,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL L'AUTANTIC***",
           "stockes": "–"
         },
@@ -229,6 +229,20 @@
           "stockes": "–"
         },
         {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "CHAMONIX SUD - ARRET BUS",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "CAMPING DU GLACIER D'ARGENTIERE",
+          "stockes": "–"
+        },
+        {
           "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
@@ -294,7 +308,7 @@
           "heure_rdv": "",
           "depart": "HOTEL L'AUTANTIC***",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL LA COURONNE",
           "stockes": "–"
         },
@@ -322,7 +336,7 @@
           "heure_rdv": "",
           "depart": "REFUGE DE LA GITTAZ",
           "client": "TREKKER LAURA\n",
-          "nbre": "6",
+          "nbre": "6+1",
           "arrivee": "VERT LODGE CHAMONIX",
           "stockes": "–"
         }
@@ -399,7 +413,7 @@
           "heure_rdv": "",
           "depart": "VERT LODGE CHAMONIX",
           "client": "TREKKER LAURA\n",
-          "nbre": "6",
+          "nbre": "6+1",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
         },
@@ -465,12 +479,26 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "09H45",
-          "details": "\n",
+          "details": "8H\n",
           "heure_rdv": "PRARION Boulangerie AEM",
           "depart": "RDV TELEPHERIQUE BREVENT",
           "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
           "nbre": "13+1",
           "arrivee": "HOTEL LE DAHU**",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "CAMPING DU GLACIER D'ARGENTIERE",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "CAMPING DES GLACIERS",
           "stockes": "–"
         },
         {
@@ -483,7 +511,7 @@
           "heure_rdv": "",
           "depart": "HOTEL LA COURONNE",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
         },
@@ -549,7 +577,7 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "10H00",
-          "details": "–",
+          "details": "Boulangerie\n",
           "heure_rdv": "8H PRARION CAISSES + TRANSFERT AEM",
           "depart": "RDV MONTROC",
           "client": "PAYAN MATHIEU\n(06 28 28 59 14 - )",
@@ -621,8 +649,8 @@
       "titre": "LUNDI 15 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "Jean-Marc, Serge",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge, TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -635,8 +663,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "TAXI CVT",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge, TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -649,7 +677,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -682,7 +710,7 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "08H30 Transfert HBG > Parc MERLETles campa\n",
+          "details": "08H30 Transfert HBG > Parc MERLET\n",
           "heure_rdv": "",
           "depart": "HOTEL LES CAMPANULES**",
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
@@ -691,7 +719,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "TRANSFERT",
@@ -710,16 +738,16 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "9:15 HBG > Col Monttets  16:30 Retour Chamonix \n",
+          "details": "9:15 Flégère> Col Montets  16:30 Retour Chamonix \n",
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",
-          "nbre": "15",
+          "nbre": "15+1",
           "arrivee": "CHAMONIARD VOLANT",
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "TRANSFERT",
@@ -733,7 +761,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -747,7 +775,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -761,7 +789,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -775,7 +803,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -789,7 +817,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -803,7 +831,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -817,7 +845,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -831,7 +859,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -859,7 +887,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -873,7 +901,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -887,7 +915,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Ivan",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -901,7 +929,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -915,7 +943,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -929,7 +957,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -943,7 +971,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -971,7 +999,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -1072,6 +1100,20 @@
           "pilote": "",
           "renforts": "",
           "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "CAMPING DES GLACIERS",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "CAMPING LA SORGENTE",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
           "type": "–",
           "transfert": "–",
           "details": "–",
@@ -1155,7 +1197,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "LA GRANDE OURSE",
           "stockes": "–"
         },
@@ -1169,7 +1211,7 @@
           "heure_rdv": "",
           "depart": "HOTEL ROCKY POP***",
           "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
         },
@@ -1183,7 +1225,7 @@
           "heure_rdv": "",
           "depart": "CHAMONIARD VOLANT",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",
-          "nbre": "15",
+          "nbre": "15+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
         },
@@ -1567,6 +1609,20 @@
         },
         {
           "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "CAMPING LA SORGENTE",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "CAMPING LA SORGENTE",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
           "renforts": "TAXI HOFMANN",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
@@ -1629,7 +1685,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -1638,7 +1694,7 @@
           "heure_rdv": "",
           "depart": "HOTEL ROCKY POP***",
           "client": "TREKKER CHARLES\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "HOTEL ROCKY POP***",
           "stockes": "–"
         },
@@ -1736,7 +1792,7 @@
           "heure_rdv": "",
           "depart": "LA GRANDE OURSE",
           "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         },
@@ -1946,7 +2002,7 @@
           "heure_rdv": "",
           "depart": "HOTEL L'UNION",
           "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         },
@@ -1960,7 +2016,7 @@
           "heure_rdv": "",
           "depart": "HOTEL L'UNION",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",
-          "nbre": "15",
+          "nbre": "15+1",
           "arrivee": "HOTEL LES JUMEAUX",
           "stockes": "–"
         },
@@ -2091,7 +2147,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -2102,6 +2158,20 @@
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
           "nbre": "9+1",
           "arrivee": "HOTEL MAISON SAINT JEAN",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "CAMPING LA SORGENTE",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "CAMPING LES CHAPIEUX",
           "stockes": "–"
         },
         {
@@ -2149,7 +2219,7 @@
           "heure_rdv": "",
           "depart": "HOTEL ROCKY POP***",
           "client": "TREKKER CHARLES\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "HOTEL LA COURONNE",
           "stockes": "–"
         },
@@ -2448,7 +2518,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -2457,12 +2527,12 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -2471,7 +2541,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "HOTEL DOLONNE",
           "stockes": "–"
         },
@@ -2504,7 +2574,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -2513,7 +2583,7 @@
           "heure_rdv": "",
           "depart": "HOTEL LES JUMEAUX",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",
-          "nbre": "15",
+          "nbre": "15+1",
           "arrivee": "HOTEL LES JUMEAUX",
           "stockes": "–"
         },
@@ -2599,6 +2669,20 @@
           "client": "DUBOIS\n",
           "nbre": "7",
           "arrivee": "REFUGE PLAN MYA",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "–",
+          "transfert": "–",
+          "details": "transfert Rdv 16:30 Ntre Dame >> Les Houches\n",
+          "heure_rdv": "",
+          "depart": "CAMPING LES CHAPIEUX",
+          "client": "TREKKER SOPHIE\n+33604405073\n",
+          "nbre": "8+1",
+          "arrivee": "BUREAU ALTITUDE TREKKER",
           "stockes": "–"
         },
         {
@@ -2721,7 +2805,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "0. AUCUN",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
@@ -2758,7 +2842,7 @@
           "heure_rdv": "",
           "depart": "HOTEL LA COURONNE",
           "client": "TREKKER CHARLES\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "HOTEL L'UNION",
           "stockes": "–"
         },
@@ -2912,7 +2996,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
-          "nbre": "12",
+          "nbre": "12+1",
           "arrivee": "REFUGE DE LA GITTAZ",
           "stockes": "–"
         },
@@ -2926,7 +3010,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DOLONNE",
           "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
-          "nbre": "14",
+          "nbre": "14+1",
           "arrivee": "HOTEL MALGOVERT",
           "stockes": "–"
         },
@@ -3012,6 +3096,20 @@
           "client": "ISABELLE\n",
           "nbre": "1",
           "arrivee": "CHALET DU BERGER",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "\n",
+          "heure_rdv": "",
+          "depart": "HOTEL LES JUMEAUX",
+          "client": "TREKKER Salomé \n06 76 74 92 79\n",
+          "nbre": "15+1",
+          "arrivee": "LE RELAIS DES VILLARDS",
           "stockes": "–"
         },
         {

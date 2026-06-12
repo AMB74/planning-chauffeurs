@@ -700,7 +700,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
-          "nbre": "14+1",
+          "nbre": "14",
           "arrivee": "GVA AÉROPORT",
           "stockes": "–"
         },
@@ -714,7 +714,7 @@
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER LAURA\n",
-          "nbre": "6+1",
+          "nbre": "6",
           "arrivee": "GVA AÉROPORT",
           "stockes": "–"
         },
