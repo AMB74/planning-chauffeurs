@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagages stockés</title>
+<style>
+  :root {
+    --vert: #2e7d32;
+    --vert-clair: #e8f5e9;
+    --gris-bord: #ddd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #fafafa;
+    color: #222;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: var(--vert);
+  }
+
+  .retour {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    background: #fff;
+    border: 1px solid var(--gris-bord);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 12px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    border: 1px solid var(--gris-bord);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--vert);
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f7f7f7;
+  }
+
+  tbody tr:hover {
+    background: var(--vert-clair);
+  }
+
+  td.nbre {
+    text-align: center;
+    font-weight: 700;
+    color: var(--vert);
+    width: 60px;
+  }
+
+  td.client {
+    white-space: pre-line;
+  }
+
+  td.dates {
+    white-space: nowrap;
+  }
+
+  .vide {
+    text-align: center;
+    color: #888;
+    padding: 40px 0;
+    font-style: italic;
+  }
+
+  @media (max-width: 700px) {
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    tr {
+      border: 1px solid var(--gris-bord);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 6px;
+      background: #fff;
+    }
+    td {
+      border: none;
+      padding: 4px 8px;
+    }
+    td::before {
+      content: attr(data-label) " : ";
+      font-weight: 600;
+      color: var(--vert);
+    }
+    td.nbre { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧳 Bagages stockés</h1>
+  <a class="retour" href="index.html">← Retour au planning</a>
+</header>
+
+<div class="meta" id="meta"></div>
+
+<div id="contenu">Chargement…</div>
+
+<script>
+async function chargerDonnees() {
+  try {
+    const resp = await fetch('data_bagages.json?v=' + Date.now());
+    const data = await resp.json();
+
+    document.getElementById('meta').textContent =
+      'Mis à jour le ' + (data.meta && data.meta.genere_le ? data.meta.genere_le : '');
+
+    const lignes = data.lignes || [];
+    const contenu = document.getElementById('contenu');
+
+    if (!lignes.length) {
+      contenu.innerHTML = '<div class="vide">Aucun bagage stocké pour le moment.</div>';
+      return;
+    }
+
+    let html = '<table><thead><tr>'
+      + '<th>Jour</th>'
+      + '<th>Chauffeur</th>'
+      + '<th>Client / AEM</th>'
+      + '<th>Nbre</th>'
+      + '<th>Début</th>'
+      + '<th>Hébergement (départ)</th>'
+      + '<th>Fin</th>'
+      + '<th>Hébergement (arrivée)</th>'
+      + '</tr></thead><tbody>';
+
+    lignes.forEach(l => {
+      html += '<tr>'
+        + `<td data-label="Jour">${l.jour_semaine || '–'}</td>`
+        + `<td data-label="Chauffeur">${l.chauffeur || '–'}</td>`
+        + `<td class="client" data-label="Client">${l.client || '–'}</td>`
+        + `<td class="nbre" data-label="Nbre">${l.nbre || '–'}</td>`
+        + `<td class="dates" data-label="Début">${l.date_debut_aff || '–'}</td>`
+        + `<td data-label="Hébergement départ">${l.depart || '–'}</td>`
+        + `<td class="dates" data-label="Fin">${l.date_fin_aff || '–'}</td>`
+        + `<td data-label="Hébergement arrivée">${l.arrivee || '–'}</td>`
+        + '</tr>';
+    });
+
+    html += '</tbody></table>';
+    contenu.innerHTML = html;
+
+  } catch (err) {
+    document.getElementById('contenu').innerHTML =
+      '<div class="vide">Erreur de chargement des données.</div>';
+    console.error(err);
+  }
+}
+
+chargerDonnees();
+</script>
+
+</body>
+</html>
