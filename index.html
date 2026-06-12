@@ -107,6 +107,8 @@ tbody tr.valide { background: #f0faf0 !important; opacity: 0.75; }
 tbody tr.valide td { text-decoration: line-through; color: #888; }
 tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; font-weight: 600; }
 td.check { width: 32px; text-align: center; padding: 9px 6px; vertical-align: middle; }
+td.alerte-stock { width: 24px; text-align: center; padding: 9px 4px; vertical-align: middle; font-size: 14px; }
+th.alerte-stock { width: 24px; padding: 8px 4px; }
 td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; border-radius: 4px; }
 th.check { width: 32px; text-align: center; padding: 8px 6px; }
 td { padding: 9px 10px; vertical-align: top; }
@@ -306,7 +308,7 @@ async function chargerDonnees() {
     SECTIONS = data.sections || [];
 
     // Mettre à jour les éléments de date/meta
-    const dateHtml = `${META.date_affichee || ''}`;
+    const dateHtml = `${META.date_affichee || ''}&nbsp;<span style="font-weight:300;color:var(--gris-moyen);font-size:18px;">${META.numero_semaine || ''}</span>`;
     document.getElementById('acc-date').innerHTML = dateHtml;
     document.getElementById('pg-date').innerHTML  = dateHtml;
     document.getElementById('acc-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
@@ -414,6 +416,7 @@ function ligneHTMLWithHr(l, prenom, showHr) {
   const typeDisplay = l.type || '–';
   return `<tr class="${rowCls}" data-lid="${lid}">
     <td class="check"><input type="checkbox" ${valide ? 'checked' : ''} onchange="toggleValide('${lid}')"></td>
+    <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
     <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
@@ -444,7 +447,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     </div>
     <div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
         <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('')}</tbody>
@@ -548,29 +551,31 @@ const PRINT_CSS = `
   tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
   th:nth-child(1) { width: 0; display: none; }
-  th:nth-child(2) { width: 7%; }
+  th:nth-child(2) { width: 3%; }
   th:nth-child(3) { width: 7%; }
   th:nth-child(4) { width: 7%; }
-  th:nth-child(5) { width: 9%; }
-  th:nth-child(6) { width: 7%; }
-  th:nth-child(7) { width: 12%; }
-  th:nth-child(8) { width: 13%; }
-  th:nth-child(9) { width: 12%; }
-  th:nth-child(10) { width: 4%; }
-  th:nth-child(11) { width: 13%; }
-  th:nth-child(12) { width: 4%; }
+  th:nth-child(5) { width: 7%; }
+  th:nth-child(6) { width: 9%; }
+  th:nth-child(7) { width: 7%; }
+  th:nth-child(8) { width: 12%; }
+  th:nth-child(9) { width: 13%; }
+  th:nth-child(10) { width: 12%; }
+  th:nth-child(11) { width: 4%; }
+  th:nth-child(12) { width: 13%; }
+  th:nth-child(13) { width: 4%; }
   td:nth-child(1) { width: 0; display: none; }
-  td:nth-child(2) { width: 7%; }
+  td:nth-child(2) { width: 3%; text-align: center; font-size: 9px; }
   td:nth-child(3) { width: 7%; }
   td:nth-child(4) { width: 7%; }
-  td:nth-child(5) { width: 9%; }
-  td:nth-child(6) { width: 7%; }
-  td:nth-child(7) { width: 12%; }
-  td:nth-child(8) { width: 13%; }
-  td:nth-child(9) { width: 12%; }
-  td:nth-child(10) { width: 4%; }
-  td:nth-child(11) { width: 13%; }
-  td:nth-child(12) { width: 4%; }
+  td:nth-child(5) { width: 7%; }
+  td:nth-child(6) { width: 9%; }
+  td:nth-child(7) { width: 7%; }
+  td:nth-child(8) { width: 12%; }
+  td:nth-child(9) { width: 13%; }
+  td:nth-child(10) { width: 12%; }
+  td:nth-child(11) { width: 4%; }
+  td:nth-child(12) { width: 13%; }
+  td:nth-child(13) { width: 4%; }
   td.pilote { font-weight: 600; white-space: nowrap; font-size: 7px; }
   td.renforts { color: #1565C0; font-size: 6.5px; }
   td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 6.5px; }
