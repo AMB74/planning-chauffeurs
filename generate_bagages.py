@@ -86,6 +86,10 @@ def main():
         print(f"  → {len(recs)} enregistrement(s)")
         if recs:
             print(f"  → Champs disponibles : {list(recs[0]['fields'].keys())}")
+            print(f"  → Contenu du 1er enregistrement :")
+            for k, v in recs[0]['fields'].items():
+                if 'DEBUT' in k.upper() or 'FIN' in k.upper() or k == 'NBRE':
+                    print(f"      {k!r} = {v!r}")
         for r in recs:
             r["_table"] = table
         all_records.extend(recs)
