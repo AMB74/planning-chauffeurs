@@ -43,21 +43,27 @@ body {
 .btn-retour { display: inline-flex; align-items: center; gap: 6px; background: none; border: 1.5px solid var(--gris-border); border-radius: 6px; padding: 6px 12px; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--gris-moyen); cursor: pointer; text-decoration: none; margin-bottom: 20px; transition: all 0.15s; }
 .btn-retour:hover { border-color: var(--vert); color: var(--vert); }
 
+.legende { display: flex; gap: 16px; margin-bottom: 14px; font-size: 11px; color: var(--gris-moyen); flex-wrap: wrap; }
+.legende-item { display: flex; align-items: center; gap: 6px; }
+
 /* ── TABLEAU ── */
 .table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
-table { width: 100%; min-width: 760px; border-collapse: collapse; }
+table { width: 100%; min-width: 860px; border-collapse: collapse; }
 thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
 th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
 tbody tr { border-bottom: 1px solid var(--gris-border); transition: background 0.15s; }
 tbody tr:last-child { border-bottom: none; }
 tbody tr:hover { background: #f0faf0; }
 td { padding: 9px 10px; vertical-align: top; }
-td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 160px; }
+td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 150px; }
 td.nbre { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 700; color: var(--vert); text-align: center; white-space: nowrap; width: 60px; }
-td.lieu { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
+td.lieu { font-size: 12px; font-weight: 500; min-width: 150px; white-space: normal; word-break: break-word; }
 td.date { font-family: 'DM Mono', monospace; font-size: 12px; white-space: nowrap; text-align: center; }
 td.jour { font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--gris-moyen); white-space: nowrap; }
 td.chauffeur { font-weight: 600; white-space: nowrap; }
+td.chauffeur-debut { color: #E8263A; }
+td.chauffeur-fin { color: #0D47A1; }
+td.chauffeur.empty { color: #ccc; font-weight: 400; font-style: italic; }
 
 .empty-section { text-align: center; padding: 32px; color: var(--gris-moyen); font-size: 13px; background: var(--blanc); border: 1.5px solid var(--gris-border); border-radius: 8px; }
 
@@ -68,6 +74,7 @@ td.chauffeur { font-weight: 600; white-space: nowrap; }
   .page { padding: 14px 10px 32px; }
   .header-day { font-size: 18px; }
   .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 860px; }
   th { font-size: 8.5px; padding: 6px 6px; white-space: nowrap; }
   td { padding: 7px 6px; font-size: 11px; }
 }
@@ -81,6 +88,7 @@ td.chauffeur { font-weight: 600; white-space: nowrap; }
   .header { padding-bottom: 6px; margin-bottom: 10px; }
   .header-day { font-size: 16px; }
   .table-wrapper { border-radius: 0; overflow: visible; }
+  table { min-width: 0; width: 100%; }
 }
 </style>
 </head>
@@ -101,6 +109,11 @@ td.chauffeur { font-weight: 600; white-space: nowrap; }
   </div>
 
   <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+
+  <div class="legende">
+    <div class="legende-item"><span style="color:#E8263A;font-weight:600;">●</span> Chauffeur qui récupère les bagages (J1)</div>
+    <div class="legende-item"><span style="color:#0D47A1;font-weight:600;">●</span> Chauffeur qui dépose les bagages (dernier jour)</div>
+  </div>
 
   <div id="contenu">Chargement…</div>
 
@@ -131,26 +144,28 @@ async function chargerDonnees() {
     }
 
     let html = '<div class="table-wrapper"><table><thead><tr>'
-      + '<th>Jour</th>'
-      + '<th>Chauffeur</th>'
       + '<th>Client / AEM</th>'
       + '<th>Nbre</th>'
       + '<th>Début</th>'
       + '<th>Hébergement (départ)</th>'
+      + '<th>Chauffeur récupération (J1)</th>'
       + '<th>Fin</th>'
       + '<th>Hébergement (arrivée)</th>'
+      + '<th>Chauffeur dépose (dernier jour)</th>'
       + '</tr></thead><tbody>';
 
     lignes.forEach(l => {
+      const chDebut = l.chauffeur_debut || '–';
+      const chFin   = l.chauffeur_fin || '–';
       html += '<tr>'
-        + `<td class="jour">${l.jour_semaine || '–'}</td>`
-        + `<td class="chauffeur">${l.chauffeur || '–'}</td>`
         + `<td class="client">${(l.client || '–').replace(/\n/g, '<br>')}</td>`
         + `<td class="nbre">${l.nbre || '–'}</td>`
         + `<td class="date">${l.date_debut_aff || '–'}</td>`
         + `<td class="lieu">${l.depart || '–'}</td>`
+        + `<td class="chauffeur ${chDebut === '–' ? 'empty' : 'chauffeur-debut'}">${chDebut}</td>`
         + `<td class="date">${l.date_fin_aff || '–'}</td>`
         + `<td class="lieu">${l.arrivee || '–'}</td>`
+        + `<td class="chauffeur ${chFin === '–' ? 'empty' : 'chauffeur-fin'}">${chFin}</td>`
         + '</tr>';
     });
 
