@@ -3,160 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bagages stockés</title>
+<title>Bagages stockés – ALTITUDE MONT-BLANC</title>
 <style>
-  :root {
-    --vert: #2e7d32;
-    --vert-clair: #e8f5e9;
-    --gris-bord: #ddd;
-  }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+:root {
+  --vert: #2e7d32;
+  --gris-fonce: #1a1a1a;
+  --gris-moyen: #5c5c5c;
+  --gris-clair: #f4f4f4;
+  --gris-border: #e0e0e0;
+  --blanc: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f8f8f6;
+  color: var(--gris-fonce);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.page { max-width: 1100px; margin: 0 auto; padding: 28px 24px 48px; }
 
-  * { box-sizing: border-box; }
+/* ── HEADER ── */
+.header { display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 2.5px solid var(--vert); padding-bottom: 14px; margin-bottom: 24px; }
+.breadcrumb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+.breadcrumb span { color: var(--vert); font-weight: 500; }
+.header-day { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; }
+.header-societe { text-align: right; font-family: 'DM Mono', monospace; }
+.societe-nom { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.societe-detail { font-size: 9px; color: var(--gris-moyen); margin-top: 2px; }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    margin: 0;
-    padding: 16px;
-    background: #fafafa;
-    color: #222;
-  }
+.badge-maj {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  background: #e8f5e9; color: var(--vert); border: 1px solid #a5d6a7;
+  border-radius: 3px; padding: 2px 7px; margin-top: 4px;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
+.btn-retour { display: inline-flex; align-items: center; gap: 6px; background: none; border: 1.5px solid var(--gris-border); border-radius: 6px; padding: 6px 12px; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--gris-moyen); cursor: pointer; text-decoration: none; margin-bottom: 20px; transition: all 0.15s; }
+.btn-retour:hover { border-color: var(--vert); color: var(--vert); }
 
-  h1 {
-    font-size: 1.4rem;
-    margin: 0;
-    color: var(--vert);
-  }
+/* ── TABLEAU ── */
+.table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
+table { width: 100%; min-width: 760px; border-collapse: collapse; }
+thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
+th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
+tbody tr { border-bottom: 1px solid var(--gris-border); transition: background 0.15s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f0faf0; }
+td { padding: 9px 10px; vertical-align: top; }
+td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 160px; }
+td.nbre { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 700; color: var(--vert); text-align: center; white-space: nowrap; width: 60px; }
+td.lieu { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
+td.date { font-family: 'DM Mono', monospace; font-size: 12px; white-space: nowrap; text-align: center; }
+td.jour { font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--gris-moyen); white-space: nowrap; }
+td.chauffeur { font-weight: 600; white-space: nowrap; }
 
-  .retour {
-    display: inline-block;
-    text-decoration: none;
-    color: #555;
-    background: #fff;
-    border: 1px solid var(--gris-bord);
-    border-radius: 6px;
-    padding: 6px 12px;
-    font-size: 0.9rem;
-  }
+.empty-section { text-align: center; padding: 32px; color: var(--gris-moyen); font-size: 13px; background: var(--blanc); border: 1.5px solid var(--gris-border); border-radius: 8px; }
 
-  .meta {
-    font-size: 0.8rem;
-    color: #888;
-    margin-bottom: 12px;
-  }
+.footer { margin-top: 32px; border-top: 1px solid var(--gris-border); padding-top: 12px; display: flex; justify-content: space-between; color: var(--gris-moyen); font-size: 10.5px; font-family: 'DM Mono', monospace; }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    font-size: 0.9rem;
-  }
+/* ── MOBILE ── */
+@media (max-width: 700px) {
+  .page { padding: 14px 10px 32px; }
+  .header-day { font-size: 18px; }
+  .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  th { font-size: 8.5px; padding: 6px 6px; white-space: nowrap; }
+  td { padding: 7px 6px; font-size: 11px; }
+}
 
-  th, td {
-    border: 1px solid var(--gris-bord);
-    padding: 8px 10px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  th {
-    background: var(--vert);
-    color: #fff;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #f7f7f7;
-  }
-
-  tbody tr:hover {
-    background: var(--vert-clair);
-  }
-
-  td.nbre {
-    text-align: center;
-    font-weight: 700;
-    color: var(--vert);
-    width: 60px;
-  }
-
-  td.client {
-    white-space: pre-line;
-  }
-
-  td.dates {
-    white-space: nowrap;
-  }
-
-  .vide {
-    text-align: center;
-    color: #888;
-    padding: 40px 0;
-    font-style: italic;
-  }
-
-  @media (max-width: 700px) {
-    table, thead, tbody, th, td, tr { display: block; }
-    thead { display: none; }
-    tr {
-      border: 1px solid var(--gris-bord);
-      border-radius: 8px;
-      margin-bottom: 10px;
-      padding: 6px;
-      background: #fff;
-    }
-    td {
-      border: none;
-      padding: 4px 8px;
-    }
-    td::before {
-      content: attr(data-label) " : ";
-      font-weight: 600;
-      color: var(--vert);
-    }
-    td.nbre { text-align: left; }
-  }
+/* ── IMPRESSION ── */
+@media print {
+  @page { size: A4 portrait; margin: 8mm 10mm; }
+  body { background: white; font-size: 10px; }
+  .page { padding: 0; max-width: 100%; }
+  .btn-retour, .badge-maj { display: none; }
+  .header { padding-bottom: 6px; margin-bottom: 10px; }
+  .header-day { font-size: 16px; }
+  .table-wrapper { border-radius: 0; overflow: visible; }
+}
 </style>
 </head>
 <body>
 
-<header>
-  <h1>🧳 Bagages stockés</h1>
-  <a class="retour" href="index.html">← Retour au planning</a>
-</header>
+<div class="page">
+  <div class="header">
+    <div class="header-left">
+      <div class="breadcrumb">ALTITUDE MONT-BLANC › <span>Bagages stockés</span></div>
+      <div class="header-day">🧳 Bagages stockés</div>
+      <div class="badge-maj" id="maj"></div>
+    </div>
+    <div class="header-societe">
+      <div class="societe-nom">ALTITUDE MONT-BLANC</div>
+      <div class="societe-detail">62 passage du Nant Devant · 74110 MONTRIOND</div>
+      <div class="societe-detail">SIREN : 481 563 567</div>
+    </div>
+  </div>
 
-<div class="meta" id="meta"></div>
+  <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
 
-<div id="contenu">Chargement…</div>
+  <div id="contenu">Chargement…</div>
+
+  <div class="footer">
+    <span id="footer-txt"></span>
+    <span>ALTITUDE MONT-BLANC</span>
+  </div>
+</div>
 
 <script>
 async function chargerDonnees() {
   try {
     const resp = await fetch('data_bagages.json?v=' + Date.now());
+    if (!resp.ok) throw new Error('Erreur HTTP ' + resp.status);
     const data = await resp.json();
 
-    document.getElementById('meta').textContent =
-      'Mis à jour le ' + (data.meta && data.meta.genere_le ? data.meta.genere_le : '');
-
+    const meta   = data.meta || {};
     const lignes = data.lignes || [];
+
+    document.getElementById('maj').textContent = '✓ Mis à jour le ' + (meta.genere_le || '');
+    document.getElementById('footer-txt').textContent = 'Généré le ' + (meta.genere_le || '') + ' · Bagages stockés';
+
     const contenu = document.getElementById('contenu');
 
     if (!lignes.length) {
-      contenu.innerHTML = '<div class="vide">Aucun bagage stocké pour le moment.</div>';
+      contenu.innerHTML = '<div class="empty-section">Aucun bagage stocké pour le moment.</div>';
       return;
     }
 
-    let html = '<table><thead><tr>'
+    let html = '<div class="table-wrapper"><table><thead><tr>'
       + '<th>Jour</th>'
       + '<th>Chauffeur</th>'
       + '<th>Client / AEM</th>'
@@ -169,23 +143,23 @@ async function chargerDonnees() {
 
     lignes.forEach(l => {
       html += '<tr>'
-        + `<td data-label="Jour">${l.jour_semaine || '–'}</td>`
-        + `<td data-label="Chauffeur">${l.chauffeur || '–'}</td>`
-        + `<td class="client" data-label="Client">${l.client || '–'}</td>`
-        + `<td class="nbre" data-label="Nbre">${l.nbre || '–'}</td>`
-        + `<td class="dates" data-label="Début">${l.date_debut_aff || '–'}</td>`
-        + `<td data-label="Hébergement départ">${l.depart || '–'}</td>`
-        + `<td class="dates" data-label="Fin">${l.date_fin_aff || '–'}</td>`
-        + `<td data-label="Hébergement arrivée">${l.arrivee || '–'}</td>`
+        + `<td class="jour">${l.jour_semaine || '–'}</td>`
+        + `<td class="chauffeur">${l.chauffeur || '–'}</td>`
+        + `<td class="client">${(l.client || '–').replace(/\n/g, '<br>')}</td>`
+        + `<td class="nbre">${l.nbre || '–'}</td>`
+        + `<td class="date">${l.date_debut_aff || '–'}</td>`
+        + `<td class="lieu">${l.depart || '–'}</td>`
+        + `<td class="date">${l.date_fin_aff || '–'}</td>`
+        + `<td class="lieu">${l.arrivee || '–'}</td>`
         + '</tr>';
     });
 
-    html += '</tbody></table>';
+    html += '</tbody></table></div>';
     contenu.innerHTML = html;
 
   } catch (err) {
     document.getElementById('contenu').innerHTML =
-      '<div class="vide">Erreur de chargement des données.</div>';
+      `<div class="empty-section">⚠ Impossible de charger les données.<br><span style="font-size:10px;color:#aaa;">${err.message}</span></div>`;
     console.error(err);
   }
 }
