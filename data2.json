@@ -271,7 +271,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Charlie",
+          "pilote": "Oscar",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -621,8 +621,8 @@
       "titre": "LUNDI 15 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "Laurent",
-          "renforts": "TAXI CVT",
+          "pilote": "",
+          "renforts": "Jean-Marc, Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
