@@ -57,6 +57,8 @@ tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; font-weight: 
 td.check { width: 32px; text-align: center; padding: 9px 6px; vertical-align: middle; }
 td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; }
 th.check { width: 32px; text-align: center; padding: 8px 6px; }
+td.alerte-stock { width: 24px; text-align: center; padding: 9px 4px; vertical-align: middle; font-size: 14px; }
+th.alerte-stock { width: 24px; padding: 8px 4px; }
 td { padding: 9px 10px; vertical-align: top; }
 td.pilote { font-weight: 600; white-space: nowrap; min-width: 70px; }
 td.pilote.empty { color: #bbb; font-weight: 400; font-style: italic; }
@@ -72,6 +74,8 @@ td.heure-rdv.empty { color: #ddd; text-align: center; }
 td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 130px; }
 td.nbre { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; text-align: center; white-space: nowrap; }
 td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
+td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
+td.stockes.empty { color: #ddd; text-align: center; }
 .badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
@@ -153,6 +157,7 @@ td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: n
       <div class="societe-detail">SIREN : 481 563 567</div>
     </div>
   </div>
+  <a href="bagages.html" style="display:inline-flex;align-items:center;gap:6px;background:none;border:1.5px solid var(--gris-border);border-radius:6px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--gris-moyen);text-decoration:none;margin-bottom:16px;">🧳 Bagages stockés</a>
   <div class="legende">
     <div class="legende-item"><div class="legende-dot dot-pilote"></div> Bagages + Transfert</div>
     <div class="legende-item"><div class="legende-dot dot-renfort"></div> Renfort Transfert</div>
@@ -232,6 +237,7 @@ function ligneHTML(l, showHr) {
   const typeDisplay = l.type || '–';
   return `<tr class="${rowCls}" data-lid="${lid}">
     <td class="check"><input type="checkbox" ${valide ? 'checked' : ''} onchange="toggleValide('${lid}')"></td>
+    <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
     <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
@@ -242,6 +248,7 @@ function ligneHTML(l, showHr) {
     <td class="client">${(l.client || '–').replace(/\n/g, '<br>')}</td>
     <td class="nbre">${l.nbre || '–'}</td>
     <td class="arrivee">${l.arrivee || '–'}</td>
+    <td class="${(l.stockes && l.stockes !== '–') ? 'stockes' : 'stockes empty'}">${l.stockes || '–'}</td>
   </tr>`;
 }
 
@@ -249,8 +256,8 @@ function tableauHTML(lignes, hasHr) {
   const colHr = hasHr ? '' : ' style="display:none"';
   return `<div class="table-wrapper"><table>
     <thead><tr>
-      <th class="check">✓</th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th>Type</th><th>Détails</th>
-      <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th>
+      <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th>Type</th><th>Détails</th>
+      <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
     </tr></thead>
     <tbody>${lignes.map(l => ligneHTML(l, hasHr)).join('')}</tbody>
   </table></div>`;
@@ -328,9 +335,9 @@ const PRINT_CSS = `
   tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide td { text-decoration: line-through; color: #888; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
-  th:nth-child(1){display:none} th:nth-child(2){width:8%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:10%} th:nth-child(6){width:8%} th:nth-child(7){width:13%} th:nth-child(8){width:14%} th:nth-child(9){width:13%} th:nth-child(10){width:4%} th:nth-child(11){width:14%}
-  td:nth-child(1){display:none} td:nth-child(2){width:8%} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:10%} td:nth-child(6){width:8%} td:nth-child(7){width:13%} td:nth-child(8){width:14%} td:nth-child(9){width:13%} td:nth-child(10){width:4%} td:nth-child(11){width:14%}
-  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:8.5px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:8.5px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:8.5px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:8.5px} td.client{font-weight:600;text-transform:uppercase;font-size:8.5px} td.transfert{font-size:8px;color:#555} td.depart,td.arrivee{font-size:9px;font-weight:500}
+  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:8%} th:nth-child(6){width:9%} th:nth-child(7){width:8%} th:nth-child(8){width:12%} th:nth-child(9){width:13%} th:nth-child(10){width:12%} th:nth-child(11){width:4%} th:nth-child(12){width:13%} th:nth-child(13){width:4%}
+  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:9px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:8%} td:nth-child(6){width:9%} td:nth-child(7){width:8%} td:nth-child(8){width:12%} td:nth-child(9){width:13%} td:nth-child(10){width:12%} td:nth-child(11){width:4%} td:nth-child(12){width:13%} td:nth-child(13){width:4%}
+  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:8.5px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:8.5px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:8.5px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:8.5px} td.client{font-weight:600;text-transform:uppercase;font-size:8.5px} td.transfert{font-size:8px;color:#555} td.depart,td.arrivee{font-size:9px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:8.5px}
   .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .badge-bagages{background:#FFF8E1!important;color:#F57F17;border-color:#FFE082} .badge-bagages-trf{background:#E8F5E9!important;color:#2E7D32;border-color:#A5D6A7} .badge-transfert{background:#E3F2FD!important;color:#1565C0;border-color:#90CAF9} .badge-rdv{background:#F3E5F5!important;color:#6A1B9A;border-color:#CE93D8} .badge-default{background:#f4f4f4!important;color:#555;border-color:#ddd}
   .footer{margin-top:8px;border-top:1px solid #eee;padding-top:6px;display:flex;justify-content:space-between;color:#999;font-size:9px;font-family:monospace}
