@@ -70,8 +70,11 @@ body {
 .chauffeur-prenom { font-size: 15px; font-weight: 700; letter-spacing: 0.02em; color: var(--gris-fonce); }
 .chauffeur-vehicule { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); margin-top: 4px; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
 .plaque { background: var(--gris-clair); border: 1px solid var(--gris-border); border-radius: 3px; padding: 1px 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.05em; }
-.btn-general { display: inline-flex; align-items: center; gap: 8px; background: var(--rouge); color: white; border: none; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; margin-bottom: 28px; box-shadow: 0 4px 16px rgba(232,38,58,0.3); }
+.btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+.btn-general { display: inline-flex; align-items: center; gap: 8px; background: var(--rouge); color: white; border: none; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; box-shadow: 0 4px 16px rgba(232,38,58,0.3); }
 .btn-general:hover { background: #c41e30; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,38,58,0.4); }
+.btn-bagages { background: #2e7d32; box-shadow: 0 4px 16px rgba(46,125,50,0.3); }
+.btn-bagages:hover { background: #1b5e20; box-shadow: 0 6px 20px rgba(46,125,50,0.4); }
 
 /* ── HEADER CHAUFFEUR ── */
 .header-chauffeur-nom { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
@@ -226,7 +229,10 @@ td.stockes.empty { color: #ddd; text-align: center; }
       <div class="societe-detail">SIREN : 481 563 567</div>
     </div>
   </div>
-  <button class="btn-general" onclick="afficherPlanning()">📋 PLANNING GÉNÉRAL</button>
+  <div class="btn-row">
+    <button class="btn-general" onclick="afficherPlanning()">📋 PLANNING GÉNÉRAL</button>
+    <button class="btn-general btn-bagages" onclick="window.location.href='bagages.html'">🧳 BAGAGES STOCKÉS</button>
+  </div>
   <div class="accueil-subtitle">Sélectionnez votre nom pour accéder à votre planning personnel</div>
   <div class="chauffeurs-grid" id="chauffeurs-grid"></div>
   <div class="footer">
