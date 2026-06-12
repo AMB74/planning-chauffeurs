@@ -41,6 +41,13 @@ def format_date_fr_court(date_str):
         return date_str or "–"
 
 
+def parse_date(date_str):
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d")
+    except Exception:
+        return None
+
+
 def fetch_records(table_name):
     records = []
     offset = None
@@ -84,19 +91,13 @@ def main():
         print(f"Récupération de '{table}' — vue '{VIEW_NAME}'...")
         recs = fetch_records(table)
         print(f"  → {len(recs)} enregistrement(s)")
-        if recs:
-            print(f"  → Champs disponibles : {list(recs[0]['fields'].keys())}")
-            print(f"  → Contenu du 1er enregistrement :")
-            for k, v in recs[0]['fields'].items():
-                if 'DEBUT' in k.upper() or 'FIN' in k.upper() or k == 'NBRE':
-                    print(f"      {k!r} = {v!r}")
         for r in recs:
             r["_table"] = table
         all_records.extend(recs)
 
-    # Filtrer les lignes où NBRE est vide / nul, et dédoublonner par DOSSIER_ID
-    vus = set()
-    lignes = []
+    # Regrouper par DOSSIER_ID (un dossier peut avoir 1 ou 2 lignes,
+    # une par semaine, avec un chauffeur différent au début et à la fin)
+    groupes = {}
 
     for rec in all_records:
         f = rec.get("fields", {})
@@ -107,35 +108,75 @@ def main():
 
         dossier_id = get_text(f, "DOSSIER_ID")
         cle = dossier_id or rec.get("id")
-        if cle in vus:
-            continue
-        vus.add(cle)
+        groupes.setdefault(cle, []).append(rec)
 
+    lignes = []
+    for cle, recs in groupes.items():
+        def get_date_prestation(r):
+            return parse_date(get_text(r.get("fields", {}), "DATE PRESTATION"))
+
+        def get_date_debut(r):
+            return parse_date(get_text(r.get("fields", {}), "DÉBUT"))
+
+        def get_date_fin(r):
+            return parse_date(get_text(r.get("fields", {}), "FIN"))
+
+        # Référence : DÉBUT et FIN du séjour (identiques sur toutes les lignes du dossier normalement)
+        dates_debut = [d for d in (get_date_debut(r) for r in recs) if d]
+        dates_fin   = [d for d in (get_date_fin(r) for r in recs) if d]
+        ref_debut = min(dates_debut) if dates_debut else None
+        ref_fin   = max(dates_fin) if dates_fin else None
+
+        # Ligne de récupération (J1) : DATE PRESTATION == DÉBUT
+        rec_debut = None
+        for r in recs:
+            if ref_debut and get_date_prestation(r) == ref_debut:
+                rec_debut = r
+                break
+
+        # Ligne de dépose (dernier jour) : DATE PRESTATION == FIN
+        rec_fin = None
+        for r in recs:
+            if ref_fin and get_date_prestation(r) == ref_fin:
+                rec_fin = r
+                break
+
+        principal = rec_debut or rec_fin or recs[0]
+        f = principal.get("fields", {})
+
+        chauffeur_debut = get_text(rec_debut.get("fields", {}), "CHAUFFEUR") if rec_debut else "–"
+        chauffeur_fin   = get_text(rec_fin.get("fields", {}), "CHAUFFEUR") if rec_fin else "–"
+        chauffeur_debut = chauffeur_debut or "–"
+        chauffeur_fin   = chauffeur_fin or "–"
+
+        nbre = get_text(f, "NBRE").strip()
         date_debut = get_text(f, "DÉBUT")
         date_fin   = get_text(f, "FIN")
 
+        # Hébergement d'arrivée : prendre la ligne du dernier jour si possible
+        rec_pour_arrivee = rec_fin or principal
+        arrivee = get_text(rec_pour_arrivee.get("fields", {}), "HÉBERGEMENT (from FIN SEJOUR)") or get_text(f, "HÉBERGEMENT (from FIN SEJOUR)") or "–"
+
         lignes.append({
-            "jour_semaine": get_text(f, "Jour de la semaine") or "–",
-            "client":      format_client(get_text(f, "CLIENT /AEM")),
-            "chauffeur":   get_text(f, "CHAUFFEUR") or "–",
-            "nbre":        nbre,
-            "depart":      get_text(f, "HÉBERGEMENT (from DEBUT)") or "–",
-            "arrivee":     get_text(f, "HÉBERGEMENT (from FIN SEJOUR)") or "–",
-            "date_debut":  date_debut,
-            "date_fin":    date_fin,
+            "jour_semaine":   get_text(f, "Jour de la semaine") or "–",
+            "client":         format_client(get_text(f, "CLIENT /AEM")),
+            "chauffeur_debut": chauffeur_debut,
+            "chauffeur_fin":  chauffeur_fin,
+            "nbre":           nbre,
+            "depart":         get_text(f, "HÉBERGEMENT (from DEBUT)") or "–",
+            "arrivee":        arrivee,
+            "date_debut":     date_debut,
+            "date_fin":       date_fin,
             "date_debut_aff": format_date_fr_court(date_debut),
             "date_fin_aff":   format_date_fr_court(date_fin),
-            "semaine":     rec.get("_table", ""),
         })
 
     # Tri par date de début de séjour
-    def parse_date(date_str):
-        try:
-            return datetime.strptime(date_str, "%Y-%m-%d")
-        except Exception:
-            return datetime.max
+    def parse_date_sort(date_str):
+        d = parse_date(date_str)
+        return d or datetime.max
 
-    lignes.sort(key=lambda l: parse_date(l["date_debut"]))
+    lignes.sort(key=lambda l: parse_date_sort(l["date_debut"]))
 
     data = {
         "meta": {
