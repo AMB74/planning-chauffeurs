@@ -229,7 +229,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -376,8 +376,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
-          "renforts": "Serge",
+          "pilote": "Laurent",
+          "renforts": "Laurent",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -409,7 +409,7 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 HBG > Col Montets (TAXI)  16:30 Retour les Houches (serge)\n",
+          "details": "8:45 HBG > Col Montets (TAXI) \n16:30 Retour les Houches (serge)\n",
           "heure_rdv": "",
           "depart": "VERT LODGE CHAMONIX",
           "client": "TREKKER LAURA\n",
@@ -488,7 +488,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -1097,7 +1097,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Oscar",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2603,7 +2603,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -2617,7 +2617,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -2659,7 +2659,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG\n\n17H00",
@@ -3044,7 +3044,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -3058,7 +3058,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -3072,7 +3072,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -3086,7 +3086,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -3142,7 +3142,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
@@ -3170,7 +3170,7 @@
         },
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
