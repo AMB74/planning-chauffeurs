@@ -733,41 +733,6 @@
           "stockes": "–"
         }
       ]
-    },
-    {
-      "id": "s8",
-      "label": "18/06",
-      "titre": "JEUDI 18 JUIN — Autres",
-      "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "BAGAGES",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "HOTEL EDELWEISS LA FOULY",
-          "client": "RETI\n",
-          "nbre": "1",
-          "arrivee": "ALBERGO DEI CAMOSCI",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "BAGAGES",
-          "transfert": "17H00 Les Chapieux > HBG",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "OT LES CHAPIEUX",
-          "client": "DUBOIS\n",
-          "nbre": "7",
-          "arrivee": "REFUGE PLAN MYA",
-          "stockes": "–"
-        }
-      ]
     }
   ]
 }

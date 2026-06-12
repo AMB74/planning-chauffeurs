@@ -201,6 +201,20 @@
           "stockes": "–"
         },
         {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "Transfert HBG > LA VILLETTE",
+          "details": "–",
+          "heure_rdv": "08H00",
+          "depart": "HOTEL LA GELINOTTE",
+          "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
+          "nbre": "13+1",
+          "arrivee": "RDV PRARION",
+          "stockes": "1"
+        },
+        {
           "pilote": "Serge",
           "renforts": "Laurent",
           "alerte": "BAGAGES",
@@ -285,8 +299,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Charlie",
-          "renforts": "Charlie",
+          "pilote": "Laurent",
+          "renforts": "Jean-Marc",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "16H30 Transfert ND GORGE > HBG",
@@ -299,7 +313,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -432,7 +446,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -640,6 +654,20 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
+          "details": "\n",
+          "heure_rdv": "",
+          "depart": "HOTEL GAI SOLEIL***",
+          "client": "DECLERCQ MAYEUL / VELORIZONS\n",
+          "nbre": "6",
+          "arrivee": "HOTEL PENSION VIALLET",
+          "stockes": "–"
+        },
+        {
+          "pilote": "Ivan",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
           "details": "–",
           "heure_rdv": "",
           "depart": "HOTEL LA GELINOTTE",
@@ -649,12 +677,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
-          "renforts": "",
+          "pilote": "Ivan",
+          "renforts": "Oscar",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "08H30 Transfert HBG > Parc MERLET\n",
+          "details": "08H30 Transfert HBG > Parc MERLETles campa\n",
           "heure_rdv": "",
           "depart": "HOTEL LES CAMPANULES**",
           "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
@@ -691,7 +719,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Oscar",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -779,8 +807,8 @@
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
-          "transfert": "–",
-          "details": "–",
+          "transfert": "9H00",
+          "details": "\n",
           "heure_rdv": "",
           "depart": "RDV PLANPRAZ",
           "client": "LEWIS\n",
@@ -1048,35 +1076,7 @@
       "titre": "MARDI 16 JUIN — Autres",
       "lignes": [
         {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "SANS BAGAGE",
-          "transfert": "8H15",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RDV HOTEL",
-          "client": "SEUTE\n",
-          "nbre": "3",
-          "arrivee": "REFUGE DE L'ALPAGE",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "ALTITUDE TRANSPORT",
-          "client": "LEWIS\n",
-          "nbre": "2",
-          "arrivee": "HOTEL SPLENDIDE",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "PAIN",
@@ -1090,7 +1090,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Charlie",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -1108,7 +1108,7 @@
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
-          "transfert": "08H15 HBG > ITALIE",
+          "transfert": "08H15 HBG > COURMAYEUR",
           "details": "–",
           "heure_rdv": "",
           "depart": "HOTEL LES CAMPANULES**",
@@ -1550,6 +1550,20 @@
           "nbre": "2",
           "arrivee": "HOTEL LE VIEUX POMMIER",
           "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "TAXI HOFMANN",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "SANS BAGAGE",
+          "transfert": "8H15",
+          "details": "J+1 : ECONDU\nTransfert TAXI HOFFMAN\n",
+          "heure_rdv": "",
+          "depart": "RÉSIDENCE CGH LES SAISIES",
+          "client": "SEUTE\n",
+          "nbre": "3",
+          "arrivee": "REFUGE DE L'ALPAGE",
+          "stockes": "–"
         }
       ]
     },
@@ -1558,20 +1572,6 @@
       "label": "17/06",
       "titre": "MERCREDI 17 JUIN — Autres",
       "lignes": [
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "ALTITUDE TRANSPORT",
-          "client": "ISABELLE\n",
-          "nbre": "1",
-          "arrivee": "HOTEL DU GLACIER",
-          "stockes": "–"
-        },
         {
           "pilote": "",
           "renforts": "",
@@ -2082,7 +2082,7 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "–",
+          "details": "J-1 RESIDENCE CGH LES SAISIES\n",
           "heure_rdv": "",
           "depart": "REFUGE DE L'ALPAGE",
           "client": "SEUTE\n",
@@ -2123,6 +2123,20 @@
           "client": "WIPF\n",
           "nbre": "2",
           "arrivee": "RELAIS ARPETTE",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "RELAIS ARPETTE",
+          "client": "HULLY\n",
+          "nbre": "2",
+          "arrivee": "ALBERGO DEI CAMOSCI",
           "stockes": "–"
         },
         {
@@ -2579,7 +2593,7 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
           "transfert": "–",
-          "details": "–",
+          "details": "J+1 CHALET DU BERGER\n",
           "heure_rdv": "",
           "depart": "REFUGE DE L'ECONDU",
           "client": "SEUTE\n",
@@ -2802,6 +2816,20 @@
           "client": "KURT\n",
           "nbre": "3",
           "arrivee": "HOTEL MAISON SAINT JEAN",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "BAGAGES",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "ALBERGO DEI CAMOSCI",
+          "client": "HULLY\n",
+          "nbre": "2",
+          "arrivee": "REFUGE MONTE BIANCO",
           "stockes": "–"
         },
         {
@@ -3090,7 +3118,7 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "–",
+          "details": "J-1 ECONDU\n",
           "heure_rdv": "",
           "depart": "REFUGE DE PRESSET",
           "client": "SEUTE\n",
