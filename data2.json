@@ -348,8 +348,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
-          "renforts": "",
+          "pilote": "",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -719,12 +719,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "Oscar",
-          "renforts": "",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 HBG > Col Monttets  16:30 Retour Chamonix ou les Houches\n",
+          "details": "9:15 HBG > Col Monttets  16:30 Retour Chamonix \n",
           "heure_rdv": "",
           "depart": "HOTEL DU BOIS***",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",

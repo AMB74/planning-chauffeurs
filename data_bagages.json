@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "genere_le": "12/06/2026 11:12"
+  },
+  "lignes": [
+    {
+      "jour_semaine": "07-06 - DIMANCHE",
+      "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
+      "chauffeur": "–",
+      "nbre": "1",
+      "depart": "–",
+      "arrivee": "–",
+      "date_debut": "2026-06-07",
+      "date_fin": "2026-06-13",
+      "date_debut_aff": "Dim 07/06",
+      "date_fin_aff": "Sam 13/06",
+      "semaine": "SEMAINE 1"
+    }
+  ]
+}
