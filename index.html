@@ -72,6 +72,8 @@ body {
 .plaque { background: var(--gris-clair); border: 1px solid var(--gris-border); border-radius: 3px; padding: 1px 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.05em; }
 .btn-general { display: inline-flex; align-items: center; gap: 8px; background: var(--rouge); color: white; border: none; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; margin-bottom: 28px; box-shadow: 0 4px 16px rgba(232,38,58,0.3); }
 .btn-general:hover { background: #c41e30; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,38,58,0.4); }
+.btn-bagages { display: inline-flex; align-items: center; gap: 8px; background: #e8f5e9; color: #2e7d32; border: 1.5px solid #a5d6a7; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; margin-bottom: 28px; margin-left: 10px; text-decoration: none; }
+.btn-bagages:hover { background: #d2ecd4; transform: translateY(-2px); }
 
 /* ── HEADER CHAUFFEUR ── */
 .header-chauffeur-nom { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
@@ -163,6 +165,8 @@ td.stockes.empty { color: #ddd; text-align: center; }
   td.transfert { min-width: 180px; white-space: normal; word-break: break-word; }
   td.depart, td.arrivee { max-width: none; white-space: nowrap; }
   td.client { white-space: normal; word-break: break-word; }
+  .btn-general, .btn-bagages { display: block; width: 100%; margin-left: 0; box-sizing: border-box; justify-content: center; }
+  .btn-bagages { margin-top: 10px; }
 }
 
 /* ── IMPRESSION ── */
@@ -195,7 +199,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
   .badge { font-size: 7px; padding: 1px 3px; }
   thead { display: table-header-group; }
   .footer { margin-top: 10px; font-size: 9px; }
-  .btn-print, .btn-retour, .btn-general, .legende, .badge-maj { display: none; }
+  .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj { display: none; }
   tbody tr:hover { background: white; }
   tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -227,6 +231,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
     </div>
   </div>
   <button class="btn-general" onclick="afficherPlanning()">📋 PLANNING GÉNÉRAL</button>
+  <a class="btn-bagages" href="bagages.html">🧳 BAGAGES STOCKÉS</a>
   <div class="accueil-subtitle">Sélectionnez votre nom pour accéder à votre planning personnel</div>
   <div class="chauffeurs-grid" id="chauffeurs-grid"></div>
   <div class="footer">
@@ -536,7 +541,7 @@ const PRINT_CSS = `
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
-  .chevron, .btn-print, .btn-retour, .btn-general, .legende, .badge-maj, td.check, th.check { display: none !important; }
+  .chevron, .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj, td.check, th.check { display: none !important; }
   .section.collapsed .table-wrapper { display: block !important; }
   .table-wrapper { border: 1px solid #ccc; border-radius: 0; overflow: visible; }
   table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
