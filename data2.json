@@ -357,13 +357,13 @@
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER Salomé \n06 76 74 92 79\n",
-          "nbre": "+1",
+          "nbre": "–",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
         },
         {
           "pilote": "Serge",
-          "renforts": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "Transfert HBG > LA VILLETTE",
@@ -376,7 +376,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Jean-Marc",
+          "pilote": "Laurent",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -390,12 +390,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "Charlie",
-          "renforts": "",
+          "pilote": "Serge",
+          "renforts": "Jean-Marc, TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 HBG > Col Montets  16:30 Retour Chamonix ou les Houches\n",
+          "details": "8:45 HBG > Col Montets (TAXI)  16:30 Retour Chamonix ou les Houches\n",
           "heure_rdv": "",
           "depart": "VERT LODGE CHAMONIX",
           "client": "TREKKER LAURA\n",
@@ -474,12 +474,12 @@
           "stockes": "–"
         },
         {
-          "pilote": "Laurent",
-          "renforts": "Oscar",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge, TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 Coronne > Col Monttets  16:30 Retour Chamonix ou les Houches\n",
+          "details": "8:45 Coronne > Col Montets (JM +TAXI) 16:30 Retour Chamonix (JM + Serge)\n",
           "heure_rdv": "",
           "depart": "HOTEL LA COURONNE",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
@@ -630,7 +630,7 @@
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
-          "nbre": "+1",
+          "nbre": "–",
           "arrivee": "HOTEL DU BOIS***",
           "stockes": "–"
         },
@@ -644,7 +644,7 @@
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
-          "nbre": "+1",
+          "nbre": "–",
           "arrivee": "HOTEL ROCKY POP***",
           "stockes": "–"
         },
@@ -1099,7 +1099,7 @@
           "heure_rdv": "",
           "depart": "GVA AÉROPORT",
           "client": "TREKKER CHARLES\n",
-          "nbre": "+1",
+          "nbre": "–",
           "arrivee": "HOTEL ROCKY POP***",
           "stockes": "–"
         },
@@ -2632,7 +2632,7 @@
           "heure_rdv": "",
           "depart": "HOTEL WARWICK GENEVA",
           "client": "TREKKER SOPHIE\n",
-          "nbre": "+1",
+          "nbre": "–",
           "arrivee": "HOTEL ROCKY POP***",
           "stockes": "–"
         },
