@@ -362,8 +362,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "0. AUCUN",
-          "renforts": "TAXI CVT",
+          "pilote": "Jean-Marc",
+          "renforts": "Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
@@ -405,11 +405,11 @@
         },
         {
           "pilote": "Serge",
-          "renforts": "TAXI CVT",
+          "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 HBG > Col Montets (TAXI) \n16:30 Retour les Houches (serge)\n",
+          "details": "\n",
           "heure_rdv": "",
           "depart": "VERT LODGE CHAMONIX",
           "client": "TREKKER LAURA\n",
@@ -503,11 +503,11 @@
         },
         {
           "pilote": "Jean-Marc",
-          "renforts": "Serge, TAXI CVT",
+          "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
-          "details": "8:45 Coronne > Col Montets (JM 8pax+TAXI 7pax) 16:30 Retour Chamonix (JM + Serge)\n",
+          "details": "\n",
           "heure_rdv": "",
           "depart": "HOTEL LA COURONNE",
           "client": "TREKKER MARTIAL  +33 6 85 02 37 00\n",
