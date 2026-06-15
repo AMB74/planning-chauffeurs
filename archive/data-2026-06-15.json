@@ -1170,6 +1170,20 @@
           "stockes": "–"
         },
         {
+          "pilote": "Ivan",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "–",
+          "details": "!! RECUP MASTER 479 > DEPOSE TRAFIC 132 pour bagagerie\n",
+          "heure_rdv": "",
+          "depart": "RDV PRARION",
+          "client": "TRAFIC 479\n",
+          "nbre": "–",
+          "arrivee": "RDV PRARION",
+          "stockes": "–"
+        },
+        {
           "pilote": "Jean-Marc",
           "renforts": "Oscar",
           "alerte": "BAGAGES",
@@ -2546,7 +2560,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2560,8 +2574,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
-          "renforts": "",
+          "pilote": "Ivan",
+          "renforts": "Oscar, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "08H00 HBG > COL DES MONTETS",
@@ -2588,7 +2602,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2602,7 +2616,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2616,7 +2630,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "TAXI JAY",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2630,7 +2644,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2644,7 +2658,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Serge",
+          "pilote": "Ivan",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
