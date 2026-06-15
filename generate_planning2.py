@@ -125,6 +125,10 @@ def main():
         if not massif:
             massif = "Autres"
 
+        # Massifs exclus cette saison
+        if "DOLOMITES" in massif.upper():
+            continue
+
         ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  ", ".join(filter(None, [get_text(f, "RENFORTS_NOM"), get_text(f, "TAXIS (from TAXI)")])),
@@ -147,23 +151,23 @@ def main():
         dates[date_prestation][massif].append(ligne)
 
     ORDRE_MASSIFS = [
-        "1. RDV & TRANSFERT",
+        "0. RDV & TRANSFERT",
         "0. BAGAGES",
-        "CHABLAIS",
-        "GTA 1",
-        "MONT-BLANC",
-        "GTA 2",
-        "VANOISE",
-        "BEAUFORTAIN",
-        "ARAVIS / GLIERES",
-        "GRAND PARADIS",
-        "CHAMONIX - ZERMATT / CERVIN / VALAIS",
-        "GRANDS COMBINS",
-        "MONT-ROSE",
-        "DOLOMITES",
-        "VERCORS & DEVOLUY",
-        "OBERLAND",
-        "DENTS BLANCHES",
+        "1. CHABLAIS",
+        "2. GTA 1",
+        "3. MONT-BLANC",
+        "4. GTA 2",
+        "5. VANOISE",
+        "6. BEAUFORTAIN",
+        "7. ARAVIS / GLIERES",
+        "8. GRAND PARADIS",
+        "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
+        "10. GRANDS COMBINS",
+        "11. MONT-ROSE",
+        "12. DOLOMITES",
+        "13. VERCORS & DEVOLUY",
+        "14. OBERLAND",
+        "15. DENTS BLANCHES",
         "Autres",
     ]
 
