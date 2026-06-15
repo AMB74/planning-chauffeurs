@@ -127,7 +127,7 @@ def main():
         if not date_prestation:
             date_prestation = "Sans date"
 
-        massif = get_text(f, "MASSIFS (from SÉJOUR)")
+        massif = get_text(f, "MASSIFS_CALC")
         if not massif:
             massif = "Autres"
 
