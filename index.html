@@ -88,6 +88,7 @@ body {
 .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; user-select: none; }
 .section-label { font-size: 10px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); margin-bottom: 2px; }
 .section-title { font-size: 15px; font-weight: 600; }
+.section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
 .section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
 .chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
 .section.collapsed .chevron { transform: rotate(-90deg); }
@@ -441,11 +442,15 @@ function sectionHTML(s, lignes, idx, prenom) {
   const domId = (prenom ? 'ch' : 'pg') + '-s' + idx;
   const hasHeurerdv = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
   const colHrClass = hasHeurerdv ? '' : ' style="display:none"';
+  const massifHTML = s.massif ? `<div class="section-massif">▸ ${s.massif}</div>` : '';
   return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
-        <div class="section-title">${s.titre}</div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
+          <div class="section-title">${s.titre}</div>
+        </div>
+        ${massifHTML}
       </div>
       <div class="section-count">${lignes.length}</div>
       <div class="chevron">▾</div>
@@ -532,17 +537,11 @@ const PRINT_CSS = `
   @page { size: A4 portrait; margin: 8mm 10mm; }
   body { font-family: 'DM Sans', sans-serif; background: white; font-size: 9px; }
   .page { padding: 0; max-width: 100%; }
-  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #E8263A; padding-bottom: 8px; margin-bottom: 12px; }
-  .header-day { font-size: 16px; font-weight: 600; }
-  .header-day span { display: none; }
-  .print-date-banner { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 10px 0; padding-bottom: 6px; border-bottom: 2px solid #E8263A; }
-  .print-date-banner:first-of-type { margin-top: 0; }
-  .societe-nom { font-size: 9px; font-weight: 600; text-transform: uppercase; }
-  .societe-detail { font-size: 8px; color: #666; }
-  .breadcrumb { font-size: 8px; color: #888; margin-bottom: 4px; }
+  .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .section-title { font-size: 12px; font-weight: 600; }
+  .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj, td.check, th.check { display: none !important; }
   .section.collapsed .table-wrapper { display: block !important; }
@@ -616,17 +615,9 @@ function getFooterHTML() {
   return document.querySelector('#ch-footer')?.parentElement?.outerHTML || '';
 }
 
-function ouvrirFenetreImpression(contenuHTML, dateDuJour) {
+function ouvrirFenetreImpression(contenuHTML) {
   const w = window.open('', '_blank');
   if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
-  let headerHTML = getHeaderHTML();
-  if (dateDuJour) {
-    // Remplacer le contenu de .header-day (et retirer le numéro de semaine éventuel)
-    headerHTML = headerHTML.replace(
-      /(<div class="header-day"[^>]*>)([\s\S]*?)(<\/div>)/,
-      `$1${dateDuJour}$3`
-    );
-  }
   w.document.write(`<!DOCTYPE html><html lang="fr"><head>
     <meta charset="UTF-8">
     <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
@@ -635,7 +626,6 @@ function ouvrirFenetreImpression(contenuHTML, dateDuJour) {
     <style>${PRINT_CSS}</style>
   </head><body>
     <div class="page">
-      ${headerHTML}
       ${contenuHTML}
     </div>
     <script>window.onload = function(){ setTimeout(function(){ window.print(); }, 400); }<\/script>
@@ -652,7 +642,7 @@ function imprimerPage() {
   const sections      = document.querySelectorAll(`#${conteneurId} .section`);
 
   if (sections.length === 0) {
-    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML, null);
+    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML);
     return;
   }
 
@@ -699,23 +689,15 @@ function lancerImpression(conteneurId) {
 
   const sections = document.querySelectorAll(`#${conteneurId} .section`);
   let html = '';
-  let dateActuelle = null;
-  let premiereDateGlobale = null;
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
-      const dateSection = s.dataset.date || '';
-      if (!premiereDateGlobale) premiereDateGlobale = dateSection;
-      if (dateSection !== dateActuelle) {
-        html += `<div class="print-date-banner">${dateSection}</div>`;
-        dateActuelle = dateSection;
-      }
       // Forcer l'affichage même si collapsed
       const clone = s.cloneNode(true);
       clone.classList.remove('collapsed');
       html += clone.outerHTML;
     }
   });
-  ouvrirFenetreImpression(html, premiereDateGlobale);
+  ouvrirFenetreImpression(html);
 }
 
 chargerDonnees();
