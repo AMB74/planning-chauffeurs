@@ -66,7 +66,7 @@
       "id": "s0",
       "label": "12/06",
       "titre": "VENDREDI 12 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "VENDREDI 12 JUIN 2026",
       "lignes": [
         {
@@ -173,7 +173,7 @@
       "id": "s1",
       "label": "13/06",
       "titre": "SAMEDI 13 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "SAMEDI 13 JUIN 2026",
       "lignes": [
         {
@@ -350,7 +350,7 @@
       "id": "s2",
       "label": "14/06",
       "titre": "DIMANCHE 14 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "DIMANCHE 14 JUIN 2026",
       "lignes": [
         {
@@ -653,7 +653,7 @@
       "id": "s3",
       "label": "15/06",
       "titre": "LUNDI 15 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "LUNDI 15 JUIN 2026",
       "lignes": [
         {
@@ -1117,20 +1117,6 @@
           "nbre": "8+1",
           "arrivee": "CAMPING LA SORGENTE",
           "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RIFUGIO AURONZO",
-          "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-          "nbre": "11+1",
-          "arrivee": "RIFUGIO PRATO PIAZZA",
-          "stockes": "–"
         }
       ]
     },
@@ -1138,7 +1124,7 @@
       "id": "s4",
       "label": "16/06",
       "titre": "MARDI 16 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "MARDI 16 JUIN 2026",
       "lignes": [
         {
@@ -1644,7 +1630,16 @@
           "nbre": "8+1",
           "arrivee": "CAMPING LA SORGENTE",
           "stockes": "–"
-        },
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "label": "16/06",
+      "titre": "MARDI 16 JUIN",
+      "massif": "6. BEAUFORTAIN",
+      "date_complete": "MARDI 16 JUIN 2026",
+      "lignes": [
         {
           "pilote": "Ivan",
           "renforts": "TAXI HOFMANN",
@@ -1658,28 +1653,14 @@
           "nbre": "3",
           "arrivee": "REFUGE DE L'ALPAGE",
           "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RIFUGIO PRATO PIAZZA",
-          "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-          "nbre": "11+1",
-          "arrivee": "RIFUGIO SENNES",
-          "stockes": "–"
         }
       ]
     },
     {
-      "id": "s5",
+      "id": "s6",
       "label": "17/06",
       "titre": "MERCREDI 17 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "MERCREDI 17 JUIN 2026",
       "lignes": [
         {
@@ -2185,7 +2166,16 @@
           "nbre": "8+1",
           "arrivee": "CAMPING LES CHAPIEUX",
           "stockes": "–"
-        },
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "label": "17/06",
+      "titre": "MERCREDI 17 JUIN",
+      "massif": "6. BEAUFORTAIN",
+      "date_complete": "MERCREDI 17 JUIN 2026",
+      "lignes": [
         {
           "pilote": "Ivan",
           "renforts": "",
@@ -2199,28 +2189,14 @@
           "nbre": "3",
           "arrivee": "REFUGE DE L'ECONDU",
           "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RIFUGIO SENNES",
-          "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-          "nbre": "11+1",
-          "arrivee": "RIFUGIO MUNTAGNOLES",
-          "stockes": "–"
         }
       ]
     },
     {
-      "id": "s6",
+      "id": "s8",
       "label": "18/06",
       "titre": "JEUDI 18 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "JEUDI 18 JUIN 2026",
       "lignes": [
         {
@@ -2726,7 +2702,16 @@
           "nbre": "2",
           "arrivee": "HOTEL LA GELINOTTE",
           "stockes": "–"
-        },
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "label": "18/06",
+      "titre": "JEUDI 18 JUIN",
+      "massif": "6. BEAUFORTAIN",
+      "date_complete": "JEUDI 18 JUIN 2026",
+      "lignes": [
         {
           "pilote": "Ivan",
           "renforts": "",
@@ -2740,28 +2725,14 @@
           "nbre": "3",
           "arrivee": "REFUGE DE PRESSET",
           "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "–",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RIFUGIO MUNTAGNOLES",
-          "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-          "nbre": "11+1",
-          "arrivee": "RIFUGIO SCOTONI",
-          "stockes": "–"
         }
       ]
     },
     {
-      "id": "s7",
+      "id": "s10",
       "label": "19/06",
       "titre": "VENDREDI 19 JUIN",
-      "massif": "",
+      "massif": "3. MONT-BLANC",
       "date_complete": "VENDREDI 19 JUIN 2026",
       "lignes": [
         {
@@ -3281,7 +3252,16 @@
           "nbre": "7",
           "arrivee": "LA CITE MONTJOIE",
           "stockes": "–"
-        },
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "label": "19/06",
+      "titre": "VENDREDI 19 JUIN",
+      "massif": "6. BEAUFORTAIN",
+      "date_complete": "VENDREDI 19 JUIN 2026",
+      "lignes": [
         {
           "pilote": "Ivan",
           "renforts": "",
@@ -3294,20 +3274,6 @@
           "client": "SEUTE\n",
           "nbre": "3",
           "arrivee": "CHALET DU BERGER",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "SANS BAGAGE",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "RIFUGIO SCOTONI",
-          "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-          "nbre": "11+1",
-          "arrivee": "RIFUGIO GIUSSANI",
           "stockes": "–"
         }
       ]
