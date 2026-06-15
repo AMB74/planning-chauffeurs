@@ -132,7 +132,7 @@ def main():
             massif = "Autres"
 
         # Massifs exclus cette saison
-        if massif in ("DOLOMITES",):
+        if "DOLOMITES" in massif.upper():
             continue
 
         ligne = {
@@ -170,7 +170,7 @@ def main():
         "CHAMONIX - ZERMATT / CERVIN / VALAIS",
         "GRANDS COMBINS",
         "MONT-ROSE",
-        "DOLOMITES",
+        "1. DOLOMITES",
         "VERCORS & DEVOLUY",
         "OBERLAND",
         "DENTS BLANCHES",
