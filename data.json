@@ -65,7 +65,8 @@
     {
       "id": "s0",
       "label": "12/06",
-      "titre": "VENDREDI 12 JUIN — Autres",
+      "titre": "VENDREDI 12 JUIN",
+      "massif": "",
       "date_complete": "VENDREDI 12 JUIN 2026",
       "lignes": [
         {
@@ -171,7 +172,8 @@
     {
       "id": "s1",
       "label": "13/06",
-      "titre": "SAMEDI 13 JUIN — Autres",
+      "titre": "SAMEDI 13 JUIN",
+      "massif": "",
       "date_complete": "SAMEDI 13 JUIN 2026",
       "lignes": [
         {
@@ -347,7 +349,8 @@
     {
       "id": "s2",
       "label": "14/06",
-      "titre": "DIMANCHE 14 JUIN — Autres",
+      "titre": "DIMANCHE 14 JUIN",
+      "massif": "",
       "date_complete": "DIMANCHE 14 JUIN 2026",
       "lignes": [
         {
@@ -649,7 +652,8 @@
     {
       "id": "s3",
       "label": "15/06",
-      "titre": "LUNDI 15 JUIN — Autres",
+      "titre": "LUNDI 15 JUIN",
+      "massif": "",
       "date_complete": "LUNDI 15 JUIN 2026",
       "lignes": [
         {
@@ -1133,7 +1137,8 @@
     {
       "id": "s4",
       "label": "16/06",
-      "titre": "MARDI 16 JUIN — Autres",
+      "titre": "MARDI 16 JUIN",
+      "massif": "",
       "date_complete": "MARDI 16 JUIN 2026",
       "lignes": [
         {
@@ -1659,7 +1664,8 @@
     {
       "id": "s5",
       "label": "17/06",
-      "titre": "MERCREDI 17 JUIN — Autres",
+      "titre": "MERCREDI 17 JUIN",
+      "massif": "",
       "date_complete": "MERCREDI 17 JUIN 2026",
       "lignes": [
         {
@@ -1674,20 +1680,6 @@
           "client": "RÉASSORT GROUPES 7J\n",
           "nbre": "–",
           "arrivee": "CHEZ PINPIN",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "BAGAGES",
-          "type": "BAGAGES",
-          "transfert": "–",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "ALTITUDE TRANSPORT",
-          "client": "TAYOU\n",
-          "nbre": "1",
-          "arrivee": "HOTEL DU GLACIER",
           "stockes": "–"
         },
         {
@@ -2213,7 +2205,8 @@
     {
       "id": "s6",
       "label": "18/06",
-      "titre": "JEUDI 18 JUIN — Autres",
+      "titre": "JEUDI 18 JUIN",
+      "massif": "",
       "date_complete": "JEUDI 18 JUIN 2026",
       "lignes": [
         {
@@ -2753,7 +2746,8 @@
     {
       "id": "s7",
       "label": "19/06",
-      "titre": "VENDREDI 19 JUIN — Autres",
+      "titre": "VENDREDI 19 JUIN",
+      "massif": "",
       "date_complete": "VENDREDI 19 JUIN 2026",
       "lignes": [
         {
