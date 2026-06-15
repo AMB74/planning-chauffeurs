@@ -19,7 +19,7 @@ CHAUFFEURS = [
     {"prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM"},
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
-    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": None},
+    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
 ]
 
