@@ -441,7 +441,7 @@ function sectionHTML(s, lignes, idx, prenom) {
   const domId = (prenom ? 'ch' : 'pg') + '-s' + idx;
   const hasHeurerdv = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
   const colHrClass = hasHeurerdv ? '' : ' style="display:none"';
-  return `<div class="section" id="${domId}" data-sid="${sid}">
+  return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
       <div style="display:flex;align-items:center;gap:10px;">
         <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
@@ -534,6 +534,9 @@ const PRINT_CSS = `
   .page { padding: 0; max-width: 100%; }
   .header { display: flex; justify-content: space-between; border-bottom: 2px solid #E8263A; padding-bottom: 8px; margin-bottom: 12px; }
   .header-day { font-size: 16px; font-weight: 600; }
+  .header-day span { display: none; }
+  .print-date-banner { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 10px 0; padding-bottom: 6px; border-bottom: 2px solid #E8263A; }
+  .print-date-banner:first-of-type { margin-top: 0; }
   .societe-nom { font-size: 9px; font-weight: 600; text-transform: uppercase; }
   .societe-detail { font-size: 8px; color: #666; }
   .breadcrumb { font-size: 8px; color: #888; margin-bottom: 4px; }
@@ -546,8 +549,8 @@ const PRINT_CSS = `
   .table-wrapper { border: 1px solid #ccc; border-radius: 0; overflow: visible; }
   table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
   thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  th { font-size: 6.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #666; padding: 3px 3px; white-space: nowrap; border-bottom: 1px solid #ccc; overflow: hidden; }
-  td { padding: 3px 3px; font-size: 7px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; overflow: hidden; }
+  th { font-size: 7.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #666; padding: 3px 3px; white-space: nowrap; border-bottom: 1px solid #ccc; overflow: hidden; }
+  td { padding: 3px 3px; font-size: 8px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; overflow: hidden; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -569,7 +572,7 @@ const PRINT_CSS = `
   th:nth-child(12) { width: 13%; }
   th:nth-child(13) { width: 4%; }
   td:nth-child(1) { width: 0; display: none; }
-  td:nth-child(2) { width: 3%; text-align: center; font-size: 9px; }
+  td:nth-child(2) { width: 3%; text-align: center; font-size: 10px; }
   td:nth-child(3) { width: 7%; }
   td:nth-child(4) { width: 7%; }
   td:nth-child(5) { width: 7%; }
@@ -581,16 +584,16 @@ const PRINT_CSS = `
   td:nth-child(11) { width: 4%; }
   td:nth-child(12) { width: 13%; }
   td:nth-child(13) { width: 4%; }
-  td.pilote { font-weight: 600; white-space: nowrap; font-size: 7px; }
-  td.renforts { color: #1565C0; font-size: 6.5px; }
-  td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 6.5px; }
-  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; font-size: 6.5px; }
-  td.nbre { text-align: center; font-family: monospace; font-weight: 500; font-size: 6.5px; }
-  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; font-size: 6.5px; }
-  td.client { font-weight: 600; text-transform: uppercase; font-size: 6.5px; }
-  td.transfert { font-size: 6.5px; color: #555; white-space: normal; word-break: break-word; }
-  td.depart, td.arrivee { font-size: 7px; font-weight: 500; white-space: normal; word-break: break-word; }
-  .badge { display: inline-block; font-size: 6px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 3px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  td.pilote { font-weight: 600; white-space: nowrap; font-size: 8px; }
+  td.renforts { color: #1565C0; font-size: 7.5px; }
+  td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 7.5px; }
+  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; font-size: 7.5px; }
+  td.nbre { text-align: center; font-family: monospace; font-weight: 500; font-size: 7.5px; }
+  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; font-size: 7.5px; }
+  td.client { font-weight: 600; text-transform: uppercase; font-size: 7.5px; }
+  td.transfert { font-size: 7.5px; color: #555; white-space: normal; word-break: break-word; }
+  td.depart, td.arrivee { font-size: 8px; font-weight: 500; white-space: normal; word-break: break-word; }
+  .badge { display: inline-block; font-size: 7px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 3px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .badge-bagages     { background: #FFF8E1 !important; color: #F57F17; border-color: #FFE082; }
   .badge-bagages-trf { background: #E8F5E9 !important; color: #2E7D32; border-color: #A5D6A7; }
   .badge-transfert   { background: #E3F2FD !important; color: #1565C0; border-color: #90CAF9; }
@@ -613,9 +616,17 @@ function getFooterHTML() {
   return document.querySelector('#ch-footer')?.parentElement?.outerHTML || '';
 }
 
-function ouvrirFenetreImpression(contenuHTML) {
+function ouvrirFenetreImpression(contenuHTML, dateDuJour) {
   const w = window.open('', '_blank');
   if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
+  let headerHTML = getHeaderHTML();
+  if (dateDuJour) {
+    // Remplacer le contenu de .header-day (et retirer le numéro de semaine éventuel)
+    headerHTML = headerHTML.replace(
+      /(<div class="header-day"[^>]*>)([\s\S]*?)(<\/div>)/,
+      `$1${dateDuJour}$3`
+    );
+  }
   w.document.write(`<!DOCTYPE html><html lang="fr"><head>
     <meta charset="UTF-8">
     <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
@@ -624,7 +635,7 @@ function ouvrirFenetreImpression(contenuHTML) {
     <style>${PRINT_CSS}</style>
   </head><body>
     <div class="page">
-      ${getHeaderHTML()}
+      ${headerHTML}
       ${contenuHTML}
     </div>
     <script>window.onload = function(){ setTimeout(function(){ window.print(); }, 400); }<\/script>
@@ -641,7 +652,7 @@ function imprimerPage() {
   const sections      = document.querySelectorAll(`#${conteneurId} .section`);
 
   if (sections.length === 0) {
-    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML);
+    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML, null);
     return;
   }
 
@@ -688,15 +699,23 @@ function lancerImpression(conteneurId) {
 
   const sections = document.querySelectorAll(`#${conteneurId} .section`);
   let html = '';
+  let dateActuelle = null;
+  let premiereDateGlobale = null;
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
+      const dateSection = s.dataset.date || '';
+      if (!premiereDateGlobale) premiereDateGlobale = dateSection;
+      if (dateSection !== dateActuelle) {
+        html += `<div class="print-date-banner">${dateSection}</div>`;
+        dateActuelle = dateSection;
+      }
       // Forcer l'affichage même si collapsed
       const clone = s.cloneNode(true);
       clone.classList.remove('collapsed');
       html += clone.outerHTML;
     }
   });
-  ouvrirFenetreImpression(html);
+  ouvrirFenetreImpression(html, premiereDateGlobale);
 }
 
 chargerDonnees();
