@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "15/06/2026 09:27"
+    "genere_le": "15/06/2026 09:36"
   },
   "lignes": [
     {
@@ -33,7 +33,7 @@
       "jour_semaine": "21-06 - DIMANCHE",
       "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
       "chauffeur_debut": "–",
-      "chauffeur_fin": "TAXI",
+      "chauffeur_fin": "–",
       "nbre": "1",
       "depart": "–",
       "arrivee": "RDV PRARION",
@@ -46,7 +46,7 @@
       "jour_semaine": "14-06 - DIMANCHE",
       "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
       "chauffeur_debut": "Serge",
-      "chauffeur_fin": "TAXI",
+      "chauffeur_fin": "–",
       "nbre": "1",
       "depart": "–",
       "arrivee": "RDV PRARION",
@@ -59,7 +59,7 @@
       "jour_semaine": "14-06 - DIMANCHE",
       "client": "LETOURNEAU\n",
       "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "TAXI",
+      "chauffeur_fin": "–",
       "nbre": "1",
       "depart": "RDV MONTROC",
       "arrivee": "RDV PRARION",
@@ -72,7 +72,7 @@
       "jour_semaine": "14-06 - DIMANCHE",
       "client": "PAYAN MATHIEU\n(06 28 28 59 14 - )",
       "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "TAXI",
+      "chauffeur_fin": "–",
       "nbre": "2",
       "depart": "RDV MONTROC",
       "arrivee": "RDV PRARION",
@@ -84,7 +84,7 @@
     {
       "jour_semaine": "20-06 - SAMEDI",
       "client": "NORTIER GENEVIEVE\n(06 74 95 87 36 - )",
-      "chauffeur_debut": "TAXI",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "10",
       "depart": "BIG SKY HOTEL",
@@ -97,7 +97,7 @@
     {
       "jour_semaine": "21-06 - DIMANCHE",
       "client": "FREBOURG MAXIME\n(- 06 02 66 02 89)",
-      "chauffeur_debut": "TAXI",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "2",
       "depart": "RDV MONTROC",
