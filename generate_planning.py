@@ -131,6 +131,10 @@ def main():
         if not massif:
             massif = "Autres"
 
+        # Massifs exclus cette saison
+        if massif in ("DOLOMITES",):
+            continue
+
         ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  ", ".join(filter(None, [get_text(f, "RENFORTS_NOM"), get_text(f, "TAXIS (from TAXI)")])),
@@ -187,20 +191,24 @@ def main():
             if date_str == "Sans date":
                 titre = f"Sans date — {massif}"
                 label = "–"
+                date_complete = "SANS DATE"
             else:
                 try:
                     d = datetime.strptime(date_str, "%Y-%m-%d")
                     jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
                     label = d.strftime("%d/%m")
+                    date_complete = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]} {d.year}".upper()
                 except:
                     jour = date_str
                     label = date_str
+                    date_complete = date_str
                 titre = f"{jour} — {massif}"
 
             sections.append({
                 "id":     f"s{idx}",
                 "label":  label,
                 "titre":  titre,
+                "date_complete": date_complete,
                 "lignes": lignes,
             })
             idx += 1
