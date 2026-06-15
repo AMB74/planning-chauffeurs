@@ -179,22 +179,26 @@ def main():
         massifs = dates[date_str]
         for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
             if date_str == "Sans date":
-                titre = f"Sans date — {massif}"
+                titre = "Sans date"
                 label = "–"
+                date_complete = "SANS DATE"
             else:
                 try:
                     d = datetime.strptime(date_str, "%Y-%m-%d")
-                    jour = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                    titre = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
                     label = d.strftime("%d/%m")
+                    date_complete = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]} {d.year}".upper()
                 except:
-                    jour = date_str
+                    titre = date_str
                     label = date_str
-                titre = f"{jour} — {massif}"
+                    date_complete = date_str
 
             sections.append({
                 "id":     f"s{idx}",
                 "label":  label,
                 "titre":  titre,
+                "massif": massif if massif != "Autres" else "",
+                "date_complete": date_complete,
                 "lignes": lignes,
             })
             idx += 1
