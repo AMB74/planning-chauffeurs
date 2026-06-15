@@ -30,17 +30,12 @@ body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gri
 .section { margin-bottom: 28px; }
 .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; user-select: none; }
 .section-title { font-size: 15px; font-weight: 600; }
+.section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
 .section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
 .chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
 .section.collapsed .chevron { transform: rotate(-90deg); }
 .section.collapsed .section-body { display: none; }
-.massif-groupe { margin-bottom: 0; }
-.massif-label { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gris-moyen); background: #f0f0ee; border-left: 3px solid var(--gris-border); padding: 4px 10px; }
 .table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
-.massif-groupe:first-child .table-wrapper { border-radius: 8px 8px 0 0; }
-.massif-groupe:not(:first-child) .table-wrapper { border-radius: 0; border-top: none; }
-.massif-groupe:last-child .table-wrapper { border-radius: 0 0 8px 8px; }
-.massif-groupe:only-child .table-wrapper { border-radius: 8px; }
 table { width: 100%; min-width: 860px; border-collapse: collapse; }
 thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
 th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
@@ -266,26 +261,23 @@ function tableauHTML(lignes, hasHr) {
 function sectionHTML(s, idx) {
   const domId = 'pg-s' + idx;
   const sid   = 'sec2-s' + idx;
-  const groupes = s.groupes_massifs || [{ massif: '', lignes: s.lignes }];
-  const totalLignes = groupes.reduce((n, g) => n + g.lignes.length, 0);
-  const toutesLignes = groupes.flatMap(g => g.lignes);
-  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+  const lignes = s.lignes || [];
+  const hasHr = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+  const massifHTML = s.massif ? `<div class="section-massif">▸ ${s.massif}</div>` : '';
 
-  const bodyHTML = groupes.map(g => {
-    const labelMassif = (g.massif && groupes.length > 1)
-      ? `<div class="massif-label">▸ ${g.massif}</div>` : '';
-    return `<div class="massif-groupe">${labelMassif}${tableauHTML(g.lignes, hasHr)}</div>`;
-  }).join('');
-  return `<div class="section" id="${domId}" data-sid="${sid}">
+  return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
-        <div class="section-title">${s.titre}</div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
+          <div class="section-title">${s.titre}</div>
+        </div>
+        ${massifHTML}
       </div>
-      <div class="section-count">${totalLignes}</div>
+      <div class="section-count">${lignes.length}</div>
       <div class="chevron">▾</div>
     </div>
-    <div class="section-body">${bodyHTML}</div>
+    <div class="section-body">${tableauHTML(lignes, hasHr)}</div>
   </div>`;
 }
 
@@ -312,32 +304,26 @@ const PRINT_CSS = `
   @page { size: A4 portrait; margin: 5mm 6mm; }
   body { font-family: 'DM Sans', sans-serif; background: white; font-size: 10px; }
   .page { padding: 0; max-width: 100%; }
-  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #E8263A; padding-bottom: 8px; margin-bottom: 12px; }
-  .header-day { font-size: 16px; font-weight: 600; }
-  .societe-nom { font-size: 9px; font-weight: 600; text-transform: uppercase; }
-  .societe-detail { font-size: 8px; color: #666; }
-  .breadcrumb { font-size: 8px; color: #888; margin-bottom: 4px; }
+  .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
   .section-title { font-size: 12px; font-weight: 600; }
+  .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .legende, .badge-maj, .badge-s2, td.check, th.check { display: none !important; }
   .section.collapsed .section-body { display: block !important; }
-  .massif-label { font-size: 7px; font-family: monospace; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #666; background: #f0f0ee; border-left: 2px solid #ccc; padding: 2px 6px; }
-  .massif-groupe { margin-bottom: 0; }
-  .table-wrapper { border: 1px solid #ccc; border-radius: 0 !important; overflow: visible; border-top: none; }
-  .massif-groupe:first-child .table-wrapper { border-top: 1px solid #ccc; }
+  .table-wrapper { border: 1px solid #ccc; border-radius: 0 !important; overflow: visible; }
   table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
   thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  th { font-size: 7.5px; font-weight: 600; text-transform: uppercase; color: #666; padding: 3px 4px; white-space: nowrap; border-bottom: 1px solid #ccc; }
-  td { padding: 3px 4px; font-size: 9.5px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; }
+  th { font-size: 8px; font-weight: 600; text-transform: uppercase; color: #666; padding: 3px 4px; white-space: nowrap; border-bottom: 1px solid #ccc; }
+  td { padding: 3px 4px; font-size: 10px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide td { text-decoration: line-through; color: #888; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
   th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:8%} th:nth-child(6){width:9%} th:nth-child(7){width:8%} th:nth-child(8){width:12%} th:nth-child(9){width:13%} th:nth-child(10){width:12%} th:nth-child(11){width:4%} th:nth-child(12){width:13%} th:nth-child(13){width:4%}
-  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:9px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:8%} td:nth-child(6){width:9%} td:nth-child(7){width:8%} td:nth-child(8){width:12%} td:nth-child(9){width:13%} td:nth-child(10){width:12%} td:nth-child(11){width:4%} td:nth-child(12){width:13%} td:nth-child(13){width:4%}
-  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:8.5px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:8.5px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:8.5px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:8.5px} td.client{font-weight:600;text-transform:uppercase;font-size:8.5px} td.transfert{font-size:8px;color:#555} td.depart,td.arrivee{font-size:9px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:8.5px}
+  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:8%} td:nth-child(6){width:9%} td:nth-child(7){width:8%} td:nth-child(8){width:12%} td:nth-child(9){width:13%} td:nth-child(10){width:12%} td:nth-child(11){width:4%} td:nth-child(12){width:13%} td:nth-child(13){width:4%}
+  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:9px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:9px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:9px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:9px} td.client{font-weight:600;text-transform:uppercase;font-size:9px} td.transfert{font-size:9px;color:#555} td.depart,td.arrivee{font-size:9.5px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:9px}
   .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .badge-bagages{background:#FFF8E1!important;color:#F57F17;border-color:#FFE082} .badge-bagages-trf{background:#E8F5E9!important;color:#2E7D32;border-color:#A5D6A7} .badge-transfert{background:#E3F2FD!important;color:#1565C0;border-color:#90CAF9} .badge-rdv{background:#F3E5F5!important;color:#6A1B9A;border-color:#CE93D8} .badge-default{background:#f4f4f4!important;color:#555;border-color:#ddd}
   .footer{margin-top:8px;border-top:1px solid #eee;padding-top:6px;display:flex;justify-content:space-between;color:#999;font-size:9px;font-family:monospace}
@@ -350,7 +336,7 @@ function ouvrirFenetreImpression(contenuHTML) {
     <meta charset="UTF-8"><title>Planning Semaine de Travail – ALTITUDE MONT-BLANC</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>${PRINT_CSS}</style>
-  </head><body><div class="page">${document.querySelector('#page-planning .header').outerHTML}${contenuHTML}</div>
+  </head><body><div class="page">${contenuHTML}</div>
   <script>window.onload=function(){setTimeout(function(){window.print();},400);}<\/script>
   </body></html>`);
   w.document.close();
