@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 20 JUIN",
     "numero_semaine": "Semaine 26",
-    "genere_le": "15/06/2026"
+    "genere_le": "16/06/2026"
   },
   "chauffeurs": [
     {
@@ -6331,7 +6331,7 @@
           "depart": "REFUGE LES MOTTETS",
           "client": "JAVET ERIC\n(- 06 12 49 87 35)",
           "nbre": "14+1",
-          "arrivee": "LA CITE MONTJOIE",
+          "arrivee": "CHALET DES CONTAMINES",
           "stockes": "–"
         },
         {
@@ -6345,7 +6345,7 @@
           "depart": "REFUGE LES MOTTETS",
           "client": "FREBOURG MAXIME\n(- 06 02 66 02 89)",
           "nbre": "14+1",
-          "arrivee": "CHALET DES CONTAMINES",
+          "arrivee": "LA CITE MONTJOIE",
           "stockes": "–"
         },
         {
