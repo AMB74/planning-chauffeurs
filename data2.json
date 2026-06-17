@@ -355,7 +355,7 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "17H00 Les Chapieux > HBG",
-          "details": "–",
+          "details": "!! pas de transfert c'est le Taxi Jay\n",
           "heure_rdv": "",
           "depart": "HOTEL MAISON SAINT JEAN",
           "client": "LEWIS\n",
@@ -401,7 +401,7 @@
           "heure_rdv": "",
           "depart": "REFUGE MONTE BIANCO",
           "client": "BAUDRILLART\n",
-          "nbre": "9",
+          "nbre": "8",
           "arrivee": "REFUGE PLAN MYA",
           "stockes": "–"
         },
@@ -1120,7 +1120,7 @@
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "16H30 Transfert ND GORGE > HBG",
-          "details": "–",
+          "details": "!!Récupérer M. Forget et le déposer à cité Montjoie (0673982724)\n",
           "heure_rdv": "",
           "depart": "REFUGE PLAN MYA",
           "client": "BAUDRILLART\n",
@@ -1261,20 +1261,6 @@
           "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
           "nbre": "10+1",
           "arrivee": "RDV PARKING DE PONT",
-          "stockes": "–"
-        },
-        {
-          "pilote": "",
-          "renforts": "",
-          "alerte": "!! TRANSFERT UNIQUEMENT",
-          "type": "BAGAGES",
-          "transfert": "16H30 Transfert ND GORGE > HBG\n\n16H30",
-          "details": "–",
-          "heure_rdv": "",
-          "depart": "ALTITUDE TRANSPORT",
-          "client": "GUILMETTE\n",
-          "nbre": "2",
-          "arrivee": "CHALET DES CONTAMINES",
           "stockes": "–"
         },
         {
@@ -1847,7 +1833,7 @@
           "heure_rdv": "",
           "depart": "LA CITE MONTJOIE",
           "client": "BAUDRILLART\n",
-          "nbre": "9",
+          "nbre": "8",
           "arrivee": "RDV PRARION",
           "stockes": "–"
         },
@@ -2367,6 +2353,34 @@
           "client": "KURT\n",
           "nbre": "3",
           "arrivee": "HOTEL LE CHRISTIANIA**",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "16H30 Transfert ND GORGE > HBG\n\n16H30",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "N.-D. DE LA GORGE Sans BG",
+          "client": "GUILMETTE\n",
+          "nbre": "2",
+          "arrivee": "CHALET DES CONTAMINES",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "16H30 Transfert ND GORGE > HBG",
+          "details": "Seulement transfert 2 pax (lib sans BG)\n",
+          "heure_rdv": "",
+          "depart": "N.-D. DE LA GORGE Sans BG",
+          "client": "CHERYL Tan et Ng Tsuei\n",
+          "nbre": "2",
+          "arrivee": "CHALET DES CONTAMINES",
           "stockes": "–"
         },
         {
@@ -3062,6 +3076,34 @@
           "client": "WIPF\n",
           "nbre": "2",
           "arrivee": "HOTEL LA GELINOTTE",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "16H30 Transfert ND GORGE > HBG",
+          "details": "\n",
+          "heure_rdv": "",
+          "depart": "N.-D. DE LA GORGE Sans BG",
+          "client": "COURTEAU\n",
+          "nbre": "2",
+          "arrivee": "LA CITE MONTJOIE",
+          "stockes": "–"
+        },
+        {
+          "pilote": "",
+          "renforts": "",
+          "alerte": "!! TRANSFERT UNIQUEMENT",
+          "type": "BAGAGES",
+          "transfert": "16H30 Transfert ND GORGE > HBG",
+          "details": "–",
+          "heure_rdv": "",
+          "depart": "N.-D. DE LA GORGE Sans BG",
+          "client": "WEBER\n",
+          "nbre": "1",
+          "arrivee": "CHALET DES CONTAMINES",
           "stockes": "–"
         },
         {
