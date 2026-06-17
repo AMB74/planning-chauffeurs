@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 20 JUIN",
     "numero_semaine": "Semaine 26",
-    "genere_le": "16/06/2026"
+    "genere_le": "17/06/2026"
   },
   "chauffeurs": [
     {
@@ -1157,7 +1157,7 @@
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "SANS BAGAGE",
           "transfert": "Transfert Gare Chamonix > Thollon",
-          "details": "–",
+          "details": "!! Récupérer Claude CHABUT à l'Hôtel ibis (2055 Av de Genève, Sallanches)\n",
           "heure_rdv": "",
           "depart": "RDV THOLLON",
           "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
