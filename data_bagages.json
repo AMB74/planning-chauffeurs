@@ -1,34 +1,8 @@
 {
   "meta": {
-    "genere_le": "19/06/2026 12:36"
+    "genere_le": "19/06/2026 14:42"
   },
   "lignes": [
-    {
-      "jour_semaine": "13-06 - SAMEDI",
-      "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Serge",
-      "nbre": "1",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-06-07",
-      "date_fin": "2026-06-13",
-      "date_debut_aff": "Dim 07/06",
-      "date_fin_aff": "Sam 13/06"
-    },
-    {
-      "jour_semaine": "13-06 - SAMEDI",
-      "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "–",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-06-13",
-      "date_fin": "2026-06-21",
-      "date_debut_aff": "Sam 13/06",
-      "date_fin_aff": "Dim 21/06"
-    },
     {
       "jour_semaine": "21-06 - DIMANCHE",
       "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
@@ -43,23 +17,10 @@
       "date_fin_aff": "Dim 21/06"
     },
     {
-      "jour_semaine": "14-06 - DIMANCHE",
-      "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
-      "chauffeur_debut": "Serge",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "–",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-06-14",
-      "date_fin": "2026-06-20",
-      "date_debut_aff": "Dim 14/06",
-      "date_fin_aff": "Sam 20/06"
-    },
-    {
-      "jour_semaine": "14-06 - DIMANCHE",
+      "jour_semaine": "20-06 - SAMEDI",
       "client": "LETOURNEAU\n",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "Jean-Marc, Serge",
       "nbre": "1",
       "depart": "RDV MONTROC",
       "arrivee": "RDV PRARION",
@@ -69,12 +30,25 @@
       "date_fin_aff": "Sam 20/06"
     },
     {
-      "jour_semaine": "14-06 - DIMANCHE",
+      "jour_semaine": "20-06 - SAMEDI",
       "client": "PAYAN MATHIEU\n(06 28 28 59 14 - )",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "Jean-Marc, Serge",
       "nbre": "2",
       "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-06-14",
+      "date_fin": "2026-06-20",
+      "date_debut_aff": "Dim 14/06",
+      "date_fin_aff": "Sam 20/06"
+    },
+    {
+      "jour_semaine": "20-06 - SAMEDI",
+      "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "Jean-Marc, Serge",
+      "nbre": "1",
+      "depart": "–",
       "arrivee": "RDV PRARION",
       "date_debut": "2026-06-14",
       "date_fin": "2026-06-20",
