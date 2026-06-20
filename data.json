@@ -1259,7 +1259,7 @@
       "lignes": [
         {
           "pilote": "",
-          "renforts": "",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "08H15 HBG > ITALIE",
@@ -1455,11 +1455,11 @@
         },
         {
           "pilote": "Laurent",
-          "renforts": "",
+          "renforts": "Laurent, Serge",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "HBG > LA VILLETTE",
-          "details": "Bagage stocké dans Master-bagagerie\n",
+          "details": "!!7h45 1er transferts\nBagage stocké dans Master-bagagerie\n",
           "heure_rdv": "08H00",
           "depart": "HOTEL LA GELINOTTE",
           "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
@@ -1552,7 +1552,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "Charlie",
+          "pilote": "Jean Jacques",
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -1567,7 +1567,7 @@
         },
         {
           "pilote": "Charlie",
-          "renforts": "",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "08H00 HBG > Trient",
@@ -1581,7 +1581,7 @@
         },
         {
           "pilote": "Charlie",
-          "renforts": "",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "08H00 HBG > Trient",
@@ -1930,8 +1930,8 @@
           "stockes": "–"
         },
         {
-          "pilote": "Aurore",
-          "renforts": "",
+          "pilote": "0. AUCUN",
+          "renforts": "TAXI HAUTE MAURIENNE",
           "alerte": "!! TRANSFERT UNIQUEMENT",
           "type": "BAGAGES",
           "transfert": "–",
