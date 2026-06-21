@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 20 JUIN",
     "numero_semaine": "Semaine 26",
-    "genere_le": "20/06/2026"
+    "genere_le": "21/06/2026"
   },
   "chauffeurs": [
     {
@@ -1338,7 +1338,7 @@
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
-          "transfert": "HBG > ND de la GORGE",
+          "transfert": "–",
           "details": "–",
           "heure_rdv": "",
           "depart": "CHALET HOTEL LA CHEMENAZ****",
@@ -2173,7 +2173,7 @@
           "renforts": "",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
-          "transfert": "HBG > ND de la GORGE",
+          "transfert": "–",
           "details": "\n",
           "heure_rdv": "08H00",
           "depart": "LA CITE MONTJOIE",
