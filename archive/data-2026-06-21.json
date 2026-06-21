@@ -2198,7 +2198,7 @@
           "stockes": "–"
         },
         {
-          "pilote": "",
+          "pilote": "Serge",
           "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
@@ -2213,7 +2213,7 @@
         },
         {
           "pilote": "Serge",
-          "renforts": "TAXI CVT, TAXI JAY",
+          "renforts": "TAXI CVT",
           "alerte": "BAGAGES",
           "type": "BAGAGES",
           "transfert": "–",
