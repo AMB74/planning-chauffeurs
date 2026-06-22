@@ -2017,25 +2017,6 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "9H30",
-              "details": "J+2 BARMAZ\n",
-              "heure_rdv": "8H PRARION - CAISSES",
-              "depart": "RDV GARE LE BUET, VOITURE AEM",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "6+1",
-              "arrivee": "REFUGE DE LA LORIAZ",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "0. AUTRES",
           "lignes": [
             {
@@ -2106,6 +2087,25 @@
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
               "nbre": "6+1",
               "arrivee": "HOTEL ZODIAQUE***",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "2. DENTS BLANCHES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "SANS BAGAGE",
+              "transfert": "9H30",
+              "details": "J+2 BARMAZ\n",
+              "heure_rdv": "8H PRARION - CAISSES",
+              "depart": "RDV GARE LE BUET, VOITURE AEM",
+              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
+              "nbre": "6+1",
+              "arrivee": "REFUGE DE LA LORIAZ",
               "stockes": "–"
             }
           ]
@@ -2910,25 +2910,6 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
-          "lignes": [
-            {
-              "pilote": "Bertrand",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 BARMAZ\n",
-              "heure_rdv": "",
-              "depart": "REFUGE DE LA LORIAZ",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "6+1",
-              "arrivee": "AUBERGE DE SALANFE",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "0. AUTRES",
           "lignes": [
             {
@@ -2999,6 +2980,25 @@
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
               "nbre": "6+1",
               "arrivee": "HOTEL ZODIAQUE***",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "2. DENTS BLANCHES",
+          "lignes": [
+            {
+              "pilote": "Bertrand",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "SANS BAGAGE",
+              "transfert": "–",
+              "details": "J+1 BARMAZ\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DE LA LORIAZ",
+              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
+              "nbre": "6+1",
+              "arrivee": "AUBERGE DE SALANFE",
               "stockes": "–"
             }
           ]
@@ -3259,7 +3259,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "Charlie",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3697,20 +3697,6 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "BREUGELMANS\n",
-              "nbre": "2",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
-            },
-            {
               "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -3840,25 +3826,6 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
-          "lignes": [
-            {
-              "pilote": "Bertrand",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "A VERIFIER",
-              "transfert": "–",
-              "details": "J-2 VOITURE AEM\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE SALANFE",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "6+1",
-              "arrivee": "CANTINE DE BARMAZ",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "0. AUTRES",
           "lignes": [
             {
@@ -3946,6 +3913,25 @@
               "stockes": "–"
             }
           ]
+        },
+        {
+          "massif": "2. DENTS BLANCHES",
+          "lignes": [
+            {
+              "pilote": "Bertrand",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "A VERIFIER",
+              "transfert": "–",
+              "details": "J-2 VOITURE AEM\n",
+              "heure_rdv": "",
+              "depart": "AUBERGE DE SALANFE",
+              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
+              "nbre": "6+1",
+              "arrivee": "CANTINE DE BARMAZ",
+              "stockes": "–"
+            }
+          ]
         }
       ]
     },
@@ -3959,7 +3945,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -3973,7 +3959,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -4700,29 +4686,10 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 SALVAGNY\n",
-              "heure_rdv": "",
-              "depart": "CANTINE DE BARMAZ",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "6+1",
-              "arrivee": "REFUGE DU FOLLY",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "PAIN",
@@ -4775,6 +4742,25 @@
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
               "nbre": "6+1",
               "arrivee": "HOTEL BECS DE BOSSON",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "2. DENTS BLANCHES",
+          "lignes": [
+            {
+              "pilote": "Bertrand",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "SANS BAGAGE",
+              "transfert": "–",
+              "details": "J+1 SALVAGNY\n",
+              "heure_rdv": "",
+              "depart": "CANTINE DE BARMAZ",
+              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
+              "nbre": "6+1",
+              "arrivee": "REFUGE DU FOLLY",
               "stockes": "–"
             }
           ]
@@ -5602,7 +5588,7 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
+          "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
               "pilote": "",
@@ -6462,7 +6448,7 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
+          "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
               "pilote": "",
