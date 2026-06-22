@@ -89,6 +89,7 @@ body {
 .section-label { font-size: 10px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); margin-bottom: 2px; }
 .section-title { font-size: 15px; font-weight: 600; }
 .section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
+tr.massif-separator td.massif-sep-cell { background: #f0f0ee; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 4px 10px; border-left: 3px solid var(--rouge) !important; }
 .section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
 .chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
 .section.collapsed .chevron { transform: rotate(-90deg); }
@@ -440,19 +441,30 @@ function ligneHTMLWithHr(l, prenom, showHr) {
 function sectionHTML(s, lignes, idx, prenom) {
   const sid = 'sec-s' + idx;
   const domId = (prenom ? 'ch' : 'pg') + '-s' + idx;
-  const hasHeurerdv = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+
+  // Si on passe des lignes directement (planning chauffeur filtré), pas de groupes
+  const groupes = s.groupes || [{ massif: '', lignes: lignes || s.lignes || [] }];
+  const toutesLignes = groupes.flatMap(g => g.lignes);
+  const hasHeurerdv = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
   const colHrClass = hasHeurerdv ? '' : ' style="display:none"';
-  const massifHTML = s.massif ? `<div class="section-massif">▸ ${s.massif}</div>` : '';
+  const totalLignes = toutesLignes.length;
+
+  // Construire le contenu : bandeau massif + lignes du tableau, tous dans 1 seul tableau
+  let tbodyHTML = '';
+  groupes.forEach(g => {
+    if (g.massif) {
+      tbodyHTML += `<tr class="massif-separator"><td colspan="13" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
+    }
+    tbodyHTML += g.lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('');
+  });
+
   return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
-      <div style="display:flex;flex-direction:column;gap:2px;">
-        <div style="display:flex;align-items:center;gap:10px;">
-          <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
-          <div class="section-title">${s.titre}</div>
-        </div>
-        ${massifHTML}
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
+        <div class="section-title">${s.titre}</div>
       </div>
-      <div class="section-count">${lignes.length}</div>
+      <div class="section-count">${totalLignes}</div>
       <div class="chevron">▾</div>
     </div>
     <div class="table-wrapper"><table>
@@ -460,7 +472,7 @@ function sectionHTML(s, lignes, idx, prenom) {
         <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
         <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
-      <tbody>${lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('')}</tbody>
+      <tbody>${tbodyHTML}</tbody>
     </table></div>
   </div>`;
 }
@@ -493,13 +505,20 @@ function afficherChauffeur(prenom) {
   let html = '';
   let total = 0;
   SECTIONS.forEach((s, i) => {
-    const filtrees = s.lignes.filter(l =>
-      (l.pilote  && l.pilote.toLowerCase().includes(prenom.toLowerCase())) ||
-      (l.renforts && l.renforts.toLowerCase().includes(prenom.toLowerCase()))
-    );
-    if (!filtrees.length) return;
-    total += filtrees.length;
-    html += sectionHTML(s, filtrees, i, prenom);
+    // Filtrer les lignes dans chaque groupe
+    const groupesFiltres = (s.groupes || [{ massif: '', lignes: s.lignes || [] }])
+      .map(g => ({
+        massif: g.massif,
+        lignes: g.lignes.filter(l =>
+          (l.pilote  && l.pilote.toLowerCase().includes(prenom.toLowerCase())) ||
+          (l.renforts && l.renforts.toLowerCase().includes(prenom.toLowerCase()))
+        )
+      }))
+      .filter(g => g.lignes.length > 0);
+    if (!groupesFiltres.length) return;
+    const nbLignes = groupesFiltres.reduce((n, g) => n + g.lignes.length, 0);
+    total += nbLignes;
+    html += sectionHTML({ ...s, groupes: groupesFiltres }, null, i, prenom);
   });
   if (!total) {
     html = `<div class="empty-section">Aucune mission assignée à ${prenom} ce jour.</div>`;
@@ -542,6 +561,7 @@ const PRINT_CSS = `
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
+  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #666; padding: 2px 6px; border-left: 2px solid #E8263A !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj, td.check, th.check { display: none !important; }
   .section.collapsed .table-wrapper { display: block !important; }
