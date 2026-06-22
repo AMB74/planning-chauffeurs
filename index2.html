@@ -31,6 +31,7 @@ body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gri
 .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; user-select: none; }
 .section-title { font-size: 15px; font-weight: 600; }
 .section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
+tr.massif-separator td.massif-sep-cell { background: #f0f0ee; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 4px 10px; border-left: 3px solid var(--rouge) !important; }
 .section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
 .chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
 .section.collapsed .chevron { transform: rotate(-90deg); }
@@ -261,23 +262,37 @@ function tableauHTML(lignes, hasHr) {
 function sectionHTML(s, idx) {
   const domId = 'pg-s' + idx;
   const sid   = 'sec2-s' + idx;
-  const lignes = s.lignes || [];
-  const hasHr = lignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
-  const massifHTML = s.massif ? `<div class="section-massif">▸ ${s.massif}</div>` : '';
+  const groupes = s.groupes || [{ massif: '', lignes: s.lignes || [] }];
+  const toutesLignes = groupes.flatMap(g => g.lignes);
+  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+  const totalLignes = toutesLignes.length;
+
+  // Construire le tbody avec bandeaux de massif
+  const colHr = hasHr ? '' : ' style="display:none"';
+  let tbodyHTML = '';
+  groupes.forEach(g => {
+    if (g.massif) {
+      tbodyHTML += `<tr class="massif-separator"><td colspan="12" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
+    }
+    tbodyHTML += g.lignes.map(l => ligneHTML(l, hasHr)).join('');
+  });
 
   return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
     <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
-      <div style="display:flex;flex-direction:column;gap:2px;">
-        <div style="display:flex;align-items:center;gap:10px;">
-          <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
-          <div class="section-title">${s.titre}</div>
-        </div>
-        ${massifHTML}
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
+        <div class="section-title">${s.titre}</div>
       </div>
-      <div class="section-count">${lignes.length}</div>
+      <div class="section-count">${totalLignes}</div>
       <div class="chevron">▾</div>
     </div>
-    <div class="section-body">${tableauHTML(lignes, hasHr)}</div>
+    <div class="section-body"><div class="table-wrapper"><table>
+      <thead><tr>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th>Type</th><th>Détails</th>
+        <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th>
+      </tr></thead>
+      <tbody>${tbodyHTML}</tbody>
+    </table></div></div>
   </div>`;
 }
 
@@ -309,6 +324,7 @@ const PRINT_CSS = `
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
+  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #666; padding: 2px 6px; border-left: 2px solid #E8263A !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .legende, .badge-maj, .badge-s2, td.check, th.check { display: none !important; }
   .section.collapsed .section-body { display: block !important; }
