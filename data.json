@@ -730,7 +730,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "HOTEL SAINT ANTOINE***",
               "client": "RONG\n",
@@ -1575,7 +1575,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "10H30",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "RDV MONTROC",
               "client": "MAIGNAUT\n",
@@ -1701,7 +1701,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "AUBERGE MONT BLANC",
               "client": "RONG\n",
@@ -2496,7 +2496,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "LA GRANDE OURSE",
               "client": "MAIGNAUT\n",
@@ -2566,7 +2566,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "14 sacs + 1 cabas\n",
               "heure_rdv": "",
               "depart": "AUBERGE MONT BLANC",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
@@ -2608,7 +2608,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "PENSION EN PLEIN AIR",
               "client": "RONG\n",
@@ -3015,12 +3015,12 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "J-1 TELE THOLLON\n",
+              "details": "DEJA FAIT ?\nJ-1 TELE THOLLON\n",
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "WITZ\n",
@@ -3043,12 +3043,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBG",
-              "details": "–",
+              "details": "!! Transfert avancé à 07h30\n",
               "heure_rdv": "",
               "depart": "LE FETO",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -3057,8 +3057,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3071,8 +3071,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3085,8 +3085,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3104,12 +3104,12 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "13H ibis Geneve Centre Gare < Les Houches Hotel Rockypop - 10 pax\n\npoint de rdv : Rue Voltaire 10, 1201 Genève, Suisse\n",
+              "details": "13H ibis Geneve Centre Gare < Les Houches Hotel Rockypop - 10 pax\n2 BUS CVT\npoint de rdv : Rue Voltaire 10, 1201 Genève, Suisse\n",
               "heure_rdv": "",
               "depart": "HOTEL IBIS GENEVE",
               "client": "TREKKER Elie\n06 33 07 28 35\n",
@@ -3118,7 +3118,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3132,7 +3132,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3146,7 +3146,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3160,7 +3160,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3174,7 +3174,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3188,7 +3188,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3202,7 +3202,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3216,7 +3216,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3230,7 +3230,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3244,21 +3244,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "GORDON\n",
-              "nbre": "3",
-              "arrivee": "HOTEL LA COURONNE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3272,8 +3258,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3286,7 +3272,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3300,7 +3286,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3314,8 +3300,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H00 HBG > Trient",
@@ -3328,7 +3314,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3342,7 +3328,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3356,7 +3342,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3370,7 +3356,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3384,8 +3370,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H00 HBG > Trient",
@@ -3398,7 +3384,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3412,7 +3398,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3426,7 +3412,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3440,7 +3426,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3454,7 +3440,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3468,7 +3454,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3482,7 +3468,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3496,7 +3482,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3510,7 +3496,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3524,7 +3510,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3538,7 +3524,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3552,7 +3538,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3566,12 +3552,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "PENSION EN PLEIN AIR",
               "client": "MAIGNAUT\n",
@@ -3580,7 +3566,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3594,7 +3580,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3608,12 +3594,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "14 sacs + 1 cabas\n",
               "heure_rdv": "",
               "depart": "AUBERGE MAYA-JOIE",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
@@ -3622,7 +3608,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3636,7 +3622,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3650,12 +3636,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE LA VACHEY",
               "client": "RONG\n",
@@ -3664,7 +3650,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -3678,8 +3664,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -3692,7 +3678,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3711,7 +3697,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3725,7 +3711,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3758,7 +3744,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3777,8 +3763,8 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Damian",
+              "renforts": "Damian",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Valgrisenche",
@@ -3792,7 +3778,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Damian",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Valgrisenche",
@@ -3805,7 +3791,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3819,7 +3805,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3839,7 +3825,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "0. AUCUN, TAXI FOLLONIER",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -3857,12 +3843,12 @@
           "massif": "15. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "A VERIFIER",
               "transfert": "–",
-              "details": "J-2 VOITURE AEM\n",
+              "details": "DEJA FAIT?\nJ-2 VOITURE AEM\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALANFE",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -3890,7 +3876,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3904,8 +3890,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H15 HBG > ITALIE",
@@ -3918,12 +3904,26 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
+              "transfert": "–",
+              "details": "!! 1 SEUL BAGAGE\n",
+              "heure_rdv": "",
+              "depart": "LA GRANDE OURSE",
+              "client": "PIERRET\n",
+              "nbre": "2",
+              "arrivee": "HOTEL DU GLACIER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
               "transfert": "08H00 HBG > COL DES MONTETS",
-              "details": "–",
+              "details": "Bagages + Transfert > CVT\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "GAGNE\n",
@@ -4053,13 +4053,13 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H00 HBG > Trient",
-              "details": "–",
+              "details": "!! 3 BAGAGES A STOCKÉS à déposer à l'hôtel de l'Arve pour stockage\n",
               "heure_rdv": "",
               "depart": "HOTEL LA COURONNE",
               "client": "GORDON\n",
               "nbre": "3",
               "arrivee": "HOTEL DU GLACIER",
-              "stockes": "–"
+              "stockes": "3"
             },
             {
               "pilote": "",
@@ -4417,7 +4417,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "REFUGE ELENA",
               "client": "MAIGNAUT\n",
@@ -4487,7 +4487,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "14 sacs + 1 cabas\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE LA VACHEY",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
@@ -4543,7 +4543,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "\n",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "HOTEL EDELWEISS COURMAYEUR",
               "client": "RONG\n",
@@ -4733,6 +4733,20 @@
               "client": "RÉASSORT GROUPES 7J\n",
               "nbre": "–",
               "arrivee": "CHEZ PINPIN",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "!! 1 SEUL BAGAGE\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DU GLACIER",
+              "client": "PIERRET\n",
+              "nbre": "2",
+              "arrivee": "HOTEL EDELWEISS LA FOULY",
               "stockes": "–"
             },
             {
@@ -5291,7 +5305,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "14 sacs + 1 cabas\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
@@ -5333,7 +5347,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "MAIGNAUT\n",
@@ -5614,6 +5628,20 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
+              "transfert": "–",
+              "details": "!! 1 SEUL BAGAGE\n",
+              "heure_rdv": "",
+              "depart": "HOTEL EDELWEISS LA FOULY",
+              "client": "PIERRET\n",
+              "nbre": "2",
+              "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
               "transfert": "08H00 HBG > COL DES MONTETS",
               "details": "–",
               "heure_rdv": "",
@@ -5689,7 +5717,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 trousse médicaments\n",
               "heure_rdv": "",
               "depart": "LA CITE MONTJOIE",
               "client": "RONG\n",
@@ -6193,7 +6221,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "14 sacs + 1 cabas\n",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
@@ -6249,7 +6277,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "1 SEUL BAGAGE\n",
               "heure_rdv": "",
               "depart": "AUBERGE LA NOVA",
               "client": "MAIGNAUT\n",
@@ -6481,6 +6509,20 @@
               "client": "SOMBART Marie Noelle\n(06 75 78 26 77)",
               "nbre": "1",
               "arrivee": "CHALET ALPIN DU TOUR",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "!! 1 SEUL BAGAGE\n",
+              "heure_rdv": "",
+              "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "client": "PIERRET\n",
+              "nbre": "2",
+              "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
             },
             {

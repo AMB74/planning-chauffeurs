@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "22/06/2026 09:36"
+    "genere_le": "22/06/2026 15:14"
   },
   "lignes": [
     {
@@ -80,6 +80,19 @@
       "date_fin": "2026-06-27",
       "date_debut_aff": "Dim 21/06",
       "date_fin_aff": "Sam 27/06"
+    },
+    {
+      "jour_semaine": "24-06 - MERCREDI",
+      "client": "GORDON\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "3",
+      "depart": "HOTEL DE L'ARVE",
+      "arrivee": "HOTEL DE L'ARVE",
+      "date_debut": "2026-06-22",
+      "date_fin": "2026-06-29",
+      "date_debut_aff": "Lun 22/06",
+      "date_fin_aff": "Lun 29/06"
     }
   ]
 }
