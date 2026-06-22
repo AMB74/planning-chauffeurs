@@ -19,7 +19,7 @@ CHAUFFEURS = [
     {"prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM"},
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
-    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
+    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": None},
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
 ]
 
@@ -121,7 +121,7 @@ def main():
         if not date_prestation:
             date_prestation = "Sans date"
 
-        massif = get_text(f, "MASSIFS (from SÉJOUR)")
+        massif = get_text(f, "MASSIFS_CALC")
         if not massif:
             massif = "Autres"
 
@@ -151,23 +151,23 @@ def main():
         dates[date_prestation][massif].append(ligne)
 
     ORDRE_MASSIFS = [
-        "0. RDV & TRANSFERT",
+        "1. RDV & TRANSFERT",
         "0. BAGAGES",
-        "1. CHABLAIS",
-        "2. GTA 1",
-        "3. MONT-BLANC",
-        "4. GTA 2",
-        "5. VANOISE",
-        "6. BEAUFORTAIN",
-        "7. ARAVIS / GLIERES",
-        "8. GRAND PARADIS",
-        "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
-        "10. GRANDS COMBINS",
-        "11. MONT-ROSE",
+        "CHABLAIS",
+        "GTA 1",
+        "MONT-BLANC",
+        "GTA 2",
+        "VANOISE",
+        "BEAUFORTAIN",
+        "ARAVIS / GLIERES",
+        "GRAND PARADIS",
+        "CHAMONIX - ZERMATT / CERVIN / VALAIS",
+        "GRANDS COMBINS",
+        "MONT-ROSE",
         "12. DOLOMITES",
-        "13. VERCORS & DEVOLUY",
-        "14. OBERLAND",
-        "15. DENTS BLANCHES",
+        "VERCORS & DEVOLUY",
+        "OBERLAND",
+        "DENTS BLANCHES",
         "Autres",
     ]
 
@@ -181,31 +181,36 @@ def main():
     idx = 0
     for date_str in sorted(dates.keys()):
         massifs = dates[date_str]
-        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
-            if date_str == "Sans date":
-                titre = "Sans date"
-                label = "–"
-                date_complete = "SANS DATE"
-            else:
-                try:
-                    d = datetime.strptime(date_str, "%Y-%m-%d")
-                    titre = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
-                    label = d.strftime("%d/%m")
-                    date_complete = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]} {d.year}".upper()
-                except:
-                    titre = date_str
-                    label = date_str
-                    date_complete = date_str
+        if date_str == "Sans date":
+            titre = "Sans date"
+            label = "–"
+            date_complete = "SANS DATE"
+        else:
+            try:
+                d = datetime.strptime(date_str, "%Y-%m-%d")
+                titre = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                label = d.strftime("%d/%m")
+                date_complete = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]} {d.year}".upper()
+            except:
+                titre = date_str
+                label = date_str
+                date_complete = date_str
 
-            sections.append({
-                "id":     f"s{idx}",
-                "label":  label,
-                "titre":  titre,
+        groupes = []
+        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+            groupes.append({
                 "massif": massif if massif != "Autres" else "",
-                "date_complete": date_complete,
                 "lignes": lignes,
             })
-            idx += 1
+
+        sections.append({
+            "id":            f"s{idx}",
+            "label":         label,
+            "titre":         titre,
+            "date_complete": date_complete,
+            "groupes":       groupes,
+        })
+        idx += 1
 
     data = {
         "meta": {
