@@ -3697,6 +3697,20 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
+              "pilote": "Laurent",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL DU BOIS***",
+              "client": "BREUGELMANS\n",
+              "nbre": "2",
+              "arrivee": "CHALET DES CONTAMINES",
+              "stockes": "–"
+            },
+            {
               "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -3868,20 +3882,6 @@
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
               "nbre": "5+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Laurent",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DU BOIS***",
-              "client": "BREUGELMANS\n",
-              "nbre": "2",
-              "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
             {
