@@ -4170,7 +4170,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "Récupérer pochette noire LOLE médicaments à la Grande Ourse - Clients POMELEAU à déposer au Splendide (réception) > Laurent récupérera demain\n",
               "heure_rdv": "",
               "depart": "LA GRANDE OURSE",
               "client": "CHALAYE-LOZANO\n",
@@ -4394,7 +4394,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "HOTEL SPLENDIDE",
               "client": "POMELEAU\n",
@@ -5039,7 +5039,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer pochette noire LOLE médicaments au Splendide - Client POMELEAU + dépose à Maison Saint Jean (réception)\n",
               "heure_rdv": "",
               "depart": "HOTEL SPLENDIDE",
               "client": "MANOUKIAN\n",
@@ -5641,17 +5641,17 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
+              "type": "SANS BAGAGE, RDV PRARION",
               "transfert": "–",
-              "details": "J+1 VOITURE AEM\n",
+              "details": "!! DEPOSE DES BAGAGES A LA BAGAGERIE DES HOUCHES\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
               "nbre": "6+1",
-              "arrivee": "REFUGE MOEDE ANTERNE",
+              "arrivee": "REFUGE MOEDE ANTERNE, PRARION LES HOUCHES",
               "stockes": "–"
             }
           ]
@@ -5660,12 +5660,12 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "–",
-              "details": "J+1 TELE PLANPRAZ\n",
+              "details": "!! DEPOSE DES BAGAGES A LA BAGAGERIE DES HOUCHES\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -5674,8 +5674,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
-              "renforts": "Bertrand",
+              "pilote": "Yann L.",
+              "renforts": "Yann L.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "16H30 Fer à Cheval > Sixt",
@@ -6342,22 +6342,8 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "J+3 REPOJU\n",
-              "heure_rdv": "",
-              "depart": "LE PETIT REFUGE",
-              "client": "BREUGELMANS\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE TERRIL BLANC**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Aurore",
+              "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -6392,14 +6378,14 @@
               "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
+              "type": "–",
               "transfert": "–",
               "details": "!! Transfert AVEC LE GROUPE ACCOMPAGNÉ H. Evettes > Modane + taxi sup. à prévoir Modane > Orgère\n",
               "heure_rdv": "",
               "depart": "RDV BONNEVAL",
               "client": "LAVAL Quentin\n(06 11 17 69 73)",
               "nbre": "2",
-              "arrivee": "RDV ORGERE",
+              "arrivee": "RDV GARE MODANE",
               "stockes": "–"
             },
             {
@@ -6420,14 +6406,14 @@
               "pilote": "",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES, BAGAGES",
+              "type": "BAGAGES",
               "transfert": "Hôtel Glacier des Evettes vers Aussois puis Modane",
               "details": "RDV 14h pour transfert\nJ-1 PLAN DU LAC\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "STOPPA FLORIAN\n(- 06 48 37 06 71)",
               "nbre": "8+1",
-              "arrivee": "HOTEL LE COMMERCE ***, RDV BONNEVAL",
+              "arrivee": "RDV BONNEVAL",
               "stockes": "–"
             }
           ]
