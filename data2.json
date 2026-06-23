@@ -238,7 +238,7 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
+          "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
               "pilote": "",
@@ -299,6 +299,20 @@
               "client": "LAW\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LES CAMPANULES**",
+              "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
+              "nbre": "5+1",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -775,25 +789,6 @@
               "client": "FERRY\n",
               "nbre": "2",
               "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LES CAMPANULES**",
-              "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
-              "nbre": "5+1",
-              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             }
           ]
@@ -1658,7 +1653,7 @@
           ]
         },
         {
-          "massif": "15. DENTS BLANCHES",
+          "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
               "pilote": "",
