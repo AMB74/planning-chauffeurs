@@ -3720,7 +3720,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Laurent",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3880,7 +3880,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -4698,7 +4698,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "RDV 17h30 au lac de Moiry > Gite St Jean\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GLACIER** AROLLA",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",

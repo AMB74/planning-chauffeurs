@@ -5165,11 +5165,11 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Chapieux",
-              "details": "–",
+              "details": "!! Transfert décaler à 08H00\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "CIMET\n",
