@@ -156,32 +156,19 @@ def main():
             dates[date_prestation][massif] = []
         dates[date_prestation][massif].append(ligne)
 
-    ORDRE_MASSIFS = [
-        "0. RDV & TRANSFERT",
-        "0. BAGAGES",
-        "1. CHABLAIS",
-        "2. GTA 1",
-        "3. MONT-BLANC",
-        "4. GTA 2",
-        "5. VANOISE",
-        "6. BEAUFORTAIN",
-        "7. ARAVIS / GLIERES",
-        "8. GRAND PARADIS",
-        "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
-        "10. GRANDS COMBINS",
-        "11. MONT-ROSE",
-        "12. DOLOMITES",
-        "13. VERCORS & DEVOLUY",
-        "14. OBERLAND",
-        "15. DENTS BLANCHES",
-        "Autres",
-    ]
-
     def sort_massif(m):
-        try:
-            return ORDRE_MASSIFS.index(m)
-        except ValueError:
-            return len(ORDRE_MASSIFS)
+        # Trier par le numéro en début de nom (ex: "3. MONT-BLANC" → 3)
+        # Les noms sans numéro vont à la fin
+        import re
+        match = re.match(r'^(\d+)[\.\s]', m)
+        if match:
+            return int(match.group(1))
+        # Noms spéciaux sans numéro en premier
+        if "RDV" in m.upper() or "TRANSFERT" in m.upper():
+            return -2
+        if "BAGAGES" in m.upper():
+            return -1
+        return 9999
 
     sections = []
     idx = 0
