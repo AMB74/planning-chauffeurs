@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "23/06/2026 17:00"
+    "genere_le": "24/06/2026 16:37"
   },
   "lignes": [
     {
@@ -76,6 +76,19 @@
       "nbre": "2",
       "depart": "RDV MONTROC",
       "arrivee": "HOTEL LES CAMPANULES**",
+      "date_debut": "2026-06-21",
+      "date_fin": "2026-06-27",
+      "date_debut_aff": "Dim 21/06",
+      "date_fin_aff": "Sam 27/06"
+    },
+    {
+      "jour_semaine": "27-06 - SAMEDI",
+      "client": "JAVET ERIC\n(- 06 12 49 87 35)",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
       "date_debut": "2026-06-21",
       "date_fin": "2026-06-27",
       "date_debut_aff": "Dim 21/06",
