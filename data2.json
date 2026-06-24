@@ -138,12 +138,12 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": " J+1 : DEPOSE DES BAGAGES A LA BAGAGERIE DES HOUCHES\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -919,7 +919,7 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "j-1 : DEPOSE DES BAGAGES A LA BAGAGERIE DES HOUCHES\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
