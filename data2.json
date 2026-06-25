@@ -1,7 +1,7 @@
 {
   "meta": {
     "semaine": "SEMAINE 2",
-    "date_affichee": "SEMAINE DU SAMEDI 6 JUIN",
+    "date_affichee": "SEMAINE DU SAMEDI 27 JUIN",
     "numero_semaine": "Semaine 27",
     "genere_le": "25/06/2026"
   },
@@ -64,33 +64,6 @@
   "sections": [
     {
       "id": "s0",
-      "label": "03/06",
-      "titre": "MERCREDI 3 JUIN",
-      "date_complete": "MERCREDI 3 JUIN 2026",
-      "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE TETRAS LYRE PONT",
-              "client": "PINEAU PIERRICK\n",
-              "nbre": "10+1",
-              "arrivee": "REFUGE TETRAS LYRE PONT",
-              "stockes": "–"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s1",
       "label": "27/06",
       "titre": "SAMEDI 27 JUIN",
       "date_complete": "SAMEDI 27 JUIN 2026",
@@ -1001,7 +974,7 @@
       ]
     },
     {
-      "id": "s2",
+      "id": "s1",
       "label": "28/06",
       "titre": "DIMANCHE 28 JUIN",
       "date_complete": "DIMANCHE 28 JUIN 2026",
@@ -1926,7 +1899,7 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s2",
       "label": "29/06",
       "titre": "LUNDI 29 JUIN",
       "date_complete": "LUNDI 29 JUIN 2026",
@@ -2884,7 +2857,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s3",
       "label": "30/06",
       "titre": "MARDI 30 JUIN",
       "date_complete": "MARDI 30 JUIN 2026",
@@ -3898,7 +3871,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s4",
       "label": "01/07",
       "titre": "MERCREDI 1 JUILLET",
       "date_complete": "MERCREDI 1 JUILLET 2026",
@@ -4856,7 +4829,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s5",
       "label": "02/07",
       "titre": "JEUDI 2 JUILLET",
       "date_complete": "JEUDI 2 JUILLET 2026",
@@ -5772,7 +5745,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s6",
       "label": "03/07",
       "titre": "VENDREDI 3 JUILLET",
       "date_complete": "VENDREDI 3 JUILLET 2026",
@@ -5792,6 +5765,20 @@
               "client": "RASMUS\n",
               "nbre": "2",
               "arrivee": "CHAMBRES DU SOLEIL ",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE TETRAS LYRE PONT",
+              "client": "PINEAU PIERRICK\n",
+              "nbre": "10+1",
+              "arrivee": "REFUGE TETRAS LYRE PONT",
               "stockes": "–"
             }
           ]
@@ -6749,7 +6736,7 @@
       ]
     },
     {
-      "id": "s8",
+      "id": "s7",
       "label": "04/07",
       "titre": "SAMEDI 4 JUILLET",
       "date_complete": "SAMEDI 4 JUILLET 2026",
@@ -6776,7 +6763,7 @@
       ]
     },
     {
-      "id": "s9",
+      "id": "s8",
       "label": "05/07",
       "titre": "DIMANCHE 5 JUILLET",
       "date_complete": "DIMANCHE 5 JUILLET 2026",
