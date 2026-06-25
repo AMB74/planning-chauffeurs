@@ -72,7 +72,7 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "RENDEZ-VOUS",
@@ -91,7 +91,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -105,8 +105,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES, BAGAGES",
               "transfert": "–",
@@ -124,7 +124,7 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "–",
@@ -143,7 +143,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -157,8 +157,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "HBG > LA VILLETTE",
@@ -171,7 +171,7 @@
               "stockes": "1"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -185,8 +185,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "HBG > LA VILLETTE",
@@ -199,8 +199,8 @@
               "stockes": "2"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "HBG > LA VILLETTE",
@@ -213,7 +213,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -227,7 +227,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -241,8 +241,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "HBG > LA VILLETTE",
@@ -255,7 +255,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -269,8 +269,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "13h00",
@@ -311,7 +311,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -325,7 +325,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -4017,7 +4017,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -5437,7 +5437,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "–",
               "transfert": "–",
@@ -6185,7 +6185,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",

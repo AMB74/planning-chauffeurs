@@ -6142,11 +6142,11 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "TAXI JAY",
+              "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! 3 pax à transférer avec les bagages\nDu coup pas besoin transfert Chapieux > JAY annulé\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "GORDON\n",
@@ -6342,12 +6342,12 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Aurore",
-              "renforts": "Bertrand",
+              "pilote": "Bertrand",
+              "renforts": "Aurore",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "15H00 : 11 pax Transfert Porte ORGERE  > HBG\n",
+              "details": "!! 1 pax à transférer avec les bagages\n15H00 : 11 pax Transfert Porte ORGERE  > HBG\n",
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "NORTIER GENEVIEVE\n(06 74 95 87 36 - )",
@@ -6375,8 +6375,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "TAXI HAUTE MAURIENNE",
+              "pilote": "Aurore",
+              "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",

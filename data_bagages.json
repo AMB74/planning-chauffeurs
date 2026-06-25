@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "25/06/2026 11:49"
+    "genere_le": "25/06/2026 14:33"
   },
   "lignes": [
     {
@@ -72,7 +72,7 @@
       "jour_semaine": "21-06 - DIMANCHE",
       "client": "FREBOURG MAXIME\n(- 06 02 66 02 89)",
       "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
+      "chauffeur_fin": "Bertrand",
       "nbre": "2",
       "depart": "RDV MONTROC",
       "arrivee": "HOTEL LES CAMPANULES**",
@@ -85,7 +85,7 @@
       "jour_semaine": "27-06 - SAMEDI",
       "client": "JAVET ERIC\n(- 06 12 49 87 35)",
       "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
+      "chauffeur_fin": "Bertrand",
       "nbre": "1",
       "depart": "RDV MONTROC",
       "arrivee": "RDV PRARION",
