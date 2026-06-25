@@ -6128,11 +6128,11 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "TAXI JAY",
+              "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! Plus besoin transfert Taxi Jay annulé\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "BRABRAND\n",
