@@ -5752,14 +5752,14 @@
               "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
-              "type": "BAGAGES",
+              "type": "BAGAGES, BAGAGES",
               "transfert": "–",
-              "details": "\n",
+              "details": "!! 8 BG > HOTEL PLAN B\n!! 6 BG > HOTEL EXCELSIOR (étiquette jaune)\n",
               "heure_rdv": "",
               "depart": "HOTEL DU BOIS***",
               "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
               "nbre": "14+1",
-              "arrivee": "HOTEL PLAN B*** CHAMONIX",
+              "arrivee": "HOTEL PLAN B*** CHAMONIX, HOTEL EXCELSIOR",
               "stockes": "–"
             },
             {
@@ -6211,7 +6211,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6225,7 +6225,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6239,7 +6239,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6281,7 +6281,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6295,7 +6295,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6309,7 +6309,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6323,7 +6323,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Ivan",
               "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type": "BAGAGES",

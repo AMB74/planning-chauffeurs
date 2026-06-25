@@ -96,7 +96,7 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : HOTEL LA COURONNE\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "WITZ\n",
@@ -106,11 +106,11 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "Jean-Marc, Laurent",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES, BAGAGES",
               "transfert": "–",
-              "details": "J-1: AUBERGE DE SALVANY\n1 pax (Valérie MERCERON) > TC Planpraz\n8 pax > Gîte des Méandres\n",
+              "details": "J-1: AUBERGE DE SALVANY\n1 BG (Valérie MERCERON) > TC Planpraz\n8 BG > Gîte des Méandres\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -190,7 +190,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "HBG > LA VILLETTE",
-              "details": "–",
+              "details": "!! 2 BG stockés\n",
               "heure_rdv": "08H00",
               "depart": "LA CITE MONTJOIE",
               "client": "FREBOURG MAXIME\n(- 06 02 66 02 89)",
@@ -302,9 +302,9 @@
               "alerte": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 8 BG > HOTEL PLAN B\n!! 6 BG > HOTEL EXCELSIOR (étiquette jaune)\n",
               "heure_rdv": "",
-              "depart": "HOTEL PLAN B*** CHAMONIX",
+              "depart": "HOTEL PLAN B*** CHAMONIX, HOTEL EXCELSIOR",
               "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
               "nbre": "14+1",
               "arrivee": "LES TOURISTES CHATELARD",
@@ -941,8 +941,8 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Oscar",
+              "renforts": "Jean-Marc",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "9H15 BOULANG.\n9H45 GARE CHAM > Pont",
@@ -960,7 +960,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -988,12 +988,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "\n",
+              "details": "J-1 : AUBERGE DE SALVAGNY\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "WITZ\n",
@@ -1007,7 +1007,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1021,7 +1021,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1035,7 +1035,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1049,7 +1049,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1063,7 +1063,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1077,7 +1077,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1091,7 +1091,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1105,7 +1105,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1119,7 +1119,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1133,7 +1133,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1147,7 +1147,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1161,7 +1161,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1175,7 +1175,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1189,7 +1189,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1203,7 +1203,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1218,7 +1218,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H00 HBG > Trient",
@@ -1231,7 +1231,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1245,7 +1245,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1259,7 +1259,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1273,7 +1273,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1287,7 +1287,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1301,7 +1301,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1315,7 +1315,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1329,7 +1329,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1343,7 +1343,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1357,7 +1357,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1371,7 +1371,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1385,21 +1385,21 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
-              "type": "BAGAGES",
+              "type": "BAGAGES, BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 7 BG > PENSION PLEIN AIR\n!! 7 BG > HOTEL SPLENDIDE (étiquette jaune)\n",
               "heure_rdv": "",
               "depart": "LES TOURISTES CHATELARD",
               "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
               "nbre": "14+1",
-              "arrivee": "PENSION EN PLEIN AIR",
+              "arrivee": "PENSION EN PLEIN AIR, HOTEL SPLENDIDE",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2427,9 +2427,9 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "Attention moitier du groupe au  au Plein Air et l'autre au splendide identifier le bagge slpendide\n  \n",
+              "details": "!! 7 BG > PENSION PLEIN AIR\n!! 7 BG > HOTEL SPLENDIDE (étiquette jaune)\n",
               "heure_rdv": "",
-              "depart": "PENSION EN PLEIN AIR",
+              "depart": "PENSION EN PLEIN AIR, HOTEL SPLENDIDE",
               "client": "TREKKER MARTIAL\n+33 6 85 02 37 00\n",
               "nbre": "14+1",
               "arrivee": "HOTEL L'UNION",
