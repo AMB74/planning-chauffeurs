@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 27 JUIN",
     "numero_semaine": "Semaine 27",
-    "genere_le": "25/06/2026"
+    "genere_le": "26/06/2026"
   },
   "chauffeurs": [
     {
@@ -452,6 +452,20 @@
             },
             {
               "pilote": "Oscar",
+              "renforts": "Oscar",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "!! Transférer 2 pax Chalet Col de Fenêtre > Hôtel Vieux Pommier\n",
+              "heure_rdv": "",
+              "depart": "CHALET COL DE FENETRE",
+              "client": "POIRIER\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE VIEUX POMMIER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -504,20 +518,6 @@
               "client": "LECOMTE\n",
               "nbre": "2",
               "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Oscar",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE LA VACHEY",
-              "client": "POIRIER\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE VIEUX POMMIER",
               "stockes": "–"
             },
             {
@@ -974,20 +974,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "Gare Chamonix > Thollon",
-              "details": "–",
-              "heure_rdv": "12H OT THOLLON",
-              "depart": "RDV THOLLON",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "LA FERME DU NOYER",
-              "stockes": "–"
-            },
-            {
               "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -1021,7 +1007,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1035,7 +1021,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1049,7 +1035,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1063,7 +1049,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1077,7 +1063,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1091,7 +1077,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1105,7 +1091,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1119,7 +1105,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1133,7 +1119,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Laurent, Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1217,7 +1203,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1413,7 +1399,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1427,7 +1413,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1441,7 +1427,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1455,7 +1441,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1469,7 +1455,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1483,7 +1469,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1497,7 +1483,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1511,7 +1497,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1525,8 +1511,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Ivan",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -1539,8 +1525,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Ivan",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
@@ -1553,7 +1539,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1567,7 +1553,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1581,7 +1567,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1595,7 +1581,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1609,7 +1595,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1623,7 +1609,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1637,7 +1623,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1656,7 +1642,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1670,7 +1656,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1684,7 +1670,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -1703,7 +1689,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1717,21 +1703,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "NIQUET MARION\n(- 06 37 46 26 31)",
-              "nbre": "9+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1782,20 +1754,6 @@
         {
           "massif": "8. GRAND PARADIS",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix\n09H45",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
