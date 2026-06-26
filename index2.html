@@ -12,7 +12,7 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gris-fonce); font-size: 13px; line-height: 1.4; }
-.page { max-width: 1100px; margin: 0 auto; padding: 28px 24px 48px; }
+.page { max-width: 1400px; margin: 0 auto; padding: 28px 24px 48px; }
 #loading { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 16px; color: var(--gris-moyen); }
 .spinner { width: 32px; height: 32px; border: 3px solid var(--gris-border); border-top-color: var(--rouge); border-radius: 50%; animation: spin 0.7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -324,7 +324,8 @@ const PRINT_CSS = `
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
-  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #666; padding: 2px 6px; border-left: 2px solid #E8263A !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555 !important; padding: 2px 6px; border-left: 2px solid #E8263A !important; text-decoration: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .legende, .badge-maj, .badge-s2, td.check, th.check { display: none !important; }
   .section.collapsed .section-body { display: block !important; }
@@ -403,6 +404,16 @@ function lancerImpression() {
 }
 
 chargerDonnees();
+
+// Scroll horizontal à la molette sur les tableaux (desktop)
+document.addEventListener('wheel', function(e) {
+  const wrapper = e.target.closest('.table-wrapper');
+  if (!wrapper) return;
+  if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+  if (e.deltaY === 0) return;
+  e.preventDefault();
+  wrapper.scrollLeft += e.deltaY;
+}, { passive: false });
 </script>
 </body>
 </html>
