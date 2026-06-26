@@ -2693,6 +2693,20 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "AUBERGE MONT BLANC",
+              "client": "SEMIOND FLORENCE\n",
+              "nbre": "12+1",
+              "arrivee": "AUBERGE MAYA-JOIE",
+              "stockes": "–"
+            },
+            {
               "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
