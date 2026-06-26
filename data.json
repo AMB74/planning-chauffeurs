@@ -109,7 +109,7 @@
               "renforts": "Yann L.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "J-1 MINES D'OR\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOLLY",
@@ -420,7 +420,7 @@
             {
               "pilote": "Oscar",
               "renforts": "",
-              "alerte": "BAGAGES",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
               "details": "–",
@@ -428,7 +428,7 @@
               "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
               "client": "NORUP\n",
               "nbre": "2",
-              "arrivee": "REFUGE MONTE BIANCO",
+              "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
               "stockes": "–"
             },
             {
@@ -984,7 +984,7 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "–",
               "transfert": "–",
-              "details": "j-1 : DEPOSE DES BAGAGES A LA BAGAGERIE DES HOUCHES\n",
+              "details": "J-1 : BUREAU > VOITURE ROBIN 206 BLEUE\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -1119,7 +1119,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "FERRY\n",
-              "nbre": "2",
+              "nbre": "1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -1205,6 +1205,20 @@
               "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
               "nbre": "14+1",
               "arrivee": "CHALET ALPIN DU TOUR",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Yann L.",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "08H15",
+              "details": "!! REMORQUE\nPRENDRE UN TRAFIC AU BUREAU\n",
+              "heure_rdv": "",
+              "depart": "RDV FLÉGÈRE",
+              "client": "TREKKER ELENA\n",
+              "nbre": "13+1",
+              "arrivee": "CAMPING DU GLACIER D'ARGENTIERE",
               "stockes": "–"
             },
             {
@@ -1405,6 +1419,20 @@
             },
             {
               "pilote": "Ivan",
+              "renforts": "TAXI JAY",
+              "alerte": "BAGAGES",
+              "type": "BAGAGES",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "client": "NORUP\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -1499,20 +1527,6 @@
               "client": "EMHOFF\n",
               "nbre": "2",
               "arrivee": "REFUGE LES MOTTETS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Ivan",
-              "renforts": "TAXI JAY",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE MONTE BIANCO",
-              "client": "NORUP\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -2385,7 +2399,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "\n RDV 16:00 Notre Dame de la Gorge >> transfert au Houches\nTransport de bagages stockés, de hotel du bois à rockypop, marqué avec étiquettes jaunes\n",
+              "details": "!! Bagages stockés, de hotel du bois à rockypop, marqué avec étiquettes jaunes\nTaxi CVT :RDV 16:00 Notre Dame de la Gorge >> transfert au Houches\n",
               "heure_rdv": "",
               "depart": "BASE CAMP LODGE HOTEL",
               "client": "TREKKER JESSICA\n+33 6 95 19 29 36\n",
@@ -2592,7 +2606,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HOFMANN",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "8H30",
@@ -2679,7 +2693,7 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -2698,21 +2712,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "LA FERME DU NOYER",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "LE FETO",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -2726,11 +2726,11 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE DU FOLLY",
@@ -2740,7 +2740,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "–",
@@ -2759,7 +2759,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2773,7 +2773,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2787,7 +2787,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2801,7 +2801,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2815,7 +2815,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2829,7 +2829,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2843,7 +2843,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2857,7 +2857,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2871,7 +2871,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2885,7 +2885,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2899,7 +2899,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2913,7 +2913,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2927,7 +2927,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2941,8 +2941,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H00 HBG > Trient",
@@ -2955,7 +2955,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2969,7 +2969,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2983,7 +2983,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -2997,7 +2997,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3011,7 +3011,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3025,7 +3025,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3039,7 +3039,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3053,7 +3053,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3067,7 +3067,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3081,7 +3081,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3095,7 +3095,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3109,7 +3109,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3123,21 +3123,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "TAXI DES COMBINS",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "16:30 : Transfert Bar Cabanon Champex > la Fouly (Taxi)\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE MONT BLANC",
-              "client": "SEMIOND FLORENCE\n(06 63 76 77 09 - )",
-              "nbre": "12+1",
-              "arrivee": "AUBERGE MAYA-JOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3151,7 +3137,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3165,7 +3151,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3179,7 +3165,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3193,7 +3179,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3207,7 +3193,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3221,7 +3207,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3235,7 +3221,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3249,7 +3235,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3263,7 +3249,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3277,7 +3263,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -3291,7 +3277,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3305,7 +3291,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3319,7 +3305,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3333,7 +3319,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3347,7 +3333,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3361,7 +3347,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3375,7 +3361,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3389,8 +3375,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Jean-Marc, Serge",
               "alerte": "BAGAGES",
               "type": "–",
               "transfert": "–",
@@ -3408,7 +3394,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3422,7 +3408,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3436,7 +3422,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -3455,7 +3441,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -3469,21 +3455,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE BELLECOMBE",
-              "client": "NIQUET MARION\n(- 06 37 46 26 31)",
-              "nbre": "9+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3497,7 +3469,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -3521,7 +3493,7 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "j-1 : Départ\n",
+              "details": "J-1 : Départ\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ALPAGE",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -3549,7 +3521,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
@@ -3577,7 +3549,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -4148,20 +4120,6 @@
               "client": "GIRARD\n",
               "nbre": "2",
               "arrivee": "RELAIS ARPETTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "TAXI DES COMBINS",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "08h00 : Transfert HBG > Le Clou (Taxi)\n",
-              "heure_rdv": "",
-              "depart": "GITE BON ABRI",
-              "client": "DIOT JULIEN\n(- 06 11 73 61 44)",
-              "nbre": "13+1",
-              "arrivee": "REFUGE ELENA",
               "stockes": "–"
             },
             {
@@ -5660,7 +5618,7 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "–",
               "heure_rdv": "",
               "depart": "RESTAURANT FER A CHEVAL",
@@ -5674,7 +5632,7 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "–",
               "heure_rdv": "",
               "depart": "RESTAURANT FER A CHEVAL",
@@ -5688,7 +5646,7 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE DU FOLLY",
@@ -5702,7 +5660,7 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "J-1: REFUGE CHARDONNIERE\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOLLY",
@@ -6562,7 +6520,7 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
-              "transfert": "16H30 Fer à Cheval > Sixt",
+              "transfert": "17H Fer à Cheval > Sixt",
               "details": "–",
               "heure_rdv": "",
               "depart": "RESTAURANT FER A CHEVAL",
