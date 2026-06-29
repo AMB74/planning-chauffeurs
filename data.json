@@ -2027,7 +2027,7 @@
               "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
               "nbre": "6+1",
               "arrivee": "HOTEL ARVEYRON",
-              "stockes": "–"
+              "stockes": "4"
             },
             {
               "pilote": "Charlie",
@@ -4381,7 +4381,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 PAX A TRANSFERER AVEC LES BAGAGES\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "VACHERON\n",
@@ -5311,12 +5311,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "J-1: REFUGE ECONDU\n",
+              "details": "DEJA FAIT\nJ-1: REFUGE ECONDU\n",
               "heure_rdv": "",
               "depart": "REFUGE DE PRESSET",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -5460,12 +5460,12 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Aurore",
+              "renforts": "TAXI APOLLO",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "–",
-              "details": "J+1 REPOJU\n",
+              "details": "!! 8H transfert Julien HBG > Eglise du Planay : 1 bus Aurore + 1 bus Taxi Apollo\nJ+1 REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -6086,7 +6086,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
@@ -6105,7 +6105,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6119,7 +6119,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6133,7 +6133,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6147,8 +6147,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "SANS BAGAGE",
               "transfert": "–",
@@ -6161,7 +6161,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6227,7 +6227,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6241,7 +6241,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -6269,7 +6269,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -7128,7 +7128,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",

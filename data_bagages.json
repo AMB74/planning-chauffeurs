@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "29/06/2026 11:03"
+    "genere_le": "29/06/2026 13:32"
   },
   "lignes": [
     {
@@ -41,6 +41,19 @@
       "date_fin": "2026-06-27",
       "date_debut_aff": "Dim 21/06",
       "date_fin_aff": "Sam 27/06"
+    },
+    {
+      "jour_semaine": "28-06 - DIMANCHE",
+      "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
+      "chauffeur_debut": "Charlie",
+      "chauffeur_fin": "–",
+      "nbre": "4",
+      "depart": "RDV FLÉGÈRE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-06-28",
+      "date_fin": "2026-07-04",
+      "date_debut_aff": "Dim 28/06",
+      "date_fin_aff": "Sam 04/07"
     },
     {
       "jour_semaine": "04-07 - SAMEDI",
