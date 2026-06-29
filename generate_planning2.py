@@ -129,6 +129,11 @@ def main():
         if "DOLOMITES" in massif.upper():
             continue
 
+        # Clients exclus
+        client = get_text(f, "CLIENT /AEM")
+        if "ALTITUDE HAUTE MONTAGNE" in client.upper():
+            continue
+
         ligne = {
             "pilote":    get_text(f, "PILOTE_NOM"),
             "renforts":  ", ".join(filter(None, [get_text(f, "RENFORTS_NOM"), get_text(f, "TAXIS (from TAXI)")])),
