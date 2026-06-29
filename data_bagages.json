@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "28/06/2026 15:47"
+    "genere_le": "29/06/2026 11:00"
   },
   "lignes": [
     {
@@ -41,6 +41,45 @@
       "date_fin": "2026-06-27",
       "date_debut_aff": "Dim 21/06",
       "date_fin_aff": "Sam 27/06"
+    },
+    {
+      "jour_semaine": "04-07 - SAMEDI",
+      "client": "COGGINS\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "2",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-04",
+      "date_fin": "2026-07-10",
+      "date_debut_aff": "Sam 04/07",
+      "date_fin_aff": "Ven 10/07"
+    },
+    {
+      "jour_semaine": "07-07 - MARDI",
+      "client": "LANE\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "4",
+      "depart": "RDV HOTEL",
+      "arrivee": "–",
+      "date_debut": "2026-07-07",
+      "date_fin": "2026-07-12",
+      "date_debut_aff": "Mar 07/07",
+      "date_fin_aff": "Dim 12/07"
+    },
+    {
+      "jour_semaine": "07-07 - MARDI",
+      "client": "TREMBLAY\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "4",
+      "depart": "RDV PLANPRAZ",
+      "arrivee": "HOTEL LA GELINOTTE",
+      "date_debut": "2026-07-07",
+      "date_fin": "2026-07-11",
+      "date_debut_aff": "Mar 07/07",
+      "date_fin_aff": "Sam 11/07"
     }
   ]
 }
