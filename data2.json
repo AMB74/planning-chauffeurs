@@ -512,7 +512,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -526,7 +526,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -568,7 +568,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Chapieux",
@@ -592,6 +592,20 @@
               "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
               "nbre": "14+1",
               "arrivee": "HOTEL LA GELINOTTE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type": "BAGAGES",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "THOMAS\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -680,7 +694,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Chapieux",
@@ -916,65 +930,9 @@
               "transfert": "Pont > Gare Chamonix",
               "details": "–",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "HOSTELLERIE DU PARADIS",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
               "nbre": "6+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE TETRAS LYRE PONT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "3+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE VICTOR EMMANUEL 2",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE VICTOR EMMANUEL 2",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
               "arrivee": "RDV PARKING DE PONT",
               "stockes": "–"
             },
@@ -1558,7 +1516,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -1572,7 +1530,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -1614,7 +1572,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -1628,7 +1586,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -1684,7 +1642,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "08H30 HBG > Chapieux",
@@ -3960,7 +3918,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -3974,7 +3932,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -5115,7 +5073,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -5157,7 +5115,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6106,7 +6064,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6134,7 +6092,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6204,7 +6162,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6471,7 +6429,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6919,7 +6877,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6947,7 +6905,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6975,7 +6933,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6989,7 +6947,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7003,7 +6961,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7017,7 +6975,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7031,7 +6989,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7087,7 +7045,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7479,20 +7437,6 @@
         {
           "massif": "11. MONT-ROSE",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "3+1",
-              "arrivee": "REFUGE ORESTES",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",

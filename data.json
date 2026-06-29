@@ -2596,20 +2596,6 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "Pont > Gare Chamonix",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE TETRAS LYRE PONT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "3+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
               "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -2621,20 +2607,6 @@
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
               "nbre": "6+1",
               "arrivee": "CHALET DE L'EPEE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "9H15 BOULANG.\n9H45 GARE CHAM > Pont\n11H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PARKING DE PONT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "REFUGE SAVOIA",
               "stockes": "–"
             },
             {
@@ -3475,20 +3447,6 @@
               "depart": "REFUGE SAVOIA",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
               "nbre": "6+1",
-              "arrivee": "REFUGE BENEVOLO",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE SAVOIA",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
               "arrivee": "REFUGE BENEVOLO",
               "stockes": "–"
             },
@@ -4442,20 +4400,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE BENEVOLO",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "REFUGE BEZZI",
-              "stockes": "–"
-            },
-            {
               "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -5386,20 +5330,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE BEZZI",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "HOTEL GALISIA",
-              "stockes": "–"
-            },
-            {
               "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -6250,20 +6180,6 @@
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "PINEAU PIERRICK\n",
-              "nbre": "10+1",
-              "arrivee": "REFUGE TETRAS LYRE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GALISIA",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
               "nbre": "10+1",
               "arrivee": "REFUGE TETRAS LYRE PONT",
               "stockes": "–"
@@ -7215,20 +7131,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE TETRAS LYRE PONT",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "10+1",
-              "arrivee": "REFUGE VICTOR EMMANUEL 2",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "Pont > Gare Chamonix",
@@ -7238,20 +7140,6 @@
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
               "nbre": "6+1",
               "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "SANS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE VICTOR EMMANUEL 2",
-              "client": "ALTITUDE HAUTE MONTAGNE\n(- )",
-              "nbre": "3+1",
-              "arrivee": "REFUGE VICTOR EMMANUEL 2",
               "stockes": "–"
             },
             {
