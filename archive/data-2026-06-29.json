@@ -3611,11 +3611,11 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "Laurent",
+              "renforts": "Laurent, TAXI CVT",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "RDV 8:00  Hôtel des 2 Gares Le Fayet >> Transfert retour au Champel\n",
+              "details": "CVT + LAURENT : RDV 8:00  Hôtel des 2 Gares Le Fayet >> Transfert retour au Champel\n",
               "heure_rdv": "",
               "depart": "HOTEL DES DEUX GARES",
               "client": "TREKKER Elie\n06 33 07 28 35\n",
@@ -6320,7 +6320,7 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 REFUGE DU LAISONNAY\n",
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
