@@ -4855,20 +4855,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "HOTEL SPLENDIDE",
-              "client": "MUNSTER\n",
-              "nbre": "2",
-              "arrivee": "CHALET VAL FERRET",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "AUBERGE MAYA-JOIE",
               "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
               "nbre": "14+1",
@@ -5241,12 +5227,12 @@
               "stockes": "–"
             },
             {
-              "pilote": "0. AUCUN",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "DEJA FAIT\nJ-1: REFUGE ECONDU\n",
+              "details": "J-1: REFUGE ECONDU\n",
               "heure_rdv": "",
               "depart": "REFUGE DE PRESSET",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -5700,20 +5686,6 @@
               "client": "CHIASSON\n",
               "nbre": "4",
               "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET VAL FERRET",
-              "client": "MUNSTER\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TRIOLET",
               "stockes": "–"
             },
             {
@@ -6709,20 +6681,6 @@
               "client": "TREKKER CHARLES\n+33 6 30 99 79 47\n",
               "nbre": "15+1",
               "arrivee": "HOTEL LES JUMEAUX",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "TAXI JAY",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL TRIOLET",
-              "client": "MUNSTER\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
