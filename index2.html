@@ -73,7 +73,8 @@ td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: n
 td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
 td.stockes.empty { color: #ddd; text-align: center; }
 .badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
-.col-type .badge { font-size: 7.5px; padding: 2px 4px; white-space: nowrap; }
+.col-type .badge { font-size: 7.5px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; max-width: 60px; text-align: center; }
+.col-type { max-width: 70px; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
 .badge-transfert   { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
@@ -341,11 +342,11 @@ const PRINT_CSS = `
   tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide td { text-decoration: line-through; color: #888; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
-  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:7%} th:nth-child(6){width:7%} th:nth-child(7){width:9%} th:nth-child(8){width:8%} th:nth-child(9){width:12%} th:nth-child(10){width:13%} th:nth-child(11){width:12%} th:nth-child(12){width:4%} th:nth-child(13){width:13%} th:nth-child(14){width:4%}
-  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:7%} td:nth-child(6){width:7%} td:nth-child(7){width:9%} td:nth-child(8){width:8%} td:nth-child(9){width:12%} td:nth-child(10){width:13%} td:nth-child(11){width:12%} td:nth-child(12){width:4%} td:nth-child(13){width:13%} td:nth-child(14){width:4%}
+  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:7%} th:nth-child(6){width:4%} th:nth-child(7){width:10%} th:nth-child(8){width:8%} th:nth-child(9){width:12%} th:nth-child(10){width:13%} th:nth-child(11){width:12%} th:nth-child(12){width:4%} th:nth-child(13){width:13%} th:nth-child(14){width:4%}
+  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:7%} td:nth-child(6){width:4%} td:nth-child(7){width:10%} td:nth-child(8){width:8%} td:nth-child(9){width:12%} td:nth-child(10){width:13%} td:nth-child(11){width:12%} td:nth-child(12){width:4%} td:nth-child(13){width:13%} td:nth-child(14){width:4%}
   td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:9px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:9px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:9px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:9px} td.client{font-weight:600;text-transform:uppercase;font-size:9px} td.transfert{font-size:9px;color:#555} td.depart,td.arrivee{font-size:9.5px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:9px}
   .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .col-type .badge{font-size:6px;padding:1px 2px;white-space:nowrap}
+  .col-type .badge{font-size:6px;padding:1px 2px;white-space:normal;word-break:break-word;max-width:30px;display:inline-block;text-align:center}
   .badge-bagages{background:#FFF8E1!important;color:#F57F17;border-color:#FFE082} .badge-bagages-trf{background:#E8F5E9!important;color:#2E7D32;border-color:#A5D6A7} .badge-transfert{background:#E3F2FD!important;color:#1565C0;border-color:#90CAF9} .badge-rdv{background:#F3E5F5!important;color:#6A1B9A;border-color:#CE93D8} .badge-default{background:#f4f4f4!important;color:#555;border-color:#ddd}
   .footer{margin-top:8px;border-top:1px solid #eee;padding-top:6px;display:flex;justify-content:space-between;color:#999;font-size:9px;font-family:monospace}
 `;
