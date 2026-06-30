@@ -5518,7 +5518,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 PAX A TRANSFERER AVEC LES BAGAGES\n",
               "heure_rdv": "",
               "depart": "HOTEL A+",
               "client": "VACHERON\n",
@@ -6275,7 +6275,7 @@
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "DIOT JULIEN\n(- 06 11 73 61 44)",
-              "nbre": "13+1",
+              "nbre": "12+1",
               "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–"
             },
@@ -7263,7 +7263,7 @@
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "DIOT JULIEN\n(- 06 11 73 61 44)",
-              "nbre": "13+1",
+              "nbre": "12+1",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
