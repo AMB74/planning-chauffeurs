@@ -3764,7 +3764,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -4339,7 +4339,7 @@
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
-              "details": "!! 1 PAX A TRANSFERER AVEC LES BAGAGES\n",
+              "details": "!! 1 PAX A TRANSFERER AVEC LES BAGAGES -15h\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "VACHERON\n",
@@ -4666,7 +4666,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
@@ -5222,8 +5222,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
-              "renforts": "",
+              "pilote": "",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type": "BAGAGES",
               "transfert": "–",
