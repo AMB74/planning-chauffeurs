@@ -3,20 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planning Interne – ALTITUDE MONT-BLANC</title>
+<title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
 :root {
-  --rouge: #E8263A; --gris-fonce: #1a1a1a; --gris-moyen: #5c5c5c;
-  --gris-clair: #f4f4f4; --gris-border: #e0e0e0; --blanc: #ffffff; --bleu-renfort: #0D47A1;
+  --rouge: #E8263A;
+  --gris-fonce: #1a1a1a;
+  --gris-moyen: #5c5c5c;
+  --gris-clair: #f4f4f4;
+  --gris-border: #e0e0e0;
+  --blanc: #ffffff;
+  --bleu-renfort: #0D47A1;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gris-fonce); font-size: 13px; line-height: 1.4; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f8f8f6;
+  color: var(--gris-fonce);
+  font-size: 13px;
+  line-height: 1.4;
+}
 .page { max-width: 1400px; margin: 0 auto; padding: 28px 24px 48px; }
-#loading { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 16px; color: var(--gris-moyen); }
-.spinner { width: 32px; height: 32px; border: 3px solid var(--gris-border); border-top-color: var(--rouge); border-radius: 50%; animation: spin 0.7s linear infinite; }
+
+/* ── LOADING ── */
+#loading {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 60vh; gap: 16px; color: var(--gris-moyen);
+}
+.spinner {
+  width: 32px; height: 32px; border: 3px solid var(--gris-border);
+  border-top-color: var(--rouge); border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
 @keyframes spin { to { transform: rotate(360deg); } }
 #loading p { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ── HEADER ── */
 .header { display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 2.5px solid var(--rouge); padding-bottom: 14px; margin-bottom: 24px; }
 .breadcrumb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
 .breadcrumb span { color: var(--rouge); font-weight: 500; }
@@ -24,20 +46,58 @@ body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gri
 .header-societe { text-align: right; font-family: 'DM Mono', monospace; }
 .societe-nom { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .societe-detail { font-size: 9px; color: var(--gris-moyen); margin-top: 2px; }
-.badge-maj { display: inline-flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 9px; background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; border-radius: 3px; padding: 2px 7px; margin-top: 4px; }
-.badge-s2 { display: inline-flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 9px; background: #e3f2fd; color: #1565C0; border: 1px solid #90caf9; border-radius: 3px; padding: 2px 7px; margin-top: 4px; margin-left: 8px; }
+
+/* ── BADGE MAJ ── */
+.badge-maj {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7;
+  border-radius: 3px; padding: 2px 7px; margin-top: 4px;
+}
+
+/* ── PAGES ── */
+#page-accueil  { display: none; }
 #page-planning { display: none; }
+#page-chauffeur{ display: none; }
+
+/* ── PAGE ACCUEIL ── */
+.accueil-subtitle { font-size: 12px; color: var(--gris-moyen); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+.chauffeurs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.chauffeur-card { background: var(--blanc); border: 1.5px solid var(--gris-border); border-radius: 10px; padding: 16px 18px; cursor: pointer; transition: all 0.18s; display: flex; align-items: center; gap: 14px; }
+.chauffeur-card:hover { border-color: var(--rouge); box-shadow: 0 4px 16px rgba(232,38,58,0.12); transform: translateY(-2px); }
+.chauffeur-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--rouge); color: white; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.chauffeur-nom { font-size: 11px; color: var(--gris-moyen); margin-top: 2px; text-transform: uppercase; }
+.chauffeur-prenom { font-size: 15px; font-weight: 700; letter-spacing: 0.02em; color: var(--gris-fonce); }
+.chauffeur-vehicule { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); margin-top: 4px; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.plaque { background: var(--gris-clair); border: 1px solid var(--gris-border); border-radius: 3px; padding: 1px 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.05em; }
+.btn-general { display: inline-flex; align-items: center; gap: 8px; background: var(--rouge); color: white; border: none; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; margin-bottom: 28px; box-shadow: 0 4px 16px rgba(232,38,58,0.3); }
+.btn-general:hover { background: #c41e30; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,38,58,0.4); }
+.btn-bagages { display: inline-flex; align-items: center; gap: 8px; background: #e8f5e9; color: #2e7d32; border: 1.5px solid #a5d6a7; border-radius: 8px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; transition: all 0.18s; margin-bottom: 28px; margin-left: 10px; text-decoration: none; }
+.btn-bagages:hover { background: #d2ecd4; transform: translateY(-2px); }
+
+/* ── HEADER CHAUFFEUR ── */
+.header-chauffeur-nom { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.header-chauffeur-vehicule { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gris-moyen); margin-top: 4px; display: flex; align-items: center; gap: 6px; }
+
+/* ── BOUTONS ── */
+.btn-retour { display: inline-flex; align-items: center; gap: 6px; background: none; border: 1.5px solid var(--gris-border); border-radius: 6px; padding: 6px 12px; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--gris-moyen); cursor: pointer; margin-bottom: 20px; transition: all 0.15s; }
+.btn-retour:hover { border-color: var(--rouge); color: var(--rouge); }
+
+/* ── SECTIONS ── */
 .section { margin-bottom: 28px; }
 .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; user-select: none; }
+.section-label { font-size: 10px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); margin-bottom: 2px; }
 .section-title { font-size: 15px; font-weight: 600; }
 .section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
 tr.massif-separator td.massif-sep-cell { background: #f0f0ee; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 4px 10px; border-left: 3px solid var(--rouge) !important; }
 .section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
 .chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
 .section.collapsed .chevron { transform: rotate(-90deg); }
-.section.collapsed .section-body { display: none; }
+.section.collapsed .table-wrapper { display: none; }
+
+/* ── TABLEAU ── */
 .table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
-table { width: 100%; min-width: 860px; border-collapse: collapse; }
+table { width: 100%; min-width: 900px; border-collapse: collapse; }
 thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
 th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
 tbody tr { border-bottom: 1px solid var(--gris-border); transition: background 0.15s; }
@@ -51,10 +111,10 @@ tbody tr.valide { background: #f0faf0 !important; opacity: 0.75; }
 tbody tr.valide td { text-decoration: line-through; color: #888; }
 tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; font-weight: 600; }
 td.check { width: 32px; text-align: center; padding: 9px 6px; vertical-align: middle; }
-td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; }
-th.check { width: 32px; text-align: center; padding: 8px 6px; }
 td.alerte-stock { width: 24px; text-align: center; padding: 9px 4px; vertical-align: middle; font-size: 14px; }
 th.alerte-stock { width: 24px; padding: 8px 4px; }
+td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; border-radius: 4px; }
+th.check { width: 32px; text-align: center; padding: 8px 6px; }
 td { padding: 9px 10px; vertical-align: top; }
 td.pilote { font-weight: 600; white-space: nowrap; min-width: 70px; }
 td.pilote.empty { color: #bbb; font-weight: 400; font-style: italic; }
@@ -65,7 +125,7 @@ td.details.empty { color: #ccc; }
 td.transfert { font-size: 11.5px; color: var(--gris-moyen); min-width: 180px; max-width: 220px; white-space: normal; word-break: break-word; }
 td.transfert.empty { color: #ccc; }
 td.depart { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
-td.heure-rdv { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #1565C0; text-align: center; min-width: 110px; }
+td.heure-rdv { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #1565C0; white-space: normal; word-break: normal; overflow-wrap: break-word; text-align: center; min-width: 110px; }
 td.heure-rdv.empty { color: #ddd; text-align: center; }
 td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 130px; }
 td.nbre { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; text-align: center; white-space: nowrap; }
@@ -73,79 +133,101 @@ td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: n
 td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
 td.stockes.empty { color: #ddd; text-align: center; }
 .badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
+.col-type .badge { font-size: 7.5px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; max-width: 60px; text-align: center; }
+.col-type { max-width: 70px; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
 .badge-transfert   { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
 .badge-rdv         { background: #F3E5F5; color: #6A1B9A; border-color: #CE93D8; }
 .badge-sans        { background: #f4f4f4; color: #888; border-color: #ddd; }
 .badge-default     { background: #f4f4f4; color: #555; border-color: #ddd; }
+
+/* ── LÉGENDE ── */
 .legende { display: flex; gap: 16px; margin-bottom: 14px; font-size: 11px; color: var(--gris-moyen); flex-wrap: wrap; }
 .legende-item { display: flex; align-items: center; gap: 6px; }
 .legende-dot { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
 .dot-pilote  { background: #ffe0e0; border: 1px solid #f5b0b0; }
 .dot-renfort { background: #dce8ff; border: 1px solid #a0b8f0; }
 .empty-section { text-align: center; padding: 32px; color: var(--gris-moyen); font-size: 13px; background: var(--blanc); border: 1.5px solid var(--gris-border); border-radius: 8px; }
+
+/* ── FOOTER ── */
 .footer { margin-top: 32px; border-top: 1px solid var(--gris-border); padding-top: 12px; display: flex; justify-content: space-between; color: var(--gris-moyen); font-size: 10.5px; font-family: 'DM Mono', monospace; }
+
+/* ── BOUTON IMPRESSION ── */
 .btn-print { position: fixed; bottom: 20px; right: 20px; background: var(--rouge); color: white; border: none; border-radius: 50px; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgba(232,38,58,0.3); transition: all 0.2s; z-index: 100; }
 .btn-print:hover { transform: translateY(-2px); }
+
+/* ── MOBILE ── */
 @media (max-width: 700px) {
   .page { padding: 14px 10px 32px; }
-  .header-day { font-size: 18px; }
-  .table-wrapper { overflow-x: auto; }
-  table { min-width: 860px; }
-  th { font-size: 8.5px; padding: 6px; }
+  .header-day, .header-chauffeur-nom { font-size: 18px; }
+  .chauffeurs-grid { grid-template-columns: 1fr; }
+  .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 900px; }
+  th { font-size: 8.5px; padding: 6px 6px; white-space: nowrap; }
   td { padding: 7px 6px; font-size: 11px; }
+  td.transfert { min-width: 180px; white-space: normal; word-break: break-word; }
+  td.depart, td.arrivee { max-width: none; white-space: nowrap; }
+  td.client { white-space: normal; word-break: break-word; }
+  .btn-general, .btn-bagages { display: block; width: 100%; margin-left: 0; box-sizing: border-box; justify-content: center; }
+  .btn-bagages { margin-top: 10px; }
 }
+
+/* ── IMPRESSION ── */
 @media print {
-  @page { size: A4 portrait; margin: 5mm 6mm; }
+  @page { size: A4 portrait; margin: 8mm 10mm; }
   body { background: white; font-size: 10px; }
   .page { padding: 0; max-width: 100%; }
+  #page-accueil { display: none !important; }
   .header { padding-bottom: 6px; margin-bottom: 10px; }
-  .header-day { font-size: 16px; }
+  .header-day, .header-chauffeur-nom { font-size: 16px; }
   .breadcrumb, .societe-nom { font-size: 9px; }
   .societe-detail { font-size: 8px; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
+  .section-label { font-size: 8px; }
   .section-title { font-size: 12px; }
   .chevron { display: none; }
-  .section.collapsed .section-body { display: block !important; }
-  .massif-label { font-size: 7px; padding: 2px 6px; }
-  .table-wrapper { border-radius: 0 !important; overflow: visible; border-top: none; }
-  .massif-groupe:first-child .table-wrapper { border-top: 1px solid #ccc; }
+  .section.collapsed .table-wrapper { display: block !important; }
+  .table-wrapper { border-radius: 0; border: 1px solid #ccc; overflow: visible; }
   table { min-width: 0; width: 100%; }
-  th { font-size: 7.5px; padding: 3px 4px; }
-  td { padding: 3px 4px; font-size: 9.5px; word-break: break-word; white-space: normal; }
-  td.transfert { font-size: 8px; }
-  td.depart, td.arrivee { font-size: 8.5px; }
-  td.heure-rdv, td.client { font-size: 8.5px; }
-  td.pilote { font-size: 9px; }
-  td.renforts, td.details, td.nbre { font-size: 8px; }
+  .col-type-transfert .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
+  .col-type .badge { font-size: 6px; padding: 1px 2px; border: 1px solid; white-space: normal; word-break: break-word; max-width: 30px; display: inline-block; text-align: center; }
+  th { font-size: 8px; padding: 4px 5px; }
+  td { padding: 4px 5px; font-size: 9px; }
+  td.transfert { font-size: 7.5px; max-width: 90px; }
+  td.depart, td.arrivee { max-width: 100px; font-size: 8px; word-break: break-word; white-space: normal; }
+  td.stockes { font-size: 8px; }
+  td.heure-rdv { font-size: 8px; }
+  td.client { font-size: 8px; max-width: 80px; word-break: break-word; white-space: normal; letter-spacing: 0; }
+  td.pilote { font-size: 8.5px; min-width: 40px; }
+  td.renforts, td.details, td.nbre { font-size: 7.5px; }
   .badge { font-size: 7px; padding: 1px 3px; }
+  thead { display: table-header-group; }
   .footer { margin-top: 10px; font-size: 9px; }
-  .btn-print, .legende, .badge-maj, .badge-s2 { display: none; }
+  .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj { display: none; }
+  tbody tr:hover { background: white; }
   tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide { background: #f0faf0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   td.check, th.check { display: none; }
-  thead { display: table-header-group; }
 }
 </style>
 </head>
 <body>
 
+<!-- ════ LOADING ════ -->
 <div id="loading" class="page">
   <div class="spinner"></div>
   <p>Chargement du planning…</p>
 </div>
 
-<div id="page-planning" class="page">
+<!-- ════ PAGE D'ACCUEIL ════ -->
+<div id="page-accueil" class="page">
   <div class="header">
     <div class="header-left">
-      <div class="breadcrumb">ALTITUDE MONT-BLANC › <span>Planning Semaine de Travail</span></div>
-      <div class="header-day" id="pg-date"></div>
-      <div style="display:flex;align-items:center;">
-        <div class="badge-maj" id="pg-maj"></div>
-        <div class="badge-s2">⚙ Semaine de travail</div>
-      </div>
+      <div class="breadcrumb">ALTITUDE MONT-BLANC › <span>Planning Chauffeurs</span></div>
+      <div class="header-day" id="acc-date"></div>
+      <div class="badge-maj" id="acc-maj"></div>
     </div>
     <div class="header-societe">
       <div class="societe-nom">ALTITUDE MONT-BLANC</div>
@@ -153,44 +235,139 @@ td.stockes.empty { color: #ddd; text-align: center; }
       <div class="societe-detail">SIREN : 481 563 567</div>
     </div>
   </div>
-  <a href="bagages.html" style="display:inline-flex;align-items:center;gap:6px;background:none;border:1.5px solid var(--gris-border);border-radius:6px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--gris-moyen);text-decoration:none;margin-bottom:16px;">🧳 Bagages stockés</a>
-  <div class="legende">
-    <div class="legende-item"><div class="legende-dot dot-pilote"></div> Bagages + Transfert</div>
-    <div class="legende-item"><div class="legende-dot dot-renfort"></div> Renfort Transfert</div>
+  <button class="btn-general" onclick="afficherPlanning()">📋 PLANNING GÉNÉRAL</button>
+  <a class="btn-bagages" href="bagages.html">🧳 BAGAGES STOCKÉS</a>
+  <div class="accueil-subtitle">Sélectionnez votre nom pour accéder à votre planning personnel</div>
+  <div class="chauffeurs-grid" id="chauffeurs-grid"></div>
+  <div class="footer">
+    <span id="acc-footer"></span>
+    <span>ALTITUDE MONT-BLANC</span>
   </div>
-  <div id="planning-contenu"></div>
-  <div class="footer"><span id="pg-footer"></span><span>ALTITUDE MONT-BLANC</span></div>
+</div>
+
+<!-- ════ PAGE PLANNING GÉNÉRAL ════ -->
+<div id="page-planning" class="page">
+  <div class="header">
+    <div class="header-left">
+      <div class="breadcrumb">Planning Chauffeurs › <span>Semaine en cours</span></div>
+      <div class="header-day" id="pg-date"></div>
+    </div>
+    <div class="header-societe">
+      <div class="societe-nom">ALTITUDE MONT-BLANC</div>
+      <div class="societe-detail">62 passage du Nant Devant · 74110 MONTRIOND</div>
+      <div class="societe-detail">SIREN : 481 563 567</div>
+    </div>
+  </div>
+  <button class="btn-retour" onclick="retourAccueil()">← Retour</button>
+  <div id="planning-general-contenu"></div>
+  <div class="footer">
+    <span id="pg-footer"></span>
+    <span>ALTITUDE MONT-BLANC</span>
+  </div>
+</div>
+
+<!-- ════ PAGE CHAUFFEUR INDIVIDUEL ════ -->
+<div id="page-chauffeur" class="page">
+  <div class="header">
+    <div class="header-left">
+      <div class="breadcrumb" id="ch-breadcrumb">Planning › <span>Chauffeur</span></div>
+      <div class="header-chauffeur-nom" id="ch-nom"></div>
+      <div class="header-chauffeur-vehicule" id="ch-vehicule"></div>
+    </div>
+    <div class="header-societe">
+      <div class="societe-nom">ALTITUDE MONT-BLANC</div>
+      <div class="societe-detail">62 passage du Nant Devant · 74110 MONTRIOND</div>
+      <div class="societe-detail">SIREN : 481 563 567</div>
+    </div>
+  </div>
+  <button class="btn-retour" onclick="retourAccueil()">← Retour</button>
+  <div class="legende">
+    <div class="legende-item"><div class="legende-dot dot-pilote"></div> Pilote</div>
+    <div class="legende-item"><div class="legende-dot dot-renfort"></div> Renfort</div>
+  </div>
+  <div id="ch-contenu"></div>
+  <div class="footer">
+    <span id="ch-footer"></span>
+    <span>ALTITUDE MONT-BLANC</span>
+  </div>
 </div>
 
 <button class="btn-print" onclick="imprimerPage()">🖨 Imprimer / PDF</button>
 
 <script>
-let SECTIONS = [];
-let META     = {};
+// ── DONNÉES GLOBALES (chargées depuis data.json) ──
+let CHAUFFEURS = {};
+let SECTIONS   = [];
+let META       = {};
 
+// ── CHARGEMENT DATA.JSON ──
 async function chargerDonnees() {
   try {
-    const resp = await fetch('data2.json?v=' + Date.now());
+    const resp = await fetch('data.json?v=' + Date.now()); // cache busting
     if (!resp.ok) throw new Error('Erreur HTTP ' + resp.status);
     const data = await resp.json();
-    META     = data.meta || {};
+
+    META = data.meta || {};
+
+    // Convertir le tableau chauffeurs en objet indexé par prénom
+    CHAUFFEURS = {};
+    (data.chauffeurs || []).forEach(c => {
+      CHAUFFEURS[c.prenom] = { nom: c.nom, vehicule: c.vehicule, plaque: c.plaque };
+    });
+
     SECTIONS = data.sections || [];
-    const dateHtml = `${META.date_affichee || ''}`;
-    document.getElementById('pg-date').innerHTML = dateHtml;
-    document.getElementById('pg-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
-    document.getElementById('pg-footer').textContent = 'Généré le ' + (META.genere_le || '') + ' · Planning semaine de travail';
+
+    // Mettre à jour les éléments de date/meta
+    const dateHtml = `${META.date_affichee || ''}&nbsp;<span style="font-weight:300;color:var(--gris-moyen);font-size:18px;">${META.numero_semaine || ''}</span>`;
+    document.getElementById('acc-date').innerHTML = dateHtml;
+    document.getElementById('pg-date').innerHTML  = dateHtml;
+    document.getElementById('acc-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
+    const footerTxt = 'Généré le ' + (META.genere_le || '') + ' · Planning chauffeurs';
+    document.getElementById('acc-footer').textContent = footerTxt;
+    document.getElementById('pg-footer').textContent  = footerTxt;
+    document.getElementById('ch-footer').textContent  = footerTxt;
+
+    // Construire la grille des chauffeurs
+    construireGrilleChauffeurs();
+
+    // Pré-générer le planning général
     let html = '';
-    SECTIONS.forEach((s, i) => { html += sectionHTML(s, i); });
-    document.getElementById('planning-contenu').innerHTML = html;
-    document.getElementById('loading').style.display   = 'none';
-    document.getElementById('page-planning').style.display = 'block';
+    SECTIONS.forEach((s, i) => { html += sectionHTML(s, s.lignes, i, null); });
+    document.getElementById('planning-general-contenu').innerHTML = html;
+
+    // Masquer le loader, afficher l'accueil
+    document.getElementById('loading').style.display  = 'none';
+    document.getElementById('page-accueil').style.display = 'block';
     restaurerSections();
+
   } catch (err) {
     document.getElementById('loading').innerHTML =
-      `<div style="text-align:center;color:#c00;font-family:'DM Mono',monospace;font-size:12px;"><p>⚠ Impossible de charger data2.json</p><p style="color:#999;margin-top:8px;font-size:10px;">${err.message}</p></div>`;
+      `<div style="text-align:center;color:#c00;font-family:'DM Mono',monospace;font-size:12px;">
+        <p>⚠ Impossible de charger data.json</p>
+        <p style="color:#999;margin-top:8px;font-size:10px;">${err.message}</p>
+      </div>`;
   }
 }
 
+function construireGrilleChauffeurs() {
+  const grid = document.getElementById('chauffeurs-grid');
+  grid.innerHTML = Object.entries(CHAUFFEURS).map(([prenom, info]) => {
+    const initiales = prenom.split('-').map(p => p[0]).join('').toUpperCase().slice(0, 2);
+    const vehHtml = info.plaque
+      ? `🚐 ${info.vehicule} &nbsp;<span class="plaque">${info.plaque}</span>`
+      : `🚐 <span style="color:#aaa;">${info.vehicule}</span>`;
+    return `<div class="chauffeur-card" onclick="afficherChauffeur('${prenom}')">
+      <div class="chauffeur-avatar">${initiales}</div>
+      <div>
+        <div class="chauffeur-prenom">${prenom.toUpperCase()}</div>
+        <div class="chauffeur-nom">${info.nom}</div>
+        <div class="chauffeur-vehicule">${vehHtml}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── UTILITAIRES ──
 function badgeClass(type) {
   if (!type || type === '–') return 'badge-default';
   const t = type.toUpperCase();
@@ -202,20 +379,31 @@ function badgeClass(type) {
   return 'badge-default';
 }
 
+function ligneHTML(l, prenom) { return ligneHTMLWithHr(l, prenom, true); }
+
 function getLigneId(l) {
+  // Identifiant unique basé sur TOUTES les données de la ligne
   const str = [l.pilote, l.renforts, l.client, l.depart, l.arrivee, l.nbre, l.details, l.transfert, l.type, l.heure_rdv].join('||');
+  // Hash simple mais fiable
   let hash = 0;
-  for (let i = 0; i < str.length; i++) { const chr = str.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0; }
+  for (let i = 0; i < str.length; i++) {
+    const chr = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
   return 'lid_' + Math.abs(hash).toString(36);
 }
 
-function isValide(lid) { try { return localStorage.getItem('valide2_' + lid) === '1'; } catch(e) { return false; } }
+function isValide(lid) {
+  try { return localStorage.getItem('valide_' + lid) === '1'; } catch(e) { return false; }
+}
 
 function toggleValide(lid) {
   try {
     const val = isValide(lid) ? null : '1';
-    if (val) localStorage.setItem('valide2_' + lid, val);
-    else localStorage.removeItem('valide2_' + lid);
+    if (val) localStorage.setItem('valide_' + lid, val);
+    else localStorage.removeItem('valide_' + lid);
+    // Mettre à jour toutes les lignes avec cet ID sur la page
     document.querySelectorAll(`tr[data-lid="${lid}"]`).forEach(tr => {
       const cb = tr.querySelector('input[type="checkbox"]');
       if (val) { tr.classList.add('valide'); if(cb) cb.checked = true; }
@@ -224,10 +412,15 @@ function toggleValide(lid) {
   } catch(e) {}
 }
 
-function ligneHTML(l, showHr) {
+function ligneHTMLWithHr(l, prenom, showHr) {
+  const isPilote  = prenom && l.pilote  && l.pilote.toLowerCase().includes(prenom.toLowerCase());
+  const isRenfort = prenom && l.renforts && l.renforts.toLowerCase().includes(prenom.toLowerCase());
   const lid = getLigneId(l);
   const valide = isValide(lid);
-  const rowCls = (l.pilote ? 'has-pilote' : 'no-pilote') + (valide ? ' valide' : '');
+  const rowCls = (l.pilote ? 'has-pilote' : 'no-pilote')
+    + (isPilote  ? ' hl-pilote'  : '')
+    + (isRenfort ? ' hl-renfort' : '')
+    + (valide    ? ' valide'     : '');
   const trfTxt = (l.transfert && l.transfert !== '–') ? l.transfert : '–';
   const trfCls = (l.transfert && l.transfert !== '–') ? 'transfert' : 'transfert empty';
   const typeDisplay = l.type || '–';
@@ -250,33 +443,24 @@ function ligneHTML(l, showHr) {
   </tr>`;
 }
 
-function tableauHTML(lignes, hasHr) {
-  const colHr = hasHr ? '' : ' style="display:none"';
-  return `<div class="table-wrapper"><table>
-    <thead><tr>
-      <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
-      <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
-    </tr></thead>
-    <tbody>${lignes.map(l => ligneHTML(l, hasHr)).join('')}</tbody>
-  </table></div>`;
-}
+function sectionHTML(s, lignes, idx, prenom) {
+  const sid = 'sec-s' + idx;
+  const domId = (prenom ? 'ch' : 'pg') + '-s' + idx;
 
-function sectionHTML(s, idx) {
-  const domId = 'pg-s' + idx;
-  const sid   = 'sec2-s' + idx;
-  const groupes = s.groupes || [{ massif: '', lignes: s.lignes || [] }];
+  // Si on passe des lignes directement (planning chauffeur filtré), pas de groupes
+  const groupes = s.groupes || [{ massif: '', lignes: lignes || s.lignes || [] }];
   const toutesLignes = groupes.flatMap(g => g.lignes);
-  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+  const hasHeurerdv = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
+  const colHrClass = hasHeurerdv ? '' : ' style="display:none"';
   const totalLignes = toutesLignes.length;
 
-  // Construire le tbody avec bandeaux de massif
-  const colHr = hasHr ? '' : ' style="display:none"';
+  // Construire le contenu : bandeau massif + lignes du tableau, tous dans 1 seul tableau
   let tbodyHTML = '';
   groupes.forEach(g => {
     if (g.massif) {
-      tbodyHTML += `<tr class="massif-separator"><td colspan="13" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
+      tbodyHTML += `<tr class="massif-separator"><td colspan="14" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
     }
-    tbodyHTML += g.lignes.map(l => ligneHTML(l, hasHr)).join('');
+    tbodyHTML += g.lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('');
   });
 
   return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
@@ -288,23 +472,76 @@ function sectionHTML(s, idx) {
       <div class="section-count">${totalLignes}</div>
       <div class="chevron">▾</div>
     </div>
-    <div class="section-body"><div class="table-wrapper"><table>
+    <div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
-        <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
+        <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${tbodyHTML}</tbody>
-    </table></div></div>
+    </table></div>
   </div>`;
+}
+
+// ── NAVIGATION ──
+function showPage(id) {
+  ['page-accueil', 'page-planning', 'page-chauffeur', 'loading'].forEach(p => {
+    document.getElementById(p).style.display = 'none';
+  });
+  document.getElementById(id).style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function retourAccueil() { showPage('page-accueil'); }
+
+function afficherPlanning() {
+  showPage('page-planning');
+  restaurerSections();
+}
+
+function afficherChauffeur(prenom) {
+  const info = CHAUFFEURS[prenom];
+  if (!info) return;
+  document.getElementById('ch-breadcrumb').innerHTML = `Planning › <span>${prenom} ${info.nom}</span>`;
+  document.getElementById('ch-nom').textContent = `Planning ${prenom} ${info.nom}`;
+  const veh = document.getElementById('ch-vehicule');
+  veh.innerHTML = info.plaque
+    ? `🚐 ${info.vehicule} &nbsp;<span class="plaque">${info.plaque}</span>`
+    : `🚐 <span style="color:#aaa;">${info.vehicule}</span>`;
+  let html = '';
+  let total = 0;
+  SECTIONS.forEach((s, i) => {
+    // Filtrer les lignes dans chaque groupe
+    const groupesFiltres = (s.groupes || [{ massif: '', lignes: s.lignes || [] }])
+      .map(g => ({
+        massif: g.massif,
+        lignes: g.lignes.filter(l =>
+          (l.pilote  && l.pilote.toLowerCase().includes(prenom.toLowerCase())) ||
+          (l.renforts && l.renforts.toLowerCase().includes(prenom.toLowerCase()))
+        )
+      }))
+      .filter(g => g.lignes.length > 0);
+    if (!groupesFiltres.length) return;
+    const nbLignes = groupesFiltres.reduce((n, g) => n + g.lignes.length, 0);
+    total += nbLignes;
+    html += sectionHTML({ ...s, groupes: groupesFiltres }, null, i, prenom);
+  });
+  if (!total) {
+    html = `<div class="empty-section">Aucune mission assignée à ${prenom} ce jour.</div>`;
+  }
+  document.getElementById('ch-contenu').innerHTML = html;
+  showPage('page-chauffeur');
+  restaurerSections();
 }
 
 function toggleSection(domId, sid) {
   const el = document.getElementById(domId);
   if (!el) return;
+  const key = sid || domId;
   el.classList.toggle('collapsed');
   try {
-    if (el.classList.contains('collapsed')) localStorage.setItem('sec_' + sid, '1');
-    else localStorage.removeItem('sec_' + sid);
+    const collapsed = el.classList.contains('collapsed');
+    if (collapsed) localStorage.setItem('sec_' + key, '1');
+    else localStorage.removeItem('sec_' + key);
   } catch(e) {}
 }
 
@@ -312,95 +549,181 @@ function restaurerSections() {
   try {
     document.querySelectorAll('.section').forEach(el => {
       const key = el.dataset.sid || el.id;
-      if (localStorage.getItem('sec_' + key) === '1') el.classList.add('collapsed');
+      if (localStorage.getItem('sec_' + key) === '1') {
+        el.classList.add('collapsed');
+      }
     });
   } catch(e) {}
 }
 
+// ── CSS IMPRESSION COMPLET (avec couleurs) ──
 const PRINT_CSS = `
-  @page { size: A4 portrait; margin: 5mm 6mm; }
-  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 10px; }
+  @page { size: A4 portrait; margin: 8mm 10mm; }
+  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 9px; }
   .page { padding: 0; max-width: 100%; }
   .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
-  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555 !important; padding: 2px 6px; border-left: 2px solid #E8263A !important; text-decoration: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
-  .chevron, .btn-print, .legende, .badge-maj, .badge-s2, td.check, th.check { display: none !important; }
-  .section.collapsed .section-body { display: block !important; }
-  .table-wrapper { border: 1px solid #ccc; border-radius: 0 !important; overflow: visible; }
+  .chevron, .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj, td.check, th.check { display: none !important; }
+  .section.collapsed .table-wrapper { display: block !important; }
+  .table-wrapper { border: 1px solid #ccc; border-radius: 0; overflow: visible; }
   table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
   thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  th { font-size: 8px; font-weight: 600; text-transform: uppercase; color: #666; padding: 3px 4px; white-space: nowrap; border-bottom: 1px solid #ccc; }
-  td { padding: 3px 4px; font-size: 10px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; }
+  th { font-size: 7.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #666; padding: 3px 3px; white-space: nowrap; border-bottom: 1px solid #ccc; overflow: hidden; }
+  td { padding: 3px 3px; font-size: 8px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; overflow: hidden; }
   tbody tr:last-child td { border-bottom: none; }
+  tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide td { text-decoration: line-through; color: #888; }
+  tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
-  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:8%} th:nth-child(4){width:8%} th:nth-child(5){width:7%} th:nth-child(6){width:7%} th:nth-child(7){width:9%} th:nth-child(8){width:8%} th:nth-child(9){width:12%} th:nth-child(10){width:13%} th:nth-child(11){width:12%} th:nth-child(12){width:4%} th:nth-child(13){width:13%} th:nth-child(14){width:4%}
-  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:8%} td:nth-child(4){width:8%} td:nth-child(5){width:7%} td:nth-child(6){width:7%} td:nth-child(7){width:9%} td:nth-child(8){width:8%} td:nth-child(9){width:12%} td:nth-child(10){width:13%} td:nth-child(11){width:12%} td:nth-child(12){width:4%} td:nth-child(13){width:13%} td:nth-child(14){width:4%}
-  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:9px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:9px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:9px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:9px} td.client{font-weight:600;text-transform:uppercase;font-size:9px} td.transfert{font-size:9px;color:#555} td.depart,td.arrivee{font-size:9.5px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:9px}
-  .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .badge-bagages{background:#FFF8E1!important;color:#F57F17;border-color:#FFE082} .badge-bagages-trf{background:#E8F5E9!important;color:#2E7D32;border-color:#A5D6A7} .badge-transfert{background:#E3F2FD!important;color:#1565C0;border-color:#90CAF9} .badge-rdv{background:#F3E5F5!important;color:#6A1B9A;border-color:#CE93D8} .badge-default{background:#f4f4f4!important;color:#555;border-color:#ddd}
-  .footer{margin-top:8px;border-top:1px solid #eee;padding-top:6px;display:flex;justify-content:space-between;color:#999;font-size:9px;font-family:monospace}
+  th:nth-child(1) { width: 0; display: none; }
+  th:nth-child(2) { width: 3%; }
+  th:nth-child(3) { width: 7%; }
+  th:nth-child(4) { width: 7%; }
+  th:nth-child(5) { width: 7%; }
+  th:nth-child(6) { width: 4%; }
+  th:nth-child(7) { width: 10%; }
+  th:nth-child(8) { width: 7%; }
+  th:nth-child(9) { width: 10%; }
+  th:nth-child(10) { width: 13%; }
+  th:nth-child(11) { width: 12%; }
+  th:nth-child(12) { width: 4%; }
+  th:nth-child(13) { width: 13%; }
+  th:nth-child(14) { width: 4%; }
+  td:nth-child(1) { width: 0; display: none; }
+  td:nth-child(2) { width: 3%; text-align: center; font-size: 10px; }
+  td:nth-child(3) { width: 7%; }
+  td:nth-child(4) { width: 7%; }
+  td:nth-child(5) { width: 7%; }
+  td:nth-child(6) { width: 4%; }
+  td:nth-child(7) { width: 10%; }
+  td:nth-child(8) { width: 7%; }
+  td:nth-child(9) { width: 10%; }
+  td:nth-child(10) { width: 13%; }
+  td:nth-child(11) { width: 12%; }
+  td:nth-child(12) { width: 4%; }
+  td:nth-child(13) { width: 13%; }
+  td:nth-child(14) { width: 4%; }
+  td.pilote { font-weight: 600; white-space: nowrap; font-size: 8px; }
+  td.renforts { color: #1565C0; font-size: 7.5px; }
+  td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 7.5px; }
+  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; font-size: 7.5px; }
+  td.nbre { text-align: center; font-family: monospace; font-weight: 500; font-size: 7.5px; }
+  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; font-size: 7.5px; }
+  td.client { font-weight: 600; text-transform: uppercase; font-size: 7.5px; }
+  td.transfert { font-size: 7.5px; color: #555; white-space: normal; word-break: break-word; }
+  td.depart, td.arrivee { font-size: 8px; font-weight: 500; white-space: normal; word-break: break-word; }
+  .badge { display: inline-block; font-size: 7px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 3px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .badge-bagages     { background: #FFF8E1 !important; color: #F57F17; border-color: #FFE082; }
+  .badge-bagages-trf { background: #E8F5E9 !important; color: #2E7D32; border-color: #A5D6A7; }
+  .badge-transfert   { background: #E3F2FD !important; color: #1565C0; border-color: #90CAF9; }
+  .badge-rdv         { background: #F3E5F5 !important; color: #6A1B9A; border-color: #CE93D8; }
+  .badge-default     { background: #f4f4f4 !important; color: #555; border-color: #ddd; }
+  .footer { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: space-between; color: #999; font-size: 8px; font-family: monospace; }
 `;
+
+function getHeaderHTML() {
+  const pagePlanning = document.getElementById('page-planning').style.display !== 'none';
+  const pageChauffeur = document.getElementById('page-chauffeur').style.display !== 'none';
+  if (pagePlanning) return document.querySelector('#page-planning .header').outerHTML;
+  if (pageChauffeur) return document.querySelector('#page-chauffeur .header').outerHTML;
+  return '';
+}
+
+function getFooterHTML() {
+  const pagePlanning = document.getElementById('page-planning').style.display !== 'none';
+  if (pagePlanning) return document.querySelector('#page-footer')?.outerHTML || '';
+  return document.querySelector('#ch-footer')?.parentElement?.outerHTML || '';
+}
 
 function ouvrirFenetreImpression(contenuHTML) {
   const w = window.open('', '_blank');
   if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
   w.document.write(`<!DOCTYPE html><html lang="fr"><head>
-    <meta charset="UTF-8"><title>Planning Semaine de Travail – ALTITUDE MONT-BLANC</title>
+    <meta charset="UTF-8">
+    <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>${PRINT_CSS}</style>
-  </head><body><div class="page">${contenuHTML}</div>
-  <script>window.onload=function(){setTimeout(function(){window.print();},400);}<\/script>
+  </head><body>
+    <div class="page">
+      ${contenuHTML}
+    </div>
+    <script>window.onload = function(){ setTimeout(function(){ window.print(); }, 400); }<\/script>
   </body></html>`);
   w.document.close();
 }
 
+// ── MODAL IMPRESSION ──
 function imprimerPage() {
-  const sections = document.querySelectorAll('#planning-contenu .section');
-  if (sections.length === 0) { ouvrirFenetreImpression(document.getElementById('planning-contenu').innerHTML); return; }
+  // Récupérer les sections visibles
+  const pagePlanning  = document.getElementById('page-planning').style.display !== 'none';
+  const pageChauffeur = document.getElementById('page-chauffeur').style.display !== 'none';
+  const conteneurId   = pagePlanning ? 'planning-general-contenu' : 'ch-contenu';
+  const sections      = document.querySelectorAll(`#${conteneurId} .section`);
+
+  if (sections.length === 0) {
+    ouvrirFenetreImpression(document.getElementById(conteneurId).innerHTML);
+    return;
+  }
+
+  // Construire le modal de choix
   const joursOptions = Array.from(sections).map((s, i) => {
     const titre = s.querySelector('.section-title')?.textContent || `Jour ${i+1}`;
     const label = s.querySelector('[style*="background:var(--rouge)"]')?.textContent || '';
     return `<label style="display:flex;align-items:center;gap:8px;padding:8px 12px;border:1.5px solid #e0e0e0;border-radius:8px;cursor:pointer;font-size:13px;">
       <input type="checkbox" value="${i}" style="width:16px;height:16px;accent-color:#E8263A;" checked>
       <span style="background:#E8263A;color:white;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;">${label}</span>
-      <span style="font-weight:500;">${titre}</span></label>`;
+      <span style="font-weight:500;">${titre}</span>
+    </label>`;
   }).join('');
+
   const modal = document.createElement('div');
   modal.id = 'modal-print';
   modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
-  modal.innerHTML = `<div style="background:white;border-radius:16px;padding:24px;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
-    <div style="font-size:16px;font-weight:600;margin-bottom:6px;">🖨 Choisir quoi imprimer</div>
-    <div style="font-size:12px;color:#888;margin-bottom:16px;">Sélectionnez les jours à inclure</div>
-    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;" id="modal-jours">${joursOptions}</div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=true)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout cocher</button>
-      <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=false)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout décocher</button>
-    </div>
-    <div style="display:flex;gap:8px;margin-top:12px;">
-      <button onclick="fermerModal()" style="flex:1;padding:10px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:13px;">Annuler</button>
-      <button onclick="lancerImpression()" style="flex:2;padding:10px;border:none;border-radius:8px;background:#E8263A;color:white;cursor:pointer;font-size:13px;font-weight:600;">Imprimer</button>
-    </div>
-  </div>`;
+  modal.innerHTML = `
+    <div style="background:white;border-radius:16px;padding:24px;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+      <div style="font-size:16px;font-weight:600;margin-bottom:6px;">🖨 Choisir quoi imprimer</div>
+      <div style="font-size:12px;color:#888;margin-bottom:16px;">Sélectionnez les jours à inclure</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;" id="modal-jours">${joursOptions}</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=true)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout cocher</button>
+        <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=false)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout décocher</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <button onclick="fermerModal()" style="flex:1;padding:10px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:13px;">Annuler</button>
+        <button onclick="lancerImpression('${conteneurId}')" style="flex:2;padding:10px;border:none;border-radius:8px;background:#E8263A;color:white;cursor:pointer;font-size:13px;font-weight:600;">Imprimer</button>
+      </div>
+    </div>`;
   document.body.appendChild(modal);
 }
 
-function fermerModal() { const m = document.getElementById('modal-print'); if (m) m.remove(); }
+function fermerModal() {
+  const m = document.getElementById('modal-print');
+  if (m) m.remove();
+}
 
-function lancerImpression() {
+function lancerImpression(conteneurId) {
   const cases = document.querySelectorAll('#modal-jours input:checked');
   const indices = Array.from(cases).map(c => parseInt(c.value));
   fermerModal();
-  const sections = document.querySelectorAll('#planning-contenu .section');
+
+  const sections = document.querySelectorAll(`#${conteneurId} .section`);
   let html = '';
   sections.forEach((s, i) => {
-    if (indices.includes(i)) { const clone = s.cloneNode(true); clone.classList.remove('collapsed'); html += clone.outerHTML; }
+    if (indices.includes(i)) {
+      // Forcer l'affichage même si collapsed
+      const clone = s.cloneNode(true);
+      clone.classList.remove('collapsed');
+      html += clone.outerHTML;
+    }
   });
   ouvrirFenetreImpression(html);
 }
