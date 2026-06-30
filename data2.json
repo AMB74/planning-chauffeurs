@@ -1728,20 +1728,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "LEPETIT\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "2"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "VOITURE AEM",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
               "nbre": "14+1",
@@ -1812,11 +1798,11 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL LE COMMERCE ***",
               "client": "LEPETIT\n",
               "nbre": "2",
               "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
+              "stockes": "2"
             },
             {
               "pilote": "",
@@ -2977,20 +2963,6 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "APPLETON\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type": "BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE BELLECOMBE",
-              "client": "LEPETIT\n",
               "nbre": "2",
               "arrivee": "AUBERGE DE BELLECOMBE",
               "stockes": "–"
