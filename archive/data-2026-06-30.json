@@ -4933,7 +4933,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "Jean-Marc",
+              "renforts": "TAXI MOUNTAINDROPOFFS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4948,7 +4948,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "Jean-Marc",
+              "renforts": "TAXI MOUNTAINDROPOFFS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4993,7 +4993,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "",
+              "renforts": "TAXI MOUNTAINDROPOFFS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5457,7 +5457,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Ivan",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -5472,7 +5472,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Ivan",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",

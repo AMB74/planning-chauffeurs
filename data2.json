@@ -4176,7 +4176,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "!! Nuit SS Bagage",
+              "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4202,28 +4202,13 @@
               "type_transfert": "TRANSFERT",
               "type": "!! TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "–",
+              "details": "!! transfert Hôtel le Commerce > Parking Orgère\n",
               "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "LANE\n",
               "nbre": "4",
               "arrivee": "REFUGE PECLET POLSET",
               "stockes": "4"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "!! TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "LANE\n",
-              "nbre": "4",
-              "arrivee": "REFUGE PECLET POLSET",
-              "stockes": "–"
             },
             {
               "pilote": "",
@@ -4696,21 +4681,6 @@
               "client": "FALKENBERG\n",
               "nbre": "4",
               "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "DOIZON\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE LE RENDEZ-VOUS",
               "stockes": "–"
             },
             {
