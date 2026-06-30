@@ -133,7 +133,7 @@ td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: n
 td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
 td.stockes.empty { color: #ddd; text-align: center; }
 .badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
-.col-type-transfert .badge { font-size: 7.5px; padding: 2px 4px; white-space: nowrap; }
+.col-type .badge { font-size: 7.5px; padding: 2px 4px; white-space: nowrap; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
 .badge-transfert   { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
@@ -189,8 +189,8 @@ td.stockes.empty { color: #ddd; text-align: center; }
   .section.collapsed .table-wrapper { display: block !important; }
   .table-wrapper { border-radius: 0; border: 1px solid #ccc; overflow: visible; }
   table { min-width: 0; width: 100%; }
-  .col-type .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
-  .col-type-transfert .badge { font-size: 6px; padding: 1px 2px; border: 1px solid; white-space: nowrap; }
+  .col-type-transfert .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
+  .col-type .badge { font-size: 6px; padding: 1px 2px; border: 1px solid; white-space: nowrap; }
   th { font-size: 8px; padding: 4px 5px; }
   td { padding: 4px 5px; font-size: 9px; }
   td.transfert { font-size: 7.5px; max-width: 90px; }
@@ -429,8 +429,8 @@ function ligneHTMLWithHr(l, prenom, showHr) {
     <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
-    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
     <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)}">${typeTransfertDisplay}</span></td>
+    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
     <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
     <td class="${trfCls}">${trfTxt}</td>
@@ -473,7 +473,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     </div>
     <div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type">Type</th><th class="col-type-transfert"></th><th>Détails</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
         <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${tbodyHTML}</tbody>
