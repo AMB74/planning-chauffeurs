@@ -188,7 +188,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
   .section.collapsed .table-wrapper { display: block !important; }
   .table-wrapper { border-radius: 0; border: 1px solid #ccc; overflow: visible; }
   table { min-width: 0; width: 100%; }
-  .col-type .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
+  .col-type .badge, .col-type-transfert .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
   th { font-size: 8px; padding: 4px 5px; }
   td { padding: 4px 5px; font-size: 9px; }
   td.transfert { font-size: 7.5px; max-width: 90px; }
@@ -421,11 +421,13 @@ function ligneHTMLWithHr(l, prenom, showHr) {
   const trfTxt = (l.transfert && l.transfert !== '–') ? l.transfert : '–';
   const trfCls = (l.transfert && l.transfert !== '–') ? 'transfert' : 'transfert empty';
   const typeDisplay = l.type || '–';
+  const typeTransfertDisplay = l.type_transfert || '–';
   return `<tr class="${rowCls}" data-lid="${lid}">
     <td class="check"><input type="checkbox" ${valide ? 'checked' : ''} onchange="toggleValide('${lid}')"></td>
     <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
+    <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)}">${typeTransfertDisplay}</span></td>
     <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
     <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
@@ -453,7 +455,7 @@ function sectionHTML(s, lignes, idx, prenom) {
   let tbodyHTML = '';
   groupes.forEach(g => {
     if (g.massif) {
-      tbodyHTML += `<tr class="massif-separator"><td colspan="13" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
+      tbodyHTML += `<tr class="massif-separator"><td colspan="14" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
     }
     tbodyHTML += g.lignes.map(l => ligneHTMLWithHr(l, prenom, hasHeurerdv)).join('');
   });
@@ -469,7 +471,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     </div>
     <div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type<br>Transfert</th><th class="col-type">Type</th><th>Détails</th>
         <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${tbodyHTML}</tbody>
@@ -583,27 +585,29 @@ const PRINT_CSS = `
   th:nth-child(3) { width: 7%; }
   th:nth-child(4) { width: 7%; }
   th:nth-child(5) { width: 7%; }
-  th:nth-child(6) { width: 11%; }
-  th:nth-child(7) { width: 7%; }
-  th:nth-child(8) { width: 10%; }
-  th:nth-child(9) { width: 13%; }
-  th:nth-child(10) { width: 12%; }
-  th:nth-child(11) { width: 4%; }
-  th:nth-child(12) { width: 13%; }
-  th:nth-child(13) { width: 4%; }
+  th:nth-child(6) { width: 7%; }
+  th:nth-child(7) { width: 11%; }
+  th:nth-child(8) { width: 7%; }
+  th:nth-child(9) { width: 10%; }
+  th:nth-child(10) { width: 13%; }
+  th:nth-child(11) { width: 12%; }
+  th:nth-child(12) { width: 4%; }
+  th:nth-child(13) { width: 13%; }
+  th:nth-child(14) { width: 4%; }
   td:nth-child(1) { width: 0; display: none; }
   td:nth-child(2) { width: 3%; text-align: center; font-size: 10px; }
   td:nth-child(3) { width: 7%; }
   td:nth-child(4) { width: 7%; }
   td:nth-child(5) { width: 7%; }
-  td:nth-child(6) { width: 11%; }
-  td:nth-child(7) { width: 7%; }
-  td:nth-child(8) { width: 10%; }
-  td:nth-child(9) { width: 13%; }
-  td:nth-child(10) { width: 12%; }
-  td:nth-child(11) { width: 4%; }
-  td:nth-child(12) { width: 13%; }
-  td:nth-child(13) { width: 4%; }
+  td:nth-child(6) { width: 7%; }
+  td:nth-child(7) { width: 11%; }
+  td:nth-child(8) { width: 7%; }
+  td:nth-child(9) { width: 10%; }
+  td:nth-child(10) { width: 13%; }
+  td:nth-child(11) { width: 12%; }
+  td:nth-child(12) { width: 4%; }
+  td:nth-child(13) { width: 13%; }
+  td:nth-child(14) { width: 4%; }
   td.pilote { font-weight: 600; white-space: nowrap; font-size: 8px; }
   td.renforts { color: #1565C0; font-size: 7.5px; }
   td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 7.5px; }
