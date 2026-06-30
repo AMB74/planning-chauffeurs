@@ -4645,7 +4645,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer les BG au Chalet Rubicon (les Houches)\n",
               "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "THORNVAL\n",
@@ -5583,6 +5583,21 @@
         {
           "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
           "lignes": [
+            {
+              "pilote": "",
+              "renforts": "TAXI FOLLONIER",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "!! NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "TAXI :  BG à l'accueil Hôtel Le Giétroz > Hôtel Gîte des Alpes\nJ+2 : Hôtel Gîte des Alpes\n",
+              "heure_rdv": "",
+              "depart": "RDV LE CHABLE",
+              "client": "ORSI FISCHER\n",
+              "nbre": "4",
+              "arrivee": "CABANE DE LOUVIE",
+              "stockes": "–"
+            },
             {
               "pilote": "",
               "renforts": "",
@@ -6622,13 +6637,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE\n!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "Fait Taxi 08/07 Hôtel Le Giétroz > Hôtel Gîte des Alpes\n",
               "heure_rdv": "",
               "depart": "CABANE DE LOUVIE",
               "client": "FISCHER\n",
@@ -6840,13 +6855,13 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "09H30",
+              "transfert": "10H00",
               "details": "–",
               "heure_rdv": "",
               "depart": "RDV FLÉGÈRE",
               "client": "DOCHE\n",
               "nbre": "1",
-              "arrivee": "LA GRANDE OURSE",
+              "arrivee": "LE NOUVEAU GRASSONET",
               "stockes": "–"
             },
             {
@@ -7415,21 +7430,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CHAZAL\n",
-              "nbre": "2",
-              "arrivee": "HOTEL DU GRAND BEC",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -7447,16 +7447,16 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
-              "type": "–",
+              "type": "PAS BESOIN BAGAGES",
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND BEC",
               "client": "CHAZAL\n",
               "nbre": "2",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "HOTEL DU GRAND BEC",
               "stockes": "–"
             },
             {
@@ -7640,13 +7640,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "Fait Taxi 08/07 Hôtel Le Giétroz > Hôtel Gîte des Alpes\n",
               "heure_rdv": "",
               "depart": "CABANE DE PRAFLEURI",
               "client": "FISCHER\n",
