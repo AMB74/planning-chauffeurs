@@ -1112,26 +1112,6 @@
       "date_complete": "DIMANCHE 5 JUILLET 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "TAXI FOLLONIER",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GARE SAINT NICKLAUS",
-              "client": "JAVET ERIC\n",
-              "nbre": "7+1",
-              "arrivee": "HOTEL SCHWARZHORN",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -2292,6 +2272,26 @@
           ]
         },
         {
+          "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "TAXI FOLLONIER",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GARE SAINT NICKLAUS",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "HOTEL SCHWARZHORN",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
@@ -2319,26 +2319,6 @@
       "titre": "LUNDI 6 JUILLET",
       "date_complete": "LUNDI 6 JUILLET 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "TAXI FOLLONIER",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "SS BAGAGE\n",
-              "heure_rdv": "",
-              "depart": "HOTEL SCHWARZHORN",
-              "client": "JAVET ERIC\n",
-              "nbre": "7+1",
-              "arrivee": "GITE DU LAC DE MOIRY",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -3489,6 +3469,21 @@
           "lignes": [
             {
               "pilote": "",
+              "renforts": "TAXI FOLLONIER",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "SS BAGAGE\n",
+              "heure_rdv": "",
+              "depart": "HOTEL SCHWARZHORN",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "GITE DU LAC DE MOIRY",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3548,26 +3543,6 @@
               "client": "RÉASSORT GROUPES 9J\n",
               "nbre": "–",
               "arrivee": "CHEZ PINPIN",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "TAXI FOLLONIER",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GITE DU LAC DE MOIRY",
-              "client": "JAVET ERIC\n",
-              "nbre": "7+1",
-              "arrivee": "HOTEL DU GLACIER** AROLLA",
               "stockes": "–"
             }
           ]
@@ -4767,6 +4742,21 @@
           "lignes": [
             {
               "pilote": "",
+              "renforts": "TAXI FOLLONIER",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GITE DU LAC DE MOIRY",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "HOTEL DU GLACIER** AROLLA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4826,26 +4816,6 @@
               "client": "RÉASSORT GROUPES 7J\n",
               "nbre": "–",
               "arrivee": "CHEZ PINPIN",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "JEAN MARC\nLE LENDEMAIN\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU GLACIER** AROLLA",
-              "client": "JAVET ERIC\n",
-              "nbre": "7+1",
-              "arrivee": "REFUGE PRARAYER",
               "stockes": "–"
             }
           ]
@@ -6012,6 +5982,21 @@
               "nbre": "7+1",
               "arrivee": "GITE DU LAC DE MOIRY",
               "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "!! NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "JEAN MARC\nLE LENDEMAIN\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DU GLACIER** AROLLA",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "REFUGE PRARAYER",
+              "stockes": "–"
             }
           ]
         },
@@ -6043,26 +6028,6 @@
       "titre": "JEUDI 9 JUILLET",
       "date_complete": "JEUDI 9 JUILLET 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "Jean-Marc",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "J-1 HOTEL DU GLACIER\n\n",
-              "heure_rdv": "",
-              "depart": "REFUGE PRARAYER",
-              "client": "JAVET ERIC\n",
-              "nbre": "7+1",
-              "arrivee": "HOTEL SPORTING",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -7159,6 +7124,21 @@
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
               "nbre": "7+1",
               "arrivee": "HOTEL SCHWARZHORN",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Jean-Marc",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "!! VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "J-1 HOTEL DU GLACIER\n\n",
+              "heure_rdv": "",
+              "depart": "REFUGE PRARAYER",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "HOTEL SPORTING",
               "stockes": "–"
             },
             {
