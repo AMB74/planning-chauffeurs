@@ -6648,7 +6648,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -6678,13 +6678,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 REFUGE DU LAISONNAY\n",
+              "details": "J-1 REFUGE DU LAISONNAY\n!! DEJA FAIT PAR AURORE\n",
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -7300,26 +7300,6 @@
           ]
         },
         {
-          "massif": "4. GTA 2",
-          "lignes": [
-            {
-              "pilote": "Aurore",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! NUIT SS BAGAGE\n!! VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "J+1 : Hôtel du Commerce (MODANE)\n",
-              "heure_rdv": "",
-              "depart": "REFUGE DU COL DE LA VANOISE",
-              "client": "WINCKLER\n",
-              "nbre": "2",
-              "arrivee": "REFUGE DU ROC",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "5. VANOISE",
           "lignes": [
             {
@@ -7419,7 +7399,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "TAXI HOFMANN",
+              "renforts": "TAXI HOFMANN, TAXI VIBERT",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
@@ -7464,7 +7444,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 21 BAGAGES\n",
+              "details": "Que 20 sacs finalement\n",
               "heure_rdv": "",
               "depart": "HOTEL GRIVOLA",
               "client": "TRICASTINS\n",
@@ -7483,7 +7463,7 @@
               "heure_rdv": "",
               "depart": "REFUGE TETRAS LYRE PONT",
               "client": "PINEAU PIERRICK\n",
-              "nbre": "10+1",
+              "nbre": "9+1",
               "arrivee": "REFUGE TETRAS LYRE PONT",
               "stockes": "–"
             },

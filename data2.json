@@ -1042,13 +1042,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "0. AUCUN",
-              "renforts": "TAXI ALP'TRANSFER",
+              "pilote": "Damian",
+              "renforts": "Damian, TAXI TREKBUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Valgrisenche",
-              "details": "!! 21 BAGAGES\n",
+              "details": "Pour le transfert : 2 minibus TREKBUS (16pax) + Damian 4x4 (4pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "TRICASTINS\n",
@@ -2186,7 +2186,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "!! 21 BAGAGES\nJ+1 BENEVOLO\n",
+              "details": "J+1 BENEVOLO\n",
               "heure_rdv": "",
               "depart": "CHALET DE L'EPEE",
               "client": "TRICASTINS\n",
@@ -2328,7 +2328,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2343,7 +2343,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2358,7 +2358,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3379,7 +3379,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "!! 21 BAGAGES\nJ-1 EPEE\n",
+              "details": "J-1 EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "TRICASTINS\n",
@@ -4622,7 +4622,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "!! 21 BAGAGES\nJ+1 GRIVOLA\n",
+              "details": "J+1 GRIVOLA\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "TRICASTINS\n",
@@ -5480,7 +5480,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! BG à déposer au AIR BNB 37 impasse du Calvaire, Contamines Montjoie. (Aline: 0626824701) \n",
+              "details": "!! BG à déposer au AIR BNB 37 impasse du Calvaire, Contamines Montjoie. (proprio Aline: 0626824701. Si pas là déposer BG devant) \n",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "MOE\n",
@@ -5775,7 +5775,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "!! 21 BAGAGES\nJ-1 BENEVOLO\n",
+              "details": "J-1 BENEVOLO\n",
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "TRICASTINS\n",
