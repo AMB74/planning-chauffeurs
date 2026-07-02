@@ -78,21 +78,6 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE MOEDE ANTERNE",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "GITE FAGOT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! VEILLE SS BAGAGE",
-              "transfert": "–",
               "details": "J-1 SALVAGNY\n2 BAG. GTA 2 > GITE FAGOT avec l'AEM\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
@@ -1128,42 +1113,12 @@
               "nbre": "2+1",
               "arrivee": "LA FERME DU NOYER",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GITE FAGOT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
             }
           ]
         },
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "08H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV GARE CHAMONIX",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "CHALET ALPIN DU TOUR",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
@@ -2351,21 +2306,6 @@
               "nbre": "2+1",
               "arrivee": "LE FETO",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "07H30",
-              "depart": "CHALET DES CONTAMINES",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "REFUGE PLAN MYA",
-              "stockes": "–"
             }
           ]
         },
@@ -2760,21 +2700,6 @@
               "client": "SPIELMANN\n",
               "nbre": "8",
               "arrivee": "LA GRANDE OURSE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "08H00 HBG > Trient",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET ALPIN DU TOUR",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "GITE BON ABRI",
               "stockes": "–"
             },
             {
@@ -3583,16 +3508,16 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "16H ST GUÉRIN > HBG",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "REFUGE PLAN MYA",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "REFUGE DE ROSUEL",
+              "depart": "LES LINDARETS / ARDENT",
+              "client": "FALLET\n",
+              "nbre": "6",
+              "arrivee": "REFUGE DE CHARDONNIERE",
               "stockes": "–"
             }
           ]
@@ -4063,21 +3988,6 @@
               "client": "ZAJAC\n",
               "nbre": "2",
               "arrivee": "B&B LE CABANON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GITE BON ABRI",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL LE VIEUX POMMIER",
               "stockes": "–"
             },
             {
@@ -4827,21 +4737,6 @@
               "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "FALLET\n",
-              "nbre": "6",
-              "arrivee": "REFUGE DU FOLLY",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
@@ -4866,21 +4761,6 @@
               "client": "STOLL\n",
               "nbre": "5",
               "arrivee": "HOTEL LE CONCORDE**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DE ROSUEL",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "REFUGE DU BOIS",
               "stockes": "–"
             }
           ]
@@ -5456,21 +5336,6 @@
               "client": "TREKKER MARTIAL\n",
               "nbre": "14+1",
               "arrivee": "HOTEL MEUBLE LAURENT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LE VIEUX POMMIER",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–"
             },
             {
@@ -6089,21 +5954,6 @@
               "client": "KAO\n",
               "nbre": "1",
               "arrivee": "LE PETIT REFUGE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DU BOIS",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "REFUGE DU GRAND BEC",
               "stockes": "–"
             }
           ]
@@ -6781,21 +6631,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE LES MOTTETS",
               "client": "CARRE\n",
               "nbre": "5",
               "arrivee": "CHALET DES CONTAMINES",
@@ -7218,21 +7053,6 @@
               "nbre": "5",
               "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DU GRAND BEC",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "2+1",
-              "arrivee": "REFUGE DU REPOJU",
-              "stockes": "–"
             }
           ]
         },
@@ -7252,21 +7072,6 @@
               "client": "COGGINS\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "BALZER\n",
-              "nbre": "1",
-              "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
             {
@@ -7326,21 +7131,6 @@
               "depart": "CHALET DES CONTAMINES",
               "client": "CARRE\n",
               "nbre": "5",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "07H30",
-              "depart": "CHALET DES CONTAMINES",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -8017,6 +7807,21 @@
               "client": "BISGAARD\n",
               "nbre": "3",
               "arrivee": "CHALET NANT ROUGE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H30",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "N.-D. DE LA GORGE Sans BG",
+              "client": "BALZER\n",
+              "nbre": "1",
+              "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             }
           ]
