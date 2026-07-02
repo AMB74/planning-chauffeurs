@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 4 JUILLET",
     "numero_semaine": "Semaine 28",
-    "genere_le": "01/07/2026"
+    "genere_le": "02/07/2026"
   },
   "chauffeurs": [
     {
@@ -692,7 +692,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -883,7 +883,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "Modane > Gare Chamonix",
-              "details": "14H30 Porte de l'Orgère > Modane (10 pax) puis > Cham (2 pax)\n",
+              "details": "14H30 Porte de l'Orgère > Modane (10 pax) puis > Cham (2 pax + 1 AEM)\n",
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
@@ -909,21 +909,6 @@
               "client": "VANCAPPEL\n",
               "nbre": "6",
               "arrivee": "RDV ORGERE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "!! NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
-              "nbre": "12+1",
-              "arrivee": "REFUGE DE LA FEMMA",
               "stockes": "–"
             },
             {
@@ -1008,7 +993,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "10h30 : RDV OT Termignon\n",
               "heure_rdv": "",
               "depart": "OT TERMIGNON",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -1072,7 +1057,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI ALP'TRANSFER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -1126,6 +1111,26 @@
       "titre": "DIMANCHE 5 JUILLET",
       "date_complete": "DIMANCHE 5 JUILLET 2026",
       "groupes": [
+        {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "TAXI FOLLONIER",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GARE SAINT NICKLAUS",
+              "client": "JAVET ERIC\n",
+              "nbre": "7+1",
+              "arrivee": "HOTEL SCHWARZHORN",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -1393,6 +1398,21 @@
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "8H00",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL ROCKY POP***",
+              "client": "GP ROSLAN\nLIBOSSART ERIC\n(06 86 55 16 03 - )",
+              "nbre": "11",
+              "arrivee": "HOTEL LES CAMPANULES**",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
@@ -1440,7 +1460,7 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "10H00",
+              "transfert": "09H45",
               "details": "–",
               "heure_rdv": "PRARION CAISSES + TRANSFERT AEM",
               "depart": "RDV FLÉGÈRE",
@@ -1881,7 +1901,7 @@
               "depart": "OT LES CHAPIEUX",
               "client": "GATEAU\n",
               "nbre": "2",
-              "arrivee": "HOTEL GAI SOLEIL***, CHALET DU BERGER",
+              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -1970,10 +1990,10 @@
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
+              "transfert": "16H ST GUÉRIN > HBG",
               "details": "16H00 : Parking Chapelle St Guérin > HBG Le Petit Refuge (Rosuel)\n",
               "heure_rdv": "",
-              "depart": "RDV SAINT GUERIN",
+              "depart": "CHALET DU BERGER",
               "client": "BELLARD\n",
               "nbre": "2",
               "arrivee": "LE PETIT REFUGE",
@@ -1984,66 +2004,6 @@
         {
           "massif": "5. VANOISE",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "VOITURE AEM",
-              "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
-              "nbre": "14+1",
-              "arrivee": "REFUGE DE PLAN SEC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL L'OUTA***",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
-              "arrivee": "OT TERMIGNON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
-              "nbre": "14+1",
-              "arrivee": "REFUGE DE PLAN SEC",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
@@ -2126,7 +2086,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+2 : HOTEL DU GRAND BEC\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -2141,27 +2101,12 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "14h15 : Gare SNCF Modane > OT Aussois  (1 pax)\n!! NUIT SANS BG : J+1 : REFUGE DU REPOJU\n",
               "heure_rdv": "",
-              "depart": "HOTEL LA TURRA***",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "1+1",
-              "arrivee": "OT TERMIGNON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA TURRA***",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "2+1",
-              "arrivee": "OT TERMIGNON",
+              "depart": "RDV OT AUSSOIS / si bagages déposés au télésiège",
+              "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
+              "nbre": "14+1",
+              "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
             },
             {
@@ -2171,11 +2116,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "10H30",
-              "details": "–",
+              "details": "10h30 : RDV OT Termignon\n",
               "heure_rdv": "",
               "depart": "OT TERMIGNON",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "AUBERGE DE BELLECOMBE",
               "stockes": "–"
             },
@@ -2272,36 +2217,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "Pont > Gare Chamonix\n09H45",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
-              "nbre": "8+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "Pont > Gare Chamonix\n09H45",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
-              "nbre": "8+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
@@ -2351,7 +2266,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
-              "details": "–",
+              "details": "9h45 : Gare Cham > Pont (5 pax)\n11h30 : RDV Pont \nJ+1 : REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "RDV PARKING DE PONT",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
@@ -2366,12 +2281,32 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
-              "details": "–",
+              "details": "9h45 : Gare Cham > Pont (2 pax)\n11h30 : RDV parking Pont \nJ+1: REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "RDV PARKING DE PONT",
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
               "nbre": "8+1",
               "arrivee": "REFUGE SAVOIA",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "11. MONT-ROSE",
+          "lignes": [
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI ZURBRIGGEN",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV STALDEN",
+              "client": "SERMET THIERRY\n",
+              "nbre": "–",
+              "arrivee": "PENSION WALDEGG",
               "stockes": "–"
             }
           ]
@@ -2389,15 +2324,15 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "SS BAGAGE\n",
               "heure_rdv": "",
               "depart": "HOTEL SCHWARZHORN",
-              "client": "COPPEY JEAN BENOIT\n(0041 27 783 22 42 - 0041 79 418 78 68)",
+              "client": "JAVET ERIC\n",
               "nbre": "7+1",
               "arrivee": "GITE DU LAC DE MOIRY",
               "stockes": "–"
@@ -2470,21 +2405,6 @@
               "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
               "nbre": "1+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MANON HAUDIQUET\n(- 06 07 27 18 22)",
-              "nbre": "12+1",
-              "arrivee": "HOTEL SPLENDIDE",
               "stockes": "–"
             },
             {
@@ -2608,13 +2528,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BAGAGES",
               "transfert": "–",
-              "details": "–",
+              "details": "8H30 HBG > PARC MERLET\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
@@ -2739,6 +2659,21 @@
               "depart": "RDV FLÉGÈRE",
               "client": "SAUNDERS\n",
               "nbre": "2",
+              "arrivee": "HOTEL LE DAHU**",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV FLÉGÈRE",
+              "client": "AMER\n",
+              "nbre": "1",
               "arrivee": "HOTEL LE DAHU**",
               "stockes": "–"
             },
@@ -3353,7 +3288,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3363,22 +3298,7 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE BELLECOMBE",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "AUBERGE DE BELLECOMBE",
               "stockes": "–"
             },
@@ -3419,7 +3339,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE\n!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : HOTEL DU GRAND BEC\nJ-1 : REFUFE DU PLAN DU LAC\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA FEMMA",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -3434,7 +3354,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! VEILLE SANS BG J-1 : RDV AUSSOIS\n",
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -3509,7 +3429,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : RDV PONT\n",
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
@@ -3539,7 +3459,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : RDV PONT\n",
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
@@ -3588,16 +3508,16 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "JEAN MARC\nLE LENDEMAIN\n",
               "heure_rdv": "",
               "depart": "PENSION WALDEGG",
-              "client": "GUIDA LUCA BULGARELLI\n(+39 335 686 33 46  - )",
+              "client": "SERMET THIERRY\n",
               "nbre": "5+1",
               "arrivee": "RIFUGIO SCARTEBODEN",
               "stockes": "–"
@@ -3637,7 +3557,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3645,7 +3565,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "GITE DU LAC DE MOIRY",
-              "client": "COPPEY JEAN BENOIT\n(0041 27 783 22 42 - 0041 79 418 78 68)",
+              "client": "JAVET ERIC\n",
               "nbre": "7+1",
               "arrivee": "HOTEL DU GLACIER** AROLLA",
               "stockes": "–"
@@ -3676,7 +3596,7 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
-              "transfert": "08H30 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBGPAS DE TRANSFERT > Navette",
+              "transfert": "08H30 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBG",
               "details": "–",
               "heure_rdv": "",
               "depart": "LE FETO",
@@ -3705,21 +3625,6 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
-              "nbre": "11+1",
-              "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
@@ -3817,7 +3722,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H15 HBG > ITALIE",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
@@ -4092,6 +3997,21 @@
               "depart": "HOTEL LE DAHU**",
               "client": "SLOT\n",
               "nbre": "2",
+              "arrivee": "LA GRANDE OURSE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LE DAHU**",
+              "client": "AMER\n",
+              "nbre": "1",
               "arrivee": "LA GRANDE OURSE",
               "stockes": "–"
             },
@@ -4656,7 +4576,7 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "HOTEL PEPE GUST ",
               "stockes": "–"
             },
@@ -4682,7 +4602,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-2 : REFUGE PLAN DU LAC\n",
               "heure_rdv": "",
               "depart": "REFUGE ENTRE DEUX EAUX",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -4802,7 +4722,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : HOTEL GALISIA\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
@@ -4832,7 +4752,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : CHALET DE L'EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
@@ -4866,16 +4786,16 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 PENSION WALDEGG\nDODO SUR PLACE\n",
               "heure_rdv": "",
               "depart": "RIFUGIO SCARTEBODEN",
-              "client": "GUIDA LUCA BULGARELLI\n(+39 335 686 33 46  - )",
+              "client": "SERMET THIERRY\n",
               "nbre": "5+1",
               "arrivee": "RIFUGIO PASTORE",
               "stockes": "–"
@@ -4914,16 +4834,16 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "JEAN MARC\nLE LENDEMAIN\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GLACIER** AROLLA",
-              "client": "COPPEY JEAN BENOIT\n(0041 27 783 22 42 - 0041 79 418 78 68)",
+              "client": "JAVET ERIC\n",
               "nbre": "7+1",
               "arrivee": "REFUGE PRARAYER",
               "stockes": "–"
@@ -5191,6 +5111,21 @@
               "client": "GARON\n",
               "nbre": "4",
               "arrivee": "RELAIS ARPETTE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "LA GRANDE OURSE",
+              "client": "AMER\n",
+              "nbre": "1",
+              "arrivee": "HOTEL SPLENDIDE",
               "stockes": "–"
             },
             {
@@ -5599,7 +5534,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5724,6 +5659,21 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H ST GUÉRIN > HBG\n16H00",
+              "details": "Chapelle St Gérin > HBG (Le petit refuge Rosuel)\n",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER",
+              "client": "MARTINEZ\n",
+              "nbre": "2",
+              "arrivee": "LE PETIT REFUGE",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -5759,7 +5709,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5819,7 +5769,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5829,7 +5779,7 @@
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "HOTEL PEPE GUST ",
               "stockes": "–"
             },
@@ -6005,7 +5955,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : REFUGE BENVOLO\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
@@ -6020,7 +5970,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1: REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
@@ -6064,6 +6014,26 @@
               "stockes": "–"
             }
           ]
+        },
+        {
+          "massif": "11. MONT-ROSE",
+          "lignes": [
+            {
+              "pilote": "Jean-Marc",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "!! NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "J+1 RISTORO SITTEN\n",
+              "heure_rdv": "",
+              "depart": "RIFUGIO PASTORE",
+              "client": "SERMET THIERRY\n",
+              "nbre": "5+1",
+              "arrivee": "REFUGE MANTOVA",
+              "stockes": "–"
+            }
+          ]
         }
       ]
     },
@@ -6077,16 +6047,16 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 HOTEL DU GLACIER\n\n",
               "heure_rdv": "",
               "depart": "REFUGE PRARAYER",
-              "client": "COPPEY JEAN BENOIT\n(0041 27 783 22 42 - 0041 79 418 78 68)",
+              "client": "JAVET ERIC\n",
               "nbre": "7+1",
               "arrivee": "HOTEL SPORTING",
               "stockes": "–"
@@ -6369,6 +6339,21 @@
               "client": "FALKENBERG\n",
               "nbre": "4",
               "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL SPLENDIDE",
+              "client": "AMER\n",
+              "nbre": "1",
+              "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             },
             {
@@ -6908,7 +6893,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 8H00 : Transfert 7pax du refuge Laisonnay > Planay de Chambéranger\nJ+1 : REFUGE DU REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
@@ -6943,7 +6928,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : REFUGE DE l'ORGERE\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND BEC",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -6977,7 +6962,7 @@
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "CHALET MONTANA",
               "stockes": "–"
             },
@@ -7072,13 +7057,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : BONNEVAL SUR ARC\n!! TAXI HMA récupère BG à Plan du Lac, les stocke ds leur locaux\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -7189,6 +7174,26 @@
               "client": "FISCHER\n",
               "nbre": "4",
               "arrivee": "CABANE DE PRAFLEURI",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "11. MONT-ROSE",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "!! VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE MANTOVA",
+              "client": "SERMET THIERRY\n",
+              "nbre": "5+1",
+              "arrivee": "AUBERGE RISTORO SITTEN",
               "stockes": "–"
             }
           ]
@@ -7375,7 +7380,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -7492,6 +7497,21 @@
               "client": "THORNVAL\n",
               "nbre": "2",
               "arrivee": "REFUGE ELENA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL L'UNION",
+              "client": "AMER\n",
+              "nbre": "1",
+              "arrivee": "CHALET VAL FERRET",
               "stockes": "–"
             },
             {
@@ -7871,17 +7891,17 @@
             },
             {
               "pilote": "",
-              "renforts": "TAXI JAY",
+              "renforts": "",
               "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
+              "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
+              "transfert": "–",
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "DAELMANS\n",
               "nbre": "2",
-              "arrivee": "REFUGE PLAN MYA",
+              "arrivee": "CHAMBRES DU SOLEIL ",
               "stockes": "–"
             },
             {
@@ -8031,7 +8051,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : Refuge du Laisonnay\n",
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
@@ -8059,21 +8079,6 @@
         {
           "massif": "5. VANOISE",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
             {
               "pilote": "0. AUCUN",
               "renforts": "",
@@ -8160,7 +8165,7 @@
               "heure_rdv": "",
               "depart": "CHALET MONTANA",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
-              "nbre": "4+1",
+              "nbre": "5+1",
               "arrivee": "OT TERMIGNON",
               "stockes": "–"
             },
@@ -8171,7 +8176,7 @@
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : HOTEL DU GRAND BEC\n",
               "heure_rdv": "",
               "depart": "REFUGE DU SAUT",
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
@@ -8180,13 +8185,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! VEILLE SS BAGAGE",
               "transfert": "Hôtel Glacier des Evettes vers Aussois puis Modane",
-              "details": "–",
+              "details": "!! TAXI HMA prend les BG stockés la veille + \n!! TRANSFERT  Bonneval >Aussois et Modane\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -8235,13 +8240,13 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "!! NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : Fin\n",
               "heure_rdv": "",
               "depart": "REFUGE TETRAS LYRE PONT",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
@@ -8305,16 +8310,16 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "AUBERGE RISTORO SITTEN",
-              "client": "GUIDA LUCA BULGARELLI\n(+39 335 686 33 46  - )",
+              "client": "SERMET THIERRY\n",
               "nbre": "5+1",
               "arrivee": "RIFUGIO FERRARO",
               "stockes": "–"
