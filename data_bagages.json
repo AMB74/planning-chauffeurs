@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "03/07/2026 10:23"
+    "genere_le": "03/07/2026 10:46"
   },
   "lignes": [
     {
@@ -70,19 +70,6 @@
     },
     {
       "jour_semaine": "07-07 - MARDI",
-      "client": "LANE\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "4",
-      "depart": "RDV HOTEL",
-      "arrivee": "–",
-      "date_debut": "2026-07-07",
-      "date_fin": "2026-07-12",
-      "date_debut_aff": "Mar 07/07",
-      "date_fin_aff": "Dim 12/07"
-    },
-    {
-      "jour_semaine": "07-07 - MARDI",
       "client": "TREMBLAY\n",
       "chauffeur_debut": "–",
       "chauffeur_fin": "–",
@@ -93,6 +80,19 @@
       "date_fin": "2026-07-11",
       "date_debut_aff": "Mar 07/07",
       "date_fin_aff": "Sam 11/07"
+    },
+    {
+      "jour_semaine": "07-07 - MARDI",
+      "client": "LANE\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "4",
+      "depart": "RDV HOTEL",
+      "arrivee": "–",
+      "date_debut": "2026-07-07",
+      "date_fin": "2026-07-12",
+      "date_debut_aff": "Mar 07/07",
+      "date_fin_aff": "Dim 12/07"
     }
   ]
 }
