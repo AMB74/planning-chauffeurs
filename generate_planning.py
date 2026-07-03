@@ -20,8 +20,8 @@ CHAUFFEURS = [
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
     {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
-    {"prenom": "Yan",       "nom": "ANDRE",        "vehicule": "TRAFIC",        "plaque": "Location"},
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
+    {"prenom": "Yan",       "nom": "ANDRE",        "vehicule": "TRAFIC",        "plaque": "Location"},
 ]
 
 JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
