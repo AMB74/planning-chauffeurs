@@ -78,7 +78,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -98,7 +98,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -113,7 +113,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -128,7 +128,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -143,7 +143,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -158,7 +158,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -173,7 +173,7 @@
               "stockes": "4"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -188,7 +188,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yann André",
+              "pilote": "Bertrand, Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -823,7 +823,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Yann André",
+              "pilote": "Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
