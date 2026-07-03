@@ -818,7 +818,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -838,7 +838,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -868,8 +868,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Jean-Marc, TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -888,8 +888,8 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -909,7 +909,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "COMMENT FAIRE CETTE ANNÉE ? ils ne voulaient plus par le télésiège. L'année dernière, rdv avec haute Maurienne à la gare de Modane à 14h\n",
+              "details": "!! 13h30 : RDV Gare SNCF MODANE\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "BOURDENET\n",
@@ -918,13 +918,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! BAGAGES A 14H\n",
+              "details": "!! BG à déposer à l'OT à 14h00\n",
               "heure_rdv": "",
               "depart": "CHALET MONTANA",
               "client": "VACHERON\n",
@@ -978,8 +978,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -998,7 +998,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -1043,13 +1043,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 EPEE\n",
+              "details": "Fait la veille ?\nJ-1 EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "RUBIN\n",
@@ -1746,7 +1746,7 @@
               "heure_rdv": "",
               "depart": "LE RELAIS DES VILLARDS",
               "client": "TREKKER CHARLES\n+33 6 30 99 79 47\n",
-              "nbre": "–",
+              "nbre": "15+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
