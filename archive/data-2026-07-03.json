@@ -1781,13 +1781,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 13h30 : RDV Gare SNCF MODANE\n",
+              "details": "!! HBG >13h30 : RDV Gare SNCF MODANE pour donner les BG au Taxi qui va au CHALET MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "BOURDENET\n",
@@ -1811,8 +1811,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
