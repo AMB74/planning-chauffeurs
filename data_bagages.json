@@ -1,51 +1,12 @@
 {
   "meta": {
-    "genere_le": "03/07/2026 10:46"
+    "genere_le": "03/07/2026 10:48"
   },
   "lignes": [
     {
-      "jour_semaine": "27-06 - SAMEDI",
-      "client": "NORTIER GENEVIEVE\n(06 74 95 87 36 - )",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "10",
-      "depart": "BIG SKY HOTEL",
-      "arrivee": "HOTEL DE L'ARVE",
-      "date_debut": "2026-06-20",
-      "date_fin": "2026-06-27",
-      "date_debut_aff": "Sam 20/06",
-      "date_fin_aff": "Sam 27/06"
-    },
-    {
-      "jour_semaine": "27-06 - SAMEDI",
-      "client": "JAVET ERIC\n(- 06 12 49 87 35)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-06-21",
-      "date_fin": "2026-06-27",
-      "date_debut_aff": "Dim 21/06",
-      "date_fin_aff": "Sam 27/06"
-    },
-    {
-      "jour_semaine": "27-06 - SAMEDI",
-      "client": "FREBOURG MAXIME\n(- 06 02 66 02 89)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "2",
-      "depart": "RDV MONTROC",
-      "arrivee": "HOTEL LES CAMPANULES**",
-      "date_debut": "2026-06-21",
-      "date_fin": "2026-06-27",
-      "date_debut_aff": "Dim 21/06",
-      "date_fin_aff": "Sam 27/06"
-    },
-    {
-      "jour_semaine": "28-06 - DIMANCHE",
+      "jour_semaine": "04-07 - SAMEDI",
       "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
-      "chauffeur_debut": "Charlie",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "Bertrand, Yann André",
       "nbre": "4",
       "depart": "RDV FLÉGÈRE",
