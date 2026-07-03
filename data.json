@@ -55,16 +55,16 @@
       "plaque": "FN-020-TV"
     },
     {
-      "prenom": "Yan",
-      "nom": "ANDRE",
-      "vehicule": "TRAFIC",
-      "plaque": "Location"
-    },
-    {
       "prenom": "Serge",
       "nom": "DECLERCK",
       "vehicule": "TRAFIC",
       "plaque": "HK-583-DV"
+    },
+    {
+      "prenom": "Yan",
+      "nom": "ANDRE",
+      "vehicule": "TRAFIC",
+      "plaque": "Location"
     }
   ],
   "sections": [
