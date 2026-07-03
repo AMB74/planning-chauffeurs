@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 4 JUILLET",
     "numero_semaine": "Semaine 28",
-    "genere_le": "02/07/2026"
+    "genere_le": "03/07/2026"
   },
   "chauffeurs": [
     {
@@ -55,6 +55,12 @@
       "plaque": null
     },
     {
+      "prenom": "Yan",
+      "nom": "ANDRE",
+      "vehicule": "LOCATION",
+      "plaque": null
+    },
+    {
       "prenom": "Serge",
       "nom": "DECLERCK",
       "vehicule": "TRAFIC",
@@ -72,7 +78,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -92,7 +98,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -107,7 +113,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -122,7 +128,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -137,7 +143,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -152,7 +158,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -167,7 +173,7 @@
               "stockes": "4"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -182,7 +188,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Yann André",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -984,41 +990,6 @@
               "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
               "nbre": "12+1",
               "arrivee": "REFUGE PLAN DU LAC",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "7. ARAVIS / GLIERES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA MONTAGNE**",
-              "client": "BONNET\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA MONTAGNE**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA MONTAGNE**",
-              "client": "DURAFOUR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA MONTAGNE**",
               "stockes": "–"
             }
           ]
@@ -2107,41 +2078,6 @@
               "client": "PAPAZIAN\n",
               "nbre": "4",
               "arrivee": "MAISON DORON",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "7. ARAVIS / GLIERES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA MONTAGNE**",
-              "client": "BONNET\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA POINTE PERCEE**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA MONTAGNE**",
-              "client": "DURAFOUR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA POINTE PERCEE**",
               "stockes": "–"
             }
           ]
@@ -3285,41 +3221,6 @@
               "client": "PORCHERET\n",
               "nbre": "2",
               "arrivee": "REFUGE DE L'ALPAGE",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "7. ARAVIS / GLIERES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA POINTE PERCEE**",
-              "client": "DURAFOUR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL L'ALPAGE***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA POINTE PERCEE**",
-              "client": "BONNET\n",
-              "nbre": "2",
-              "arrivee": "HOTEL L'ALPAGE***",
               "stockes": "–"
             }
           ]
@@ -4563,41 +4464,6 @@
           ]
         },
         {
-          "massif": "7. ARAVIS / GLIERES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL L'ALPAGE***",
-              "client": "DURAFOUR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL L'ALPAGE***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BAGAGES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL L'ALPAGE***",
-              "client": "BONNET\n",
-              "nbre": "2",
-              "arrivee": "HOTEL L'ALPAGE***",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
@@ -5726,41 +5592,6 @@
               "client": "PORCHERET\n",
               "nbre": "2",
               "arrivee": "REFUGE DE LA BALME LANDRY ",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "7. ARAVIS / GLIERES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL L'ALPAGE***",
-              "client": "BONNET\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA MONTAGNE**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL L'ALPAGE***",
-              "client": "DURAFOUR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LA MONTAGNE**",
               "stockes": "–"
             }
           ]
