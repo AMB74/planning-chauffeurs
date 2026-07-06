@@ -119,7 +119,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 PLANPRAZ\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "STOLL\n",
@@ -839,7 +839,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -854,7 +854,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -865,6 +865,21 @@
               "client": "DEMETS\n",
               "nbre": "2",
               "arrivee": "LA CITE MONTJOIE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "16H30 ND GORGE > LES HOUCHES\n",
+              "heure_rdv": "",
+              "depart": "ND GORGE Sans BG",
+              "client": "SPIELMANN\n",
+              "nbre": "8",
+              "arrivee": "PRARION LES HOUCHES",
               "stockes": "–"
             }
           ]
@@ -892,6 +907,21 @@
         {
           "massif": "5. VANOISE",
           "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "TRANSFERT DE BAGAGES STOCKÉS\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LE COMMERCE ***",
+              "client": "LANE\n",
+              "nbre": "4",
+              "arrivee": "AUBERGE D'OUL",
+              "stockes": "4"
+            },
             {
               "pilote": "",
               "renforts": "TAXI HAUTE MAURIENNE",
@@ -924,12 +954,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "RDV 13H30 AVEC TAXI HAUTE MAURIENNE\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "SANDVIG\n",
@@ -939,12 +969,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "RDV 13H30 AVEC TAXI HAUTE MAURIENNE\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "SONDERGAARD\n",
@@ -979,7 +1009,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE\n\nMONTAGE/DEMONTAGE TENTES",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 HOTEL DE LA ROCHE - BEAUFORT\n",
               "heure_rdv": "",
               "depart": "REFUGE LA ROSELETTE",
               "client": "PORCHERET\n",
@@ -1127,7 +1157,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 SALVAGNY\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "STOLL\n",
@@ -1407,6 +1437,21 @@
               "depart": "HOTEL LA GELINOTTE",
               "client": "NIQUET MARION\n(- 06 37 46 26 31)",
               "nbre": "10+1",
+              "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LA GELINOTTE",
+              "client": "DOIZON\n",
+              "nbre": "2",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -1802,7 +1847,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2212,12 +2257,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-2 CHALET DU BERGER\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA CROIX DE PIERRE",
               "client": "PORCHERET\n",
               "nbre": "2",
-              "arrivee": "RDV HOTEL",
+              "arrivee": "HOTEL DE LA ROCHE",
               "stockes": "–"
             }
           ]
@@ -2495,7 +2540,7 @@
               "depart": "HOTEL LES CAMPANULES**",
               "client": "PRENTOUT\n",
               "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
             {
