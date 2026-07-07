@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 11 JUILLET",
     "numero_semaine": "Semaine 29",
-    "genere_le": "06/07/2026"
+    "genere_le": "07/07/2026"
   },
   "chauffeurs": [
     {
@@ -280,6 +280,21 @@
               "client": "MOEGLE LISON\n(- 07 67 64 17 67)",
               "nbre": "14+1",
               "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LA GELINOTTE",
+              "client": "TREMBLAY\n",
+              "nbre": "4",
+              "arrivee": "HOTEL COSMIQUES ",
               "stockes": "–"
             },
             {
@@ -614,7 +629,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -898,7 +913,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
-              "nbre": "4+1",
+              "nbre": "6+1",
               "arrivee": "RDV MODANE",
               "stockes": "–"
             }
@@ -1937,7 +1952,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1946,6 +1961,36 @@
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "CARITOUX\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "GORDEN\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "BONNETAIN\n",
               "nbre": "2",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
@@ -2237,7 +2282,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 OT TERMIGNON\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ORGERE",
               "client": "CHAZAL\n",
@@ -2994,7 +3039,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3310,7 +3355,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 ORGERE\n",
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "CHAZAL\n",
@@ -3439,8 +3484,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3713,7 +3758,7 @@
               "depart": "CHALET DES CONTAMINES",
               "client": "THORNVAL\n",
               "nbre": "2",
-              "arrivee": "RDV HOTEL",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
@@ -6749,7 +6794,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
