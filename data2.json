@@ -78,6 +78,21 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "Peugeot 308 break, Gris foncé DX-162-XP / Clé sur amortisseur\nClé à déposer à la Maison de la Montagne après la récup. des bagages\n",
+              "heure_rdv": "",
+              "depart": "VOITURE AEM",
+              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
+              "nbre": "9+1",
+              "arrivee": "REFUGE DU NANT DU BEURRE",
+              "stockes": "–"
+            },
+            {
               "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -6007,21 +6022,6 @@
         {
           "massif": "2. GTA 1",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "WOLTHUIS\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE SALVAGNY",
-              "stockes": "–"
-            },
             {
               "pilote": "0. AUCUN",
               "renforts": "",

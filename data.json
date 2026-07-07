@@ -4280,7 +4280,7 @@
               "heure_rdv": "",
               "depart": "LE FETO",
               "client": "GAY Maxime\n",
-              "nbre": "2+1",
+              "nbre": "1+1",
               "arrivee": "REFUGE DE CHARDONNIERE",
               "stockes": "–"
             },
@@ -5473,7 +5473,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE CHARDONNIERE",
               "client": "GAY Maxime\n\n",
-              "nbre": "2+1",
+              "nbre": "1+1",
               "arrivee": "REFUGE DE LA VOGEALLE",
               "stockes": "–"
             },
@@ -6188,8 +6188,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -6611,17 +6611,17 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 : REFUGE DE CHARDONNIERE \n!! TRANSFERT 16h30 SIXT\n",
+              "details": "RAMENER SAC DE ALTITUDE A SALVAGNY\nJ-1 : REFUGE DE CHARDONNIERE \n!! TRANSFERT 16h30 SIXT\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA VOGEALLE",
               "client": "GAY Maxime\n",
-              "nbre": "2+1",
+              "nbre": "1+1",
               "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
             },
@@ -6661,6 +6661,21 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! Récupérer BG à AIR BNB 37 impasse du Calvaire, Contamines Montjoie. (Aline: 0626824701) \n",
+              "heure_rdv": "",
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "MOE\n",
+              "nbre": "2",
+              "arrivee": "HOTEL DE L'ARVE",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -6673,21 +6688,6 @@
               "client": "TREKKER LAURA\n",
               "nbre": "14+1",
               "arrivee": "HOTEL ROCKY POP***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! Récupérer BG à AIR BNB 37 impasse du Calvaire, Contamines Montjoie. (Aline: 0626824701) \n",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MOE\n",
-              "nbre": "2",
-              "arrivee": "HOTEL DE L'ARVE",
               "stockes": "–"
             },
             {
@@ -7647,12 +7647,12 @@
             },
             {
               "pilote": "Jean-Marc",
-              "renforts": "",
+              "renforts": "Jean-Marc",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 HOTEL DU GLACIER\n\n",
+              "details": "16H30 LES PERRIERES > HBG\nJ-1 HOTEL DU GLACIER\n\n",
               "heure_rdv": "",
               "depart": "REFUGE PRARAYER",
               "client": "JAVET ERIC\n",
@@ -7719,7 +7719,7 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "GAY Maxime\n\n",
-              "nbre": "2+1",
+              "nbre": "1+1",
               "arrivee": "REFUGE MOEDE ANTERNE",
               "stockes": "–"
             },
