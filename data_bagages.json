@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "07/07/2026 16:43"
+    "genere_le": "08/07/2026 14:48"
   },
   "lignes": [
     {
@@ -30,6 +30,19 @@
       "date_fin_aff": "Ven 10/07"
     },
     {
+      "jour_semaine": "11-07 - SAMEDI",
+      "client": "MOEGLE LISON\n(- 07 67 64 17 67)",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-05",
+      "date_fin": "2026-07-11",
+      "date_debut_aff": "Dim 05/07",
+      "date_fin_aff": "Sam 11/07"
+    },
+    {
       "jour_semaine": "07-07 - MARDI",
       "client": "TREMBLAY\n",
       "chauffeur_debut": "Laurent",
@@ -54,6 +67,19 @@
       "date_fin": "2026-07-12",
       "date_debut_aff": "Mar 07/07",
       "date_fin_aff": "Dim 12/07"
+    },
+    {
+      "jour_semaine": "12-07 - DIMANCHE",
+      "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV THOLLON",
+      "arrivee": "RDV PLANPRAZ",
+      "date_debut": "2026-07-12",
+      "date_fin": "2026-07-18",
+      "date_debut_aff": "Dim 12/07",
+      "date_fin_aff": "Sam 18/07"
     }
   ]
 }
