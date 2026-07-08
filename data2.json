@@ -84,7 +84,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "Peugeot 308 break, Gris foncé DX-162-XP / Clé sur amortisseur\nClé à déposer à la Maison de la Montagne après la récup. des bagages\n",
+              "details": "TRANSFERT A PREVOIR > CF CATHY\nPeugeot 308 break, Gris foncé DX-162-XP / Clé sur amortisseur\nClé à déposer à la Maison de la Montagne après la récup. des bg\n",
               "heure_rdv": "",
               "depart": "VOITURE AEM",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
@@ -1170,6 +1170,26 @@
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
               "nbre": "8+1",
               "arrivee": "RDV PARKING DE PONT",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
+          "lignes": [
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI ZURBRIGGEN",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV STALDEN",
+              "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
+              "nbre": "5+1",
+              "arrivee": "PENSION WALDEGG",
               "stockes": "–"
             }
           ]
@@ -2298,6 +2318,21 @@
             {
               "pilote": "",
               "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "**16h30 parking de Laval > HBG**\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DU NANT DU BEURRE",
+              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
+              "nbre": "9+1",
+              "arrivee": "HOTEL LE CORMET",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
@@ -2386,13 +2421,13 @@
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "Les bagages 1 nuit à l'office ça ne pose pas de problème ? ou alors voiture AEM ?\n",
               "heure_rdv": "",
               "depart": "OT FIONNAY",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -3405,29 +3440,14 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
-              "nbre": "9+1",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
-              "transfert": "8h30",
-              "details": "–",
+              "transfert": "–",
+              "details": "**8h30 HBG > Chapelle St Guérin**\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL LE CORMET",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
               "nbre": "9+1",
               "arrivee": "REFUGE DE LA BALME LANDRY ",
@@ -3545,7 +3565,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 OT ou VOITURE AEM\n",
               "heure_rdv": "",
               "depart": "CABANE CHANRION",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -3559,7 +3579,7 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4703,27 +4723,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "Prévoir tente pour Cathy\n**16h30 Cormet de Roselend > 4 pax Chalet de Roselend **\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA BALME LANDRY ",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
               "nbre": "9+1",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
-              "nbre": "9+1",
-              "arrivee": "CHALET DU BERGER",
+              "arrivee": "CHALET DU BERGER, CHALET DE ROSELEND",
               "stockes": "–"
             }
           ]
@@ -4805,21 +4810,6 @@
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
-              "nbre": "7+1",
-              "arrivee": "HOSPICE GD ST BERNARD",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "15H30 St Oyen > Col du Grand St Bernard",
@@ -4837,13 +4827,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "+ 1 RESPIRATEUR\nJ-1 PENSION WALDEGG\n",
+              "details": "DODO SUR PLACE\n+ 1 RESPIRATEUR\nJ-1 PENSION WALDEGG\n",
               "heure_rdv": "",
               "depart": "RIFUGIO SCARTEBODEN",
               "client": "SARDA ALAIN\n",
@@ -5946,6 +5936,21 @@
           "lignes": [
             {
               "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "MONTAGE /DEMONTAGE TENTES",
+              "transfert": "08H30 HBG > Chapieux",
+              "details": "**8h 4 pax Chalet de Roselend > Chalet du Berger**\n**16H30 Chalet du Berger > HBG – 10 pax**\n",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER, CHALET DE ROSELEND",
+              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
+              "nbre": "9+1",
+              "arrivee": "HOTEL DU GRAND MONT",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "TAXI HOFMANN",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -6070,7 +6075,7 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -7147,6 +7152,21 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "J+1 AVEC TRANSFERT GROUPE\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DU GRAND MONT",
+              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
+              "nbre": "9+1",
+              "arrivee": "REFUGE DE L'ALPAGE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
               "details": "J-1 : RDV BEAUFORT\n",
@@ -7268,7 +7288,7 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -8310,6 +8330,21 @@
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
+              "type": "VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "**16h Pont de la Vieille Scie avec les bagages (hôtel Le Grand Mont) > Naves**\n**J-1 GRAND MONT**\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DE L'ALPAGE",
+              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
+              "nbre": "9+1",
+              "arrivee": "RDV BEAUFORT",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
               "details": "J+1: PLAN MYA\n",
@@ -8362,7 +8397,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : RDV PONT\n",
               "heure_rdv": "",
               "depart": "REFUGE TETRAS LYRE PONT",
               "client": "PATISSIER\n",
@@ -8461,7 +8496,7 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
