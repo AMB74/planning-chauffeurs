@@ -567,7 +567,8 @@ const PRINT_CSS = `
   .page { padding: 0; max-width: 100%; }
   .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
-  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; break-after: avoid; }
+  .page-break { break-before: page; height: 0; margin: 0; padding: 0; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -726,22 +727,8 @@ function lancerImpression(conteneurId) {
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
       const dateSection = s.dataset.date || '';
-      // Ajouter un en-tête si la date change
       if (dateSection && dateSection !== dateActuelle) {
-        if (dateActuelle !== null) html += '<div style="break-before:page;"></div>';
-        html += `<div class="print-header">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #E8263A;padding-bottom:6px;margin-bottom:10px;">
-            <div>
-              <div style="font-size:8px;font-family:monospace;color:#888;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px;">ALTITUDE MONT-BLANC › Planning Chauffeurs</div>
-              <div style="font-size:16px;font-weight:600;letter-spacing:-0.02em;">${dateSection}</div>
-            </div>
-            <div style="text-align:right;font-family:monospace;font-size:8px;">
-              <div style="font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">ALTITUDE MONT-BLANC</div>
-              <div style="color:#666;">62 passage du Nant Devant · 74110 MONTRIOND</div>
-              <div style="color:#666;">SIREN : 481 563 567</div>
-            </div>
-          </div>
-        </div>`;
+        if (dateActuelle !== null) html += '<div class="page-break"></div>';
         dateActuelle = dateSection;
       }
       const clone = s.cloneNode(true);
