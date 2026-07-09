@@ -84,7 +84,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "TRANSFERT A PREVOIR > CF CATHY\nPeugeot 308 break, Gris foncé DX-162-XP / Clé sur amortisseur\nClé à déposer à la Maison de la Montagne après la récup. des bg\n",
+              "details": "Peugeot 308 break, Gris foncé DX-162-XP / Clé sur amortisseur\nClé à déposer à la Maison de la Montagne après la récup. des bg\n",
               "heure_rdv": "",
               "depart": "VOITURE AEM",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
@@ -128,7 +128,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -1009,7 +1009,7 @@
           "lignes": [
             {
               "pilote": "Serge",
-              "renforts": "",
+              "renforts": "Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2332,12 +2332,12 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "**16h30 parking de Laval > HBG**\n",
+              "details": "**16h30 Parking de Laval > HBG**\n",
               "heure_rdv": "",
               "depart": "REFUGE DU NANT DU BEURRE",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
@@ -3460,7 +3460,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "**8h30 HBG > Chapelle St Guérin**\nBAGAGES :\n**J+1 CHALET DU BERGER - 6 pax**\n**J+1 CHALET DE ROSELEND - 4 pax**\n\n",
+              "details": "**8h30 HBG > Chapelle St Guérin**\nBAGAGES :\n**J+1 CHALET DU BERGER - 6 pax**\n**J+1 CHALET DE ROSELEND - 4 pax**\n",
               "heure_rdv": "",
               "depart": "HOTEL LE CORMET",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
