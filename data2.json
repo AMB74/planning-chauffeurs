@@ -178,7 +178,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -193,7 +193,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -208,7 +208,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -223,7 +223,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -238,7 +238,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -253,7 +253,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -268,7 +268,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -283,7 +283,7 @@
               "stockes": "1"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "–",
@@ -313,7 +313,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -718,7 +718,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -733,7 +733,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -748,7 +748,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1129,7 +1129,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE\n\nMONTAGE /DEMONTAGE TENTES",
               "transfert": "–",
-              "details": "J+1 HOTEL DE LA ROCHE - BEAUFORT\n",
+              "details": "!! DEJA FAIT\nJ+1 HOTEL DE LA ROCHE - BEAUFORT\n",
               "heure_rdv": "",
               "depart": "REFUGE LA ROSELETTE",
               "client": "PORCHERET\n",
@@ -2689,8 +2689,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
