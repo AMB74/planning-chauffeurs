@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 11 JUILLET",
     "numero_semaine": "Semaine 29",
-    "genere_le": "08/07/2026"
+    "genere_le": "09/07/2026"
   },
   "chauffeurs": [
     {
@@ -78,7 +78,7 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -143,13 +143,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 SALVAGNY\n",
+              "details": "J-1 SALVAGNY\n!! Récupère BG + Sac congel au bureau MONTRIOND >Gite FAGOT\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -177,21 +177,6 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "RDV HOTEL",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
@@ -1043,7 +1028,7 @@
               "stockes": "4"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1073,7 +1058,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1088,7 +1073,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2524,36 +2509,6 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "LA GRANDE OURSE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "8h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "LA GRANDE OURSE",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -2701,6 +2656,21 @@
               "client": "TREKKER ALAN\n",
               "nbre": "12+1",
               "arrivee": "HOTEL ARVEYRON",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "8h30",
+              "details": "8H30 : RDV à l'Hôtel La Folie Douce  > Le Tour (16 pax)\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LA FOLIE DOUCE CHAMONIX",
+              "client": "GURU\n",
+              "nbre": "16",
+              "arrivee": "LA GRANDE OURSE",
               "stockes": "–"
             },
             {
@@ -3337,6 +3307,21 @@
               "nbre": "10+1",
               "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H ST GUÉRIN > HBG",
+              "details": "Chapelle St Guérin > Rosuel\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DE LA GITTAZ",
+              "client": "VOLERY\n",
+              "nbre": "1",
+              "arrivee": "LE PETIT REFUGE",
+              "stockes": "–"
             }
           ]
         },
@@ -3681,21 +3666,6 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "16h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
-              "stockes": "–"
-            },
             {
               "pilote": "Bertrand",
               "renforts": "",
@@ -4279,6 +4249,21 @@
               "client": "MEADOWS\n",
               "nbre": "2",
               "arrivee": "HOTEL DU GLACIER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "16h30",
+              "details": "16H30 : bas du télésiège Champex > HBG Orsières\n",
+              "heure_rdv": "",
+              "depart": "LA GRANDE OURSE",
+              "client": "GURU\n",
+              "nbre": "16",
+              "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             },
             {
@@ -4935,21 +4920,6 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "16h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "HOTEL CENTRALE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
@@ -4957,36 +4927,6 @@
               "client": "REINDERS\n",
               "nbre": "2",
               "arrivee": "HOTEL DU GLACIER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "08H00",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "HOSKIN\n",
-              "nbre": "3",
-              "arrivee": "RELAIS ARPETTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "8h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "HOTEL CENTRALE",
               "stockes": "–"
             },
             {
@@ -5502,6 +5442,21 @@
             {
               "pilote": "",
               "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "8h30",
+              "details": "8H30 : HBG > FERRET (16pax)\n16H30 : ARNOUVA > HBG (16pax)\n",
+              "heure_rdv": "",
+              "depart": "HOTEL L'UNION",
+              "client": "GURU\n",
+              "nbre": "16",
+              "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -5534,21 +5489,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "\n",
-              "heure_rdv": "",
-              "depart": "CAMPING DES GLACIERS",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "14+1",
-              "arrivee": "CAMPING LA SORGENTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -5557,6 +5497,21 @@
               "client": "BISSONNETTE\n",
               "nbre": "2",
               "arrivee": "AUBERGE DE LA VACHEY",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "+ REMORQUE",
+              "transfert": "–",
+              "details": "\n",
+              "heure_rdv": "",
+              "depart": "CAMPING DES GLACIERS",
+              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
+              "nbre": "14+1",
+              "arrivee": "CAMPING LA SORGENTE",
               "stockes": "–"
             },
             {
@@ -6173,21 +6128,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG\n\n8h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "CHALET DE ROSELEND",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -6764,7 +6704,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H30 : HBG > BONATTI  (16 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
               "client": "GURU\n",
@@ -7378,21 +7318,6 @@
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
               "nbre": "12",
               "arrivee": "HOTEL LES CAMPANULES**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "8h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "CHALET NANT ROUGE",
               "stockes": "–"
             },
             {
@@ -8042,12 +7967,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "8H30 : HBG > La VISAILLE (16 pax) - AMB\n17H00 : Ville des Glaciers > HBG (16pax) - TAXI JAY\n",
               "heure_rdv": "",
               "depart": "HOTEL CENTRALE",
               "client": "GURU\n",
@@ -8306,7 +8231,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
