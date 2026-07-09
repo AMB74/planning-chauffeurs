@@ -7466,8 +7466,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7481,8 +7481,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7496,8 +7496,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7526,8 +7526,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7693,6 +7693,21 @@
         {
           "massif": "0. AUTRES",
           "lignes": [
+            {
+              "pilote": "Ivan",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "Récupère les BG à LANGLEY et les laisse dans son camion pour demain les donner à Serge sur Bourg St Maurice\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LANGLEY TIGNES",
+              "client": "SEBASTIEN BRUNET\n",
+              "nbre": "6",
+              "arrivee": "RDV TIGNES",
+              "stockes": "–"
+            },
             {
               "pilote": "",
               "renforts": "",
@@ -7965,7 +7980,7 @@
               "type_transfert": "–",
               "type": "–",
               "transfert": "–",
-              "details": "!! Passeport chinois à récupérer à l'UNION Chapelle St Guérin > Rosuel\n",
+              "details": "!! Passeport chinois à récupérer à l'UNION et à déposer à l'hôtel les jumeaux (Courmayeur)\n",
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
               "client": "AMER\n",
@@ -8124,7 +8139,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Ivan",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -8545,7 +8560,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "!! INCENDIE > Si route fermée\nBAGAGES J+1 ORGERE\n",
+              "details": "!! INCENDIE > Si route fermée\nHAUTE MAURIENNE LA VEILLE\nBAGAGES J+1 ORGERE\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND BEC",
               "client": "CHAZAL\n",
@@ -8560,7 +8575,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "!! INCENDIE > Si route fermée\nBAGAGES J+1 MONTANA\n",
+              "details": "!! INCENDIE > Si route fermée\nHAUTE MAURIENNE LA VEILLE\nBAGAGES J+1 MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND BEC",
               "client": "LANG\n",
@@ -8575,7 +8590,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "!! INCENDIE > Si route fermée\nBAGAGES J+1 MONTANA\n",
+              "details": "!! INCENDIE > Si route fermée\nHAUTE MAURIENNE LA VEILLE\nBAGAGES J+1 MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "SONDERGAARD\n",
@@ -8590,7 +8605,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "!! INCENDIE > Si route fermée\nBAGAGES J+1 MONTANA\n",
+              "details": "!! INCENDIE > Si route fermée\nHAUTE MAURIENNE LA VEILLE\nBAGAGES J+1 MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "SANDVIG\n",
@@ -8650,7 +8665,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Hôtel Glacier des Evettes vers Aussois puis Modane",
-              "details": "!! INCENDIE → EN ATTENTE\n!! TAXI HMA prend les BG stockés la veille + \n!! TRANSFERT  Bonneval >Aussois et Modane\n",
+              "details": "!! INCENDIE → EN ATTENTE\n!! TRANSFERT  Bonneval >Aussois et Modane\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -8676,21 +8691,6 @@
               "client": "PORCHERET\n",
               "nbre": "2",
               "arrivee": "REFUGE LA ROSELETTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Yan",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "MONTAGE /DEMONTAGE TENTES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE PLAN MYA",
-              "client": "PAPAZIAN\n",
-              "nbre": "4",
-              "arrivee": "RDV BEAUFORT",
               "stockes": "–"
             }
           ]
