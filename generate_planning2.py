@@ -1,451 +1,260 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planning Interne – ALTITUDE MONT-BLANC</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
-:root {
-  --rouge: #E8263A; --gris-fonce: #1a1a1a; --gris-moyen: #5c5c5c;
-  --gris-clair: #f4f4f4; --gris-border: #e0e0e0; --blanc: #ffffff; --bleu-renfort: #0D47A1;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', sans-serif; background: #f8f8f6; color: var(--gris-fonce); font-size: 13px; line-height: 1.4; }
-.page { max-width: 1400px; margin: 0 auto; padding: 28px 24px 48px; }
-#loading { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 16px; color: var(--gris-moyen); }
-.spinner { width: 32px; height: 32px; border: 3px solid var(--gris-border); border-top-color: var(--rouge); border-radius: 50%; animation: spin 0.7s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-#loading p { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
-.header { display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 2.5px solid var(--rouge); padding-bottom: 14px; margin-bottom: 24px; }
-.breadcrumb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gris-moyen); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
-.breadcrumb span { color: var(--rouge); font-weight: 500; }
-.header-day { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; }
-.header-societe { text-align: right; font-family: 'DM Mono', monospace; }
-.societe-nom { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
-.societe-detail { font-size: 9px; color: var(--gris-moyen); margin-top: 2px; }
-.badge-maj { display: inline-flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 9px; background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; border-radius: 3px; padding: 2px 7px; margin-top: 4px; }
-.badge-s2 { display: inline-flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 9px; background: #e3f2fd; color: #1565C0; border: 1px solid #90caf9; border-radius: 3px; padding: 2px 7px; margin-top: 4px; margin-left: 8px; }
-#page-planning { display: none; }
-.section { margin-bottom: 28px; }
-.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; user-select: none; }
-.section-title { font-size: 15px; font-weight: 600; }
-.section-massif { font-size: 11px; font-weight: 500; color: var(--gris-moyen); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 2px; }
-tr.massif-separator td.massif-sep-cell { background: #f0f0ee; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 4px 10px; border-left: 3px solid var(--rouge) !important; }
-.section-count { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--gris-fonce); color: var(--blanc); border-radius: 20px; padding: 2px 9px; }
-.chevron { margin-left: auto; font-size: 14px; color: var(--gris-moyen); transition: transform 0.2s; }
-.section.collapsed .chevron { transform: rotate(-90deg); }
-.section.collapsed .section-body { display: none; }
-.table-wrapper { border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1.5px solid var(--gris-border); background: var(--blanc); }
-table { width: 100%; min-width: 860px; border-collapse: collapse; }
-thead tr { background: var(--gris-clair); border-bottom: 1.5px solid var(--gris-border); }
-th { font-family: 'DM Mono', monospace; font-size: 9.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-moyen); padding: 8px 10px; text-align: left; white-space: nowrap; }
-tbody tr { border-bottom: 1px solid var(--gris-border); transition: background 0.15s; }
-tbody tr:last-child { border-bottom: none; }
-tbody tr:hover { background: #fafafa; }
-tbody tr.has-pilote td:first-child { border-left: 3px solid var(--rouge); }
-tbody tr.no-pilote td:first-child { border-left: 3px solid transparent; }
-tbody tr.hl-pilote { background: #fff5f5; }
-tbody tr.hl-renfort { background: #f0f4ff; }
-tbody tr.valide { background: #f0faf0 !important; opacity: 0.75; }
-tbody tr.valide td { text-decoration: line-through; color: #888; }
-tbody tr.valide td.pilote { color: #2e7d32; text-decoration: none; font-weight: 600; }
-td.check { width: 32px; text-align: center; padding: 9px 6px; vertical-align: middle; }
-td.check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #2e7d32; }
-th.check { width: 32px; text-align: center; padding: 8px 6px; }
-td.alerte-stock { width: 24px; text-align: center; padding: 9px 4px; vertical-align: middle; font-size: 14px; }
-th.alerte-stock { width: 24px; padding: 8px 4px; }
-td { padding: 9px 10px; vertical-align: top; }
-td.pilote { font-weight: 600; white-space: nowrap; min-width: 70px; }
-td.pilote.empty { color: #bbb; font-weight: 400; font-style: italic; }
-td.renforts { color: var(--bleu-renfort); font-size: 12px; }
-td.renforts.empty { color: #ccc; }
-td.details { font-family: 'DM Mono', monospace; font-size: 12px; color: #B71C1C; font-weight: 500; white-space: normal; word-break: break-word; min-width: 90px; }
-td.details.empty { color: #ccc; }
-td.transfert { font-size: 11.5px; color: var(--gris-moyen); min-width: 180px; max-width: 220px; white-space: normal; word-break: break-word; }
-td.transfert.empty { color: #ccc; }
-td.depart { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
-td.heure-rdv { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #1565C0; text-align: center; min-width: 110px; }
-td.heure-rdv.empty { color: #ddd; text-align: center; }
-td.client { font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em; white-space: normal; word-break: break-word; max-width: 130px; }
-td.nbre { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; text-align: center; white-space: nowrap; }
-td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: normal; word-break: break-word; }
-td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
-td.stockes.empty { color: #ddd; text-align: center; }
-.badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
-.col-type .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
-.col-type { min-width: 70px; }
-.col-type-transfert .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
-.col-type-transfert { min-width: 70px; }
-.badge-remorque    { background: #FFEBEE; color: #C62828; border-color: #EF9A9A; }
-.badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
-.badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
-.badge-transfert   { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
-.badge-rdv         { background: #F3E5F5; color: #6A1B9A; border-color: #CE93D8; }
-.badge-sans        { background: #f4f4f4; color: #888; border-color: #ddd; }
-.badge-default     { background: #f4f4f4; color: #555; border-color: #ddd; }
-.legende { display: flex; gap: 16px; margin-bottom: 14px; font-size: 11px; color: var(--gris-moyen); flex-wrap: wrap; }
-.legende-item { display: flex; align-items: center; gap: 6px; }
-.legende-dot { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
-.dot-pilote  { background: #ffe0e0; border: 1px solid #f5b0b0; }
-.dot-renfort { background: #dce8ff; border: 1px solid #a0b8f0; }
-.empty-section { text-align: center; padding: 32px; color: var(--gris-moyen); font-size: 13px; background: var(--blanc); border: 1.5px solid var(--gris-border); border-radius: 8px; }
-.footer { margin-top: 32px; border-top: 1px solid var(--gris-border); padding-top: 12px; display: flex; justify-content: space-between; color: var(--gris-moyen); font-size: 10.5px; font-family: 'DM Mono', monospace; }
-.btn-print { position: fixed; bottom: 20px; right: 20px; background: var(--rouge); color: white; border: none; border-radius: 50px; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgba(232,38,58,0.3); transition: all 0.2s; z-index: 100; }
-.btn-print:hover { transform: translateY(-2px); }
-@media (max-width: 700px) {
-  .page { padding: 14px 10px 32px; }
-  .header-day { font-size: 18px; }
-  .table-wrapper { overflow-x: auto; }
-  table { min-width: 860px; }
-  th { font-size: 8.5px; padding: 6px; }
-  td { padding: 7px 6px; font-size: 11px; }
-}
-@media print {
-  @page { size: A4 portrait; margin: 5mm 6mm; }
-  body { background: white; font-size: 10px; }
-  .page { padding: 0; max-width: 100%; }
-  .header { padding-bottom: 6px; margin-bottom: 10px; }
-  .header-day { font-size: 16px; }
-  .breadcrumb, .societe-nom { font-size: 9px; }
-  .societe-detail { font-size: 8px; }
-  .section { margin-bottom: 12px; break-inside: avoid-page; }
-  .section-title { font-size: 12px; }
-  .chevron { display: none; }
-  .section.collapsed .section-body { display: block !important; }
-  .massif-label { font-size: 7px; padding: 2px 6px; }
-  .table-wrapper { border-radius: 0 !important; overflow: visible; border-top: none; }
-  .massif-groupe:first-child .table-wrapper { border-top: 1px solid #ccc; }
-  table { min-width: 0; width: 100%; }
-  th { font-size: 7.5px; padding: 3px 4px; }
-  td { padding: 3px 4px; font-size: 9.5px; word-break: break-word; white-space: normal; }
-  td.transfert { font-size: 8px; }
-  td.depart, td.arrivee { font-size: 8.5px; }
-  td.heure-rdv, td.client { font-size: 8.5px; }
-  td.pilote { font-size: 9px; }
-  td.renforts, td.details, td.nbre { font-size: 8px; }
-  .badge { font-size: 7px; padding: 1px 3px; }
-  .footer { margin-top: 10px; font-size: 9px; }
-  .btn-print, .legende, .badge-maj, .badge-s2 { display: none; }
-  tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  tbody tr.valide { background: #f0faf0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  td.check, th.check { display: none; }
-  thead { display: table-header-group; }
-}
-</style>
-</head>
-<body>
+import os
+import json
+import urllib.request
+import urllib.parse
+from datetime import datetime
 
-<div id="loading" class="page">
-  <div class="spinner"></div>
-  <p>Chargement du planning…</p>
-</div>
+# ── CONFIGURATION ──────────────────────────────────────────
+AIRTABLE_TOKEN  = os.environ["AIRTABLE_TOKEN"]
+AIRTABLE_BASE   = os.environ["AIRTABLE_BASE"]
+TABLE_NAME      = "SEMAINE 2"
+VIEW_NAME       = "🚫 Extraction Github 🚫"
 
-<div id="page-planning" class="page">
-  <div class="header">
-    <div class="header-left">
-      <div class="breadcrumb">ALTITUDE MONT-BLANC › <span>Planning Semaine de Travail</span></div>
-      <div class="header-day" id="pg-date"></div>
-      <div style="display:flex;align-items:center;">
-        <div class="badge-maj" id="pg-maj"></div>
-        <div class="badge-s2">⚙ Semaine de travail</div>
-      </div>
-    </div>
-    <div class="header-societe">
-      <div class="societe-nom">ALTITUDE MONT-BLANC</div>
-      <div class="societe-detail">62 passage du Nant Devant · 74110 MONTRIOND</div>
-      <div class="societe-detail">SIREN : 481 563 567</div>
-    </div>
-  </div>
-  <a href="bagages.html" style="display:inline-flex;align-items:center;gap:6px;background:none;border:1.5px solid var(--gris-border);border-radius:6px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--gris-moyen);text-decoration:none;margin-bottom:16px;">🧳 Bagages stockés</a>
-  <div class="legende">
-    <div class="legende-item"><div class="legende-dot dot-pilote"></div> Bagages + Transfert</div>
-    <div class="legende-item"><div class="legende-dot dot-renfort"></div> Renfort Transfert</div>
-  </div>
-  <div id="planning-contenu"></div>
-  <div class="footer"><span id="pg-footer"></span><span>ALTITUDE MONT-BLANC</span></div>
-</div>
+# Liste fixe des chauffeurs
+CHAUFFEURS = [
+    {"prenom": "Aurore",    "nom": "VALANCE",      "vehicule": "TRAFIC",        "plaque": "GN-881-PK"},
+    {"prenom": "Bertrand",  "nom": "AUMOITTE",     "vehicule": "TRAFIC",        "plaque": "FM-024-VV"},
+    {"prenom": "Charlie",   "nom": "DESMONT",      "vehicule": "MASTER",        "plaque": "GQ-609-ZB"},
+    {"prenom": "Damian",    "nom": "TESAURO",      "vehicule": "FIAT FULLBACK", "plaque": "EP-096-RC"},
+    {"prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM"},
+    {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
+    {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
+    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
+    {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
+    {"prenom": "Yan",       "nom": "ANDRE",        "vehicule": "TRAFIC",        "plaque": "Location"},
+]
 
-<button class="btn-print" onclick="imprimerPage()">🖨 Imprimer / PDF</button>
+JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
+MOIS_FR  = ["Janvier","Février","Mars","Avril","Mai","Juin",
+             "Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
 
-<script>
-let SECTIONS = [];
-let META     = {};
+def format_client(val):
+    if not val:
+        return "–"
+    if ' (' in val:
+        parts = val.split(' (', 1)
+        nom = parts[0].strip()
+        tel = '(' + parts[1].strip()
+        return f"{nom}\n{tel}"
+    return val
 
-async function chargerDonnees() {
-  try {
-    const resp = await fetch('data2.json?v=' + Date.now());
-    if (!resp.ok) throw new Error('Erreur HTTP ' + resp.status);
-    const data = await resp.json();
-    META     = data.meta || {};
-    SECTIONS = data.sections || [];
-    const dateHtml = `${META.date_affichee || ''}`;
-    document.getElementById('pg-date').innerHTML = dateHtml;
-    document.getElementById('pg-maj').textContent = '✓ Mis à jour le ' + (META.genere_le || '');
-    document.getElementById('pg-footer').textContent = 'Généré le ' + (META.genere_le || '') + ' · Planning semaine de travail';
-    let html = '';
-    SECTIONS.forEach((s, i) => { html += sectionHTML(s, i); });
-    document.getElementById('planning-contenu').innerHTML = html;
-    document.getElementById('loading').style.display   = 'none';
-    document.getElementById('page-planning').style.display = 'block';
-    restaurerSections();
-  } catch (err) {
-    document.getElementById('loading').innerHTML =
-      `<div style="text-align:center;color:#c00;font-family:'DM Mono',monospace;font-size:12px;"><p>⚠ Impossible de charger data2.json</p><p style="color:#999;margin-top:8px;font-size:10px;">${err.message}</p></div>`;
-  }
-}
+def get_text(fields, key):
+    val = fields.get(key, "")
+    if isinstance(val, list):
+        return ", ".join(str(v) for v in val if v)
+    return str(val) if val else ""
 
-function badgeClass(type) {
-  if (!type || type === '–') return 'badge-default';
-  const t = type.toUpperCase();
-  if (t.includes('REMORQUE'))  return 'badge-remorque';
-  if (t.includes('BAGAGES +') || t.includes('BAGAGES+')) return 'badge-bagages-trf';
-  if (t.includes('BAGAGES'))   return 'badge-bagages';
-  if (t.includes('TRANSFERT')) return 'badge-transfert';
-  if (t.includes('RDV'))       return 'badge-rdv';
-  if (t.includes('SANS'))      return 'badge-sans';
-  return 'badge-default';
-}
+def fetch_records():
+    records = []
+    offset = None
+    page = 0
+    max_pages = 20
 
-function getLigneId(l) {
-  const str = [l.pilote, l.renforts, l.client, l.depart, l.arrivee, l.nbre, l.details, l.transfert, l.type, l.heure_rdv].join('||');
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) { const chr = str.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0; }
-  return 'lid_' + Math.abs(hash).toString(36);
-}
+    while page < max_pages:
+        url = (
+            f"https://api.airtable.com/v0/{AIRTABLE_BASE}/"
+            f"{urllib.parse.quote(TABLE_NAME)}"
+            f"?pageSize=100"
+            f"&view={urllib.parse.quote(VIEW_NAME, safe='')}"
+        )
+        if offset:
+            url += f"&offset={offset}"
 
-function isValide(lid) { try { return localStorage.getItem('valide2_' + lid) === '1'; } catch(e) { return false; } }
+        print(f"Page {page+1} — {len(records)} enregistrements récupérés jusqu'ici...")
+        req = urllib.request.Request(
+            url,
+            headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"}
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = resp.read().decode("utf-8")
+        data = json.loads(body)
+        if "error" in data:
+            raise Exception(f"Erreur Airtable : {data['error']}")
 
-function toggleValide(lid) {
-  try {
-    const val = isValide(lid) ? null : '1';
-    if (val) localStorage.setItem('valide2_' + lid, val);
-    else localStorage.removeItem('valide2_' + lid);
-    document.querySelectorAll(`tr[data-lid="${lid}"]`).forEach(tr => {
-      const cb = tr.querySelector('input[type="checkbox"]');
-      if (val) { tr.classList.add('valide'); if(cb) cb.checked = true; }
-      else { tr.classList.remove('valide'); if(cb) cb.checked = false; }
-    });
-  } catch(e) {}
-}
+        batch = data.get("records", [])
+        records.extend(batch)
+        offset = data.get("offset")
+        print(f"Offset reçu : {repr(offset)}")
+        page += 1
 
-function ligneHTML(l, showHr) {
-  const lid = getLigneId(l);
-  const valide = isValide(lid);
-  const rowCls = (l.pilote ? 'has-pilote' : 'no-pilote') + (valide ? ' valide' : '');
-  const trfTxt = (l.transfert && l.transfert !== '–') ? l.transfert : '–';
-  const trfCls = (l.transfert && l.transfert !== '–') ? 'transfert' : 'transfert empty';
-  const typeDisplay = l.type || '–';
-  const typeTransfertDisplay = l.type_transfert || '–';
-  return `<tr class="${rowCls}" data-lid="${lid}">
-    <td class="check"><input type="checkbox" ${valide ? 'checked' : ''} onchange="toggleValide('${lid}')"></td>
-    <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
-    <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
-    <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
-    <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)}">${typeTransfertDisplay}</span></td>
-    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
-    <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
-    <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
-    <td class="${trfCls}">${trfTxt}</td>
-    <td class="depart">${l.depart || '–'}</td>
-    <td class="client">${(l.client || '–').replace(/\n/g, '<br>')}</td>
-    <td class="nbre">${l.nbre || '–'}</td>
-    <td class="arrivee">${l.arrivee || '–'}</td>
-    <td class="${(l.stockes && l.stockes !== '–') ? 'stockes' : 'stockes empty'}">${l.stockes || '–'}</td>
-  </tr>`;
-}
+        if not offset:
+            break
 
-function tableauHTML(lignes, hasHr) {
-  const colHr = hasHr ? '' : ' style="display:none"';
-  return `<div class="table-wrapper"><table>
-    <thead><tr>
-      <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
-      <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
-    </tr></thead>
-    <tbody>${lignes.map(l => ligneHTML(l, hasHr)).join('')}</tbody>
-  </table></div>`;
-}
+    print(f"{len(records)} enregistrements récupérés au total ({page} page(s)).")
+    return records
 
-function sectionHTML(s, idx) {
-  const domId = 'pg-s' + idx;
-  const sid   = 'sec2-s' + idx;
-  const groupes = s.groupes || [{ massif: '', lignes: s.lignes || [] }];
-  const toutesLignes = groupes.flatMap(g => g.lignes);
-  const hasHr = toutesLignes.some(l => l.heure_rdv && l.heure_rdv !== '–' && l.heure_rdv !== '');
-  const totalLignes = toutesLignes.length;
+def format_date_fr(date_str):
+    try:
+        d = datetime.strptime(date_str, "%Y-%m-%d")
+        return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+    except:
+        return date_str
 
-  // Construire le tbody avec bandeaux de massif
-  const colHr = hasHr ? '' : ' style="display:none"';
-  let tbodyHTML = '';
-  groupes.forEach(g => {
-    if (g.massif) {
-      tbodyHTML += `<tr class="massif-separator"><td colspan="14" class="massif-sep-cell">▸ ${g.massif}</td></tr>`;
+def main():
+    print(f"Récupération de '{TABLE_NAME}' vue '{VIEW_NAME}'...")
+    records = fetch_records()
+
+    now = datetime.now()
+    # Trouver le samedi de la semaine des données Airtable
+    from datetime import timedelta
+    dates_prestation = []
+    for rec in records:
+        d = rec.get("fields", {}).get("DATE PRESTATION", "")
+        if d:
+            try:
+                dates_prestation.append(datetime.strptime(d, "%Y-%m-%d"))
+            except:
+                pass
+    if dates_prestation:
+        premiere_date = min(dates_prestation)
+        days_until_saturday = (5 - premiere_date.weekday()) % 7
+        saturday = premiere_date + timedelta(days=days_until_saturday)
+    else:
+        days_until_saturday = (5 - now.weekday()) % 7
+        saturday = now + timedelta(days=days_until_saturday)
+    date_affichee  = f"SEMAINE du SAMEDI {saturday.day} {MOIS_FR[saturday.month-1]}"
+    numero_semaine = f"Semaine {now.isocalendar()[1]}"
+    genere_le      = now.strftime("%d/%m/%Y")
+
+    # Trier les enregistrements comme dans Airtable
+    def sort_key(rec):
+        f = rec.get("fields", {})
+        date = get_text(f, "DATE PRESTATION") or "9999"
+        num_dep = get_text(f, "NUM DÉPART (from DÉPART)") or "9999"
+        num_arr = get_text(f, "NUM ARRIVÉE (from ARRIVÉE)") or "9999"
+        try: num_dep = int(num_dep)
+        except: num_dep = 9999
+        try: num_arr = int(num_arr)
+        except: num_arr = 9999
+        return (date, num_dep, num_arr)
+
+    records.sort(key=sort_key)
+
+    from collections import OrderedDict
+    dates = OrderedDict()
+
+    for rec in records:
+        f = rec.get("fields", {})
+        if not dates:
+            print(f"Champs disponibles : {list(f.keys())[:12]}")
+
+        date_prestation = get_text(f, "DATE PRESTATION")
+        if not date_prestation:
+            date_prestation = "Sans date"
+
+        massif = get_text(f, "MASSIFS_CALC")
+        if not massif:
+            massif = "Autres"
+
+        # ── FILTRES identiques à Airtable ──
+
+        # Inclusion : ARRIVÉE non vide OU TYPE PRODUIT contient "SANS TRANSPORT"
+        arrivee = get_text(f, "ARRIVÉE")
+        type_produit = get_text(f, "TYPE PRODUIT")
+        if not arrivee and "SANS TRANSPORT" not in type_produit.upper():
+            continue
+
+        # Exclusion : CLIENT/AEM contient ANNULÉ ou ALTITUDE HAUTE MONTAGNE
+        client = get_text(f, "CLIENT /AEM")
+        if any(x in client.upper() for x in ("ANNULÉ", "ANNULE", "ALTITUDE HAUTE MONTAGNE")):
+            continue
+
+        # Exclusion : MASSIFS_CALC contient ARAVIS, VERCORS, DOLOMITES
+        if any(x in massif.upper() for x in ("DOLOMITES", "ARAVIS", "VERCORS")):
+            continue
+
+        # Exclusion : SÉJOUR contient GTA 3, GTA 4, RANDOS ET TRAINS, AU COEUR DES FIZ, ANNULE, DOLOMITES
+        sejour = get_text(f, "SÉJOUR")
+        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
+            continue
+
+        ligne = {
+            "pilote":    get_text(f, "PILOTE_NOM"),
+            "renforts":  ", ".join(filter(None, [get_text(f, "RENFORTS_NOM"), get_text(f, "TAXIS (from TAXI)")])),
+            "alerte":    get_text(f, "!!"),
+            "type_transfert": get_text(f, "TYPE TRANSFERT") or "–",
+            "type":      get_text(f, "TYPE") or "–",
+            "transfert": get_text(f, "TRANSFERT") or "–",
+            "details":   get_text(f, "DÉTAILS") or "–",
+            "heure_rdv": get_text(f, "HEURE RDV"),
+            "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
+            "client":    format_client(get_text(f, "CLIENT /AEM")),
+            "nbre":      get_text(f, "Nombre ajusté") or "–",
+            "arrivee":   get_text(f, "HÉBERGEMENT (from ARRIVÉE)") or "–",
+            "stockes":   get_text(f, "NBRE") or "–",
+        }
+
+        if date_prestation not in dates:
+            dates[date_prestation] = OrderedDict()
+        if massif not in dates[date_prestation]:
+            dates[date_prestation][massif] = []
+        dates[date_prestation][massif].append(ligne)
+
+    def sort_massif(m):
+        # Trier par le numéro en début de nom (ex: "3. MONT-BLANC" → 3)
+        # Les noms sans numéro vont à la fin
+        import re
+        match = re.match(r'^(\d+)[\.\s]', m)
+        if match:
+            return int(match.group(1))
+        # Noms spéciaux sans numéro en premier
+        if "RDV" in m.upper() or "TRANSFERT" in m.upper():
+            return -2
+        if "BAGAGES" in m.upper():
+            return -1
+        return 9999
+
+    sections = []
+    idx = 0
+    for date_str in sorted(dates.keys()):
+        massifs = dates[date_str]
+        if date_str == "Sans date":
+            titre = "Sans date"
+            label = "–"
+            date_complete = "SANS DATE"
+        else:
+            try:
+                d = datetime.strptime(date_str, "%Y-%m-%d")
+                titre = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
+                label = d.strftime("%d/%m")
+                date_complete = f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]} {d.year}".upper()
+            except:
+                titre = date_str
+                label = date_str
+                date_complete = date_str
+
+        # Groupes de massifs dans l'ordre, avec toutes les lignes
+        groupes = []
+        for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
+            groupes.append({
+                "massif": massif if massif != "Autres" else "",
+                "lignes": lignes,
+            })
+
+        sections.append({
+            "id":            f"s{idx}",
+            "label":         label,
+            "titre":         titre,
+            "date_complete": date_complete,
+            "groupes":       groupes,
+        })
+        idx += 1
+
+    data = {
+        "meta": {
+            "semaine":        "SEMAINE 2",
+            "date_affichee":  date_affichee.upper(),
+            "numero_semaine": numero_semaine,
+            "genere_le":      genere_le,
+        },
+        "chauffeurs": CHAUFFEURS,
+        "sections":   sections,
     }
-    tbodyHTML += g.lignes.map(l => ligneHTML(l, hasHr)).join('');
-  });
 
-  return `<div class="section" id="${domId}" data-sid="${sid}" data-date="${s.date_complete || ''}">
-    <div class="section-header" onclick="toggleSection('${domId}', '${sid}')">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:var(--rouge);color:white;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap;">${s.label}</div>
-        <div class="section-title">${s.titre}</div>
-      </div>
-      <div class="section-count">${totalLignes}</div>
-      <div class="chevron">▾</div>
-    </div>
-    <div class="section-body"><div class="table-wrapper"><table>
-      <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
-        <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
-      </tr></thead>
-      <tbody>${tbodyHTML}</tbody>
-    </table></div></div>
-  </div>`;
-}
+    with open("data2.json", "w", encoding="utf-8") as fout:
+        json.dump(data, fout, ensure_ascii=False, indent=2)
 
-function toggleSection(domId, sid) {
-  const el = document.getElementById(domId);
-  if (!el) return;
-  el.classList.toggle('collapsed');
-  try {
-    if (el.classList.contains('collapsed')) localStorage.setItem('sec_' + sid, '1');
-    else localStorage.removeItem('sec_' + sid);
-  } catch(e) {}
-}
+    print(f"data.json généré : {len(sections)} sections, {len(records)} lignes total.")
 
-function restaurerSections() {
-  try {
-    document.querySelectorAll('.section').forEach(el => {
-      const key = el.dataset.sid || el.id;
-      if (localStorage.getItem('sec_' + key) === '1') el.classList.add('collapsed');
-    });
-  } catch(e) {}
-}
-
-const PRINT_CSS = `
-  @page { size: A4 portrait; margin: 5mm 6mm; }
-  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 10px; }
-  .page { padding: 0; max-width: 100%; }
-  .header { display: none !important; }
-  .section { margin-bottom: 12px; break-inside: avoid-page; }
-  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; break-after: avoid; }
-  .page-break { break-before: page; height: 0; margin: 0; padding: 0; }
-  .section-title { font-size: 12px; font-weight: 600; }
-  .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
-  tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555 !important; padding: 2px 6px; border-left: 2px solid #E8263A !important; text-decoration: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
-  .chevron, .btn-print, .legende, .badge-maj, .badge-s2, td.check, th.check { display: none !important; }
-  .section.collapsed .section-body { display: block !important; }
-  .table-wrapper { border: 1px solid #ccc; border-radius: 0 !important; overflow: visible; }
-  table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
-  thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  th { font-size: 8px; font-weight: 600; text-transform: uppercase; color: #666; padding: 3px 4px; white-space: nowrap; border-bottom: 1px solid #ccc; }
-  td { padding: 3px 4px; font-size: 10px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; }
-  tbody tr:last-child td { border-bottom: none; }
-  tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  tbody tr.valide td { text-decoration: line-through; color: #888; }
-  tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
-  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:7%} th:nth-child(4){width:4%} th:nth-child(5){width:7%} th:nth-child(6){width:9%} th:nth-child(7){width:9%} th:nth-child(8){width:4%} th:nth-child(9){width:10%} th:nth-child(10){width:14%} th:nth-child(11){width:12%} th:nth-child(12){width:4%} th:nth-child(13){width:13%} th:nth-child(14){width:4%}
-  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:7%} td:nth-child(4){width:4%} td:nth-child(5){width:7%} td:nth-child(6){width:9%} td:nth-child(7){width:9%} td:nth-child(8){width:4%} td:nth-child(9){width:10%} td:nth-child(10){width:14%} td:nth-child(11){width:12%} td:nth-child(12){width:4%} td:nth-child(13){width:13%} td:nth-child(14){width:4%}
-  td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:9px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:9px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:9px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:9px} td.client{font-weight:600;text-transform:uppercase;font-size:9px} td.transfert{font-size:9px;color:#555} td.depart,td.arrivee{font-size:9.5px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:9px}
-  .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .col-type-transfert .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
-  .col-type .badge{font-size:6px;padding:1px 2px;white-space:normal;word-break:break-word;max-width:none;display:inline-block;text-align:center}
-  .badge-remorque{background:#FFEBEE!important;color:#C62828;border-color:#EF9A9A;-webkit-print-color-adjust:exact;print-color-adjust:exact} .badge-bagages{background:#FFF8E1!important;color:#F57F17;border-color:#FFE082} .badge-bagages-trf{background:#E8F5E9!important;color:#2E7D32;border-color:#A5D6A7} .badge-transfert{background:#E3F2FD!important;color:#1565C0;border-color:#90CAF9} .badge-rdv{background:#F3E5F5!important;color:#6A1B9A;border-color:#CE93D8} .badge-default{background:#f4f4f4!important;color:#555;border-color:#ddd}
-  .footer{margin-top:8px;border-top:1px solid #eee;padding-top:6px;display:flex;justify-content:space-between;color:#999;font-size:9px;font-family:monospace}
-`;
-
-function ouvrirFenetreImpression(contenuHTML, dateDuJour) {
-  const w = window.open('', '_blank');
-  if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
-  const enteteDateCSS = dateDuJour ? `
-    @page { margin-top: 20mm; }
-    .entete-page {
-      position: fixed; top: 0; left: 0; right: 0;
-      border-bottom: 2px solid #E8263A;
-      padding: 3px 0 4px 0;
-      background: white;
-      display: flex; justify-content: space-between; align-items: baseline;
-      font-family: 'DM Mono', monospace;
-      -webkit-print-color-adjust: exact; print-color-adjust: exact;
-    }
-    .entete-date { font-size: 13px; font-weight: 600; letter-spacing: -0.01em; }
-    .entete-societe { font-size: 8px; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
-  ` : '';
-  const enteteHTML = dateDuJour ? `
-    <div class="entete-page">
-      <span class="entete-date">${dateDuJour}</span>
-      <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Semaine de Travail</span>
-    </div>` : '';
-  w.document.write(`<!DOCTYPE html><html lang="fr"><head>
-    <meta charset="UTF-8"><title>Planning Semaine de Travail – ALTITUDE MONT-BLANC</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>${PRINT_CSS}${enteteDateCSS}</style>
-  </head><body>${enteteHTML}<div class="page">${contenuHTML}</div>
-  <script>window.onload=function(){setTimeout(function(){window.print();},400);}<\/script>
-  </body></html>`);
-  w.document.close();
-}
-
-function imprimerPage() {
-  const sections = document.querySelectorAll('#planning-contenu .section');
-  if (sections.length === 0) { ouvrirFenetreImpression(document.getElementById('planning-contenu').innerHTML); return; }
-  const joursOptions = Array.from(sections).map((s, i) => {
-    const titre = s.querySelector('.section-title')?.textContent || `Jour ${i+1}`;
-    const label = s.querySelector('[style*="background:var(--rouge)"]')?.textContent || '';
-    return `<label style="display:flex;align-items:center;gap:8px;padding:8px 12px;border:1.5px solid #e0e0e0;border-radius:8px;cursor:pointer;font-size:13px;">
-      <input type="checkbox" value="${i}" style="width:16px;height:16px;accent-color:#E8263A;" checked>
-      <span style="background:#E8263A;color:white;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;">${label}</span>
-      <span style="font-weight:500;">${titre}</span></label>`;
-  }).join('');
-  const modal = document.createElement('div');
-  modal.id = 'modal-print';
-  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
-  modal.innerHTML = `<div style="background:white;border-radius:16px;padding:24px;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
-    <div style="font-size:16px;font-weight:600;margin-bottom:6px;">🖨 Choisir quoi imprimer</div>
-    <div style="font-size:12px;color:#888;margin-bottom:16px;">Sélectionnez les jours à inclure</div>
-    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;" id="modal-jours">${joursOptions}</div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=true)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout cocher</button>
-      <button onclick="document.querySelectorAll('#modal-jours input').forEach(c=>c.checked=false)" style="flex:1;padding:8px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:12px;">Tout décocher</button>
-    </div>
-    <div style="display:flex;gap:8px;margin-top:12px;">
-      <button onclick="fermerModal()" style="flex:1;padding:10px;border:1.5px solid #e0e0e0;border-radius:8px;background:white;cursor:pointer;font-size:13px;">Annuler</button>
-      <button onclick="lancerImpression()" style="flex:2;padding:10px;border:none;border-radius:8px;background:#E8263A;color:white;cursor:pointer;font-size:13px;font-weight:600;">Imprimer</button>
-    </div>
-  </div>`;
-  document.body.appendChild(modal);
-}
-
-function fermerModal() { const m = document.getElementById('modal-print'); if (m) m.remove(); }
-
-function lancerImpression() {
-  const cases = document.querySelectorAll('#modal-jours input:checked');
-  const indices = Array.from(cases).map(c => parseInt(c.value));
-  fermerModal();
-  const sections = document.querySelectorAll('#planning-contenu .section');
-  let html = '';
-  let dateActuelle = null;
-  let premiereDateGlobale = null;
-  sections.forEach((s, i) => {
-    if (indices.includes(i)) {
-      const dateSection = s.dataset.date || '';
-      if (dateSection && dateSection !== dateActuelle) {
-        if (!premiereDateGlobale) premiereDateGlobale = dateSection;
-        if (dateActuelle !== null) html += '<div class="page-break"></div>';
-        dateActuelle = dateSection;
-      }
-      const clone = s.cloneNode(true);
-      clone.classList.remove('collapsed');
-      html += clone.outerHTML;
-    }
-  });
-  ouvrirFenetreImpression(html, premiereDateGlobale);
-}
-
-chargerDonnees();
-</script>
-</body>
-</html>
+if __name__ == "__main__":
+    main()
