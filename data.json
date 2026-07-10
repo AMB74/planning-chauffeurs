@@ -1196,7 +1196,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1807,12 +1807,12 @@
             },
             {
               "pilote": "Oscar",
-              "renforts": "TAXI JAY",
+              "renforts": "Serge, TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "SERGE : 08H15 MAISON ST JEAN > BASE CAMP LODGE \nTAXI JAY : 10H30 Base Camp Lodge > Chalet du Berger\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "FALKENBERG\n",
@@ -4477,8 +4477,8 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "Aurore",
-              "renforts": "Aurore, TAXI JAY",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -5735,7 +5735,7 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -6934,7 +6934,7 @@
             },
             {
               "pilote": "Aurore",
-              "renforts": "Aurore, TAXI JAY",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "MONTAGE /DEMONTAGE TENTES",
@@ -8081,7 +8081,7 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -9244,8 +9244,8 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Aurore",
+              "renforts": "Aurore, TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
