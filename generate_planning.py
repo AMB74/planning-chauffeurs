@@ -146,13 +146,26 @@ def main():
         if not massif:
             massif = "Autres"
 
-        # Massifs exclus cette saison
+        # ── FILTRES identiques à Airtable ──
+
+        # Inclusion : ARRIVÉE non vide OU TYPE PRODUIT contient "SANS TRANSPORT"
+        arrivee = get_text(f, "ARRIVÉE")
+        type_produit = get_text(f, "TYPE PRODUIT")
+        if not arrivee and "SANS TRANSPORT" not in type_produit.upper():
+            continue
+
+        # Exclusion : CLIENT/AEM contient ANNULÉ ou ALTITUDE HAUTE MONTAGNE
+        client = get_text(f, "CLIENT /AEM")
+        if any(x in client.upper() for x in ("ANNULÉ", "ANNULE", "ALTITUDE HAUTE MONTAGNE")):
+            continue
+
+        # Exclusion : MASSIFS_CALC contient ARAVIS, VERCORS, DOLOMITES
         if any(x in massif.upper() for x in ("DOLOMITES", "ARAVIS", "VERCORS")):
             continue
 
-        # Clients exclus
-        client = get_text(f, "CLIENT /AEM")
-        if "ALTITUDE HAUTE MONTAGNE" in client.upper():
+        # Exclusion : SÉJOUR contient GTA 3, GTA 4, RANDOS ET TRAINS, AU COEUR DES FIZ, ANNULE, DOLOMITES
+        sejour = get_text(f, "SÉJOUR")
+        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES")):
             continue
 
         ligne = {
