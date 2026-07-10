@@ -1,34 +1,8 @@
 {
   "meta": {
-    "genere_le": "10/07/2026 09:31"
+    "genere_le": "10/07/2026 10:47"
   },
   "lignes": [
-    {
-      "jour_semaine": "04-07 - SAMEDI",
-      "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand, Yan",
-      "nbre": "4",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-06-28",
-      "date_fin": "2026-07-04",
-      "date_debut_aff": "Dim 28/06",
-      "date_fin_aff": "Sam 04/07"
-    },
-    {
-      "jour_semaine": "04-07 - SAMEDI",
-      "client": "COGGINS\n",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-04",
-      "date_fin": "2026-07-10",
-      "date_debut_aff": "Sam 04/07",
-      "date_fin_aff": "Ven 10/07"
-    },
     {
       "jour_semaine": "11-07 - SAMEDI",
       "client": "MOEGLE LISON\n(- 07 67 64 17 67)",
@@ -43,22 +17,9 @@
       "date_fin_aff": "Sam 11/07"
     },
     {
-      "jour_semaine": "07-07 - MARDI",
-      "client": "TREMBLAY\n",
-      "chauffeur_debut": "Laurent",
-      "chauffeur_fin": "–",
-      "nbre": "4",
-      "depart": "RDV PLANPRAZ",
-      "arrivee": "HOTEL LA GELINOTTE",
-      "date_debut": "2026-07-07",
-      "date_fin": "2026-07-11",
-      "date_debut_aff": "Mar 07/07",
-      "date_fin_aff": "Sam 11/07"
-    },
-    {
-      "jour_semaine": "07-07 - MARDI",
+      "jour_semaine": "11-07 - SAMEDI",
       "client": "LANE\n",
-      "chauffeur_debut": "0. AUCUN",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "4",
       "depart": "RDV HOTEL",
