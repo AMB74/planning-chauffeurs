@@ -3091,7 +3091,7 @@
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
               "nbre": "14+1",
               "arrivee": "BIG SKY HOTEL",
-              "stockes": "–"
+              "stockes": "14"
             },
             {
               "pilote": "0. AUCUN",
@@ -3196,7 +3196,7 @@
               "client": "TREKKER CHARLES\n+33 630997947\n",
               "nbre": "12+1",
               "arrivee": "HOTEL IBIS*** LES HOUCHES",
-              "stockes": "–"
+              "stockes": "12"
             }
           ]
         },
