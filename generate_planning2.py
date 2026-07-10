@@ -158,7 +158,7 @@ def main():
 
         # Exclusion : SÉJOUR contient GTA 3, GTA 4, RANDOS ET TRAINS, AU COEUR DES FIZ, ANNULE, DOLOMITES
         sejour = get_text(f, "SÉJOUR")
-        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES")):
+        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
             continue
 
         ligne = {
