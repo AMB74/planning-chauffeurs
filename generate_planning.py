@@ -116,6 +116,20 @@ def main():
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
+    # Trier les enregistrements comme dans Airtable
+    def sort_key(rec):
+        f = rec.get("fields", {})
+        date = get_text(f, "DATE PRESTATION") or "9999"
+        num_dep = get_text(f, "NUM DÉPART (from DÉPART)") or "9999"
+        num_arr = get_text(f, "NUM ARRIVÉE (from ARRIVÉE)") or "9999"
+        try: num_dep = int(num_dep)
+        except: num_dep = 9999
+        try: num_arr = int(num_arr)
+        except: num_arr = 9999
+        return (date, num_dep, num_arr)
+
+    records.sort(key=sort_key)
+
     from collections import OrderedDict
     dates = OrderedDict()
 
