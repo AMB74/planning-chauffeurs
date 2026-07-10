@@ -20,7 +20,6 @@ CHAUFFEURS = [
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
     {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": None},
-    {"prenom": "Yan",       "nom": "ANDRE",        "vehicule": "LOCATION",      "plaque": None},
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
 ]
 
@@ -109,6 +108,20 @@ def main():
     date_affichee  = f"SEMAINE du SAMEDI {saturday.day} {MOIS_FR[saturday.month-1]}"
     numero_semaine = f"Semaine {(now.isocalendar()[1] % 52) + 1}"
     genere_le      = now.strftime("%d/%m/%Y")
+
+    # Trier les enregistrements comme dans Airtable
+    def sort_key(rec):
+        f = rec.get("fields", {})
+        date = get_text(f, "DATE PRESTATION") or "9999"
+        num_dep = get_text(f, "NUM DÉPART (from DÉPART)") or "9999"
+        num_arr = get_text(f, "NUM ARRIVÉE (from ARRIVÉE)") or "9999"
+        try: num_dep = int(num_dep)
+        except: num_dep = 9999
+        try: num_arr = int(num_arr)
+        except: num_arr = 9999
+        return (date, num_dep, num_arr)
+
+    records.sort(key=sort_key)
 
     from collections import OrderedDict
     dates = OrderedDict()
