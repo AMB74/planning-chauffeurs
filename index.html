@@ -649,16 +649,36 @@ function getFooterHTML() {
   return document.querySelector('#ch-footer')?.parentElement?.outerHTML || '';
 }
 
-function ouvrirFenetreImpression(contenuHTML) {
+function ouvrirFenetreImpression(contenuHTML, dateDuJour) {
   const w = window.open('', '_blank');
   if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
+  const enteteDateCSS = dateDuJour ? `
+    @page { margin-top: 20mm; }
+    .entete-page {
+      position: fixed; top: 0; left: 0; right: 0;
+      border-bottom: 2px solid #E8263A;
+      padding: 3px 0 4px 0;
+      background: white;
+      display: flex; justify-content: space-between; align-items: baseline;
+      font-family: 'DM Mono', monospace;
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    .entete-date { font-size: 13px; font-weight: 600; letter-spacing: -0.01em; }
+    .entete-societe { font-size: 8px; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
+  ` : '';
+  const enteteHTML = dateDuJour ? `
+    <div class="entete-page">
+      <span class="entete-date">${dateDuJour}</span>
+      <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Chauffeurs</span>
+    </div>` : '';
   w.document.write(`<!DOCTYPE html><html lang="fr"><head>
     <meta charset="UTF-8">
     <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>${PRINT_CSS}</style>
+    <style>${PRINT_CSS}${enteteDateCSS}</style>
   </head><body>
+    ${enteteHTML}
     <div class="page">
       ${contenuHTML}
     </div>
@@ -724,10 +744,12 @@ function lancerImpression(conteneurId) {
   const sections = document.querySelectorAll(`#${conteneurId} .section`);
   let html = '';
   let dateActuelle = null;
+  let premiereDateGlobale = null;
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
       const dateSection = s.dataset.date || '';
       if (dateSection && dateSection !== dateActuelle) {
+        if (!premiereDateGlobale) premiereDateGlobale = dateSection;
         if (dateActuelle !== null) html += '<div class="page-break"></div>';
         dateActuelle = dateSection;
       }
@@ -736,7 +758,7 @@ function lancerImpression(conteneurId) {
       html += clone.outerHTML;
     }
   });
-  ouvrirFenetreImpression(html);
+  ouvrirFenetreImpression(html, premiereDateGlobale);
 }
 
 chargerDonnees();
