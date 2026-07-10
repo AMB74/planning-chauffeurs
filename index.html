@@ -568,11 +568,8 @@ const PRINT_CSS = `
   .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; break-after: avoid; }
-  .page-break { break-before: page; height: 0; margin: 0; padding: 0; }
-  .jour-wrapper { width: 100%; border-collapse: collapse; }
-  .jour-wrapper > tbody > tr > td { padding: 0; }
-  .jour-header { display: table-header-group; }
-  .jour-header td { padding: 0 0 6px 0; }
+  .page-break { break-before: page; }
+  .jour-bloc { margin-bottom: 0; }
   .entete-jour { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E8263A; padding-bottom: 3px; margin-bottom: 8px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .entete-date { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; text-transform: uppercase; }
   .entete-societe { font-family: 'DM Mono', monospace; font-size: 8px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -729,40 +726,47 @@ function lancerImpression(conteneurId) {
   fermerModal();
 
   const sections = document.querySelectorAll(`#${conteneurId} .section`);
-  
-  // Grouper les sections par date
-  const groupesParDate = [];
-  let groupeActuel = null;
 
+  // Grouper par date
+  const groupes = [];
+  let groupeActuel = null;
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
       const dateSection = s.dataset.date || '';
-      if (dateSection !== (groupeActuel && groupeActuel.date)) {
-        groupeActuel = { date: dateSection, sections: [] };
-        groupesParDate.push(groupeActuel);
+      if (!groupeActuel || dateSection !== groupeActuel.date) {
+        groupeActuel = { date: dateSection, html: '' };
+        groupes.push(groupeActuel);
       }
       const clone = s.cloneNode(true);
       clone.classList.remove('collapsed');
-      groupeActuel.sections.push(clone.outerHTML);
+      groupeActuel.html += clone.outerHTML;
     }
   });
 
-  // Générer le HTML avec un tableau englobant par jour (thead répété sur chaque page)
-  let html = '';
-  groupesParDate.forEach((groupe, idx) => {
-    if (idx > 0) html += '<div class="page-break"></div>';
-    html += `<table class="jour-wrapper">
-      <thead class="jour-header"><tr><td>
-        <div class="entete-jour">
-          <span class="entete-date">${groupe.date}</span>
-          <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Chauffeurs</span>
-        </div>
-      </td></tr></thead>
-      <tbody><tr><td>${groupe.sections.join('')}</td></tr></tbody>
-    </table>`;
-  });
+  // Générer HTML avec en-tête par jour + saut de page
+  let contenuHTML = groupes.map((g, idx) => `
+    <div class="jour-bloc${idx > 0 ? ' page-break' : ''}">
+      <div class="entete-jour">
+        <span class="entete-date">${g.date}</span>
+        <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Chauffeurs</span>
+      </div>
+      ${g.html}
+    </div>
+  `).join('');
 
-  ouvrirFenetreImpression(html);
+  const w = window.open('', '_blank');
+  if (!w) { alert('Autorisez les popups pour imprimer.'); return; }
+  w.document.write(`<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <title>Planning Chauffeurs – ALTITUDE MONT-BLANC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>${PRINT_CSS}</style>
+  </head><body>
+    <div class="page">${contenuHTML}</div>
+    <script>window.onload = function(){ setTimeout(function(){ window.print(); }, 400); }<\/script>
+  </body></html>`);
+  w.document.close();
 }
 
 chargerDonnees();
