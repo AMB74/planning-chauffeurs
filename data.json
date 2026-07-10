@@ -1872,7 +1872,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 PAX A TRANSFERER \n→ RDV 9H CHAMBRES DU SOLEIL\n",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
@@ -2252,7 +2252,7 @@
               "depart": "RDV BEAUFORT",
               "client": "CHAVE\n",
               "nbre": "8",
-              "arrivee": "REFUGE DE L'ALPAGE",
+              "arrivee": "PLANAY - ARECHE",
               "stockes": "–"
             }
           ]
@@ -5706,7 +5706,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! INCENDIE \nNUIT SANS BG\nJ+2 : CHALET MONTANA\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "PERRILLAT OLIVIER\n(- 06 75 24 22 74)",
@@ -5721,7 +5721,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! INCENDIE \nNUIT SANS BG\nJ+2 : CHALET MONTANA\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "WIEDEMANN\n",
@@ -6829,7 +6829,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "–",
+              "details": "!! INCENDIE \nNUIT SANS BG\nJ+1 : CHALET MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "PERRILLAT OLIVIER\n(- 06 75 24 22 74)",
@@ -6844,7 +6844,7 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "–",
+              "details": "!! INCENDIE \nNUIT SANS BG\nJ+1 : CHALET MONTANA\n",
               "heure_rdv": "",
               "depart": "HOTEL PEPE GUST ",
               "client": "WIEDEMANN\n",
@@ -7967,17 +7967,17 @@
           "lignes": [
             {
               "pilote": "Aurore",
-              "renforts": "Aurore, TAXI APOLLO",
+              "renforts": "Aurore",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 : REFUGE REPOJU\n!! 8h00 : HBG > Planay de Chambéranger (11 pax)\n",
+              "details": "J+1 : REFUGE REPOJU\n\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
               "nbre": "10+1",
-              "arrivee": "REFUGE DU GRAND BEC",
+              "arrivee": "HOTEL LE TERRIL BLANC**",
               "stockes": "–"
             }
           ]
@@ -9167,7 +9167,7 @@
               "transfert": "–",
               "details": "J-1 : REFUGE DE LAISONNAY\n",
               "heure_rdv": "",
-              "depart": "REFUGE DU GRAND BEC",
+              "depart": "HOTEL LE TERRIL BLANC**",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
               "nbre": "10+1",
               "arrivee": "REFUGE DU REPOJU",
