@@ -51,14 +51,20 @@
     {
       "prenom": "Oscar",
       "nom": "TESAURO",
-      "vehicule": "LOCATION",
-      "plaque": null
+      "vehicule": "TRAFIC",
+      "plaque": "FN-020-TV"
     },
     {
       "prenom": "Serge",
       "nom": "DECLERCK",
       "vehicule": "TRAFIC",
       "plaque": "HK-583-DV"
+    },
+    {
+      "prenom": "Yan",
+      "nom": "ANDRE",
+      "vehicule": "TRAFIC",
+      "plaque": "Location"
     }
   ],
   "sections": [
@@ -193,7 +199,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer 1 petit sac blanc (Tot bag) oublié par KAO sur les étagères en bas CHALET DES CONTA et le déposer au bureau à Montriond\n",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "MEZA\n",
@@ -1211,41 +1217,6 @@
       "titre": "DIMANCHE 12 JUILLET",
       "date_complete": "DIMANCHE 12 JUILLET 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE\nPAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DE PLATÉ",
-              "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
-              "nbre": "7+1",
-              "arrivee": "REFUGE DE PLATÉ",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL ZODIAQUE***",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -2435,26 +2406,6 @@
       "date_complete": "LUNDI 13 JUILLET 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL ZODIAQUE***",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL ZODIAQUE***",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -3573,26 +3524,6 @@
       "date_complete": "MARDI 14 JUILLET 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL ZODIAQUE***",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL BECS DE BOSSON",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
@@ -3843,21 +3774,6 @@
               "client": "SORENSEN\n",
               "nbre": "2",
               "arrivee": "B&B LE CABANON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "ANNULE\n",
-              "nbre": "2",
-              "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
             {
@@ -4820,26 +4736,6 @@
       "titre": "MERCREDI 15 JUILLET",
       "date_complete": "MERCREDI 15 JUILLET 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL BECS DE BOSSON",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL BECS DE BOSSON",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
@@ -6038,26 +5934,6 @@
       "titre": "JEUDI 16 JUILLET",
       "date_complete": "JEUDI 16 JUILLET 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL BECS DE BOSSON",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "HOTEL ALPHUBEL**",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
