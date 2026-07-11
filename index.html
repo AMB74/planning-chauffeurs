@@ -478,7 +478,7 @@ function sectionHTML(s, lignes, idx, prenom) {
     </div>
     <div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages</th><th>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
         <th${colHrClass}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${tbodyHTML}</tbody>
@@ -743,13 +743,9 @@ function lancerImpression(conteneurId) {
     }
   });
 
-  // Générer HTML avec en-tête par jour + saut de page
+  // Générer HTML avec saut de page entre jours uniquement
   let contenuHTML = groupes.map((g, idx) => `
     <div class="jour-bloc${idx > 0 ? ' page-break' : ''}">
-      <div class="entete-jour">
-        <span class="entete-date">${g.date}</span>
-        <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Chauffeurs</span>
-      </div>
       ${g.html}
     </div>
   `).join('');
