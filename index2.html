@@ -160,8 +160,8 @@ td.stockes.empty { color: #ddd; text-align: center; }
   </div>
   <a href="bagages.html" style="display:inline-flex;align-items:center;gap:6px;background:none;border:1.5px solid var(--gris-border);border-radius:6px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--gris-moyen);text-decoration:none;margin-bottom:16px;">🧳 Bagages stockés</a>
   <div class="legende">
-    <div class="legende-item"><div class="legende-dot dot-pilote"></div> Bagages + Transfert</div>
-    <div class="legende-item"><div class="legende-dot dot-renfort"></div> Renfort Transfert</div>
+    <div class="legende-item"><div class="legende-dot dot-pilote"></div> Bagages</div>
+    <div class="legende-item"><div class="legende-dot dot-renfort"></div> Transfert</div>
   </div>
   <div id="planning-contenu"></div>
   <div class="footer"><span id="pg-footer"></span><span>ALTITUDE MONT-BLANC</span></div>
@@ -260,7 +260,7 @@ function tableauHTML(lignes, hasHr) {
   const colHr = hasHr ? '' : ' style="display:none"';
   return `<div class="table-wrapper"><table>
     <thead><tr>
-      <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
+      <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages</th><th>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
       <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
     </tr></thead>
     <tbody>${lignes.map(l => ligneHTML(l, hasHr)).join('')}</tbody>
@@ -296,7 +296,7 @@ function sectionHTML(s, idx) {
     </div>
     <div class="section-body"><div class="table-wrapper"><table>
       <thead><tr>
-        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages +<br>Transfert</th><th>Renfort<br>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
+        <th class="check">✓</th><th class="alerte-stock"></th><th>Bagages</th><th>Transfert</th><th class="col-type-transfert">Type</th><th class="col-type"></th><th>Détails</th>
         <th${colHr}>Heure RDV</th><th>RDV / Transfert</th><th>Départ</th><th>Client / AEM</th><th>Nbre</th><th>Arrivée</th><th>Stockés</th>
       </tr></thead>
       <tbody>${tbodyHTML}</tbody>
@@ -330,14 +330,8 @@ const PRINT_CSS = `
   .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; break-after: avoid; }
-  .page-break { break-before: page; height: 0; margin: 0; padding: 0; }
-  .jour-wrapper { width: 100%; border-collapse: collapse; }
-  .jour-wrapper > tbody > tr > td { padding: 0; }
-  .jour-header { display: table-header-group; }
-  .jour-header td { padding: 0 0 6px 0; }
-  .entete-jour { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E8263A; padding-bottom: 3px; margin-bottom: 8px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .entete-date { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; text-transform: uppercase; }
-  .entete-societe { font-family: 'DM Mono', monospace; font-size: 8px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
+  .page-break { break-before: page; }
+  .jour-bloc { margin-bottom: 0; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -415,36 +409,26 @@ function lancerImpression() {
   fermerModal();
   const sections = document.querySelectorAll('#planning-contenu .section');
 
-  const groupesParDate = [];
+  const groupes = [];
   let groupeActuel = null;
   sections.forEach((s, i) => {
     if (indices.includes(i)) {
       const dateSection = s.dataset.date || '';
-      if (dateSection !== (groupeActuel && groupeActuel.date)) {
-        groupeActuel = { date: dateSection, sections: [] };
-        groupesParDate.push(groupeActuel);
+      if (!groupeActuel || dateSection !== groupeActuel.date) {
+        groupeActuel = { date: dateSection, html: '' };
+        groupes.push(groupeActuel);
       }
       const clone = s.cloneNode(true);
       clone.classList.remove('collapsed');
-      groupeActuel.sections.push(clone.outerHTML);
+      groupeActuel.html += clone.outerHTML;
     }
   });
 
-  let html = '';
-  groupesParDate.forEach((groupe, idx) => {
-    if (idx > 0) html += '<div class="page-break"></div>';
-    html += `<table class="jour-wrapper">
-      <thead class="jour-header"><tr><td>
-        <div class="entete-jour">
-          <span class="entete-date">${groupe.date}</span>
-          <span class="entete-societe">ALTITUDE MONT-BLANC · Planning Semaine de Travail</span>
-        </div>
-      </td></tr></thead>
-      <tbody><tr><td>${groupe.sections.join('')}</td></tr></tbody>
-    </table>`;
-  });
+  let contenuHTML = groupes.map((g, idx) => `
+    <div class="jour-bloc${idx > 0 ? ' page-break' : ''}">${g.html}</div>
+  `).join('');
 
-  ouvrirFenetreImpression(html);
+  ouvrirFenetreImpression(contenuHTML);
 }
 
 chargerDonnees();
