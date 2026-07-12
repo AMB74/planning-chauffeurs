@@ -3324,7 +3324,7 @@
               "heure_rdv": "",
               "depart": "RDV GARE MODANE",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "5+1",
               "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
             }
@@ -3488,7 +3488,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! dossier à vérifier, peut être SS BAGAGE finalement\n",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "LE FETO",
               "client": "STEVENS\n",
@@ -3868,7 +3868,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H00 HBG > Trient",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "HOTEL LE DAHU**",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -3947,7 +3947,7 @@
               "heure_rdv": "",
               "depart": "LA GRANDE OURSE",
               "client": "LEBLAN YOANN\n(- 06 02 08 26 27)",
-              "nbre": "11+1",
+              "nbre": "10+1",
               "arrivee": "PENSION EN PLEIN AIR",
               "stockes": "–"
             },
@@ -4377,7 +4377,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "4+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             },
@@ -5340,7 +5340,7 @@
               "heure_rdv": "",
               "depart": "PENSION EN PLEIN AIR",
               "client": "LEBLAN YOANN\n(- 06 02 08 26 27)",
-              "nbre": "11+1",
+              "nbre": "10+1",
               "arrivee": "AUBERGE MAYA-JOIE",
               "stockes": "–"
             },
@@ -5351,7 +5351,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "HOTEL SPLENDIDE",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -5575,7 +5575,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "4+1",
               "arrivee": "REFUGE DES BARMETTES",
               "stockes": "–"
             },
@@ -6433,7 +6433,7 @@
               "heure_rdv": "",
               "depart": "AUBERGE MAYA-JOIE",
               "client": "LEBLAN YOANN\n(- 06 02 08 26 27)",
-              "nbre": "11+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE ELENA",
               "stockes": "–"
             },
@@ -6489,7 +6489,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "CHALET VAL FERRET",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -6743,7 +6743,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DES BARMETTES",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "4+1",
               "arrivee": "REFUGE PLAN DU LAC",
               "stockes": "–"
             },
@@ -7491,7 +7491,7 @@
               "heure_rdv": "",
               "depart": "REFUGE ELENA",
               "client": "LEBLAN YOANN\n(- 06 02 08 26 27)",
-              "nbre": "13+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE MONTE BIANCO",
               "stockes": "–"
             },
@@ -7637,7 +7637,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "HOTEL CENTRALE",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -7906,7 +7906,7 @@
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "4+1",
               "arrivee": "REFUGE DU FOND DES FOURS",
               "stockes": "–"
             },
@@ -8804,7 +8804,7 @@
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "LEBLAN YOANN\n(- 06 02 08 26 27)",
-              "nbre": "13+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–"
             },
@@ -8920,7 +8920,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "CHAMBRES DU SOLEIL ",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -9084,7 +9084,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
-              "nbre": "6+1",
+              "nbre": "4+1",
               "arrivee": "RDV BONNEVAL",
               "stockes": "–"
             }
