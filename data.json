@@ -4610,7 +4610,7 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
-              "transfert": "08H30 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBG",
+              "transfert": "08H00 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBG",
               "details": "–",
               "heure_rdv": "",
               "depart": "LE FETO",
@@ -4630,7 +4630,7 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "+ REMORQUE",
-              "transfert": "15H La Villaz > HBG",
+              "transfert": "15H30 La Villaz > HBG",
               "details": "–",
               "heure_rdv": "",
               "depart": "BIVOUAC FORON",
@@ -4925,7 +4925,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
