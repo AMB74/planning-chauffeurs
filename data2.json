@@ -669,7 +669,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -714,7 +714,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -729,7 +729,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -785,6 +785,21 @@
               "client": "COQUILLEAU MARIE\n(- 06 32 05 53 25)",
               "nbre": "12+1",
               "arrivee": "HOTEL LA GELINOTTE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "MARLOTEAU\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -909,7 +924,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -924,7 +939,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -939,7 +954,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -950,21 +965,6 @@
               "client": "CERRILLO\n",
               "nbre": "2",
               "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "8h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "CHALET NANT ROUGE",
               "stockes": "–"
             },
             {
@@ -1605,7 +1605,7 @@
               "details": "–",
               "heure_rdv": "8H PRARION CAISSES + TRANSFERT AEM",
               "depart": "RDV MONTROC",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "AUBERGE MONT BLANC",
               "stockes": "–"
@@ -1837,7 +1837,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1852,7 +1852,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1867,7 +1867,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1912,7 +1912,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1957,7 +1957,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1972,7 +1972,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2077,7 +2077,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2092,7 +2092,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2347,7 +2347,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HOFMANN",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -2988,7 +2988,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "AUBERGE MONT BLANC",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "GITE BON ABRI",
               "stockes": "–"
@@ -3310,7 +3310,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3668,7 +3668,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "PENSION WALDEGG",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
+              "client": "PATISSIER VINCENT\n+33 6 63 11 69 66\n",
               "nbre": "6+1",
               "arrivee": "RIFUGIO SCARTEBODEN",
               "stockes": "–"
@@ -4211,7 +4211,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "GITE BON ABRI",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "REFUGE ELENA",
               "stockes": "–"
@@ -4891,7 +4891,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RIFUGIO SCARTEBODEN",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
+              "client": "PATISSIER VINCENT\n+33 6 63 11 69 66\n",
               "nbre": "6+1",
               "arrivee": "RIFUGIO PASTORE",
               "stockes": "–"
@@ -5434,7 +5434,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE ELENA",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "REFUGE MONTE BIANCO",
               "stockes": "–"
@@ -5516,7 +5516,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5531,7 +5531,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5546,7 +5546,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5561,7 +5561,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5576,7 +5576,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5647,6 +5647,21 @@
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
               "nbre": "12+1",
               "arrivee": "REFUGE PLAN MYA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "DESBIENS\n",
+              "nbre": "1",
+              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -6039,7 +6054,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RIFUGIO PASTORE",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
+              "client": "PATISSIER VINCENT\n+33 6 63 11 69 66\n",
               "nbre": "6+1",
               "arrivee": "REFUGE GNIFETTI",
               "stockes": "–"
@@ -6607,7 +6622,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–"
@@ -6685,6 +6700,21 @@
               "client": "RUTH\n",
               "nbre": "3",
               "arrivee": "CHALET DES CONTAMINES",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "SHAMBROOK\n",
+              "nbre": "4",
+              "arrivee": "CHALET DE ROSELEND",
               "stockes": "–"
             },
             {
@@ -7137,37 +7167,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE GNIFETTI",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
-              "nbre": "6+1",
-              "arrivee": "AUBERGE RISTORO SITTEN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE GNIFETTI",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
-              "nbre": "6+1",
-              "arrivee": "AUBERGE RISTORO SITTEN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE GNIFETTI",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
+              "client": "PATISSIER VINCENT\n+33 6 63 11 69 66\n",
               "nbre": "6+1",
               "arrivee": "AUBERGE RISTORO SITTEN",
               "stockes": "–"
@@ -7840,7 +7840,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
-              "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
+              "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
@@ -8235,7 +8235,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "AUBERGE RISTORO SITTEN",
-              "client": "GARNAUD BENJAMIN\n(06 37 65 18 41 - )",
+              "client": "PATISSIER VINCENT\n+33 6 63 11 69 66\n",
               "nbre": "6+1",
               "arrivee": "RIFUGIO FERRARO",
               "stockes": "–"
