@@ -5136,7 +5136,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Laurent",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6349,12 +6349,12 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "TAXI DES COMBINS, TAXI LEO",
+              "renforts": "Oscar, Charlie, TAXI DES COMBINS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "8h30",
-              "details": "!! 13 SACS\n8H30 : HBG > FERRET (16pax) TAXI COMBINS\n16H30 : ARNOUVA > HBG (16pax)\nTAXI LEO\n",
+              "details": "!! 13 SACS\n8H30 : HBG > FERRET - COMBINS\n16H30 : ARNOUVA > HBG - OSCAR+CHARLIE\n",
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
               "client": "GURU\n",
