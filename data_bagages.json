@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "13/07/2026 07:48"
+    "genere_le": "13/07/2026 12:50"
   },
   "lignes": [
     {
@@ -41,6 +41,32 @@
       "date_fin": "2026-07-18",
       "date_debut_aff": "Dim 12/07",
       "date_fin_aff": "Sam 18/07"
+    },
+    {
+      "jour_semaine": "20-07 - LUNDI",
+      "client": "BOUCHARD\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "2",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-20",
+      "date_fin": "2026-07-26",
+      "date_debut_aff": "Lun 20/07",
+      "date_fin_aff": "Dim 26/07"
+    },
+    {
+      "jour_semaine": "21-07 - MARDI",
+      "client": "BOYER\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV HOTEL",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-21",
+      "date_fin": "2026-07-27",
+      "date_debut_aff": "Mar 21/07",
+      "date_fin_aff": "Lun 27/07"
     }
   ]
 }
