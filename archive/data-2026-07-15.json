@@ -7121,7 +7121,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7136,7 +7136,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7816,13 +7816,13 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Aurore",
-              "renforts": "Aurore",
+              "pilote": "0. AUCUN",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 : REFUGE REPOJU\n\n",
+              "details": "APOLLO VENDREDI\nJ+1 : REFUGE REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -7887,7 +7887,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1: BONNEVAL \noù les déposer à Bonneval ??????\n",
+              "details": "J+1: BONNEVAL\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "BIBOLLET ODILE\n(- 06 18 21 87 11)",
@@ -7931,13 +7931,13 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 PONT DE LA VIEILLE SCIE\n",
+              "details": "TAXI JAY VENDREDI\nJ+1 PONT DE LA VIEILLE SCIE\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND MONT",
               "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
@@ -8994,15 +8994,15 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI APOLLO",
+              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
+              "type": "–",
               "transfert": "–",
               "details": "J-1 : REFUGE DE LAISONNAY\n",
               "heure_rdv": "",
-              "depart": "HOTEL LE TERRIL BLANC**",
+              "depart": "REFUGE DU LAISONNAY",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
               "nbre": "9+1",
               "arrivee": "REFUGE DU REPOJU",
@@ -9094,13 +9094,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1: REFUGE PLAN MYA\n",
+              "details": "A FAIRE SAMEDI\nJ+1: REFUGE PLAN MYA\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ECONDU",
               "client": "LOISON\n",
@@ -9109,13 +9109,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1: PLAN MYA\n",
+              "details": "A FAIRE SAMEDI\nJ+1: PLAN MYA\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ECONDU",
               "client": "COSSEC\n",
