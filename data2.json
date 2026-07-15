@@ -2196,21 +2196,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "ARIEL\n",
-              "nbre": "4",
-              "arrivee": "HOTEL LA COURONNE",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -6547,7 +6532,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER Charles\n",
+              "client": "TREKKER LAURENT 0689335334\n",
               "nbre": "11+1",
               "arrivee": "HÔTEL DU STAND",
               "stockes": "–"
@@ -7885,7 +7870,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HÔTEL DU STAND",
-              "client": "TREKKER Charles\n",
+              "client": "TREKKER LAURENT 0689335334\n",
               "nbre": "11+1",
               "arrivee": "GITE BON ABRI",
               "stockes": "–"

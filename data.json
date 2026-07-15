@@ -6933,6 +6933,26 @@
       "date_complete": "JEUDI 16 JUILLET 2026",
       "groupes": [
         {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "Damian",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "–",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "Vers 12h 13h : HOSTELLERIE DU PARADIS > HOTEL GALISIA (2 pax)\n",
+              "heure_rdv": "",
+              "depart": "HOSTELLERIE DU PARADIS",
+              "client": "LEFEVRE\n",
+              "nbre": "2",
+              "arrivee": "HOTEL GALISIA",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -6986,7 +7006,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7631,13 +7651,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Ivan",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "+ REMORQUE",
               "transfert": "–",
-              "details": "\n",
+              "details": "!! emmener la remorque aux Chapieux\n",
               "heure_rdv": "",
               "depart": "CAMPING LA SORGENTE",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -7721,7 +7741,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Yan A.",
               "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
