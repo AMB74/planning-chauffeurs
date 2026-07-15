@@ -4405,6 +4405,21 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
+              "depart": "LA GRANDE OURSE",
+              "client": "ARIEL\n",
+              "nbre": "4",
+              "arrivee": "CHALET MA FOLIE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
               "depart": "GITE BON ABRI",
               "client": "JEROME TILLEUL 06 22 13 03 48\n",
               "nbre": "14+1",
@@ -5617,6 +5632,21 @@
               "client": "BOUCHARD\n",
               "nbre": "2",
               "arrivee": "AUBERGE DE LA VACHEY",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "PAS BESOIN",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET MA FOLIE",
+              "client": "ARIEL\n",
+              "nbre": "4",
+              "arrivee": "CHALET MA FOLIE",
               "stockes": "–"
             },
             {
