@@ -2458,21 +2458,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "11H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PARKING DE PONT",
-              "client": "CHIRENT\n",
-              "nbre": "2",
-              "arrivee": "HOSTELLERIE DU PARADIS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
@@ -3717,21 +3702,6 @@
               "nbre": "14+1",
               "arrivee": "REFUGE BENEVOLO",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "08H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CHIRENT\n",
-              "nbre": "2",
-              "arrivee": "HOTEL GALISIA",
-              "stockes": "–"
             }
           ]
         },
@@ -4766,21 +4736,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
-              "client": "ASMUS\n",
-              "nbre": "3",
-              "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
               "client": "MORTEN\n",
               "nbre": "7",
               "arrivee": "CHALET COL DE FENETRE",
@@ -5635,7 +5590,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -6321,7 +6276,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "CHALET DE L'EPEE",
               "client": "CHIRENT\n",
@@ -6685,6 +6640,21 @@
               "client": "BOYER\n",
               "nbre": "2",
               "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET MA FOLIE",
+              "client": "ARIEL\n",
+              "nbre": "4",
+              "arrivee": "CHALET COL DE FENETRE",
               "stockes": "–"
             },
             {
@@ -7094,7 +7064,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -7554,7 +7524,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1: CHALET DE L'EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "CHIRENT\n",
@@ -8147,7 +8117,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -8712,7 +8682,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : FIN- HOSTELLERIE DU PARDIS\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "CHIRENT\n",
