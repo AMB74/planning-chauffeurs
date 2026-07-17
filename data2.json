@@ -602,7 +602,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL ASTORIA",
-              "client": "2\n",
+              "client": "HWAN 2 \n",
               "nbre": "4",
               "arrivee": "HOTEL LE VIEUX POMMIER",
               "stockes": "–"
@@ -974,11 +974,11 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Chapieux",
-              "details": "08h30 : HBG > Chapieux (16pax) // TAXI JAY\n16h30 : ND Gorge > HBG (16 pax) // AMB\n",
+              "details": "08h15 : HBG > Chapieux (14pax) // TAXI JAY\n16h30 : ND Gorge > HBG (14 pax) // AMB\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "GURU\n",
-              "nbre": "16",
+              "nbre": "14",
               "arrivee": "CHALET NANT ROUGE",
               "stockes": "–"
             },
@@ -1224,21 +1224,6 @@
               "nbre": "2",
               "arrivee": "LE FETO",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SARAS\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE SALVAGNY",
-              "stockes": "–"
             }
           ]
         },
@@ -1272,12 +1257,12 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "8h30",
-              "details": "8h30 : HBG > La Tresse / La Frasse (16pax) // AMB\n",
+              "details": "8h30 : HBG > La Tresse / La Frasse (14pax) // AMB\n",
               "heure_rdv": "",
               "depart": "CHALET NANT ROUGE",
               "client": "GURU\n",
-              "nbre": "16",
-              "arrivee": "RDV HOTEL",
+              "nbre": "14",
+              "arrivee": "HOTEL LA FOLIE DOUCE CHAMONIX",
               "stockes": "–"
             },
             {
@@ -1815,7 +1800,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL LE VIEUX POMMIER",
-              "client": "2\n",
+              "client": "HWAN 2 \n",
               "nbre": "4",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
@@ -2321,7 +2306,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "0. AUCUN",
+              "pilote": "",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -3218,7 +3203,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
-              "client": "2\n",
+              "client": "HWAN 2\n",
               "nbre": "4",
               "arrivee": "LA CITE MONTJOIE",
               "stockes": "–"
@@ -3736,7 +3721,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "LA CITE MONTJOIE",
-              "client": "2\n",
+              "client": "HWAN 2\n",
               "nbre": "4",
               "arrivee": "RDV PRARION",
               "stockes": "–"
