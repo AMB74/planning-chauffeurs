@@ -1086,36 +1086,6 @@
               "nbre": "9+1",
               "arrivee": "RDV BEAUFORT",
               "stockes": "–"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "A FAIRE SAMEDI\nJ+1: REFUGE PLAN MYA\n",
-              "heure_rdv": "",
-              "depart": "REFUGE DE L'ECONDU",
-              "client": "LOISON\n",
-              "nbre": "4",
-              "arrivee": "REFUGE DE LA BALME LANDRY ",
-              "stockes": "–"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "A FAIRE SAMEDI\nJ+1: PLAN MYA\n",
-              "heure_rdv": "",
-              "depart": "REFUGE DE L'ECONDU",
-              "client": "COSSEC\n",
-              "nbre": "2",
-              "arrivee": "REFUGE DE LA BALME LANDRY ",
-              "stockes": "–"
             }
           ]
         },
@@ -1307,12 +1277,12 @@
           "lignes": [
             {
               "pilote": "Yan A.",
-              "renforts": "",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "+ REMORQUE",
               "transfert": "–",
-              "details": "–",
+              "details": "NAVETTE\n",
               "heure_rdv": "07H30",
               "depart": "GITE ET CAMPING DU PONTET",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -1322,7 +1292,7 @@
             },
             {
               "pilote": "Yan A.",
-              "renforts": "Laurent",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -1412,12 +1382,12 @@
             },
             {
               "pilote": "Yan A.",
-              "renforts": "Laurent",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "NAVETTE ?\n",
               "heure_rdv": "08H15",
               "depart": "HOTEL LE CHRISTIANIA**",
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
@@ -1427,7 +1397,7 @@
             },
             {
               "pilote": "Yan A.",
-              "renforts": "Laurent",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -2274,7 +2244,7 @@
               "transfert": "–",
               "details": "J-1: REFUGE DE l'ECONDU\n",
               "heure_rdv": "",
-              "depart": "REFUGE DE LA BALME LANDRY ",
+              "depart": "REFUGE DE LA BALME LANDRY",
               "client": "LOISON\n",
               "nbre": "4",
               "arrivee": "REFUGE PLAN MYA",
@@ -2287,9 +2257,9 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1: REFUGE DE l'ECONDU\n",
               "heure_rdv": "",
-              "depart": "REFUGE DE LA BALME LANDRY ",
+              "depart": "REFUGE DE LA BALME LANDRY",
               "client": "COSSEC\n",
               "nbre": "2",
               "arrivee": "REFUGE PLAN MYA",
@@ -2302,7 +2272,7 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "Oscar",
+              "renforts": "Oscar, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2317,7 +2287,7 @@
             },
             {
               "pilote": "Jean-Marc",
-              "renforts": "Oscar",
+              "renforts": "Oscar, Jean-Marc",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
@@ -2331,8 +2301,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Jean-Marc",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Jean-Marc",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -2341,7 +2311,7 @@
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "COUSIN\n",
-              "nbre": "4",
+              "nbre": "3",
               "arrivee": "REFUGE BEZZI",
               "stockes": "–"
             }
@@ -2394,13 +2364,13 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "9H30",
-              "details": "8h00 : Rdv AEM Prarion\n9h30 : RDV Clients Arrêt SNCF Buet (VALLORCINE) // BG+PN dans coffre AEM et clé déposée à l'hôtel du Buet =>ramener au bureau Montriond en attendant\nJ+2 : CANTINE DE BARMAZ\n",
+              "details": "8h00 : Rdv AEM Prarion\n9h30 : RDV Clients Arrêt SNCF Buet (VALLORCINE) // BG+PN dans coffre AEM et clé déposée à l'hôtel du Buet =>Déposer bagages dans remorque GAILLANDS\nJ+2 : CANTINE DE BARMAZ\n",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
               "client": "GAY MAXIME\n(- 06 65 04 67 53)",
@@ -3314,7 +3284,7 @@
               "heure_rdv": "",
               "depart": "RDV BELLEVUE",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             }
@@ -4462,7 +4432,7 @@
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
             },
@@ -5745,7 +5715,7 @@
               "heure_rdv": "",
               "depart": "REFUGE PLAN MYA",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             }
@@ -6953,7 +6923,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE ROSUEL",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE DU LAISONNAY",
               "stockes": "–"
             }
@@ -8111,7 +8081,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE DU GRAND BEC",
               "stockes": "–"
             }
@@ -8453,7 +8423,7 @@
               "details": "!! 1 BAGAGE STOCKÉ à récupérer au PRARION et à déposer à l'hôtel Le Commerce à Modane LE LENDEMAIN\n",
               "heure_rdv": "",
               "depart": "PRARION LES HOUCHES",
-              "client": "LAURIN\n",
+              "client": "LAURIN / Groupe François MARLEIX\n",
               "nbre": "1",
               "arrivee": "HOTEL LE COMMERCE ***",
               "stockes": "–"
@@ -9304,7 +9274,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "6+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             }

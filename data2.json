@@ -1100,41 +1100,6 @@
           ]
         },
         {
-          "massif": "6. BEAUFORTAIN",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DE LA BALME LANDRY ",
-              "client": "COSSEC\n",
-              "nbre": "2",
-              "arrivee": "REFUGE PLAN MYA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "J-1: REFUGE DE l'ECONDU\n",
-              "heure_rdv": "",
-              "depart": "REFUGE DE LA BALME LANDRY ",
-              "client": "LOISON\n",
-              "nbre": "4",
-              "arrivee": "REFUGE PLAN MYA",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
