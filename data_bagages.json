@@ -1,52 +1,13 @@
 {
   "meta": {
-    "genere_le": "17/07/2026 09:20"
+    "genere_le": "17/07/2026 15:02"
   },
   "lignes": [
     {
-      "jour_semaine": "11-07 - SAMEDI",
-      "client": "MOEGLE LISON\n(- 07 67 64 17 67)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-05",
-      "date_fin": "2026-07-11",
-      "date_debut_aff": "Dim 05/07",
-      "date_fin_aff": "Sam 11/07"
-    },
-    {
-      "jour_semaine": "15-07 - MERCREDI",
-      "client": "SAUNDERS\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PLANPRAZ",
-      "date_debut": "2026-07-06",
-      "date_fin": "2026-07-15",
-      "date_debut_aff": "Lun 06/07",
-      "date_fin_aff": "Mer 15/07"
-    },
-    {
-      "jour_semaine": "11-07 - SAMEDI",
-      "client": "LANE\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "4",
-      "depart": "RDV HOTEL",
-      "arrivee": "–",
-      "date_debut": "2026-07-07",
-      "date_fin": "2026-07-12",
-      "date_debut_aff": "Mar 07/07",
-      "date_fin_aff": "Dim 12/07"
-    },
-    {
-      "jour_semaine": "12-07 - DIMANCHE",
+      "jour_semaine": "18-07 - SAMEDI",
       "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-      "chauffeur_debut": "Bertrand",
-      "chauffeur_fin": "–",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "Bertrand",
       "nbre": "1",
       "depart": "RDV THOLLON",
       "arrivee": "RDV PLANPRAZ",
@@ -59,7 +20,7 @@
       "jour_semaine": "18-07 - SAMEDI",
       "client": "DEVOS REMY\n(06 85 40 02 01 - )",
       "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
+      "chauffeur_fin": "Yan A.",
       "nbre": "1",
       "depart": "RDV FLÉGÈRE",
       "arrivee": "RDV PRARION",
