@@ -2379,7 +2379,7 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "Charlie",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -2609,7 +2609,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2624,7 +2624,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2639,7 +2639,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Charlie",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2654,7 +2654,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Jean Jacques",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3105,7 +3105,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "",
+              "renforts": "Serge, TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3230,7 +3230,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Chapieux",
-              "details": "–",
+              "details": "!! 1 pax à transférer\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "HERTZ\n",
@@ -3315,9 +3315,9 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : HOTEL GRD BEC\n",
               "heure_rdv": "",
-              "depart": "RDV MODANE",
+              "depart": "HOTEL LE COMMERCE ***",
               "client": "LESAGE\n",
               "nbre": "3",
               "arrivee": "REFUGE PECLET POLSET",
@@ -4443,7 +4443,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Monter 3 tentes (5pax)\n",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
@@ -4478,7 +4478,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : RDV HOTEL COMMERCE\n",
               "heure_rdv": "",
               "depart": "REFUGE PECLET POLSET",
               "client": "LESAGE\n",
