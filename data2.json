@@ -3532,21 +3532,6 @@
               "nbre": "14+1",
               "arrivee": "HOTEL SPLENDIDE",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "ARIEL\n",
-              "nbre": "4",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
             }
           ]
         },
@@ -4784,36 +4769,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "RYCERZ\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "DESCHAMPS\n",
-              "nbre": "2",
-              "arrivee": "CHALET DE ROSELEND",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -4844,21 +4799,6 @@
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "1+1",
               "arrivee": "ALTITUDE TRANSPORT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "1+1",
-              "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             },
             {
@@ -6023,36 +5963,6 @@
               "nbre": "2",
               "arrivee": "HOTEL SPLENDIDE",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "WACH\n",
-              "nbre": "3",
-              "arrivee": "HOTEL ANGIVAL",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "DUPERRAY SALOMÉ\n(- 06 76 74 92 79)",
-              "nbre": "5+1",
-              "arrivee": "HOTEL ANGIVAL",
-              "stockes": "–"
             }
           ]
         },
@@ -7096,36 +7006,6 @@
               "nbre": "2",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "FERONT\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "TROELS\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
             }
           ]
         },
@@ -8128,21 +8008,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "RAMIREZ\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE CHRISTIANIA**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -8183,51 +8048,6 @@
               "client": "DUPERRAY SALOMÉ\n(- 06 76 74 92 79)",
               "nbre": "5+1",
               "arrivee": "RDV MONTROC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "BROWN\n",
-              "nbre": "1",
-              "arrivee": "BASE CAMP LODGE HOTEL",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "MUGFORD\n",
-              "nbre": "6",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "DELAINE\n",
-              "nbre": "3",
-              "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
             },
             {
