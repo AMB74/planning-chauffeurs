@@ -6025,13 +6025,13 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-2 : REFUGE PLAN MYA\n",
+              "details": "DEJA FAIT\nJ-2 : REFUGE PLAN MYA\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA CROIX DE PIERRE",
               "client": "LOISON\n",
@@ -6040,13 +6040,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-2 : REFUGE PLAN MYA\n",
+              "details": "DEJA FAIT\nJ-2 : REFUGE PLAN MYA\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA CROIX DE PIERRE",
               "client": "COSSEC\n",
@@ -6055,13 +6055,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "!! 5 SACS SEULEMENT + 1 CARTON\nJ+1 PLAN MYA\n",
+              "details": "MERCREDI\n!! 5 SACS SEULEMENT + 1 CARTON\nJ+1 PLAN MYA\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ECONDU",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
