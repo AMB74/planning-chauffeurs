@@ -3164,7 +3164,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LE VIEUX POMMIER",
               "client": "HWAN 2 \n",
-              "nbre": "4",
+              "nbre": "3",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
@@ -3481,36 +3481,6 @@
               "client": "DUGUET\n",
               "nbre": "4",
               "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "HWAN\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "2\n",
-              "nbre": "4",
-              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             },
             {
@@ -4092,7 +4062,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "8+1",
+              "nbre": "7+1",
               "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
@@ -4647,7 +4617,7 @@
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "HWAN 2\n",
-              "nbre": "4",
+              "nbre": "3",
               "arrivee": "LA CITE MONTJOIE",
               "stockes": "–"
             },
@@ -4928,7 +4898,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "!! 5 SACS SEULEMENT + 1 CARTON\nJ-1 ECONDU\n",
+              "details": "!! 5 SACS SEULEMENT + 1 CARTON\n\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ALPAGE",
               "client": "ALLAIN MARION\n(06 71 49 71 23 - )",
@@ -5225,7 +5195,7 @@
               "heure_rdv": "",
               "depart": "LA CITE MONTJOIE",
               "client": "HWAN 2\n",
-              "nbre": "4",
+              "nbre": "3",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -5330,7 +5300,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "8+1",
+              "nbre": "7+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
             },
@@ -6058,7 +6028,7 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "HOTEL EDELWEISS****",
+              "depart": "HOTEL EDELWEISS**** PRALOGNAN",
               "client": "GILSON\n",
               "nbre": "2",
               "arrivee": "CHALET MONTANA",
@@ -6283,6 +6253,21 @@
               "nbre": "7+1",
               "arrivee": "REFUGE BEZZI",
               "stockes": "–"
+            },
+            {
+              "pilote": "Damian",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET DE L'EPEE",
+              "client": "DETRY\n",
+              "nbre": "1",
+              "arrivee": "REFUGE DE FOND (GD PARADIS)",
+              "stockes": "–"
             }
           ]
         },
@@ -6358,13 +6343,13 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
-              "type": "TRANSFERT UNIQUEMENT",
+              "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 HOSTELLERIE PARADIS\n",
               "heure_rdv": "",
               "depart": "REFUGE DE FOND (GD PARADIS)",
               "client": "DETRY\n",
@@ -7173,7 +7158,7 @@
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "8+1",
+              "nbre": "7+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
             },
@@ -7661,13 +7646,13 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
-              "type": "TRANSFERT UNIQUEMENT",
+              "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 REFUGE DE FOND\n",
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "DETRY\n",
@@ -8291,7 +8276,7 @@
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "8+1",
+              "nbre": "7+1",
               "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
@@ -8692,7 +8677,7 @@
               "depart": "REFUGE PLAN DU LAC",
               "client": "GILSON\n",
               "nbre": "2",
-              "arrivee": "HOTEL EDELWEISS****",
+              "arrivee": "HOTEL EDELWEISS**** PRALOGNAN",
               "stockes": "–"
             },
             {
@@ -9154,7 +9139,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "8+1",
+              "nbre": "7+1",
               "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
@@ -9942,7 +9927,7 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "HOTEL EDELWEISS****",
+              "depart": "HOTEL EDELWEISS**** PRALOGNAN",
               "client": "GILSON\n",
               "nbre": "2",
               "arrivee": "RDV PRALOGNAN",
