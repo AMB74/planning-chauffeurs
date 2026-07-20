@@ -4507,7 +4507,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
@@ -5130,7 +5130,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5140,7 +5140,7 @@
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER Mihai\n",
-              "nbre": "10+1",
+              "nbre": "14+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
@@ -6289,11 +6289,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 sac supplément nourriture à ajouter dans les caisses du groupe\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER Mihai\n",
-              "nbre": "10+1",
+              "nbre": "14+1",
               "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             },
@@ -7666,7 +7666,7 @@
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
               "client": "TREKKER Mihai\n",
-              "nbre": "10+1",
+              "nbre": "14+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
             },
@@ -9104,7 +9104,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -9114,7 +9114,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LES JUMEAUX",
               "client": "TREKKER Mihai\n",
-              "nbre": "10+1",
+              "nbre": "14+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
             },

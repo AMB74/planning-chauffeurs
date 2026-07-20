@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "20/07/2026 08:10"
+    "genere_le": "20/07/2026 09:56"
   },
   "lignes": [
     {
@@ -93,6 +93,19 @@
       "date_fin": "2026-07-27",
       "date_debut_aff": "Mar 21/07",
       "date_fin_aff": "Lun 27/07"
+    },
+    {
+      "jour_semaine": "26-07 - DIMANCHE",
+      "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "8",
+      "depart": "HOTEL DE L'ARVE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-26",
+      "date_fin": "2026-08-01",
+      "date_debut_aff": "Dim 26/07",
+      "date_fin_aff": "Sam 01/08"
     }
   ]
 }
