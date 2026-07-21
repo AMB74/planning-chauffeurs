@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "21/07/2026 10:40"
+    "genere_le": "21/07/2026 13:48"
   },
   "lignes": [
     {
@@ -106,6 +106,19 @@
       "date_fin": "2026-08-01",
       "date_debut_aff": "Dim 26/07",
       "date_fin_aff": "Sam 01/08"
+    },
+    {
+      "jour_semaine": "27-07 - LUNDI",
+      "client": "MALHERBE\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-27",
+      "date_fin": "2026-08-02",
+      "date_debut_aff": "Lun 27/07",
+      "date_fin_aff": "Dim 02/08"
     }
   ]
 }
