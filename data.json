@@ -9189,7 +9189,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             }
@@ -9295,7 +9295,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "BAGAGES DEPOSES CHEZ EUX JEUDI PAR AURORE\n14H PLAN D'AMONT > AUSSOIS puis MODANE\nJ-2 REPOJU\n",
+              "details": "BAGAGES DEPOSES CHEZ TAXI HAUTE MAURIENNE JEUDI PAR AURORE\n14H PLAN D'AMONT > AUSSOIS puis MODANE\nJ-2 REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DE L'ARPONT",
               "client": "PINEAU PIERRICK\n+33 6 23 44 36 49\n",
@@ -9331,21 +9331,6 @@
               "client": "PERRILLAT OLIVIER\n(- 06 75 24 22 74)",
               "nbre": "8+1",
               "arrivee": "RDV BONNEVAL",
-              "stockes": "–"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "TAXI HAUTE MAURIENNE",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GLACIER DES EVETTES",
-              "client": "LESAGE\n",
-              "nbre": "3",
-              "arrivee": "RDV MODANE",
               "stockes": "–"
             }
           ]
