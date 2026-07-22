@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 25 JUILLET",
     "numero_semaine": "Semaine 30",
-    "genere_le": "21/07/2026"
+    "genere_le": "22/07/2026"
   },
   "chauffeurs": [
     {
@@ -285,7 +285,7 @@
               "client": "BLANDIN ELODIE\n(- 06 16 09 80 93)",
               "nbre": "14+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
+              "stockes": "1"
             },
             {
               "pilote": "",
@@ -699,7 +699,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\nRDV 16:30 Notre Dame de la Gorge transfert AMB >> transfert aux Houches Arche \n",
+              "details": "16:30 :  Notre Dame de la Gorge transfert >> transfert aux Houches Arche \n",
               "heure_rdv": "",
               "depart": "BASE CAMP LODGE HOTEL",
               "client": "TREKKER SOPHIE \n+33 6 04 40 50 73\n",
@@ -1253,7 +1253,7 @@
               "client": "AUDFRAY ROBIN\n(- 06 11 20 10 46)",
               "nbre": "14+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
+              "stockes": "1"
             },
             {
               "pilote": "",
@@ -1916,7 +1916,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -1937,7 +1937,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "RDV 16:30 Notre Dame de la Gorge transfert AMB à reconfirmer la veille par guide avec Liz>> transfert aux Houches Arche \n",
+              "details": "16:30 Notre Dame de la Gorge  à reconfirmer la veille par guide avec Liz >> transfert aux Houches Arche \n",
               "heure_rdv": "",
               "depart": "LE RELAIS DES VILLARDS",
               "client": "TREKKER JACQUES ANDRE\n +33 06 61 16 09 82\n",
@@ -1952,7 +1952,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "RDV 16:30 Notre Dame de la Gorge transfert AMB à reconfirmer la veille par guide avec Liz>> transfert aux Houches Arche \n",
+              "details": "16:30 Notre Dame de la Gorge à reconfirmer la veille par guide avec Liz>> transfert aux Houches Arche \n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER Mihai\n07 66 16 14 81\n",
@@ -4242,7 +4242,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + REMORQUE",
@@ -4269,6 +4269,21 @@
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
               "nbre": "6+1",
               "arrivee": "MAISON VIEILLE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "RDV 16:30 Notre Dame de la Gorge  >> transfert H. Deux Gares St Gervais  avec AMB     (ou CVT)                   \n",
+              "heure_rdv": "",
+              "depart": "HOTEL MALGOVERT",
+              "client": "TREKKER ALAN \n+33 6 84 08 60 35\n",
+              "nbre": "15+1",
+              "arrivee": "HOTEL DES DEUX GARES ",
               "stockes": "–"
             },
             {
@@ -4652,6 +4667,21 @@
               "client": "BESSON JEAN-LUC\n(04 50 43 16 32 - 06 82 50 41 28)",
               "nbre": "9+1",
               "arrivee": "CHALET LES MINES D'OR",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "RDV 8:00 Hotel 2 gares La Villette avec AMB\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DES DEUX GARES ",
+              "client": "TREKKER ALAN \n+33 6 84 08 60 35\n",
+              "nbre": "15+1",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
@@ -5338,6 +5368,21 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
+              "depart": "REFUGE DE LA GITTAZ",
+              "client": "TREKKER LAURENT 0689335334\n",
+              "nbre": "12+1",
+              "arrivee": "LA FERME DU PRAZ",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
               "depart": "TAXI DES COMBINS",
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
               "nbre": "14+1",
@@ -5705,6 +5750,21 @@
               "client": "DESCHAMPS\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "Transferts CVT/AMB 16H30 Arche TMB > Gite tupilak - 12 pax   \n",
+              "heure_rdv": "",
+              "depart": "LA FERME DU PRAZ",
+              "client": "TREKKER LAURENT 0689335334\n",
+              "nbre": "12+1",
+              "arrivee": "GITE TUPILAK",
               "stockes": "–"
             },
             {
@@ -6173,7 +6233,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",

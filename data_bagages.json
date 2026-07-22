@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "21/07/2026 15:59"
+    "genere_le": "22/07/2026 08:06"
   },
   "lignes": [
     {
@@ -67,6 +67,45 @@
       "date_fin": "2026-07-21",
       "date_debut_aff": "Lun 13/07",
       "date_fin_aff": "Mar 21/07"
+    },
+    {
+      "jour_semaine": "18-07 - SAMEDI",
+      "client": "AUDFRAY ROBIN\n(- 06 11 20 10 46)",
+      "chauffeur_debut": "Charlie",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV FLÉGÈRE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-18",
+      "date_fin": "2026-07-26",
+      "date_debut_aff": "Sam 18/07",
+      "date_fin_aff": "Dim 26/07"
+    },
+    {
+      "jour_semaine": "18-07 - SAMEDI",
+      "client": "EINIG\n",
+      "chauffeur_debut": "Charlie",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "RDV MONTROC",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-18",
+      "date_fin": "2026-07-24",
+      "date_debut_aff": "Sam 18/07",
+      "date_fin_aff": "Ven 24/07"
+    },
+    {
+      "jour_semaine": "19-07 - DIMANCHE",
+      "client": "BLANDIN ELODIE\n(- 06 16 09 80 93)",
+      "chauffeur_debut": "Charlie",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "HOTEL LES CAMPANULES**",
+      "arrivee": "HOTEL LES CAMPANULES**",
+      "date_debut": "2026-07-19",
+      "date_fin": "2026-07-25",
+      "date_debut_aff": "Dim 19/07",
+      "date_fin_aff": "Sam 25/07"
     },
     {
       "jour_semaine": "20-07 - LUNDI",
