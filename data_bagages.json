@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "22/07/2026 09:59"
+    "genere_le": "22/07/2026 14:10"
   },
   "lignes": [
     {
@@ -158,6 +158,32 @@
       "date_fin": "2026-08-02",
       "date_debut_aff": "Lun 27/07",
       "date_fin_aff": "Dim 02/08"
+    },
+    {
+      "jour_semaine": "24-07 - VENDREDI",
+      "client": "LAURIN / Groupe François MARLEIX\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "–",
+      "arrivee": "–",
+      "date_debut": "",
+      "date_fin": "",
+      "date_debut_aff": "–",
+      "date_fin_aff": "–"
+    },
+    {
+      "jour_semaine": "25-07 - SAMEDI",
+      "client": "LAURIN / GROUPE FRANCOIS MARLEIX\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "–",
+      "arrivee": "–",
+      "date_debut": "",
+      "date_fin": "",
+      "date_debut_aff": "–",
+      "date_fin_aff": "–"
     }
   ]
 }

@@ -3587,8 +3587,8 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "AEM",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -4765,8 +4765,8 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "AEM",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -6068,18 +6068,18 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "AEM",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "08H00",
               "details": "2026 08H00 ALPEN ROC > ALPAGE DE BISE // RETOUR 15H30\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL ALPEN ROC***",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
               "nbre": "8+1",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "HOTEL ALPEN ROC***",
               "stockes": "–"
             }
           ]
@@ -7201,18 +7201,18 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "AEM",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
               "details": "2026 09H00 ALPEN ROC > COL DE L'ENCRENAZ (Foron) // RETOUR 15H30\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL ALPEN ROC***",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
               "nbre": "8+1",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "HOTEL ALPEN ROC***",
               "stockes": "–"
             }
           ]
@@ -7771,8 +7771,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -8356,7 +8356,7 @@
               "client": "LAURIN / Groupe François MARLEIX\n",
               "nbre": "1",
               "arrivee": "HOTEL LE COMMERCE ***",
-              "stockes": "–"
+              "stockes": "1"
             }
           ]
         },
@@ -8364,18 +8364,18 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "AEM",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
               "details": "2026 09H00 ALPEN ROC > VALLÉE DE LA MANCHE (Mines d'Or) // RETOUR 15H30\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL ALPEN ROC***",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
               "nbre": "8+1",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "HOTEL ALPEN ROC***",
               "stockes": "–"
             }
           ]

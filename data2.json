@@ -99,11 +99,11 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "BAGAGES AU BUREAU DÉPOSÉS PAR YANN\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
-              "nbre": "3+1",
+              "nbre": "10+1",
               "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
@@ -120,21 +120,6 @@
               "client": "RONDIA\n",
               "nbre": "2",
               "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "REINEMANN\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
             }
           ]
@@ -918,13 +903,13 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "Modane > Gare Chamonix",
-              "details": "!! 3 PAX\n",
+              "details": "!! 3 PAX EN TOUT\n",
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
@@ -1026,6 +1011,21 @@
               "nbre": "11+1",
               "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
+            },
+            {
+              "pilote": "Serge",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "1 BAGAGE STOCKÉ RÉCUPÉRÉ VENDREDI AU PRARION A DÉPOSER A L'HOTEL LE COMMERCE\n",
+              "heure_rdv": "",
+              "depart": "PRARION LES HOUCHES",
+              "client": "LAURIN / GROUPE FRANCOIS MARLEIX\n",
+              "nbre": "1",
+              "arrivee": "HOTEL LE COMMERCE ***",
+              "stockes": "1"
             }
           ]
         },
@@ -2076,7 +2076,7 @@
               "heure_rdv": "",
               "depart": "RDV BELLEVUE",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             }
@@ -2232,11 +2232,11 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
-              "details": "8H PRARION - 1 AEM\n9H45 GARE CHAM - 3 PAX\nJ+1 BENEVOLO\n",
+              "details": "8H PRARION - 1 AEM\n9H45 GARE CHAM - 4 PAX\nJ+1 BENEVOLO\n",
               "heure_rdv": "",
               "depart": "RDV PARKING DE PONT",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE SAVOIA",
               "stockes": "–"
             },
@@ -3124,7 +3124,7 @@
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
             },
@@ -3274,7 +3274,7 @@
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE BENEVOLO",
               "stockes": "–"
             },
@@ -4327,7 +4327,7 @@
               "heure_rdv": "",
               "depart": "REFUGE PLAN MYA",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             }
@@ -4457,7 +4457,7 @@
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "REFUGE BEZZI",
               "stockes": "–"
             },
@@ -5400,7 +5400,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE ROSUEL",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "REFUGE DU LAISONNAY",
               "stockes": "–"
             }
@@ -5530,7 +5530,7 @@
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "CHALET DE L'EPEE",
               "stockes": "–"
             },
@@ -6423,7 +6423,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "REFUGE DU GRAND BEC",
               "stockes": "–"
             }
@@ -6553,7 +6553,7 @@
               "heure_rdv": "",
               "depart": "CHALET DE L'EPEE",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "HOTEL GALISIA",
               "stockes": "–"
             }
@@ -7431,7 +7431,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "MAZZELLA FRANCOIS\n06 47 80 34 18\n",
-              "nbre": "1+1",
+              "nbre": "8+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             }
@@ -7561,7 +7561,7 @@
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-              "nbre": "9+1",
+              "nbre": "10+1",
               "arrivee": "HOSTELLERIE DU PARADIS",
               "stockes": "–"
             }
