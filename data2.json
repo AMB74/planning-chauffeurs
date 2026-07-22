@@ -75,26 +75,6 @@
       "date_complete": "SAMEDI 25 JUILLET 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "–",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "08H30 HBG > Chapieux",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET DE ROSELEND",
-              "client": "SHAMBROOK\n(+44 78 70 55 92 12)",
-              "nbre": "4",
-              "arrivee": "OT LES CHAPIEUX",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -916,6 +896,21 @@
               "nbre": "4",
               "arrivee": "LA CITE MONTJOIE",
               "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "–",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "08H30 HBG > Chapieux",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET DE ROSELEND",
+              "client": "SHAMBROOK\n(+44 78 70 55 92 12)",
+              "nbre": "4",
+              "arrivee": "OT LES CHAPIEUX",
+              "stockes": "–"
             }
           ]
         },
@@ -1427,11 +1422,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "HOTEL HELIOPIC HOTEL & SPA",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "HOTEL EXCELSIOR",
               "stockes": "–"
             },
@@ -2550,11 +2545,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "HOTEL EXCELSIOR",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "HOTEL VATEL - MARTIGNY",
               "stockes": "–"
             },
@@ -2965,7 +2960,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3299,8 +3294,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Damian",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -3978,11 +3973,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "HOTEL VATEL - MARTIGNY",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "HOTEL GRAN BAITA****",
               "stockes": "–"
             },
@@ -5216,17 +5211,17 @@
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "HOTEL GRAN BAITA****",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "HOTEL GRAN BAITA****",
               "stockes": "–"
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6194,11 +6189,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "HOTEL GRAN BAITA****",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "CHALET DE ROSELEND",
               "stockes": "–"
             },
@@ -6294,7 +6289,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6309,7 +6304,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6324,7 +6319,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6339,7 +6334,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6369,7 +6364,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -7062,7 +7057,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -7166,7 +7161,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -7181,7 +7176,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -7382,11 +7377,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8 PAX + 2 AEM\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "HOTEL HELIOPIC HOTEL & SPA",
               "stockes": "–"
             },
