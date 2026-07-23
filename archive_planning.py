@@ -21,6 +21,7 @@ et le 15 novembre de l'annee en cours (sinon il s'arrete sans rien faire).
 import os
 import json
 import sys
+import unicodedata
 from collections import Counter
 from datetime import date, datetime
 
@@ -199,6 +200,17 @@ def find_or_create_folder(drive_service, name, parent_id):
     return folder["id"]
 
 
+def _normalize_name(name):
+    """Normalise un nom de fichier pour une comparaison tolerante :
+    ignore les differences de casse, d'espaces en trop, et les variantes
+    de tirets (-, en dash, em dash) qui sont une source frequente de
+    correspondances ratees (autocorrection clavier/mobile)."""
+    n = unicodedata.normalize("NFKC", name)
+    n = n.replace("\u2013", "-").replace("\u2014", "-")  # en dash, em dash -> -
+    n = " ".join(n.split())  # espaces multiples -> un seul, trim
+    return n.strip().lower()
+
+
 class MissingSpreadsheetError(Exception):
     """Leve quand un document attendu n'existe pas encore sur le Drive."""
 
@@ -212,19 +224,26 @@ def find_spreadsheet(drive_service, name, parent_folder_id, folder_path_hint):
     donc etre cree une fois manuellement par un humain (proprietaire du
     Drive), le compte de service ne fait ensuite que le modifier, ce qui ne
     consomme aucun quota.
+
+    La comparaison de nom est tolerante (casse, espaces, type de tiret) pour
+    eviter les faux negatifs lies a une autocorrection clavier.
     """
-    safe_name = name.replace("'", "\\'")
     query = (
-        f"name = '{safe_name}' and mimeType = 'application/vnd.google-apps.spreadsheet' "
+        f"mimeType = 'application/vnd.google-apps.spreadsheet' "
         f"and '{parent_folder_id}' in parents and trashed = false"
     )
     result = drive_service.files().list(q=query, fields="files(id, name)").execute()
     files = result.get("files", [])
-    if files:
-        return files[0]["id"]
 
+    target = _normalize_name(name)
+    for f in files:
+        if _normalize_name(f["name"]) == target:
+            return f["id"]
+
+    found_names = ", ".join(f"'{f['name']}'" for f in files) or "(dossier vide)"
     raise MissingSpreadsheetError(
         f"Le document '{name}' n'existe pas dans le dossier '{folder_path_hint}'.\n"
+        f"Fichiers trouves dans ce dossier : {found_names}\n"
         f"Merci de creer manuellement un Google Sheet vierge nomme exactement "
         f"'{name}' et de le placer dans ce dossier, puis de relancer le workflow."
     )
