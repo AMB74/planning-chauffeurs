@@ -199,7 +199,20 @@ def find_or_create_folder(drive_service, name, parent_id):
     return folder["id"]
 
 
-def find_or_create_spreadsheet(drive_service, sheets_service, name, parent_folder_id):
+class MissingSpreadsheetError(Exception):
+    """Leve quand un document attendu n'existe pas encore sur le Drive."""
+
+
+def find_spreadsheet(drive_service, name, parent_folder_id, folder_path_hint):
+    """Cherche un spreadsheet existant. Ne le cree PAS.
+
+    Avec un compte Google gratuit, le compte de service n'a aucun quota de
+    stockage propre : toute tentative de creation de fichier (meme via un
+    dossier partage) echoue avec 'storageQuotaExceeded'. Le document doit
+    donc etre cree une fois manuellement par un humain (proprietaire du
+    Drive), le compte de service ne fait ensuite que le modifier, ce qui ne
+    consomme aucun quota.
+    """
     safe_name = name.replace("'", "\\'")
     query = (
         f"name = '{safe_name}' and mimeType = 'application/vnd.google-apps.spreadsheet' "
@@ -210,19 +223,11 @@ def find_or_create_spreadsheet(drive_service, sheets_service, name, parent_folde
     if files:
         return files[0]["id"]
 
-    # On cree directement le fichier via l'API Drive, en specifiant le dossier
-    # parent des la creation. Les comptes de service n'ont pas de quota de
-    # stockage propre : passer par sheets_service.spreadsheets().create() puis
-    # deplacer le fichier echoue avec une erreur 403 ("does not have permission").
-    # En creant directement dans un dossier partage (donc dans le quota du
-    # proprietaire du dossier), ce probleme est evite.
-    metadata = {
-        "name": name,
-        "mimeType": "application/vnd.google-apps.spreadsheet",
-        "parents": [parent_folder_id],
-    }
-    file = drive_service.files().create(body=metadata, fields="id").execute()
-    return file["id"]
+    raise MissingSpreadsheetError(
+        f"Le document '{name}' n'existe pas dans le dossier '{folder_path_hint}'.\n"
+        f"Merci de creer manuellement un Google Sheet vierge nomme exactement "
+        f"'{name}' et de le placer dans ce dossier, puis de relancer le workflow."
+    )
 
 
 def get_existing_tab_titles(sheets_service, spreadsheet_id):
@@ -311,11 +316,7 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
 # Flux principaux
 # ---------------------------------------------------------------------------
 
-def archive_flow(drive_service, sheets_service, year, tab_title, records):
-    year_folder_id = find_or_create_folder(drive_service, str(year), ARCHIVES_FOLDER_ID)
-    spreadsheet_name = f"{year} - PLANNINGS ARCHIVE"
-    spreadsheet_id = find_or_create_spreadsheet(drive_service, sheets_service, spreadsheet_name, year_folder_id)
-
+def archive_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, tab_title, records):
     ensure_tab_exists(sheets_service, spreadsheet_id, tab_title)
 
     rows = [FIELDS_ORDER] + [build_row(r) for r in records]
@@ -323,15 +324,11 @@ def archive_flow(drive_service, sheets_service, year, tab_title, records):
     print(f"[{spreadsheet_name} / {tab_title}] {len(records)} ligne(s) ecrite(s).")
 
 
-def taxi_flow(drive_service, sheets_service, year, records):
+def taxi_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, records):
     taxi_records = [r for r in records if cell_to_str(r.get("fields", {}).get(TAXI_FIELD)).strip()]
     if not taxi_records:
         print("Aucune ligne TAXI cette semaine.")
         return
-
-    year_folder_id = find_or_create_folder(drive_service, str(year), ARCHIVES_FOLDER_ID)
-    spreadsheet_name = f"{year} - RESAS TAXIS"
-    spreadsheet_id = find_or_create_spreadsheet(drive_service, sheets_service, spreadsheet_name, year_folder_id)
 
     ensure_tab_exists(sheets_service, spreadsheet_id, TAXI_TAB_TITLE)
 
@@ -358,8 +355,26 @@ def main():
 
     drive_service, sheets_service = get_services()
 
-    archive_flow(drive_service, sheets_service, year, tab_title, records)
-    taxi_flow(drive_service, sheets_service, year, records)
+    # Le dossier annee (ex: '2026') peut etre cree automatiquement : les
+    # dossiers ne consomment aucun quota de stockage, contrairement aux
+    # fichiers. Seuls les deux spreadsheets doivent deja exister.
+    year_folder_id = find_or_create_folder(drive_service, str(year), ARCHIVES_FOLDER_ID)
+    folder_hint = f"ARCHIVES AMB/{year}"
+
+    archive_name = f"{year} - PLANNINGS ARCHIVE"
+    taxi_name = f"{year} - RESAS TAXIS"
+
+    # Verification prealable des deux documents avant toute ecriture, pour
+    # ne pas se retrouver avec un seul des deux flux ecrit en cas de manque.
+    try:
+        archive_id = find_spreadsheet(drive_service, archive_name, year_folder_id, folder_hint)
+        taxi_id = find_spreadsheet(drive_service, taxi_name, year_folder_id, folder_hint)
+    except MissingSpreadsheetError as exc:
+        print(str(exc))
+        sys.exit(1)
+
+    archive_flow(drive_service, sheets_service, archive_id, archive_name, tab_title, records)
+    taxi_flow(drive_service, sheets_service, taxi_id, taxi_name, records)
 
 
 if __name__ == "__main__":
