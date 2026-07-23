@@ -210,22 +210,19 @@ def find_or_create_spreadsheet(drive_service, sheets_service, name, parent_folde
     if files:
         return files[0]["id"]
 
-    spreadsheet = sheets_service.spreadsheets().create(
-        body={"properties": {"title": name}}, fields="spreadsheetId"
-    ).execute()
-    spreadsheet_id = spreadsheet["spreadsheetId"]
-
-    # Le fichier est cree a la racine du Drive par defaut -> on le deplace
-    file = drive_service.files().get(fileId=spreadsheet_id, fields="parents").execute()
-    previous_parents = ",".join(file.get("parents", []))
-    drive_service.files().update(
-        fileId=spreadsheet_id,
-        addParents=parent_folder_id,
-        removeParents=previous_parents,
-        fields="id, parents",
-    ).execute()
-
-    return spreadsheet_id
+    # On cree directement le fichier via l'API Drive, en specifiant le dossier
+    # parent des la creation. Les comptes de service n'ont pas de quota de
+    # stockage propre : passer par sheets_service.spreadsheets().create() puis
+    # deplacer le fichier echoue avec une erreur 403 ("does not have permission").
+    # En creant directement dans un dossier partage (donc dans le quota du
+    # proprietaire du dossier), ce probleme est evite.
+    metadata = {
+        "name": name,
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "parents": [parent_folder_id],
+    }
+    file = drive_service.files().create(body=metadata, fields="id").execute()
+    return file["id"]
 
 
 def get_existing_tab_titles(sheets_service, spreadsheet_id):
