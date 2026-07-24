@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "24/07/2026 10:04"
+    "genere_le": "24/07/2026 10:42"
   },
   "lignes": [
     {
@@ -41,6 +41,19 @@
       "date_fin": "2026-07-25",
       "date_debut_aff": "Dim 19/07",
       "date_fin_aff": "Sam 25/07"
+    },
+    {
+      "jour_semaine": "26-07 - DIMANCHE",
+      "client": "WEINER\n",
+      "chauffeur_debut": "Serge",
+      "chauffeur_fin": "–",
+      "nbre": "2",
+      "depart": "RDV FLÉGÈRE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-26",
+      "date_fin": "2026-08-03",
+      "date_debut_aff": "Dim 26/07",
+      "date_fin_aff": "Lun 03/08"
     },
     {
       "jour_semaine": "26-07 - DIMANCHE",

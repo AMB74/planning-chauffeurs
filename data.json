@@ -1221,7 +1221,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1381,7 +1381,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1396,7 +1396,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean Jacques",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + REMORQUE",
@@ -2147,12 +2147,12 @@
           "lignes": [
             {
               "pilote": "Oscar",
-              "renforts": "Oscar, Jean-Marc",
+              "renforts": "Jean-Marc, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "Pont > Gare Chamonix",
-              "details": "9 pax\n",
+              "details": "15h30 : PONT > Cham (9 pax)\n",
               "heure_rdv": "",
               "depart": "HOSTELLERIE DU PARADIS",
               "client": "MANON HAUDIQUET\n(- 06 07 27 18 22)",
@@ -2162,12 +2162,12 @@
             },
             {
               "pilote": "Oscar",
-              "renforts": "Jean-Marc, Oscar",
+              "renforts": "Jean-Marc, Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Pont > Gare Chamonix",
-              "details": "4 pax\n",
+              "details": "16h00 : PONT > Cham (4 pax)\n",
               "heure_rdv": "",
               "depart": "REFUGE VICTOR EMMANUEL 2",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
@@ -2197,7 +2197,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "0. AUCUN, TAXI DES COMBINS",
+              "renforts": "TAXI DES COMBINS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -2631,7 +2631,7 @@
               "client": "WEINER\n",
               "nbre": "2",
               "arrivee": "CHALET ALPIN DU TOUR",
-              "stockes": "–"
+              "stockes": "2"
             },
             {
               "pilote": "Serge",
@@ -3358,7 +3358,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "AEM",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -3377,13 +3377,13 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 TELE THOLLON\n",
+              "details": "FAIT\nJ-1 TELE THOLLON\n",
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "ROUVIERE BERTRAND\n06 43 30 82 46\n",
