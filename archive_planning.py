@@ -44,14 +44,14 @@ TAXI_FIELD = "TAXIS (from TAXI)"
 # renvoie un ID/valeur brute sous un nom technique different du libelle
 # affiche dans la vue.
 COLUMNS = [
-    ("FAIT", "FAIT"),
+    ("FAIT", None),  # laisse volontairement vide : reserve au pointage comptable manuel
     ("BAGAGES", "PILOTE_NOM"),
     ("TRANSFERT", "RENFORTS_NOM"),
     ("TAXI", "TAXIS (from TAXI)"),
     ("TYPE", "TYPE"),
     ("DÉTAILS", "DÉTAILS"),
     ("HEURE RDV", "HEURE RDV"),
-    ("TRANSFERT", "TRANSFERT"),
+    ("TRANSFERT", "TRANSFERTS"),
     ("DATE PRESTATION", "DATE PRESTATION"),
     ("DÉPART", "HÉBERGEMENT (from DÉPART)"),
     ("CLIENT /AEM", "CLIENT /AEM"),
@@ -144,7 +144,9 @@ def build_row(record, extra_id_column=False):
     fields = record.get("fields", {})
     row = []
     for _display, airtable_field in COLUMNS:
-        if airtable_field == DATE_FIELD:
+        if airtable_field is None:
+            row.append("")
+        elif airtable_field == DATE_FIELD:
             row.append(format_date_fr(fields.get(airtable_field)))
         else:
             row.append(cell_to_str(fields.get(airtable_field)))
@@ -252,9 +254,10 @@ def get_existing_tab_titles(sheets_service, spreadsheet_id):
 
 
 def ensure_tab_exists(sheets_service, spreadsheet_id, title):
+    """Retourne True si l'onglet vient d'etre cree, False s'il existait deja."""
     existing = get_existing_tab_titles(sheets_service, spreadsheet_id)
     if title in existing:
-        return
+        return False
     body = {"requests": [{"addSheet": {"properties": {"title": title}}}]}
     sheets_service.spreadsheets().batchUpdate(spreadsheetId=spreadsheet_id, body=body).execute()
 
@@ -270,6 +273,8 @@ def ensure_tab_exists(sheets_service, spreadsheet_id, title):
                 req = {"requests": [{"deleteSheet": {"sheetId": s["properties"]["sheetId"]}}]}
                 sheets_service.spreadsheets().batchUpdate(spreadsheetId=spreadsheet_id, body=req).execute()
 
+    return True
+
 
 def get_sheet_id(sheets_service, spreadsheet_id, title):
     meta = sheets_service.spreadsheets().get(spreadsheetId=spreadsheet_id).execute()
@@ -281,9 +286,11 @@ def get_sheet_id(sheets_service, spreadsheet_id, title):
 
 def apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows, num_cols):
     """Applique une mise en forme proche d'Airtable :
-    en-tete grise en gras figee, bordures fines type grille, colonnes
-    ajustees a la largeur du contenu, et fleches de filtre par colonne.
-    Sans effet si l'onglet est vide (aucune ligne)."""
+    en-tete grise en gras figee, bordures fines type grille, et fleches de
+    filtre par colonne. N'ajuste PAS la largeur des colonnes (laissee libre
+    a l'utilisateur). Sans effet si l'onglet est vide (aucune ligne).
+    A appeler UNIQUEMENT lors de la creation d'un nouvel onglet : les
+    reappels ecraseraient les ajustements manuels faits entretemps."""
     sheet_id = get_sheet_id(sheets_service, spreadsheet_id, title)
     if sheet_id is None or num_rows == 0 or num_cols == 0:
         return
@@ -347,16 +354,6 @@ def apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows, num_co
                 }
             }
         },
-        {
-            "autoResizeDimensions": {
-                "dimensions": {
-                    "sheetId": sheet_id,
-                    "dimension": "COLUMNS",
-                    "startIndex": 0,
-                    "endIndex": num_cols,
-                }
-            }
-        },
     ]
     sheets_service.spreadsheets().batchUpdate(
         spreadsheetId=spreadsheet_id, body={"requests": requests_batch}
@@ -364,7 +361,12 @@ def apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows, num_co
 
 
 def overwrite_tab(sheets_service, spreadsheet_id, title, rows):
-    """Efface le contenu de l'onglet puis ecrit les nouvelles lignes (utilise pour l'archive)."""
+    """Efface le contenu de l'onglet puis ecrit les nouvelles lignes (utilise pour l'archive).
+
+    N'applique aucune mise en forme : la mise en forme (largeurs de colonnes,
+    retour a la ligne, alignement...) est laissee telle que l'utilisateur l'a
+    configuree, et n'est appliquee automatiquement qu'a la toute premiere
+    creation de l'onglet (voir archive_flow)."""
     sheets_service.spreadsheets().values().clear(
         spreadsheetId=spreadsheet_id, range=f"'{title}'", body={}
     ).execute()
@@ -374,8 +376,6 @@ def overwrite_tab(sheets_service, spreadsheet_id, title, rows):
         valueInputOption="USER_ENTERED",
         body={"values": rows},
     ).execute()
-    num_cols = max((len(r) for r in rows), default=0)
-    apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=len(rows), num_cols=num_cols)
 
 
 def get_existing_ids(sheets_service, spreadsheet_id, title):
@@ -396,7 +396,7 @@ def get_existing_ids(sheets_service, spreadsheet_id, title):
     return ids
 
 
-def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
+def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows, newly_created):
     existing_ids = get_existing_ids(sheets_service, spreadsheet_id, title)
 
     existing = sheets_service.spreadsheets().values().get(
@@ -412,7 +412,8 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
 
     if not rows_to_append:
         print(f"[{title}] Aucune nouvelle ligne taxi a ajouter.")
-        apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=len(existing), num_cols=num_cols)
+        if newly_created:
+            apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=len(existing), num_cols=num_cols)
         return
 
     sheets_service.spreadsheets().values().append(
@@ -424,8 +425,9 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
     ).execute()
     print(f"[{title}] {len(rows_to_append)} ligne(s) ajoutee(s).")
 
-    total_rows = len(existing) + len(rows_to_append)
-    apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=total_rows, num_cols=num_cols)
+    if newly_created:
+        total_rows = len(existing) + len(rows_to_append)
+        apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=total_rows, num_cols=num_cols)
 
 
 # ---------------------------------------------------------------------------
@@ -433,11 +435,18 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
 # ---------------------------------------------------------------------------
 
 def archive_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, tab_title, records):
-    ensure_tab_exists(sheets_service, spreadsheet_id, tab_title)
+    newly_created = ensure_tab_exists(sheets_service, spreadsheet_id, tab_title)
 
     rows = [HEADERS] + [build_row(r) for r in records]
     overwrite_tab(sheets_service, spreadsheet_id, tab_title, rows)
     print(f"[{spreadsheet_name} / {tab_title}] {len(records)} ligne(s) ecrite(s).")
+
+    # La mise en forme n'est appliquee qu'a la creation de l'onglet, jamais
+    # reappliquee ensuite, pour ne pas ecraser les ajustements manuels
+    # (largeurs de colonnes, retour a la ligne, alignement...).
+    if newly_created:
+        num_cols = max((len(r) for r in rows), default=0)
+        apply_airtable_style(sheets_service, spreadsheet_id, tab_title, num_rows=len(rows), num_cols=num_cols)
 
 
 def taxi_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, records):
@@ -446,11 +455,11 @@ def taxi_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, r
         print("Aucune ligne TAXI cette semaine.")
         return
 
-    ensure_tab_exists(sheets_service, spreadsheet_id, TAXI_TAB_TITLE)
+    newly_created = ensure_tab_exists(sheets_service, spreadsheet_id, TAXI_TAB_TITLE)
 
     header = HEADERS + [TAXI_ID_COLUMN]
     rows = [build_row(r, extra_id_column=True) for r in taxi_records]
-    append_taxi_rows(sheets_service, spreadsheet_id, TAXI_TAB_TITLE, header, rows)
+    append_taxi_rows(sheets_service, spreadsheet_id, TAXI_TAB_TITLE, header, rows, newly_created)
 
 
 def main():
