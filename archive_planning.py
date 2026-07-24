@@ -161,7 +161,7 @@ def compute_year_and_tab_title(records):
 
     year = Counter(d.year for d in parsed).most_common(1)[0][0]
     min_date, max_date = min(parsed), max(parsed)
-    tab_title = f"Sem. {min_date.strftime('%d/%m')} au {max_date.strftime('%d/%m')}"
+    tab_title = f"{min_date.strftime('%d/%m')} au {max_date.strftime('%d/%m')}"
     return year, tab_title
 
 
