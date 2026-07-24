@@ -1327,7 +1327,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 12 SACS\n",
+              "details": "!! 12 SACS\n\n",
               "heure_rdv": "08H15",
               "depart": "HOTEL LE CHRISTIANIA**",
               "client": "LARUE VINCENT\n(+33 (0)6 51 77 97 93 - )",
@@ -1546,7 +1546,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
