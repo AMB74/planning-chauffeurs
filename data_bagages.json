@@ -1,90 +1,12 @@
 {
   "meta": {
-    "genere_le": "24/07/2026 07:37"
+    "genere_le": "24/07/2026 09:29"
   },
   "lignes": [
     {
-      "jour_semaine": "18-07 - SAMEDI",
-      "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV THOLLON",
-      "arrivee": "RDV PLANPRAZ",
-      "date_debut": "2026-07-12",
-      "date_fin": "2026-07-18",
-      "date_debut_aff": "Dim 12/07",
-      "date_fin_aff": "Sam 18/07"
-    },
-    {
-      "jour_semaine": "18-07 - SAMEDI",
-      "client": "DEVOS REMY\n(06 85 40 02 01 - )",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-12",
-      "date_fin": "2026-07-18",
-      "date_debut_aff": "Dim 12/07",
-      "date_fin_aff": "Sam 18/07"
-    },
-    {
-      "jour_semaine": "20-07 - LUNDI",
-      "client": "SHARON\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-12",
-      "date_fin": "2026-07-20",
-      "date_debut_aff": "Dim 12/07",
-      "date_fin_aff": "Lun 20/07"
-    },
-    {
-      "jour_semaine": "20-07 - LUNDI",
-      "client": "MARSH\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "3",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-12",
-      "date_fin": "2026-07-20",
-      "date_debut_aff": "Dim 12/07",
-      "date_fin_aff": "Lun 20/07"
-    },
-    {
-      "jour_semaine": "21-07 - MARDI",
-      "client": "QIU\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Bertrand",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV HOTEL",
-      "date_debut": "2026-07-13",
-      "date_fin": "2026-07-21",
-      "date_debut_aff": "Lun 13/07",
-      "date_fin_aff": "Mar 21/07"
-    },
-    {
-      "jour_semaine": "18-07 - SAMEDI",
-      "client": "AUDFRAY ROBIN\n(- 06 11 20 10 46)",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-18",
-      "date_fin": "2026-07-26",
-      "date_debut_aff": "Sam 18/07",
-      "date_fin_aff": "Dim 26/07"
-    },
-    {
-      "jour_semaine": "18-07 - SAMEDI",
+      "jour_semaine": "24-07 - VENDREDI",
       "client": "EINIG\n",
-      "chauffeur_debut": "Charlie",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "Serge",
       "nbre": "1",
       "depart": "RDV MONTROC",
@@ -95,9 +17,22 @@
       "date_fin_aff": "Ven 24/07"
     },
     {
-      "jour_semaine": "19-07 - DIMANCHE",
+      "jour_semaine": "26-07 - DIMANCHE",
+      "client": "AUDFRAY ROBIN\n(- 06 11 20 10 46)",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "Yan A.",
+      "nbre": "1",
+      "depart": "RDV FLÉGÈRE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-07-18",
+      "date_fin": "2026-07-26",
+      "date_debut_aff": "Sam 18/07",
+      "date_fin_aff": "Dim 26/07"
+    },
+    {
+      "jour_semaine": "25-07 - SAMEDI",
       "client": "BLANDIN ELODIE\n(- 06 16 09 80 93)",
-      "chauffeur_debut": "Charlie",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "Yan A.",
       "nbre": "1",
       "depart": "HOTEL LES CAMPANULES**",
@@ -106,32 +41,6 @@
       "date_fin": "2026-07-25",
       "date_debut_aff": "Dim 19/07",
       "date_fin_aff": "Sam 25/07"
-    },
-    {
-      "jour_semaine": "20-07 - LUNDI",
-      "client": "BOUCHARD\n",
-      "chauffeur_debut": "Serge",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-20",
-      "date_fin": "2026-07-26",
-      "date_debut_aff": "Lun 20/07",
-      "date_fin_aff": "Dim 26/07"
-    },
-    {
-      "jour_semaine": "21-07 - MARDI",
-      "client": "BOYER\n",
-      "chauffeur_debut": "Bertrand",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "RDV HOTEL",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-21",
-      "date_fin": "2026-07-27",
-      "date_debut_aff": "Mar 21/07",
-      "date_fin_aff": "Lun 27/07"
     },
     {
       "jour_semaine": "26-07 - DIMANCHE",
@@ -162,6 +71,19 @@
     {
       "jour_semaine": "24-07 - VENDREDI",
       "client": "LAURIN / Groupe François MARLEIX\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "1",
+      "depart": "–",
+      "arrivee": "–",
+      "date_debut": "",
+      "date_fin": "",
+      "date_debut_aff": "–",
+      "date_fin_aff": "–"
+    },
+    {
+      "jour_semaine": "25-07 - SAMEDI",
+      "client": "LAURIN / GROUPE FRANCOIS MARLEIX\n",
       "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "1",
