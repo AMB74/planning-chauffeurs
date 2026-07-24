@@ -36,28 +36,34 @@ from googleapiclient.discovery import build
 AIRTABLE_TABLE_NAME = "SEMAINE 1"
 AIRTABLE_VIEW_NAME = "2. Attribution CHAUFFEURS"
 DATE_FIELD = "DATE PRESTATION"
-TAXI_FIELD = "TAXI"
+TAXI_FIELD = "TAXIS (from TAXI)"
 
-# Ordre exact des colonnes de la vue "2. Attribution CHAUFFEURS"
-FIELDS_ORDER = [
-    "FAIT",
-    "BAGAGES + TRANSFERT",
-    "RENFORTS",
-    "TAXI",
-    "TYPE",
-    "DÉTAILS",
-    "HEURE RDV",
-    "TRANSFERT",
-    "DATE PRESTATION",
-    "DÉPART",
-    "CLIENT /AEM",
-    "NOMBRE",
-    "Nombre ajusté",
-    "ARRIVÉE",
-    "Libellé",
-    "TYPE PRODUIT",
-    "SÉJOUR",
+# Colonnes de la vue "2. Attribution CHAUFFEURS" :
+# (en-tete affiche dans Google Sheets, nom reel du champ dans Airtable)
+# Les deux different pour les champs de type lookup/liaison, ou Airtable
+# renvoie un ID/valeur brute sous un nom technique different du libelle
+# affiche dans la vue.
+COLUMNS = [
+    ("FAIT", "FAIT"),
+    ("BAGAGES", "PILOTE_NOM"),
+    ("TRANSFERT", "RENFORTS_NOM"),
+    ("TAXI", "TAXIS (from TAXI)"),
+    ("TYPE", "TYPE"),
+    ("DÉTAILS", "DÉTAILS"),
+    ("HEURE RDV", "HEURE RDV"),
+    ("TRANSFERT", "TRANSFERT"),
+    ("DATE PRESTATION", "DATE PRESTATION"),
+    ("DÉPART", "HÉBERGEMENT (from DÉPART)"),
+    ("CLIENT /AEM", "CLIENT /AEM"),
+    ("NOMBRE", "NOMBRE"),
+    ("Nombre ajusté", "Nombre ajusté"),
+    ("ARRIVÉE", "HÉBERGEMENT (from ARRIVÉE)"),
+    ("Libellé", "Libellé"),
+    ("TYPE PRODUIT", "TYPE PRODUIT"),
+    ("SÉJOUR", "SÉJOUR"),
 ]
+
+HEADERS = [display for display, _ in COLUMNS]
 
 # Colonne technique ajoutee uniquement dans le document RESAS TAXIS,
 # pour eviter les doublons d'une semaine sur l'autre
@@ -66,11 +72,6 @@ TAXI_TAB_TITLE = "Résas Taxis"
 
 # Dossier Drive "ARCHIVES AMB"
 ARCHIVES_FOLDER_ID = "1rZL34VUqtbTeTZlhut_9b_J3SkizV0pv"
-
-MONTHS_FR = [
-    "janvier", "février", "mars", "avril", "mai", "juin",
-    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
-]
 
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
@@ -139,18 +140,14 @@ def format_date_fr(value):
     return d.strftime("%d/%m/%Y")
 
 
-def format_day_month_fr(d: date) -> str:
-    return f"{d.day} {MONTHS_FR[d.month - 1]}"
-
-
 def build_row(record, extra_id_column=False):
     fields = record.get("fields", {})
     row = []
-    for f in FIELDS_ORDER:
-        if f == DATE_FIELD:
-            row.append(format_date_fr(fields.get(f)))
+    for _display, airtable_field in COLUMNS:
+        if airtable_field == DATE_FIELD:
+            row.append(format_date_fr(fields.get(airtable_field)))
         else:
-            row.append(cell_to_str(fields.get(f)))
+            row.append(cell_to_str(fields.get(airtable_field)))
     if extra_id_column:
         row.append(record["id"])
     return row
@@ -164,7 +161,7 @@ def compute_year_and_tab_title(records):
 
     year = Counter(d.year for d in parsed).most_common(1)[0][0]
     min_date, max_date = min(parsed), max(parsed)
-    tab_title = f"Semaine du {format_day_month_fr(min_date)} au {format_day_month_fr(max_date)} {max_date.year}"
+    tab_title = f"Sem. {min_date.strftime('%d/%m')} au {max_date.strftime('%d/%m')}"
     return year, tab_title
 
 
@@ -274,6 +271,98 @@ def ensure_tab_exists(sheets_service, spreadsheet_id, title):
                 sheets_service.spreadsheets().batchUpdate(spreadsheetId=spreadsheet_id, body=req).execute()
 
 
+def get_sheet_id(sheets_service, spreadsheet_id, title):
+    meta = sheets_service.spreadsheets().get(spreadsheetId=spreadsheet_id).execute()
+    for s in meta.get("sheets", []):
+        if s["properties"]["title"] == title:
+            return s["properties"]["sheetId"]
+    return None
+
+
+def apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows, num_cols):
+    """Applique une mise en forme proche d'Airtable :
+    en-tete grise en gras figee, bordures fines type grille, colonnes
+    ajustees a la largeur du contenu, et fleches de filtre par colonne.
+    Sans effet si l'onglet est vide (aucune ligne)."""
+    sheet_id = get_sheet_id(sheets_service, spreadsheet_id, title)
+    if sheet_id is None or num_rows == 0 or num_cols == 0:
+        return
+
+    light_gray = {"red": 0.8, "green": 0.8, "blue": 0.8}
+    header_bg = {"red": 0.94, "green": 0.95, "blue": 0.96}
+
+    requests_batch = [
+        {
+            "updateSheetProperties": {
+                "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+                "fields": "gridProperties.frozenRowCount",
+            }
+        },
+        {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": 0,
+                    "endRowIndex": 1,
+                    "startColumnIndex": 0,
+                    "endColumnIndex": num_cols,
+                },
+                "cell": {
+                    "userEnteredFormat": {
+                        "backgroundColor": header_bg,
+                        "textFormat": {"bold": True, "fontSize": 10},
+                        "verticalAlignment": "MIDDLE",
+                    }
+                },
+                "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment)",
+            }
+        },
+        {
+            "updateBorders": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": 0,
+                    "endRowIndex": num_rows,
+                    "startColumnIndex": 0,
+                    "endColumnIndex": num_cols,
+                },
+                "top": {"style": "SOLID", "width": 1, "color": light_gray},
+                "bottom": {"style": "SOLID", "width": 1, "color": light_gray},
+                "left": {"style": "SOLID", "width": 1, "color": light_gray},
+                "right": {"style": "SOLID", "width": 1, "color": light_gray},
+                "innerHorizontal": {"style": "SOLID", "width": 1, "color": light_gray},
+                "innerVertical": {"style": "SOLID", "width": 1, "color": light_gray},
+            }
+        },
+        {
+            "setBasicFilter": {
+                "filter": {
+                    "range": {
+                        "sheetId": sheet_id,
+                        "startRowIndex": 0,
+                        "endRowIndex": num_rows,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": num_cols,
+                    }
+                }
+            }
+        },
+        {
+            "autoResizeDimensions": {
+                "dimensions": {
+                    "sheetId": sheet_id,
+                    "dimension": "COLUMNS",
+                    "startIndex": 0,
+                    "endIndex": num_cols,
+                }
+            }
+        },
+    ]
+    sheets_service.spreadsheets().batchUpdate(
+        spreadsheetId=spreadsheet_id, body={"requests": requests_batch}
+    ).execute()
+
+
 def overwrite_tab(sheets_service, spreadsheet_id, title, rows):
     """Efface le contenu de l'onglet puis ecrit les nouvelles lignes (utilise pour l'archive)."""
     sheets_service.spreadsheets().values().clear(
@@ -285,6 +374,8 @@ def overwrite_tab(sheets_service, spreadsheet_id, title, rows):
         valueInputOption="USER_ENTERED",
         body={"values": rows},
     ).execute()
+    num_cols = max((len(r) for r in rows), default=0)
+    apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=len(rows), num_cols=num_cols)
 
 
 def get_existing_ids(sheets_service, spreadsheet_id, title):
@@ -317,8 +408,11 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
     if not existing:
         rows_to_append = [header] + rows_to_append
 
+    num_cols = len(header)
+
     if not rows_to_append:
         print(f"[{title}] Aucune nouvelle ligne taxi a ajouter.")
+        apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=len(existing), num_cols=num_cols)
         return
 
     sheets_service.spreadsheets().values().append(
@@ -330,6 +424,9 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
     ).execute()
     print(f"[{title}] {len(rows_to_append)} ligne(s) ajoutee(s).")
 
+    total_rows = len(existing) + len(rows_to_append)
+    apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows=total_rows, num_cols=num_cols)
+
 
 # ---------------------------------------------------------------------------
 # Flux principaux
@@ -338,7 +435,7 @@ def append_taxi_rows(sheets_service, spreadsheet_id, title, header, new_rows):
 def archive_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, tab_title, records):
     ensure_tab_exists(sheets_service, spreadsheet_id, tab_title)
 
-    rows = [FIELDS_ORDER] + [build_row(r) for r in records]
+    rows = [HEADERS] + [build_row(r) for r in records]
     overwrite_tab(sheets_service, spreadsheet_id, tab_title, rows)
     print(f"[{spreadsheet_name} / {tab_title}] {len(records)} ligne(s) ecrite(s).")
 
@@ -351,7 +448,7 @@ def taxi_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, r
 
     ensure_tab_exists(sheets_service, spreadsheet_id, TAXI_TAB_TITLE)
 
-    header = FIELDS_ORDER + [TAXI_ID_COLUMN]
+    header = HEADERS + [TAXI_ID_COLUMN]
     rows = [build_row(r, extra_id_column=True) for r in taxi_records]
     append_taxi_rows(sheets_service, spreadsheet_id, TAXI_TAB_TITLE, header, rows)
 
