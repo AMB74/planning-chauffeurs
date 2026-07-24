@@ -80,7 +80,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -95,7 +95,7 @@
             {
               "pilote": "Serge",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -130,7 +130,7 @@
             {
               "pilote": "Serge",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -900,7 +900,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "08H30 HBG > Chapieux",
@@ -940,7 +940,7 @@
             {
               "pilote": "Serge",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -1015,7 +1015,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -1065,7 +1065,7 @@
             {
               "pilote": "Oscar",
               "renforts": "Jean-Marc, Oscar",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Pont > Gare Chamonix",
@@ -1080,7 +1080,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -1128,7 +1128,7 @@
             {
               "pilote": "Bertrand",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "Gare Chamonix > Thollon",
@@ -1143,7 +1143,7 @@
             {
               "pilote": "Bertrand",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -1388,7 +1388,7 @@
             {
               "pilote": "Yan A.",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "08H45",
@@ -1853,7 +1853,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -1913,7 +1913,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -2048,7 +2048,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -2103,7 +2103,7 @@
             {
               "pilote": "Aurore",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -2118,7 +2118,7 @@
             {
               "pilote": "Aurore",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -2148,7 +2148,7 @@
             {
               "pilote": "Aurore",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -2178,7 +2178,7 @@
             {
               "pilote": "Aurore",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -2193,7 +2193,7 @@
             {
               "pilote": "Aurore",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -2213,7 +2213,7 @@
             {
               "pilote": "Oscar",
               "renforts": "Jean-Marc, Oscar",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
@@ -2228,7 +2228,7 @@
             {
               "pilote": "Oscar",
               "renforts": "Jean-Marc, Oscar",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
@@ -2243,7 +2243,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "AEM",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "09H15",
@@ -2291,7 +2291,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
@@ -2311,7 +2311,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -2326,7 +2326,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -2436,7 +2436,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
@@ -2451,7 +2451,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -2976,7 +2976,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -3096,7 +3096,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "16H30",
@@ -3131,7 +3131,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "08H15 HBG > ROSUEL\n8h15",
@@ -3151,7 +3151,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -3166,7 +3166,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -3181,7 +3181,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -3196,7 +3196,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -3226,7 +3226,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -3246,7 +3246,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI HOFMANN",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "8h30",
@@ -3266,7 +3266,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -3281,7 +3281,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -3296,7 +3296,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "Damian",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "08H30 HBG > Valgrisenche",
@@ -3311,7 +3311,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
@@ -3331,7 +3331,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "09H00",
@@ -3346,7 +3346,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -3394,7 +3394,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "10h30",
@@ -3414,7 +3414,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
               "type": "PAIN",
               "transfert": "–",
@@ -3434,7 +3434,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
@@ -3454,7 +3454,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -3484,7 +3484,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -3789,7 +3789,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "08H00 HBG > Trient",
@@ -4239,7 +4239,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + REMORQUE",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -4254,7 +4254,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -4339,7 +4339,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -4414,7 +4414,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -4434,7 +4434,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -4484,7 +4484,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -4499,7 +4499,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -4547,7 +4547,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
               "type": "PAIN",
               "transfert": "–",
@@ -4567,7 +4567,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "08H00",
@@ -4587,7 +4587,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -4602,7 +4602,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -4617,7 +4617,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
@@ -4632,7 +4632,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -4652,7 +4652,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN\n+ REMORQUE",
               "transfert": "–",
@@ -5207,7 +5207,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -5252,7 +5252,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -5312,7 +5312,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -5412,7 +5412,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -5427,7 +5427,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -5457,7 +5457,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -5472,7 +5472,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -5492,7 +5492,7 @@
             {
               "pilote": "Damian",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "08H30 HBG > Valgrisenche",
@@ -5557,7 +5557,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -5572,7 +5572,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -5620,7 +5620,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
@@ -5640,7 +5640,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -5670,7 +5670,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -5685,7 +5685,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -5705,7 +5705,7 @@
             {
               "pilote": "Yann L.",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\n+ REMORQUE",
               "transfert": "–",
@@ -6155,7 +6155,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -6230,7 +6230,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -6365,7 +6365,7 @@
             {
               "pilote": "",
               "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -6415,7 +6415,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -6495,7 +6495,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -6565,7 +6565,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
@@ -6580,7 +6580,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -6628,7 +6628,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "09H00",
@@ -6648,7 +6648,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -6663,7 +6663,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -6728,7 +6728,7 @@
             {
               "pilote": "Yann L.",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE\n+ REMORQUE",
               "transfert": "15H MINES D'OR > PK NANTEGUE // CLIENTS + REMORQUE (Bureau)\n",
@@ -6803,7 +6803,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -7148,7 +7148,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "17H00 Les Chapieux > HBG",
@@ -7163,7 +7163,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -7178,7 +7178,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -7423,7 +7423,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -7443,7 +7443,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
@@ -7503,7 +7503,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI HAUTE MAURIENNE",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Hôtel Glacier des Evettes vers Aussois puis Modane\n14H00",
@@ -7523,7 +7523,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -7538,7 +7538,7 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "8H30 HBG > VAL DE FOND",
@@ -7573,7 +7573,7 @@
             {
               "pilote": "Jean-Marc",
               "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
@@ -7588,7 +7588,7 @@
             {
               "pilote": "0. AUCUN",
               "renforts": "TAXI FREDY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",

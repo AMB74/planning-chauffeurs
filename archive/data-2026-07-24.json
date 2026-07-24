@@ -1332,7 +1332,7 @@
               "depart": "HOTEL LE CHRISTIANIA**",
               "client": "LARUE VINCENT\n(+33 (0)6 51 77 97 93 - )",
               "nbre": "12+1",
-              "arrivee": "HOTEL DE L'ARVE",
+              "arrivee": "RDV PRARION",
               "stockes": "–"
             },
             {
@@ -1558,21 +1558,6 @@
               "client": "DUPERRAY SALOMÉ\n(- 06 76 74 92 79)",
               "nbre": "5+1",
               "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Laurent",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GITE BON ABRI",
-              "client": "TREKKER LAURENT 0689335334\n",
-              "nbre": "12+1",
-              "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             },
             {
@@ -2008,6 +1993,21 @@
               "client": "SHAMBROOK\n(+44 78 70 55 92 12)",
               "nbre": "4",
               "arrivee": "OT LES CHAPIEUX",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Laurent",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 4 BG à l'HOTEL PENSION PLEIN AIR (étiquettes jaunes)\n!! Les autres > Gîte BON ABRI\n!! Eventuellement 2 BG en plus\n",
+              "heure_rdv": "",
+              "depart": "GITE BON ABRI, PENSION EN PLEIN AIR",
+              "client": "TREKKER LAURENT 0689335334\n",
+              "nbre": "12+1",
+              "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             }
           ]
@@ -2526,21 +2526,6 @@
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
               "nbre": "9+1",
               "arrivee": "HOTEL EXCELSIOR",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Serge",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! 12 SACS\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "LARUE VINCENT\n(+33 (0)6 51 77 97 93 - )",
-              "nbre": "12+1",
-              "arrivee": "RDV PRARION",
               "stockes": "–"
             },
             {
@@ -8480,7 +8465,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "2026 Transfert J5 TMR Staffal > Chatillon Gauthier\nJ-2 RISTORO\n",
+              "details": "14h00 : Transfert  Staffal > Chatillon \nJ-2 RISTORO\n",
               "heure_rdv": "",
               "depart": "REFUGE GNIFETTI",
               "client": "CHAUVEROCHE DIDIER\n(- 06 08 34 52 47)",
