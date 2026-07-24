@@ -174,7 +174,7 @@ def main():
             "alerte":    get_text(f, "!!"),
             "type_transfert": get_text(f, "TYPE TRANSFERT") or "–",
             "type":      get_text(f, "TYPE") or "–",
-            "transfert": get_text(f, "TRANSFERT") or "–",
+            "transfert": get_text(f, "TRANSFERTS") or "–",
             "details":   get_text(f, "DÉTAILS") or "–",
             "heure_rdv": get_text(f, "HEURE RDV"),
             "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
@@ -198,7 +198,7 @@ def main():
         if match:
             return int(match.group(1))
         # Noms spéciaux sans numéro en premier
-        if "RDV" in m.upper() or "TRANSFERT" in m.upper():
+        if "RDV" in m.upper() or "TRANSFERTS" in m.upper():
             return -2
         if "BAGAGES" in m.upper():
             return -1
