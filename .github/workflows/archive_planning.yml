@@ -2,12 +2,12 @@ name: Archive planning hebdomadaire
 
 on:
   schedule:
-    # 08h00 UTC = 10h00 heure de Paris (CEST, heure d'ete)
+    # 18h00 UTC = 20h00 heure de Paris (CEST, heure d'ete)
     # Entre le 15 mai et le 15 novembre, la France est presque tout le temps
     # a l'heure d'ete (CEST = UTC+2), sauf la derniere quinzaine de novembre
     # deja hors periode active. Un ecart eventuel de 1h en toute fin de
     # periode est sans consequence sur le script (il filtre par date, pas heure).
-    - cron: '0 8 * * 5'
+    - cron: '0 18 * * 4'
   workflow_dispatch: {}
 
 jobs:
