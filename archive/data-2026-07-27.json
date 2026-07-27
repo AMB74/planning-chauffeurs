@@ -4219,7 +4219,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "TAXI HOFMANN",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
