@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "27/07/2026 10:36"
+    "genere_le": "27/07/2026 13:51"
   },
   "lignes": [
     {
@@ -82,21 +82,34 @@
       "date_fin_aff": "Dim 02/08"
     },
     {
-      "jour_semaine": "24-07 - VENDREDI",
-      "client": "LAURIN / Groupe François MARLEIX\n",
+      "jour_semaine": "03-08 - LUNDI",
+      "client": "DUBOIS\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "3",
+      "depart": "RDV HOTEL",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-08-03",
+      "date_fin": "2026-08-09",
+      "date_debut_aff": "Lun 03/08",
+      "date_fin_aff": "Dim 09/08"
+    },
+    {
+      "jour_semaine": "04-08 - MARDI",
+      "client": "COLES\n",
       "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "1",
-      "depart": "–",
-      "arrivee": "–",
-      "date_debut": "",
-      "date_fin": "",
-      "date_debut_aff": "–",
-      "date_fin_aff": "–"
+      "depart": "RDV PLANPRAZ",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-08-04",
+      "date_fin": "2026-08-10",
+      "date_debut_aff": "Mar 04/08",
+      "date_fin_aff": "Lun 10/08"
     },
     {
-      "jour_semaine": "25-07 - SAMEDI",
-      "client": "LAURIN / GROUPE FRANCOIS MARLEIX\n",
+      "jour_semaine": "24-07 - VENDREDI",
+      "client": "LAURIN / Groupe François MARLEIX\n",
       "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "1",

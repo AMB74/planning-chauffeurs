@@ -3240,7 +3240,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4103,7 +4103,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -4153,7 +4153,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4168,7 +4168,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4183,7 +4183,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4198,7 +4198,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4363,6 +4363,26 @@
       "date_complete": "MARDI 28 JUILLET 2026",
       "groupes": [
         {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "Bertrand",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "–",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "!! Récupérer 4 BG STOCKES A L'HOTEL DE FRANCE (EVIAN) > Les déposer vendredi max à  L'HOTEL EDEN (CHAM)\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DE FRANCE",
+              "client": "LITA Adriana\n(+1 720 299 9247",
+              "nbre": "4",
+              "arrivee": "HOTEL EDEN - PRAZ DE CHAMONIX",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
@@ -4376,7 +4396,7 @@
               "heure_rdv": "",
               "depart": "CHEZ PINPIN",
               "client": "RÉASSORT GROUPES 9J\n",
-              "nbre": "–",
+              "nbre": "1",
               "arrivee": "CHEZ PINPIN",
               "stockes": "–"
             }
@@ -4406,7 +4426,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "Yann L., Bertrand",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4422,7 +4442,7 @@
             },
             {
               "pilote": "Yann L.",
-              "renforts": "",
+              "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4436,7 +4456,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4738,21 +4758,6 @@
               "client": "PINEL\n",
               "nbre": "2",
               "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "10H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV MONTROC",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "LA GRANDE OURSE",
               "stockes": "–"
             },
             {
@@ -5231,7 +5236,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5261,7 +5266,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5276,7 +5281,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5291,7 +5296,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5436,6 +5441,26 @@
       "date_complete": "MERCREDI 29 JUILLET 2026",
       "groupes": [
         {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "Bertrand",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "–",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "!! Récupérer 4 BG STOCKES A L'HOTEL DE FRANCE (EVIAN) > Les déposer vendredi max à  L'HOTEL EDEN (CHAM)\n",
+              "heure_rdv": "",
+              "depart": "HOTEL DE FRANCE",
+              "client": "LITA Adriana\n(+1 720 299 9247",
+              "nbre": "4",
+              "arrivee": "HOTEL EDEN - PRAZ DE CHAMONIX",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
@@ -5449,7 +5474,7 @@
               "heure_rdv": "",
               "depart": "CHEZ PINPIN",
               "client": "RÉASSORT GROUPES 7J\n",
-              "nbre": "–",
+              "nbre": "1",
               "arrivee": "CHEZ PINPIN",
               "stockes": "–"
             }
@@ -5691,21 +5716,6 @@
               "client": "PERRIER\n",
               "nbre": "2",
               "arrivee": "LA GRANDE OURSE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Charlie",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "LA GRANDE OURSE",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "RELAIS ARPETTE",
               "stockes": "–"
             },
             {
@@ -6635,21 +6645,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RELAIS ARPETTE",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "HOTEL VALLÉE BLANCHE LA PALUD",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "HOTEL DU GLACIER",
               "client": "MUGFORD\n",
               "nbre": "6",
@@ -7222,7 +7217,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7237,7 +7232,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7812,21 +7807,6 @@
               "client": "SALVADO\n",
               "nbre": "2",
               "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "REFUGE MONTE BIANCO",
               "stockes": "–"
             },
             {
