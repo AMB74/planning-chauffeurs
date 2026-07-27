@@ -17,6 +17,7 @@ CHAUFFEURS = [
     {"prenom": "Charlie",   "nom": "DESMONT",      "vehicule": "MASTER",        "plaque": "GQ-609-ZB"},
     {"prenom": "Damian",    "nom": "TESAURO",      "vehicule": "FIAT FULLBACK", "plaque": "EP-096-RC"},
     {"prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM"},
+    {"prenom": "Jean-Baptiste", "nom": "MILLET", "vehicule": "TRAFIC",        "plaque": "GN-881-PK"},
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
     {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
