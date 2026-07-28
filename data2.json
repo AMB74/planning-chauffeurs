@@ -76,10 +76,58 @@
   "sections": [
     {
       "id": "s0",
+      "label": "31/07",
+      "titre": "VENDREDI 31 JUILLET",
+      "date_complete": "VENDREDI 31 JUILLET 2026",
+      "groupes": [
+        {
+          "massif": "3. MONT-BLANC",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "14.40 GENEVE AEROPORT>CAMPANULES\nSK2613, CPH-GVA, \n",
+              "heure_rdv": "",
+              "depart": "GVA AEROPORT",
+              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
+              "nbre": "8",
+              "arrivee": "HOTEL LES CAMPANULES**",
+              "stockes": "–"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1",
       "label": "01/08",
       "titre": "SAMEDI 1 AOÛT",
       "date_complete": "SAMEDI 1 AOÛT 2026",
       "groupes": [
+        {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE MONTE BIANCO",
+              "client": "BLANCHARD\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "1. CHABLAIS",
           "lignes": [
@@ -296,21 +344,6 @@
               "type": "–",
               "transfert": "–",
               "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "FERONT\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
               "heure_rdv": "08H00",
               "depart": "RDV PRARION",
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
@@ -331,21 +364,6 @@
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
               "nbre": "14+1",
               "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LES CAMPANULES**",
-              "client": "MANON HAUDIQUET\n(- 06 07 27 18 22)",
-              "nbre": "2+1",
-              "arrivee": "RDV MONTROC",
               "stockes": "–"
             },
             {
@@ -376,21 +394,6 @@
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "–",
               "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
-              "nbre": "4+1",
-              "arrivee": "RDV FLÉGÈRE",
               "stockes": "–"
             },
             {
@@ -994,43 +997,13 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA TURRA***",
-              "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
-              "nbre": "1+1",
-              "arrivee": "OT TERMIGNON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
+              "transfert": "10H30",
               "details": "–",
               "heure_rdv": "",
               "depart": "OT TERMIGNON",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
               "nbre": "12+1",
               "arrivee": "REFUGE PLAN DU LAC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
-              "nbre": "12+1",
-              "arrivee": "REFUGE DE LA FEMMA",
               "stockes": "–"
             }
           ]
@@ -1148,11 +1121,31 @@
       ]
     },
     {
-      "id": "s1",
+      "id": "s2",
       "label": "02/08",
       "titre": "DIMANCHE 2 AOÛT",
       "date_complete": "DIMANCHE 2 AOÛT 2026",
       "groupes": [
+        {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER",
+              "client": "BLANCHARD\n",
+              "nbre": "2",
+              "arrivee": "LA CITE MONTJOIE",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -1426,21 +1419,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RDV PRARION",
-              "client": "RAMIREZ\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
               "client": "MUGFORD\n",
               "nbre": "6",
               "arrivee": "HOTEL TOFANA",
@@ -1469,42 +1447,12 @@
               "type": "–",
               "transfert": "–",
               "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "BOVEE\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
               "heure_rdv": "08H00",
               "depart": "RDV PRARION",
               "client": "PAYAN MATHIEU\n(06 28 28 59 14 - )",
               "nbre": "10+1",
               "arrivee": "HOTEL TOFANA",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "MALHERBE\n",
-              "nbre": "6",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "2"
             },
             {
               "pilote": "",
@@ -2138,7 +2086,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+2 GRAND BEC\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
@@ -2526,11 +2474,31 @@
       ]
     },
     {
-      "id": "s2",
+      "id": "s3",
       "label": "03/08",
       "titre": "LUNDI 3 AOÛT",
       "date_complete": "LUNDI 3 AOÛT 2026",
       "groupes": [
+        {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "LA CITE MONTJOIE",
+              "client": "BLANCHARD\n",
+              "nbre": "2",
+              "arrivee": "RDV PRARION",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "1. CHABLAIS",
           "lignes": [
@@ -2764,67 +2732,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RDV PRARION",
-              "client": "SOULIER\n",
-              "nbre": "3",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "WEINER\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "DESNOYERS\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
               "client": "TURCOTTE\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "GUILLAUMIN\n",
               "nbre": "2",
               "arrivee": "HOTEL TOFANA",
               "stockes": "–"
@@ -2902,21 +2810,6 @@
               "client": "BROWN\n",
               "nbre": "1",
               "arrivee": "HOTEL DE L'ARVE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "NYE\n",
-              "nbre": "3",
-              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -3364,21 +3257,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
-              "client": "KOPARANOV\n",
-              "nbre": "2",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
               "client": "RYON\n",
               "nbre": "2",
               "arrivee": "HOTEL LA GELINOTTE",
@@ -3471,7 +3349,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "MONTAGE /DEMONTAGE TENTES",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! MONTER 2 TENTES\n",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
               "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
@@ -3611,7 +3489,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 GRAND BEC\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA FEMMA",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
@@ -3859,7 +3737,7 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s4",
       "label": "04/08",
       "titre": "MARDI 4 AOÛT",
       "date_complete": "MARDI 4 AOÛT 2026",
@@ -4062,21 +3940,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RDV PRARION",
-              "client": "BLANC\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
               "client": "PERRIER\n",
               "nbre": "2",
               "arrivee": "HOTEL TOFANA",
@@ -4110,36 +3973,6 @@
               "client": "NIQUET MARION\n(- 06 37 46 26 31)",
               "nbre": "7+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LES CAMPANULES**",
-              "client": "GRUNDTVIG\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LES CAMPANULES**",
-              "client": "GUT\n",
-              "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4185,21 +4018,6 @@
               "client": "LEROTY\n",
               "nbre": "3",
               "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "BROWN\n",
-              "nbre": "1",
-              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4721,6 +4539,21 @@
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "MONTAGE /DEMONTAGE TENTES",
+              "transfert": "16H ST GUÉRIN > HBG",
+              "details": "!! DEMONTER 2 TENTES\n",
+              "heure_rdv": "",
+              "depart": "REFUGE PLAN MYA",
+              "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
+              "nbre": "1+1",
+              "arrivee": "REFUGE DE ROSUEL",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
@@ -4730,21 +4563,6 @@
               "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
               "nbre": "1+1",
               "arrivee": "ALTITUDE TRANSPORT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "MONTAGE /DEMONTAGE TENTES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
-              "nbre": "1+1",
-              "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             }
           ]
@@ -4894,7 +4712,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-2 PLAN DU LAC\n",
               "heure_rdv": "",
               "depart": "REFUGE ENTRE DEUX EAUX",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
@@ -5247,7 +5065,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s5",
       "label": "05/08",
       "titre": "MERCREDI 5 AOÛT",
       "date_complete": "MERCREDI 5 AOÛT 2026",
@@ -5392,7 +5210,7 @@
               "depart": "HOTEL SAINT ANTOINE***",
               "client": "KONGSAGER\n",
               "nbre": "2",
-              "arrivee": "HOTEL TOFANA",
+              "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
             {
@@ -5408,6 +5226,21 @@
               "client": "YUMING\n",
               "nbre": "5",
               "arrivee": "HOTEL TOFANA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "–",
+              "transfert": "08H00 HBG > Trient",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LE DAHU**",
+              "client": "CORRUBLE\n",
+              "nbre": "8",
+              "arrivee": "AU VIEUX CHAMPEX",
               "stockes": "–"
             },
             {
@@ -5832,7 +5665,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5862,7 +5695,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5944,21 +5777,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "CORRUBLE\n",
-              "nbre": "8",
-              "arrivee": "AUBERGE LE RENDEZ-VOUS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
               "client": "JANNIE\n",
               "nbre": "2",
@@ -6006,7 +5824,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -6545,7 +6363,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s6",
       "label": "06/08",
       "titre": "JEUDI 6 AOÛT",
       "date_complete": "JEUDI 6 AOÛT 2026",
@@ -6787,7 +6605,7 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "AUBERGE LE RENDEZ-VOUS",
+              "depart": "AU VIEUX CHAMPEX",
               "client": "CORRUBLE\n",
               "nbre": "8",
               "arrivee": "HOTEL MAISON SAINT JEAN",
@@ -7215,7 +7033,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -7241,21 +7059,6 @@
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
               "nbre": "8+1",
               "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CORRUBLE\n",
-              "nbre": "8",
-              "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
             }
           ]
@@ -7290,7 +7093,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 ORGERE\n",
               "heure_rdv": "",
               "depart": "HOTEL DU GRAND BEC",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
@@ -7733,7 +7536,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s7",
       "label": "07/08",
       "titre": "VENDREDI 7 AOÛT",
       "date_complete": "VENDREDI 7 AOÛT 2026",
@@ -7884,21 +7687,6 @@
               "client": "SAVARD\n",
               "nbre": "3",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "08H00",
-              "depart": "RDV PRARION",
-              "client": "MANON HAUDIQUET\n(- 06 07 27 18 22)",
-              "nbre": "13+1",
-              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -8414,21 +8202,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MANON HAUDIQUET\n(- 06 07 27 18 22)",
-              "nbre": "13+1",
-              "arrivee": "RDV MONTROC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -8638,7 +8411,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 GRAND BEC\n",
               "heure_rdv": "",
               "depart": "REFUGE DU SAUT",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
@@ -9059,34 +8832,6 @@
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
               "nbre": "8+1",
               "arrivee": "RIFUGIO FERRARO",
-              "stockes": "–"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "label": "31/08",
-      "titre": "LUNDI 31 AOÛT",
-      "date_complete": "LUNDI 31 AOÛT 2026",
-      "groupes": [
-        {
-          "massif": "3. MONT-BLANC",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "12.40-14.40 GENEVE AEROPORT>CAMPANULES\nSK2613, CPH-GVA, \n",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
-              "nbre": "8+1",
-              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             }
           ]

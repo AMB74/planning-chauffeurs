@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "28/07/2026 08:55"
+    "genere_le": "28/07/2026 11:00"
   },
   "lignes": [
     {
@@ -41,6 +41,19 @@
       "date_fin": "2026-07-25",
       "date_debut_aff": "Dim 19/07",
       "date_fin_aff": "Sam 25/07"
+    },
+    {
+      "jour_semaine": "29-07 - MERCREDI",
+      "client": "LITA Adriana\n(+1 720 299 9247",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "4",
+      "depart": "–",
+      "arrivee": "–",
+      "date_debut": "2026-07-25",
+      "date_fin": "",
+      "date_debut_aff": "Sam 25/07",
+      "date_fin_aff": "–"
     },
     {
       "jour_semaine": "26-07 - DIMANCHE",
