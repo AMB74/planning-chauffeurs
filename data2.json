@@ -999,26 +999,6 @@
           ]
         },
         {
-          "massif": "11. MONT-ROSE",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RIFUGIO FERRARO",
-              "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "7+1",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "OBERLAND",
           "lignes": [
             {
