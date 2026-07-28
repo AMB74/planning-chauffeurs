@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 1 AOÛT",
     "numero_semaine": "Semaine 31",
-    "genere_le": "27/07/2026"
+    "genere_le": "28/07/2026"
   },
   "chauffeurs": [
     {
@@ -95,7 +95,7 @@
               "depart": "HOTEL ALPEN ROC***",
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
               "nbre": "13+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -160,7 +160,7 @@
               "depart": "RDV PLANPRAZ",
               "client": "ROUVIERE BERTRAND\n(- 06 43 30 82 46)",
               "nbre": "4+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -270,7 +270,7 @@
               "depart": "RDV PRARION",
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "–",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -285,22 +285,7 @@
               "depart": "RDV PRARION",
               "client": "DIOT JULIEN\n(- 06 11 73 61 44)",
               "nbre": "11+1",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "TROELS\n",
-              "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -315,7 +300,7 @@
               "depart": "RDV PRARION",
               "client": "FERONT\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -330,7 +315,7 @@
               "depart": "RDV PRARION",
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
               "nbre": "14+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -345,7 +330,7 @@
               "depart": "RDV PRARION",
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
               "nbre": "14+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -390,22 +375,7 @@
               "depart": "HOTEL LES CAMPANULES**",
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "–",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "GITE LES MEANDRES",
-              "client": "WACH\n",
-              "nbre": "3",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -950,7 +920,7 @@
               "depart": "RDV MODANE",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
               "nbre": "1+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1031,21 +1001,6 @@
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
               "nbre": "1+1",
               "arrivee": "OT TERMIGNON",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA TURRA***",
-              "client": "GREEN\n",
-              "nbre": "2",
-              "arrivee": "–",
               "stockes": "–"
             },
             {
@@ -1165,7 +1120,7 @@
               "depart": "RIFUGIO FERRARO",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
               "nbre": "7+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -1185,7 +1140,7 @@
               "depart": "BERGHOTELGROSSE SCHEIDEGG",
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "6+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -1471,24 +1426,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "RDV PRARION",
-              "client": "CHALLANDE\n",
-              "nbre": "2",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
               "client": "RAMIREZ\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1503,7 +1443,7 @@
               "depart": "RDV PRARION",
               "client": "MUGFORD\n",
               "nbre": "6",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1518,22 +1458,7 @@
               "depart": "RDV PRARION",
               "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
               "nbre": "13+1",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "DELAINE\n",
-              "nbre": "3",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1548,7 +1473,7 @@
               "depart": "RDV PRARION",
               "client": "BOVEE\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1563,7 +1488,7 @@
               "depart": "RDV PRARION",
               "client": "PAYAN MATHIEU\n(06 28 28 59 14 - )",
               "nbre": "10+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -1578,7 +1503,7 @@
               "depart": "RDV PRARION",
               "client": "MALHERBE\n",
               "nbre": "6",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "2"
             },
             {
@@ -1593,7 +1518,7 @@
               "depart": "RDV PRARION",
               "client": "PINEL\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2148,7 +2073,7 @@
               "depart": "RDV HOTEL",
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
               "nbre": "6+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -2278,7 +2203,7 @@
               "depart": "OT TERMIGNON",
               "client": "LELIEVRE\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2686,7 +2611,7 @@
               "depart": "RDV PLANPRAZ",
               "client": "HELLER\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -2841,7 +2766,7 @@
               "depart": "RDV PRARION",
               "client": "SOULIER\n",
               "nbre": "3",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2856,7 +2781,7 @@
               "depart": "RDV PRARION",
               "client": "WEINER\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2871,7 +2796,7 @@
               "depart": "RDV PRARION",
               "client": "DESNOYERS\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2886,7 +2811,7 @@
               "depart": "RDV PRARION",
               "client": "TURCOTTE\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2901,7 +2826,7 @@
               "depart": "RDV PRARION",
               "client": "GUILLAUMIN\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -2991,22 +2916,7 @@
               "depart": "HOTEL SAINT ANTOINE***",
               "client": "NYE\n",
               "nbre": "3",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "BERGIERS\n",
-              "nbre": "1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -3766,7 +3676,7 @@
               "depart": "OT TERMIGNON",
               "client": "BARNETCHE\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4154,7 +4064,7 @@
               "depart": "RDV PRARION",
               "client": "BLANC\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4169,7 +4079,7 @@
               "depart": "RDV PRARION",
               "client": "PERRIER\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4214,22 +4124,7 @@
               "depart": "HOTEL LES CAMPANULES**",
               "client": "GRUNDTVIG\n",
               "nbre": "2",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LES CAMPANULES**",
-              "client": "NIKOLAJSEN\n",
-              "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4244,7 +4139,7 @@
               "depart": "HOTEL LES CAMPANULES**",
               "client": "GUT\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -4304,22 +4199,7 @@
               "depart": "HOTEL DE L'ARVE",
               "client": "BROWN\n",
               "nbre": "1",
-              "arrivee": "–",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "SALVADO\n",
-              "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -5512,7 +5392,7 @@
               "depart": "HOTEL SAINT ANTOINE***",
               "client": "KONGSAGER\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -5527,7 +5407,7 @@
               "depart": "RDV PLANPRAZ",
               "client": "YUMING\n",
               "nbre": "5",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -6407,7 +6287,7 @@
               "depart": "OT TERMIGNON",
               "client": "FLOREANI\n",
               "nbre": "4",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -6820,7 +6700,7 @@
               "depart": "RDV PRARION",
               "client": "CROHEM\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -6835,7 +6715,7 @@
               "depart": "RDV PRARION",
               "client": "SIX\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -7943,7 +7823,7 @@
               "depart": "REFUGE DE BOSTAN",
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
               "nbre": "6+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8033,7 +7913,7 @@
               "depart": "RDV PRARION",
               "client": "SAVARD\n",
               "nbre": "3",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8048,7 +7928,7 @@
               "depart": "RDV PRARION",
               "client": "WOLFF\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8778,7 +8658,7 @@
               "depart": "HOTEL LA TURRA***",
               "client": "GHEORGHIU\n",
               "nbre": "2",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8793,7 +8673,7 @@
               "depart": "RDV BONNEVAL",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
               "nbre": "12+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8808,7 +8688,7 @@
               "depart": "OT TERMIGNON",
               "client": "PERRIER SEBASTIEN\n(- 06 51 90 52 07)",
               "nbre": "8+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8823,7 +8703,7 @@
               "depart": "OT TERMIGNON",
               "client": "BOHEC\n",
               "nbre": "4",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8948,7 +8828,7 @@
               "depart": "RDV BEAUFORT",
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
               "nbre": "9+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -8984,6 +8864,21 @@
             {
               "pilote": "",
               "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV HOTEL",
+              "client": "DUCLOUX\n",
+              "nbre": "2",
+              "arrivee": "HOTEL TOFANA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -8994,21 +8889,6 @@
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
               "nbre": "9+1",
               "arrivee": "TAXI SAS CHRISTOPHE HOFMANN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "DUCLOUX\n",
-              "nbre": "2",
-              "arrivee": "–",
               "stockes": "–"
             }
           ]
@@ -9088,7 +8968,7 @@
               "depart": "HOTEL GRIVOLA",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
               "nbre": "6+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             },
             {
@@ -9123,7 +9003,7 @@
               "depart": "HOTEL SPORTING",
               "client": "DE BASTIER ERIC\n(06 43 65 47 03 - )",
               "nbre": "4+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -9158,7 +9038,7 @@
               "depart": "OT FIONNAY",
               "client": "JAVET ERIC\n(- 06 12 49 87 35)",
               "nbre": "11+1",
-              "arrivee": "–",
+              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
