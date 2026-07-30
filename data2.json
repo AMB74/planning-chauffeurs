@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 1 AOÛT",
     "numero_semaine": "Semaine 31",
-    "genere_le": "29/07/2026"
+    "genere_le": "30/07/2026"
   },
   "chauffeurs": [
     {
@@ -113,7 +113,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "–",
               "type": "–",
@@ -314,21 +314,6 @@
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "–",
               "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL HELIOPIC HOTEL & SPA",
-              "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "–",
-              "arrivee": "HOTEL HELIOPIC HOTEL & SPA",
               "stockes": "–"
             },
             {
@@ -618,7 +603,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -633,7 +618,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -693,7 +678,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1327,21 +1312,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL HELIOPIC HOTEL & SPA",
-              "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
-              "nbre": "–",
-              "arrivee": "HOTEL HELIOPIC HOTEL & SPA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -1686,7 +1656,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3228,7 +3198,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3288,13 +3258,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1: PASTORE\n",
               "heure_rdv": "",
               "depart": "PENSION WALDEGG",
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
@@ -4436,7 +4406,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4511,13 +4481,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "JM dort sur place\nJ-1 : WALDEGG\n",
               "heure_rdv": "",
               "depart": "RIFUGIO SCARTEBODEN",
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
@@ -5220,7 +5190,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5689,13 +5659,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : RISTORO SITTEN\n",
               "heure_rdv": "",
               "depart": "RIFUGIO PASTORE",
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
@@ -6742,7 +6712,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -6802,43 +6772,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "TAXI FREDY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE GNIFETTI",
-              "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
-              "nbre": "8+1",
-              "arrivee": "AUBERGE RISTORO SITTEN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE GNIFETTI",
-              "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
-              "nbre": "8+1",
-              "arrivee": "AUBERGE RISTORO SITTEN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
+              "details": "J-1 : PASTORE\n!! Déposé BG à Taxi Freddy\n",
               "heure_rdv": "",
               "depart": "REFUGE GNIFETTI",
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
@@ -7410,7 +7350,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -7530,8 +7470,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -7916,7 +7856,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "HOTEL GRIVOLA",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -8000,7 +7940,7 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
