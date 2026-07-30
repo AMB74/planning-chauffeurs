@@ -863,7 +863,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\nRDV 16:00 Notre Dame de la Gorge transfert AMB à reconfirmer la veille par guide avec Liz>> transfert aux Houches Arche \n",
+              "details": "16:00 Notre Dame de la Gorge transfert AMB à reconfirmer la veille par guide avec Liz>> transfert aux Houches Arche \n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA GITTAZ",
               "client": "TREKKER THERRY\n+33 6 61 59 31 01\n",
@@ -2130,13 +2130,13 @@
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "BG déposés à l'OT\nJ+1:REFUGE CHAMPILLON\n",
               "heure_rdv": "",
               "depart": "OT FIONNAY",
               "client": "JAVET ERIC\n(- 06 12 49 87 35)",
@@ -3219,12 +3219,12 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! SANS BG\nJ+1 : HOTEL DU GLACIER AROLLA\n",
               "heure_rdv": "",
               "depart": "HOTEL SCHWARZHORN",
               "client": "DE BASTIER ERIC\n(06 43 65 47 03 - )",
@@ -3238,13 +3238,13 @@
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : OT FIONNAY\n",
               "heure_rdv": "",
               "depart": "CABANE CHANRION",
               "client": "JAVET ERIC\n(- 06 12 49 87 35)",
@@ -4427,12 +4427,12 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI FOLLONIER",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! VEILLE SANS BG\nJ-1 : HOTEL SCHWARZHORN\n",
               "heure_rdv": "",
               "depart": "GITE DU LAC DE MOIRY",
               "client": "DE BASTIER ERIC\n(06 43 65 47 03 - )",
@@ -4446,7 +4446,7 @@
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -4455,21 +4455,6 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE DE CHAMPILLON",
-              "client": "JAVET ERIC\n(- 06 12 49 87 35)",
-              "nbre": "11+1",
-              "arrivee": "HOSPICE GD ST BERNARD",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
               "client": "JAVET ERIC\n(- 06 12 49 87 35)",
               "nbre": "11+1",
               "arrivee": "HOSPICE GD ST BERNARD",
@@ -6773,7 +6758,7 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "TAXI FREDY",
+              "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
@@ -7896,7 +7881,7 @@
               "depart": "HOTEL SPORTING",
               "client": "DE BASTIER ERIC\n(06 43 65 47 03 - )",
               "nbre": "4+1",
-              "arrivee": "HOTEL TOFANA",
+              "arrivee": "RDV ZERMATT",
               "stockes": "–"
             }
           ]
@@ -7918,21 +7903,6 @@
               "nbre": "11+1",
               "arrivee": "OT FIONNAY",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "OT FIONNAY",
-              "client": "JAVET ERIC\n(- 06 12 49 87 35)",
-              "nbre": "11+1",
-              "arrivee": "HOTEL TOFANA",
-              "stockes": "–"
             }
           ]
         },
@@ -7940,13 +7910,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "0. AUCUN",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 ZERMATT URANIA\n",
               "heure_rdv": "",
               "depart": "AUBERGE RISTORO SITTEN",
               "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",

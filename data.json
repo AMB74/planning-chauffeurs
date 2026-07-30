@@ -7991,7 +7991,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "HOTEL LES JUMEAUX",
               "client": "TREKKER THIERRY\n+33 6 61 59 31 01\n",
@@ -8156,7 +8156,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 16H30 : ND GORGE > Les Houches ARCHE  (15min attente) > HBG (10 pax)\n",
+              "details": "!! 16H30 : ND GORGE > Les Houches ARCHE  (30min attente) > HBG (10 pax)\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "TREKKER ELIE+33 6 33 07 28 35\nFRANCK+33 6 12 38 85 02\n",
@@ -8177,6 +8177,21 @@
               "client": "JAGER ROBIN\n(- 06 95 87 38 46)",
               "nbre": "6+1",
               "arrivee": "PENSION EN PLEIN AIR",
+              "stockes": "–"
+            },
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "14H40: GENEVE > HOTEL DES CAMPANULES (8pax) \n",
+              "heure_rdv": "",
+              "depart": "GVA AEROPORT",
+              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
+              "nbre": "8",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             }
           ]
