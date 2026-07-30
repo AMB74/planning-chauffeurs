@@ -76,34 +76,6 @@
   "sections": [
     {
       "id": "s0",
-      "label": "31/07",
-      "titre": "VENDREDI 31 JUILLET",
-      "date_complete": "VENDREDI 31 JUILLET 2026",
-      "groupes": [
-        {
-          "massif": "3. MONT-BLANC",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "14.40 GENEVE AEROPORT>CAMPANULES\nSK2613, CPH-GVA, \n",
-              "heure_rdv": "",
-              "depart": "GVA AEROPORT",
-              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
-              "nbre": "8",
-              "arrivee": "HOTEL LES CAMPANULES**",
-              "stockes": "–"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s1",
       "label": "01/08",
       "titre": "SAMEDI 1 AOÛT",
       "date_complete": "SAMEDI 1 AOÛT 2026",
@@ -1051,7 +1023,7 @@
       ]
     },
     {
-      "id": "s2",
+      "id": "s1",
       "label": "02/08",
       "titre": "DIMANCHE 2 AOÛT",
       "date_complete": "DIMANCHE 2 AOÛT 2026",
@@ -1706,7 +1678,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "16:15 Notre Dame de la Gorge >> transfert au Houches \n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER CHARLES\n+33 6 30 99 79 47\n",
@@ -1841,7 +1813,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "16:15 Notre Dame de la Gorge >> au Houches Arche TMB\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA GITTAZ",
               "client": "TREKKER CLAIRE\n+33 6 13 58 31 14\n",
@@ -2149,7 +2121,7 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s2",
       "label": "03/08",
       "titre": "LUNDI 3 AOÛT",
       "date_complete": "LUNDI 3 AOÛT 2026",
@@ -3277,7 +3249,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s3",
       "label": "04/08",
       "titre": "MARDI 4 AOÛT",
       "date_complete": "MARDI 4 AOÛT 2026",
@@ -4485,7 +4457,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s4",
       "label": "05/08",
       "titre": "MERCREDI 5 AOÛT",
       "date_complete": "MERCREDI 5 AOÛT 2026",
@@ -5195,6 +5167,21 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
+              "details": "16:30 avec AMB Notre Dame de la Gorge >> transfert à l'hôtel plan b \n",
+              "heure_rdv": "",
+              "depart": "LE RELAIS DES VILLARDS",
+              "client": "TREKKER Anne\n+33 6 82 29 59 52\n",
+              "nbre": "15+1",
+              "arrivee": "PLAN B FAYET",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
               "details": "–",
               "heure_rdv": "",
               "depart": "CHAMBRES DU SOLEIL ",
@@ -5663,7 +5650,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s5",
       "label": "06/08",
       "titre": "JEUDI 6 AOÛT",
       "date_complete": "JEUDI 6 AOÛT 2026",
@@ -5759,6 +5746,21 @@
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
               "nbre": "6+1",
               "arrivee": "REFUGE DE BOSTAN",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "RDV 8:00 Transfert retour à la Vilette\n",
+              "heure_rdv": "",
+              "depart": "PLAN B FAYET",
+              "client": "TREKKER Anne\n+33 6 82 29 59 52\n",
+              "nbre": "15+1",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
@@ -6776,7 +6778,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s6",
       "label": "07/08",
       "titre": "VENDREDI 7 AOÛT",
       "date_complete": "VENDREDI 7 AOÛT 2026",
