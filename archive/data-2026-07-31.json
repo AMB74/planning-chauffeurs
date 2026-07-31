@@ -1363,7 +1363,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -1882,7 +1882,7 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
-              "transfert": "Pont > Gare Chamonix",
+              "transfert": "Pont > Gare Chamonix\n13h30",
               "details": "!! + amener une carte tunnel supplémentaire\n!! TRANSFERT 13H30 PONT > CHAM- 8 pax\n",
               "heure_rdv": "",
               "depart": "HOSTELLERIE DU PARADIS",
@@ -1913,32 +1913,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "TRANSFERT THUILE\n\\> CHAM - 1 PAX\nJ-1 PARAMONT\n\n",
+              "details": "bagages déjà fait\nTRANSFERT THUILE\n\\> CHAM - 1 PAX\nJ-1 PARAMONT\n\n",
               "heure_rdv": "",
               "depart": "REFUGE DEFFEYES",
               "client": "DEVOS REMY\n06 85 40 02 01\n",
               "nbre": "13+1",
               "arrivee": "RDV LA THUILE",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "OBERLAND",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "BERGHOTELGROSSE SCHEIDEGG",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "6+1",
-              "arrivee": "HOTEL TOFANA",
               "stockes": "–"
             }
           ]
@@ -1951,26 +1931,6 @@
       "titre": "DIMANCHE 2 AOÛT",
       "date_complete": "DIMANCHE 2 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "–",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET DU BERGER",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -2667,6 +2627,21 @@
               "client": "NIKOLAJSEN\n",
               "nbre": "2",
               "arrivee": "HOTEL LE CHRISTIANIA**",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER",
+              "client": "BLANCHARD\n",
+              "nbre": "2",
+              "arrivee": "LA CITE MONTJOIE",
               "stockes": "–"
             },
             {
