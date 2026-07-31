@@ -1,99 +1,8 @@
 {
   "meta": {
-    "genere_le": "30/07/2026 16:04"
+    "genere_le": "31/07/2026 07:48"
   },
   "lignes": [
-    {
-      "jour_semaine": "24-07 - VENDREDI",
-      "client": "EINIG\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Serge",
-      "nbre": "1",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-18",
-      "date_fin": "2026-07-24",
-      "date_debut_aff": "Sam 18/07",
-      "date_fin_aff": "Ven 24/07"
-    },
-    {
-      "jour_semaine": "26-07 - DIMANCHE",
-      "client": "AUDFRAY ROBIN\n(- 06 11 20 10 46)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-18",
-      "date_fin": "2026-07-26",
-      "date_debut_aff": "Sam 18/07",
-      "date_fin_aff": "Dim 26/07"
-    },
-    {
-      "jour_semaine": "25-07 - SAMEDI",
-      "client": "BLANDIN ELODIE\n(- 06 16 09 80 93)",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "HOTEL LES CAMPANULES**",
-      "arrivee": "HOTEL LES CAMPANULES**",
-      "date_debut": "2026-07-19",
-      "date_fin": "2026-07-25",
-      "date_debut_aff": "Dim 19/07",
-      "date_fin_aff": "Sam 25/07"
-    },
-    {
-      "jour_semaine": "29-07 - MERCREDI",
-      "client": "LITA Adriana\n(+1 720 299 9247",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "4",
-      "depart": "–",
-      "arrivee": "–",
-      "date_debut": "2026-07-25",
-      "date_fin": "",
-      "date_debut_aff": "Sam 25/07",
-      "date_fin_aff": "–"
-    },
-    {
-      "jour_semaine": "26-07 - DIMANCHE",
-      "client": "WEINER\n",
-      "chauffeur_debut": "Serge",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-26",
-      "date_fin": "2026-08-03",
-      "date_debut_aff": "Dim 26/07",
-      "date_fin_aff": "Lun 03/08"
-    },
-    {
-      "jour_semaine": "26-07 - DIMANCHE",
-      "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
-      "chauffeur_debut": "Serge",
-      "chauffeur_fin": "–",
-      "nbre": "8",
-      "depart": "HOTEL DE L'ARVE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-26",
-      "date_fin": "2026-08-01",
-      "date_debut_aff": "Dim 26/07",
-      "date_fin_aff": "Sam 01/08"
-    },
-    {
-      "jour_semaine": "27-07 - LUNDI",
-      "client": "MALHERBE\n",
-      "chauffeur_debut": "Laurent",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-07-27",
-      "date_fin": "2026-08-02",
-      "date_debut_aff": "Lun 27/07",
-      "date_fin_aff": "Dim 02/08"
-    },
     {
       "jour_semaine": "03-08 - LUNDI",
       "client": "DUBOIS\n",
@@ -119,32 +28,6 @@
       "date_fin": "2026-08-10",
       "date_debut_aff": "Mar 04/08",
       "date_fin_aff": "Lun 10/08"
-    },
-    {
-      "jour_semaine": "24-07 - VENDREDI",
-      "client": "LAURIN / Groupe François MARLEIX\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "–",
-      "arrivee": "–",
-      "date_debut": "",
-      "date_fin": "",
-      "date_debut_aff": "–",
-      "date_fin_aff": "–"
-    },
-    {
-      "jour_semaine": "25-07 - SAMEDI",
-      "client": "LAURIN / GROUPE FRANCOIS MARLEIX\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "–",
-      "arrivee": "–",
-      "date_debut": "",
-      "date_fin": "",
-      "date_debut_aff": "–",
-      "date_fin_aff": "–"
     }
   ]
 }
