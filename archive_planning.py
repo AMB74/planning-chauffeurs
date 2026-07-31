@@ -162,23 +162,33 @@ def build_row(record, extra_id_column=False):
     return row
 
 
+def _is_placeholder_value(text):
+    """Detecte une valeur 'pas de chauffeur / pas de taxi' plutot qu'un vrai
+    nom : '0', '0. Aucun', '0 - Aucun', etc."""
+    n = text.strip().lower()
+    return n.startswith("0") or "aucun" in n
+
+
 def _extract_names(value):
     """Extrait un ou plusieurs noms depuis la valeur brute d'un champ
     (gere le cas ou plusieurs personnes sont listees dans la meme cellule,
     separees par une virgule, un '/', un '+' ou 'et').
-    '0' est ignore : ca signifie 'pas besoin de chauffeur', pas un nom."""
+    Les valeurs de type '0' / '0. Aucun' sont ignorees : ca signifie 'pas
+    besoin de chauffeur', pas un nom."""
     text = cell_to_str(value)
     if not text:
         return []
     parts = re.split(r",|/|\+|\bet\b", text)
-    return [p.strip() for p in parts if p.strip() and p.strip() != "0"]
+    return [p.strip() for p in parts if p.strip() and not _is_placeholder_value(p)]
 
 
 def group_records_by_driver(records):
     """Regroupe les lignes par chauffeur : le nom est pris directement
     dans PILOTE_NOM (BAGAGES) et/ou RENFORTS_NOM (TRANSFERT), sans liste
     fixe a maintenir a la main -> un nouveau chauffeur est detecte
-    automatiquement des qu'il apparait dans Airtable."""
+    automatiquement des qu'il apparait dans Airtable. Les deux champs sont
+    traites independamment : si l'un vaut '0. Aucun' et l'autre contient un
+    nom, la ligne est bien affectee au chauffeur concerne (pas ignoree)."""
     groups = {}
     for r in records:
         fields = r.get("fields", {})
@@ -192,11 +202,12 @@ def group_records_by_driver(records):
 
 def group_records_by_taxi(records):
     """Regroupe les lignes par taxi : la cle est la valeur brute du champ
-    TAXI (TAXIS (from TAXI)), telle quelle."""
+    TAXI (TAXIS (from TAXI)), telle quelle. Une valeur de type '0. Aucun'
+    (pas de taxi) ne cree pas d'onglet."""
     groups = {}
     for r in records:
         val = cell_to_str(r.get("fields", {}).get(TAXI_FIELD)).strip()
-        if val:
+        if val and not _is_placeholder_value(val):
             groups.setdefault(val, []).append(r)
     return groups
 
