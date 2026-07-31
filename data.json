@@ -2765,7 +2765,7 @@
               "heure_rdv": "",
               "depart": "RDV MODANE",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
             },
@@ -3898,7 +3898,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             },
@@ -4861,7 +4861,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU REPOJU",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DES BARMETTES",
               "stockes": "–"
             },
@@ -5093,7 +5093,7 @@
               "client": "KOUKOUVITAKIS\n",
               "nbre": "6",
               "arrivee": "REFUGE DE L'ALPAGE",
-              "stockes": "–"
+              "stockes": "6"
             },
             {
               "pilote": "",
@@ -6109,7 +6109,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DES BARMETTES",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE PLAN DU LAC",
               "stockes": "–"
             },
@@ -7307,7 +7307,7 @@
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DU FOND DES FOURS",
               "stockes": "–"
             }
@@ -8445,7 +8445,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "RDV BONNEVAL",
               "stockes": "–"
             }

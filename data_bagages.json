@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "31/07/2026 09:06"
+    "genere_le": "31/07/2026 10:45"
   },
   "lignes": [
     {
@@ -24,6 +24,19 @@
       "nbre": "1",
       "depart": "RDV PLANPRAZ",
       "arrivee": "RDV PRARION",
+      "date_debut": "2026-08-04",
+      "date_fin": "2026-08-10",
+      "date_debut_aff": "Mar 04/08",
+      "date_fin_aff": "Lun 10/08"
+    },
+    {
+      "jour_semaine": "04-08 - MARDI",
+      "client": "KOUKOUVITAKIS\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "6",
+      "depart": "RDV BEAUFORT",
+      "arrivee": "RDV HOTEL",
       "date_debut": "2026-08-04",
       "date_fin": "2026-08-10",
       "date_debut_aff": "Mar 04/08",
