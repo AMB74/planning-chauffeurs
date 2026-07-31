@@ -21,13 +21,15 @@ et le 15 novembre de l'annee en cours (sinon il s'arrete sans rien faire).
 import os
 import json
 import sys
+import io
 import unicodedata
 from collections import Counter
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import requests
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseUpload
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -65,6 +67,23 @@ COLUMNS = [
 
 HEADERS = [display for display, _ in COLUMNS]
 
+# Roster des chauffeurs (prenom -> nom), utilise pour detecter a qui
+# appartient une ligne dans les champs BAGAGES (PILOTE_NOM) / TRANSFERT
+# (RENFORTS_NOM). La detection se fait par recherche du prenom (insensible
+# a la casse) dans le texte de ces deux champs.
+DRIVERS_ROSTER = {
+    "Aurore": "VALANCE",
+    "Bertrand": "AUMOITTE",
+    "Charlie": "DESMONT",
+    "Damian": "TESAURO",
+    "Ivan": "VILA",
+    "Jean-Marc": "LONNE-PEYRET",
+    "Laurent": "GOUGAIN",
+    "Oscar": "TESAURO",
+    "Yan": "ANDRE",
+    "Serge": "DECLERCK",
+}
+
 # Colonne technique ajoutee uniquement dans le document RESAS TAXIS,
 # pour eviter les doublons d'une semaine sur l'autre
 TAXI_ID_COLUMN = "ID Airtable (interne)"
@@ -72,6 +91,9 @@ TAXI_TAB_TITLE = "Résas Taxis"
 
 # Dossier Drive "ARCHIVES AMB"
 ARCHIVES_FOLDER_ID = "1rZL34VUqtbTeTZlhut_9b_J3SkizV0pv"
+
+# Site GitHub Pages a capturer en PDF chaque semaine
+PLANNING_SITE_URL = "https://amb74.github.io/planning-chauffeurs/"
 
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
@@ -155,16 +177,55 @@ def build_row(record, extra_id_column=False):
     return row
 
 
+def group_records_by_driver(records):
+    """Regroupe les lignes par chauffeur : une ligne appartient a un
+    chauffeur si son prenom (roster) apparait dans PILOTE_NOM (BAGAGES)
+    ou RENFORTS_NOM (TRANSFERT)."""
+    groups = {}
+    for r in records:
+        fields = r.get("fields", {})
+        text = (
+            cell_to_str(fields.get("PILOTE_NOM")) + " " + cell_to_str(fields.get("RENFORTS_NOM"))
+        ).lower()
+        for first_name in DRIVERS_ROSTER:
+            if first_name.lower() in text:
+                groups.setdefault(first_name, []).append(r)
+    return groups
+
+
+def group_records_by_taxi(records):
+    """Regroupe les lignes par taxi : la cle est la valeur brute du champ
+    TAXI (TAXIS (from TAXI)), telle quelle."""
+    groups = {}
+    for r in records:
+        val = cell_to_str(r.get("fields", {}).get(TAXI_FIELD)).strip()
+        if val:
+            groups.setdefault(val, []).append(r)
+    return groups
+
+
+def sum_nombre(records):
+    total = 0.0
+    for r in records:
+        val = r.get("fields", {}).get("NOMBRE")
+        try:
+            total += float(val)
+        except (TypeError, ValueError):
+            continue
+    return int(total) if total == int(total) else total
+
+
 def compute_year_and_tab_title(records):
     parsed = [parse_airtable_date(r.get("fields", {}).get(DATE_FIELD)) for r in records]
     parsed = [d for d in parsed if d is not None]
     if not parsed:
-        return None, None
+        return None, None, None
 
     year = Counter(d.year for d in parsed).most_common(1)[0][0]
     min_date, max_date = min(parsed), max(parsed)
     tab_title = f"{min_date.strftime('%d/%m')} au {max_date.strftime('%d/%m')}"
-    return year, tab_title
+    monday = min_date - timedelta(days=min_date.weekday())
+    return year, tab_title, monday
 
 
 # ---------------------------------------------------------------------------
@@ -245,6 +306,31 @@ def find_spreadsheet(drive_service, name, parent_folder_id, folder_path_hint):
         f"Fichiers trouves dans ce dossier : {found_names}\n"
         f"Merci de creer manuellement un Google Sheet vierge nomme exactement "
         f"'{name}' et de le placer dans ce dossier, puis de relancer le workflow."
+    )
+
+
+class MissingFileError(Exception):
+    """Leve quand un fichier (ex: PDF) attendu n'existe pas encore sur le Drive."""
+
+
+def find_file(drive_service, name, parent_folder_id, mime_type, folder_path_hint):
+    """Equivalent generique de find_spreadsheet, pour tout type de fichier
+    (utilise ici pour le PDF cumulatif). Ne cree rien, cherche seulement."""
+    query = f"mimeType = '{mime_type}' and '{parent_folder_id}' in parents and trashed = false"
+    result = drive_service.files().list(q=query, fields="files(id, name)").execute()
+    files = result.get("files", [])
+
+    target = _normalize_name(name)
+    for f in files:
+        if _normalize_name(f["name"]) == target:
+            return f["id"]
+
+    found_names = ", ".join(f"'{f['name']}'" for f in files) or "(dossier vide)"
+    raise MissingFileError(
+        f"Le fichier '{name}' n'existe pas dans le dossier '{folder_path_hint}'.\n"
+        f"Fichiers trouves dans ce dossier : {found_names}\n"
+        f"Merci de creer manuellement un PDF (ex: imprimer une page blanche en PDF) "
+        f"nomme exactement '{name}' et de le placer dans ce dossier, puis de relancer le workflow."
     )
 
 
@@ -360,7 +446,123 @@ def apply_airtable_style(sheets_service, spreadsheet_id, title, num_rows, num_co
     ).execute()
 
 
-def overwrite_tab(sheets_service, spreadsheet_id, title, rows):
+def style_header_only(sheets_service, spreadsheet_id, title, num_cols):
+    """Version allegee de la mise en forme : fige et met en gras seulement
+    la ligne d'en-tete (utilisee pour les onglets chauffeur/taxi, dont le
+    contenu grossit chaque semaine sans limite connue a l'avance)."""
+    sheet_id = get_sheet_id(sheets_service, spreadsheet_id, title)
+    if sheet_id is None:
+        return
+    header_bg = {"red": 0.94, "green": 0.95, "blue": 0.96}
+    requests_batch = [
+        {
+            "updateSheetProperties": {
+                "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+                "fields": "gridProperties.frozenRowCount",
+            }
+        },
+        {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": 0,
+                    "endRowIndex": 1,
+                    "startColumnIndex": 0,
+                    "endColumnIndex": num_cols,
+                },
+                "cell": {
+                    "userEnteredFormat": {
+                        "backgroundColor": header_bg,
+                        "textFormat": {"bold": True, "fontSize": 10},
+                        "verticalAlignment": "MIDDLE",
+                    }
+                },
+                "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment)",
+            }
+        },
+    ]
+    sheets_service.spreadsheets().batchUpdate(
+        spreadsheetId=spreadsheet_id, body={"requests": requests_batch}
+    ).execute()
+
+
+def append_grouped_block(sheets_service, spreadsheet_id, tab_title, header, week_label, data_rows, total_label):
+    """Ajoute un bloc hebdomadaire a un onglet chauffeur/taxi :
+    une ligne titre coloree ('Semaine du DD/MM'), les lignes de donnees,
+    puis (si total_label est fourni) une ligne total coloree differemment.
+    Le tout est fusionne (merge) sur toute la largeur du tableau."""
+    num_cols = len(header)
+
+    existing = sheets_service.spreadsheets().values().get(
+        spreadsheetId=spreadsheet_id, range=f"'{tab_title}'"
+    ).execute().get("values", [])
+    existing_count = len(existing)
+
+    block = []
+    if not existing:
+        block.append(header)
+
+    title_row_index = existing_count if existing else 1
+    title_row = [week_label] + [""] * (num_cols - 1)
+    block.append(title_row)
+    block.extend(data_rows)
+
+    total_row_index = None
+    if total_label is not None:
+        total_row_index = title_row_index + 1 + len(data_rows)
+        total_row = [total_label] + [""] * (num_cols - 1)
+        block.append(total_row)
+
+    sheets_service.spreadsheets().values().append(
+        spreadsheetId=spreadsheet_id,
+        range=f"'{tab_title}'!A1",
+        valueInputOption="USER_ENTERED",
+        insertDataOption="INSERT_ROWS",
+        body={"values": block},
+    ).execute()
+
+    sheet_id = get_sheet_id(sheets_service, spreadsheet_id, tab_title)
+    if sheet_id is None:
+        return
+
+    title_bg = {"red": 0.80, "green": 0.88, "blue": 0.98}
+    total_bg = {"red": 1.0, "green": 0.93, "blue": 0.78}
+
+    def band_requests(row_index, bg_color):
+        rng = {
+            "sheetId": sheet_id,
+            "startRowIndex": row_index,
+            "endRowIndex": row_index + 1,
+            "startColumnIndex": 0,
+            "endColumnIndex": num_cols,
+        }
+        return [
+            {"mergeCells": {"range": rng, "mergeType": "MERGE_ALL"}},
+            {
+                "repeatCell": {
+                    "range": rng,
+                    "cell": {
+                        "userEnteredFormat": {
+                            "backgroundColor": bg_color,
+                            "textFormat": {"bold": True},
+                            "horizontalAlignment": "CENTER",
+                        }
+                    },
+                    "fields": "userEnteredFormat(backgroundColor,textFormat,horizontalAlignment)",
+                }
+            },
+        ]
+
+    requests_batch = band_requests(title_row_index, title_bg)
+    if total_row_index is not None:
+        requests_batch += band_requests(total_row_index, total_bg)
+
+    sheets_service.spreadsheets().batchUpdate(
+        spreadsheetId=spreadsheet_id, body={"requests": requests_batch}
+    ).execute()
+
+
+
     """Efface le contenu de l'onglet puis ecrit les nouvelles lignes (utilise pour l'archive).
 
     N'applique aucune mise en forme : la mise en forme (largeurs de colonnes,
@@ -462,6 +664,94 @@ def taxi_flow(drive_service, sheets_service, spreadsheet_id, spreadsheet_name, r
     append_taxi_rows(sheets_service, spreadsheet_id, TAXI_TAB_TITLE, header, rows, newly_created)
 
 
+def driver_flow(sheets_service, spreadsheet_id, records, week_label):
+    """Un onglet par chauffeur, pour toute la saison. Chaque semaine ajoute
+    un bloc : ligne titre coloree, lignes de la semaine, ligne total
+    bagages (somme du champ NOMBRE) coloree."""
+    groups = group_records_by_driver(records)
+    for first_name in sorted(groups.keys()):
+        group_records = groups[first_name]
+        newly_created = ensure_tab_exists(sheets_service, spreadsheet_id, first_name)
+        total = sum_nombre(group_records)
+        total_label = f"Total bagages semaine : {total}"
+        data_rows = [build_row(r) for r in group_records]
+        append_grouped_block(sheets_service, spreadsheet_id, first_name, HEADERS, week_label, data_rows, total_label)
+        if newly_created:
+            style_header_only(sheets_service, spreadsheet_id, first_name, num_cols=len(HEADERS))
+        print(f"[{first_name}] {len(group_records)} ligne(s) ajoutee(s) pour {week_label}.")
+
+
+def taxi_group_flow(sheets_service, spreadsheet_id, records, week_label):
+    """Un onglet par taxi, pour toute la saison (l'onglet general 'Résas
+    Taxis' cree par taxi_flow reste le premier onglet du document)."""
+    groups = group_records_by_taxi(records)
+    for taxi_name in sorted(groups.keys()):
+        group_records = groups[taxi_name]
+        newly_created = ensure_tab_exists(sheets_service, spreadsheet_id, taxi_name)
+        data_rows = [build_row(r) for r in group_records]
+        append_grouped_block(sheets_service, spreadsheet_id, taxi_name, HEADERS, week_label, data_rows, total_label=None)
+        if newly_created:
+            style_header_only(sheets_service, spreadsheet_id, taxi_name, num_cols=len(HEADERS))
+        print(f"[{taxi_name}] {len(group_records)} ligne(s) ajoutee(s) pour {week_label} (taxi).")
+
+
+def export_and_archive_pdf(drive_service, year_folder_id, year, week_label):
+    """Capture le site GitHub Pages en PDF et l'ajoute a la suite du PDF
+    cumulatif de l'annee (une page par semaine).
+
+    Le fichier PDF doit deja exister (cree manuellement une fois, comme les
+    2 Google Sheets) : le compte de service ne peut pas creer de nouveau
+    fichier binaire (PDF) sans quota de stockage propre. Il se contente
+    donc de recuperer le contenu existant, d'ajouter la nouvelle page a la
+    suite, et de reecrire le fichier (une modification de fichier existant
+    ne consomme pas de quota, contrairement a une creation)."""
+    from playwright.sync_api import sync_playwright
+    from pypdf import PdfReader, PdfWriter
+
+    pdf_folder_name = f"{year} - PDF"
+    pdf_folder_id = find_or_create_folder(drive_service, pdf_folder_name, year_folder_id)
+    pdf_file_name = f"{year} - PLANNING PDF.pdf"
+    folder_hint = f"ARCHIVES AMB/{year}/{pdf_folder_name}"
+
+    try:
+        file_id = find_file(drive_service, pdf_file_name, pdf_folder_id, "application/pdf", folder_hint)
+    except MissingFileError as exc:
+        print(str(exc))
+        return
+
+    # 1. Capturer la page actuelle du site en PDF
+    local_new_pdf = "/tmp/new_week.pdf"
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        page.goto(PLANNING_SITE_URL, wait_until="networkidle")
+        page.pdf(path=local_new_pdf, format="A4", print_background=True, landscape=True)
+        browser.close()
+
+    # 2. Recuperer le contenu existant et fusionner (ancien + nouvelle page)
+    existing_bytes = drive_service.files().get_media(fileId=file_id).execute()
+
+    writer = PdfWriter()
+    try:
+        existing_reader = PdfReader(io.BytesIO(existing_bytes))
+        for existing_page in existing_reader.pages:
+            writer.add_page(existing_page)
+    except Exception:
+        print(f"[{pdf_file_name}] Contenu existant illisible ou vide, on repart avec la nouvelle page seule.")
+
+    new_reader = PdfReader(local_new_pdf)
+    for new_page in new_reader.pages:
+        writer.add_page(new_page)
+
+    output_buffer = io.BytesIO()
+    writer.write(output_buffer)
+    output_buffer.seek(0)
+
+    media = MediaIoBaseUpload(output_buffer, mimetype="application/pdf", resumable=False)
+    drive_service.files().update(fileId=file_id, media_body=media).execute()
+    print(f"[{pdf_file_name}] page ajoutee pour {week_label}.")
+
+
 def main():
     today = date.today()
     if not is_in_active_window(today):
@@ -473,10 +763,12 @@ def main():
         print("Aucun enregistrement recupere depuis Airtable. Arret.")
         return
 
-    year, tab_title = compute_year_and_tab_title(records)
+    year, tab_title, monday = compute_year_and_tab_title(records)
     if year is None:
         print(f"Impossible de determiner l'annee ({DATE_FIELD} vide sur toutes les lignes). Arret.")
         sys.exit(1)
+
+    week_label = f"Semaine du {monday.strftime('%d/%m')}"
 
     drive_service, sheets_service = get_services()
 
@@ -500,6 +792,16 @@ def main():
 
     archive_flow(drive_service, sheets_service, archive_id, archive_name, tab_title, records)
     taxi_flow(drive_service, sheets_service, taxi_id, taxi_name, records)
+
+    # Onglets par chauffeur (document PLANNINGS ARCHIVE) et par taxi
+    # (document RESAS TAXIS), cumulatifs sur toute la saison.
+    driver_flow(sheets_service, archive_id, records, week_label)
+    taxi_group_flow(sheets_service, taxi_id, records, week_label)
+
+    # PDF cumulatif de la saison (une page par semaine). Non bloquant :
+    # si le fichier n'existe pas encore, on avertit mais on ne fait pas
+    # echouer le workflow (les Sheets ont deja ete ecrits avec succes).
+    export_and_archive_pdf(drive_service, year_folder_id, year, week_label)
 
 
 if __name__ == "__main__":
