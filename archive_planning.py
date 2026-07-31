@@ -22,6 +22,7 @@ import os
 import json
 import sys
 import io
+import re
 import unicodedata
 from collections import Counter
 from datetime import date, datetime, timedelta
@@ -67,22 +68,6 @@ COLUMNS = [
 
 HEADERS = [display for display, _ in COLUMNS]
 
-# Roster des chauffeurs (prenom -> nom), utilise pour detecter a qui
-# appartient une ligne dans les champs BAGAGES (PILOTE_NOM) / TRANSFERT
-# (RENFORTS_NOM). La detection se fait par recherche du prenom (insensible
-# a la casse) dans le texte de ces deux champs.
-DRIVERS_ROSTER = {
-    "Aurore": "VALANCE",
-    "Bertrand": "AUMOITTE",
-    "Charlie": "DESMONT",
-    "Damian": "TESAURO",
-    "Ivan": "VILA",
-    "Jean-Marc": "LONNE-PEYRET",
-    "Laurent": "GOUGAIN",
-    "Oscar": "TESAURO",
-    "Yan": "ANDRE",
-    "Serge": "DECLERCK",
-}
 
 # Colonne technique ajoutee uniquement dans le document RESAS TAXIS,
 # pour eviter les doublons d'une semaine sur l'autre
@@ -177,19 +162,31 @@ def build_row(record, extra_id_column=False):
     return row
 
 
+def _extract_names(value):
+    """Extrait un ou plusieurs noms depuis la valeur brute d'un champ
+    (gere le cas ou plusieurs personnes sont listees dans la meme cellule,
+    separees par une virgule, un '/', un '+' ou 'et').
+    '0' est ignore : ca signifie 'pas besoin de chauffeur', pas un nom."""
+    text = cell_to_str(value)
+    if not text:
+        return []
+    parts = re.split(r",|/|\+|\bet\b", text)
+    return [p.strip() for p in parts if p.strip() and p.strip() != "0"]
+
+
 def group_records_by_driver(records):
-    """Regroupe les lignes par chauffeur : une ligne appartient a un
-    chauffeur si son prenom (roster) apparait dans PILOTE_NOM (BAGAGES)
-    ou RENFORTS_NOM (TRANSFERT)."""
+    """Regroupe les lignes par chauffeur : le nom est pris directement
+    dans PILOTE_NOM (BAGAGES) et/ou RENFORTS_NOM (TRANSFERT), sans liste
+    fixe a maintenir a la main -> un nouveau chauffeur est detecte
+    automatiquement des qu'il apparait dans Airtable."""
     groups = {}
     for r in records:
         fields = r.get("fields", {})
-        text = (
-            cell_to_str(fields.get("PILOTE_NOM")) + " " + cell_to_str(fields.get("RENFORTS_NOM"))
-        ).lower()
-        for first_name in DRIVERS_ROSTER:
-            if first_name.lower() in text:
-                groups.setdefault(first_name, []).append(r)
+        names = set()
+        names.update(_extract_names(fields.get("PILOTE_NOM")))
+        names.update(_extract_names(fields.get("RENFORTS_NOM")))
+        for name in names:
+            groups.setdefault(name, []).append(r)
     return groups
 
 
