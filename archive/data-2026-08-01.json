@@ -649,7 +649,7 @@
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
-              "nbre": "13+1",
+              "nbre": "12+1",
               "arrivee": "REFUGE LES MOTTETS",
               "stockes": "–"
             },
@@ -1597,7 +1597,7 @@
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
-              "nbre": "13+1",
+              "nbre": "12+1",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
@@ -2010,7 +2010,7 @@
               "heure_rdv": "07H30",
               "depart": "CHALET DES CONTAMINES",
               "client": "PINEAU PIERRICK\n(- 06 23 44 36 49)",
-              "nbre": "13+1",
+              "nbre": "12+1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -2716,12 +2716,12 @@
           "lignes": [
             {
               "pilote": "Jean-Baptiste",
-              "renforts": "",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "14H15 SNCF MODANE\n14H30 OT AUSSOIS",
-              "details": "14H15 - 5 pax\nJ+1 REPOJU\n",
+              "details": "14H15: GARE MODANE > OT AUSSOIS (5 pax)\nJ+1 REPOJU\n",
               "heure_rdv": "",
               "depart": "RDV MODANE",
               "client": "SERMET THIERRY\n(- 06 61 59 31 01)",
@@ -2821,7 +2821,7 @@
             },
             {
               "pilote": "Jean-Baptiste",
-              "renforts": "Jean-Baptiste",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
