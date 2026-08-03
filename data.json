@@ -827,9 +827,9 @@
               "transfert": "–",
               "details": "14H40: GENEVE > HOTEL DES CAMPANULES (8pax) \n",
               "heure_rdv": "",
-              "depart": "GVA AEROPORT",
+              "depart": "AEROPORT GENEVE",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
-              "nbre": "8",
+              "nbre": "8+1",
               "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             }
@@ -4092,12 +4092,12 @@
           "lignes": [
             {
               "pilote": "Yann L.",
-              "renforts": "Yann L.",
+              "renforts": "Yann L., TAXI GAGNEUX",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Lac des Plagnes\n16H30 Lac de Montriond > HBG",
-              "details": "TRANSFERTS YANN x2 TOURS\n",
+              "details": "Transfert : YANN + ? pour Montriond\n",
               "heure_rdv": "",
               "depart": "LE FETO",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
