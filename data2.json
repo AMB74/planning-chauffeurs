@@ -81,6 +81,26 @@
       "date_complete": "SAMEDI 8 AOÛT 2026",
       "groupes": [
         {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "16H00",
+              "details": "16H00 : TRANSFERT + BG Gare SNCF Bourg St M. > HBG Tignes\nPAS TRANSFERT CHAPIEUX\n\n",
+              "heure_rdv": "",
+              "depart": "RDV GARE SNCF BOURG SAINT MAURICE",
+              "client": "SLUSZREK\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE TERRIL BLANC**",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -90,12 +110,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "FAGOT : 5 PAX\n",
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
               "nbre": "6+1",
-              "arrivee": "RDV PLANPRAZ",
+              "arrivee": "RDV PLANPRAZ, GITE FAGOT",
               "stockes": "–"
             },
             {
@@ -1153,9 +1173,9 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "9H30",
-              "details": "–",
+              "details": "!! Clé au bar de l'hotel Le Buet\nJ+2 CANTINE DE BARMAZ\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "VOITURE AEM",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
               "nbre": "8+1",
               "arrivee": "CABANE DU VIEUX EMOSSON",
@@ -1840,21 +1860,6 @@
               "nbre": "2",
               "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "VISHY\n",
-              "nbre": "2",
-              "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
             }
           ]
         },
@@ -1911,6 +1916,21 @@
         {
           "massif": "5. VANOISE",
           "lignes": [
+            {
+              "pilote": "Jean-Baptiste",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "14H15 SNCF MODANE\n14H30 OT AUSSOIS",
+              "details": "!! 2 PAX A LA GARE\nJ+1 REPOJU\n",
+              "heure_rdv": "",
+              "depart": "VOITURE AEM, RDV MODANE",
+              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
+              "nbre": "12+1",
+              "arrivee": "REFUGE DE PLAN SEC",
+              "stockes": "–"
+            },
             {
               "pilote": "",
               "renforts": "",
@@ -2014,66 +2034,6 @@
               "client": "PHILIBOIS\n",
               "nbre": "1",
               "arrivee": "REFUGE DE L'ORGERE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
-              "nbre": "11+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HAUTE MAURIENNE AMBULANCES -TAXI",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "12+1",
-              "arrivee": "REFUGE DE PLAN SEC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "VOITURE AEM",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "12+1",
-              "arrivee": "REFUGE DE PLAN SEC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "12+1",
-              "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
             }
           ]
@@ -2251,7 +2211,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 CANTINE DE BARMAZ\n",
               "heure_rdv": "",
               "depart": "CABANE DU VIEUX EMOSSON",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -2984,14 +2944,14 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "–",
+              "type": "MONTAGE /DEMONTAGE TENTES",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 3 TENTES\n",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "nbre": "11+1",
+              "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
             },
             {
@@ -3008,21 +2968,6 @@
               "nbre": "2",
               "arrivee": "HOTEL LE TERRIL BLANC**",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "MONTAGE /DEMONTAGE TENTES",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "!! 3 TENTES\n",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
-              "arrivee": "REFUGE PLAN MYA",
-              "stockes": "–"
             }
           ]
         },
@@ -3030,7 +2975,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3045,28 +2990,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE BELLECOMBE",
-              "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
-              "nbre": "11+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 GARE MODANE\n",
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -3389,7 +3319,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-2 VOITURE AEM\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALANFE",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -4114,17 +4044,17 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "MONTAGE /DEMONTAGE TENTES",
+              "transfert": "16H ST GUÉRIN > HBG",
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE PLAN MYA",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "nbre": "11+1",
+              "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             },
             {
@@ -4140,21 +4070,6 @@
               "client": "LEVESQUE\n",
               "nbre": "2",
               "arrivee": "REFUGE DU COL DE LA VANOISE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "MONTAGE /DEMONTAGE TENTES",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
-              "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             }
           ]
@@ -4178,8 +4093,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI REFUGE DES BARMETTES",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -4193,7 +4108,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4497,7 +4412,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 SALVAGNY\n",
               "heure_rdv": "",
               "depart": "CANTINE DE BARMAZ",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -5141,7 +5056,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE ROSUEL",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DU LAISONNAY",
               "stockes": "–"
             },
@@ -5166,7 +5081,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -5196,7 +5111,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5266,6 +5181,21 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
+              "pilote": "0. AUCUN",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "08H30 HBG > Valgrisenche\n\n08H30",
+              "details": "\n",
+              "heure_rdv": "",
+              "depart": "HOTEL GALISIA",
+              "client": "GRAIN\n",
+              "nbre": "2",
+              "arrivee": "CHALET DE L'EPEE",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -5322,21 +5252,6 @@
               "depart": "REFUGE BEZZI",
               "client": "ALTITUDE ENCADREMENT\n(- )",
               "nbre": "–",
-              "arrivee": "CHALET DE L'EPEE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "08H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GRAIN\n",
-              "nbre": "2",
               "arrivee": "CHALET DE L'EPEE",
               "stockes": "–"
             }
@@ -5475,7 +5390,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 CANTINE DE BARMAZ\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA VOGEALLE",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -5945,7 +5860,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6088,13 +6003,13 @@
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE\n\nMONTAGE /DEMONTAGE TENTES",
+              "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DU GRAND BEC",
               "stockes": "–"
             },
@@ -6119,7 +6034,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -6164,13 +6079,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 BONNEVAL\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DU LAC",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -6378,7 +6293,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 VOITURE AEM\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -6947,8 +6862,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -6973,11 +6888,11 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 LAISONNAY\n",
               "heure_rdv": "",
               "depart": "REFUGE DU GRAND BEC",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
-              "nbre": "6+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DU REPOJU",
               "stockes": "–"
             }
@@ -7002,8 +6917,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7032,13 +6947,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI HAUTE MAURIENNE",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Hôtel Glacier des Evettes vers Aussois puis Modane",
-              "details": "–",
+              "details": "J-1 PLAN DU LAC\n",
               "heure_rdv": "",
               "depart": "REFUGE DU FOND DES FOURS",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -7059,36 +6974,6 @@
               "client": "GELY\n",
               "nbre": "4",
               "arrivee": "REFUGE DU REPOJU",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
-              "nbre": "11+1",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HAUTE MAURIENNE AMBULANCES -TAXI",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "12+1",
-              "arrivee": "HAUTE MAURIENNE AMBULANCES -TAXI",
               "stockes": "–"
             },
             {
