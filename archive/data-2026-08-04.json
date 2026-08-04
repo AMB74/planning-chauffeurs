@@ -4072,7 +4072,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Yann L., Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -6308,7 +6308,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "AEM, Yann L.",
+              "renforts": "Yann L.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
