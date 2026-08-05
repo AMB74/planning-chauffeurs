@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 8 AOÛT",
     "numero_semaine": "Semaine 32",
-    "genere_le": "04/08/2026"
+    "genere_le": "05/08/2026"
   },
   "chauffeurs": [
     {
@@ -196,21 +196,6 @@
               "client": "BACHAND\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "LA CITE MONTJOIE",
-              "client": "MCNULTY\n",
-              "nbre": "1",
-              "arrivee": "HOTEL LE CHAMONIX",
               "stockes": "–"
             },
             {
@@ -2172,6 +2157,26 @@
               "stockes": "–"
             }
           ]
+        },
+        {
+          "massif": "11. MONT-ROSE",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV STALDEN",
+              "client": "TAINTURIER ULRICK\n",
+              "nbre": "6+1",
+              "arrivee": "PENSION WALDEGG",
+              "stockes": "–"
+            }
+          ]
         }
       ]
     },
@@ -3975,21 +3980,6 @@
               "client": "LABRECQUE\n",
               "nbre": "2",
               "arrivee": "AUBERGE DES GLACIERS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "NIQUET MARION\n(- 06 37 46 26 31)",
-              "nbre": "9+1",
-              "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
             }
           ]
