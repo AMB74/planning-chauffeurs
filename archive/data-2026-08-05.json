@@ -6318,7 +6318,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "!! Transferts\nJ-1 CHARDONNIERE\n",
+              "details": "!! A déposer samedi\nJ-1 CHARDONNIERE\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA VOGEALLE",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
@@ -6363,7 +6363,7 @@
             },
             {
               "pilote": "Oscar",
-              "renforts": "",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7375,13 +7375,13 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "Serge",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 PLANPRAZ\n",
+              "details": "A DEPOSER SAMEDI\nJ+1 PLANPRAZ\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
@@ -7605,7 +7605,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7620,7 +7620,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7635,7 +7635,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7650,7 +7650,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7665,7 +7665,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Oscar",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7716,7 +7716,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! 1 pax à transférer avec les BG (001 514 9137681)\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "GASCON\n",
@@ -8380,7 +8380,7 @@
           "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
           "lignes": [
             {
-              "pilote": "Jean-Marc",
+              "pilote": "Jean-Marc, Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
