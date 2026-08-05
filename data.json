@@ -5764,6 +5764,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "Charlie",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! BG oublié hier GROSSE VALISE à récupérer à l'HOTEL JUMEAUX et déposer AU PLAN B FAYET\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LES JUMEAUX",
+              "client": "TREKKER ANNE\n",
+              "nbre": "1+1",
+              "arrivee": "PLAN B FAYET",
+              "stockes": "–"
+            },
+            {
               "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
