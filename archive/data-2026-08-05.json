@@ -6783,7 +6783,7 @@
             },
             {
               "pilote": "Oscar",
-              "renforts": "",
+              "renforts": "Oscar",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
