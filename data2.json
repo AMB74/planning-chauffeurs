@@ -969,7 +969,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE L'ORGERE",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "REFUGE DE PLAN SEC",
               "stockes": "–"
             }
@@ -1957,7 +1957,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE PLAN SEC",
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "OT TERMIGNON",
               "stockes": "–"
             },
@@ -2102,8 +2102,8 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI ZURBRIGGEN",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
