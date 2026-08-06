@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 8 AOÛT",
     "numero_semaine": "Semaine 32",
-    "genere_le": "05/08/2026"
+    "genere_le": "06/08/2026"
   },
   "chauffeurs": [
     {
@@ -158,21 +158,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "07H30",
-              "depart": "GITE ET CAMPING DU PONTET",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -254,7 +239,7 @@
               "heure_rdv": "08H00",
               "depart": "HOTEL LA GELINOTTE",
               "client": "COQUILLEAU MARIE\n(- 06 32 05 53 25)",
-              "nbre": "12+1",
+              "nbre": "11+1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -1089,6 +1074,26 @@
           ]
         },
         {
+          "massif": "2. GTA 1",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "FOULONNEAU\n",
+              "nbre": "3",
+              "arrivee": "REFUGE DU FOLLY",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
@@ -1274,7 +1279,7 @@
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
               "nbre": "12+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
+              "stockes": "1"
             },
             {
               "pilote": "",
@@ -1514,21 +1519,6 @@
               "client": "OURS JEAN-CLAUDE\n(- 07 82 82 28 25)",
               "nbre": "14+1",
               "arrivee": "AUBERGE MONT BLANC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "10H00",
-              "details": "–",
-              "heure_rdv": "8H PRARION CAISSES + TRANSFERT AEM",
-              "depart": "RDV MONTROC",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "CAMPING COMMUNE DE TRIENT",
               "stockes": "–"
             },
             {
@@ -2173,21 +2163,6 @@
               "pilote": "",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "FOULONNEAU\n",
-              "nbre": "3",
-              "arrivee": "REFUGE DU FOLLY",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
@@ -2674,21 +2649,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CAMPING COMMUNE DE TRIENT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "RELAIS ARPETTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -3047,81 +3007,6 @@
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
               "nbre": "12+1",
               "arrivee": "REFUGE BENEVOLO",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DEFFEYES",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "REFUGE DE L'ARCHEBOC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "9H45 GARE CHAM > 11H30 Pont\n11H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PARKING DE PONT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL PERRET",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "REFUGE DE L'ARCHEBOC",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "14H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL PERRET",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL PERRET",
               "stockes": "–"
             }
           ]
@@ -3672,21 +3557,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RELAIS ARPETTE",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "CAMPING DES GLACIERS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -4078,21 +3948,6 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE\nNUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE DE L'ARCHEBOC",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "REFUGE BEZZI",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
@@ -4135,21 +3990,6 @@
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
               "nbre": "11+1",
               "arrivee": "REFUGE BEZZI",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL PERRET",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL PERRET",
               "stockes": "–"
             }
           ]
@@ -4660,21 +4500,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CAMPING DES GLACIERS",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "CAMPING LA SORGENTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -5100,21 +4925,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL PERRET",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL GRANTA PAREY***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
               "details": "J-1 BENEVOLO\n",
@@ -5137,21 +4947,6 @@
               "depart": "REFUGE BEZZI",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
               "nbre": "12+1",
-              "arrivee": "CHALET DE L'EPEE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE BEZZI",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
               "arrivee": "CHALET DE L'EPEE",
               "stockes": "–"
             }
@@ -5718,21 +5513,6 @@
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "+ REMORQUE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CAMPING LA SORGENTE",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "GITE ET CAMPING DU PONTET",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
               "details": "–",
@@ -5950,7 +5730,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 REPOJU\n",
+              "details": "!! TRANSFERT 8H00 HBG > NOTRE DAME DES NEIGE / LA NOVA\nJ+1 REPOJU\n",
               "heure_rdv": "",
               "depart": "REFUGE DU LAISONNAY",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
@@ -6081,36 +5861,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GRANTA PAREY***",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL GRANTA PAREY***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET DE L'EPEE",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "HOTEL PARAMONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -6121,21 +5871,6 @@
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
               "nbre": "12+1",
               "arrivee": "HOTEL GALISIA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "REFUGE DEFFEYES",
               "stockes": "–"
             }
           ]
@@ -6994,21 +6729,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "8H30 HBG > VAL DE FOND",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL PARAMONT",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
-              "arrivee": "REFUGE DEFFEYES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -7018,21 +6738,6 @@
               "depart": "HOTEL GALISIA",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
               "nbre": "12+1",
-              "arrivee": "HOSTELLERIE DU PARADIS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GRANTA PAREY***",
-              "client": "ALTITUDE ENCADREMENT\n(- )",
-              "nbre": "–",
               "arrivee": "HOSTELLERIE DU PARADIS",
               "stockes": "–"
             }
