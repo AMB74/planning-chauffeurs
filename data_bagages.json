@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "06/08/2026 13:11"
+    "genere_le": "07/08/2026 08:12"
   },
   "lignes": [
     {
@@ -17,39 +17,13 @@
       "date_fin_aff": "Dim 09/08"
     },
     {
-      "jour_semaine": "03-08 - LUNDI",
-      "client": "DUBOIS\n",
-      "chauffeur_debut": "Laurent",
-      "chauffeur_fin": "–",
-      "nbre": "3",
-      "depart": "RDV HOTEL",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-03",
-      "date_fin": "2026-08-09",
-      "date_debut_aff": "Lun 03/08",
-      "date_fin_aff": "Dim 09/08"
-    },
-    {
-      "jour_semaine": "04-08 - MARDI",
+      "jour_semaine": "10-08 - LUNDI",
       "client": "COLES\n",
-      "chauffeur_debut": "Laurent",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "–",
       "nbre": "1",
       "depart": "RDV PLANPRAZ",
       "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-04",
-      "date_fin": "2026-08-10",
-      "date_debut_aff": "Mar 04/08",
-      "date_fin_aff": "Lun 10/08"
-    },
-    {
-      "jour_semaine": "04-08 - MARDI",
-      "client": "KOUKOUVITAKIS\n",
-      "chauffeur_debut": "Bertrand",
-      "chauffeur_fin": "–",
-      "nbre": "6",
-      "depart": "RDV BEAUFORT",
-      "arrivee": "RDV HOTEL",
       "date_debut": "2026-08-04",
       "date_fin": "2026-08-10",
       "date_debut_aff": "Mar 04/08",
