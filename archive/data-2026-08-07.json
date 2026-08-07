@@ -1778,7 +1778,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 pax à transférer\n",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "CORRUBLE\n",
@@ -3459,7 +3459,7 @@
             },
             {
               "pilote": "Serge",
-              "renforts": "Charlie, Yan A.",
+              "renforts": "Charlie, TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
