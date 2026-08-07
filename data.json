@@ -1231,7 +1231,7 @@
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "MONTAGE /DEMONTAGE TENTES",
+              "type": "–",
               "transfert": "–",
               "details": "!! BG à déposer à l'HOTEL la VANOISE (Peisey Nancroix)\n!! 16H30 : TRANSFERT Chapelle St Guérin > HOTEL LA VANOISE (Peisey Nacroix) // 2 pax\n",
               "heure_rdv": "",
@@ -1793,7 +1793,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer les affaires de Mme Tandra à la réception et les amener à Chamonix (agence)\n",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "JANTA\n",
@@ -2326,7 +2326,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 16 BAGAGES\n",
+              "details": "!! Récupérer les PN d'Adeline aux Gaillands\n!! 16 BAGAGES\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
@@ -3113,7 +3113,7 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "AEM",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3133,7 +3133,7 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3153,13 +3153,13 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "!! BG à récupérer à l'HOTEL la VANOISE (Peisey Nancroix)\n!! 6H00 : TRANSFERT HOTEL LA VANOISE > ROSUEL  // 2 pax \nJ+3 : BG à déposer à l'hôtel du Commerce (MODANE)\n",
+              "details": "!! 6H00 : TRANSFERT +BG HOTEL LA VANOISE (Peisey Nancroix) > ROSUEL  // 2 pax \nJ+3 : BG à déposer à l'hôtel du Commerce (MODANE)\n",
               "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "JEAN\n",
@@ -3173,7 +3173,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3188,7 +3188,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3203,7 +3203,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3218,7 +3218,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3233,7 +3233,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3249,12 +3249,12 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "!! 8H30 : TRANSFERT HBG > PARC MERLET // 10 pax\n",
+              "details": "!! 8H30 : TRANSFERT HBG > PARC MERLET // 10 pax 2 aller retour\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "NIQUET MARION\n(- 06 37 46 26 31)",
@@ -3263,7 +3263,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3278,7 +3278,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3293,7 +3293,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3308,7 +3308,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3323,7 +3323,7 @@
               "stockes": "1"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3338,7 +3338,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3353,7 +3353,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3368,8 +3368,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Serge, TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
