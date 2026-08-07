@@ -2048,7 +2048,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "!! BG A déposer avant 10H00 \nHôtel GRAND MONT (Beaufort)\n",
+              "details": "!! BG à récupérer et à mettre ds la remorque \nJ+2: Hôtel GRAND MONT (Beaufort)\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DE LA LAI",
               "client": "KOUKOUVITAKIS\n",
@@ -2986,7 +2986,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "FAIT LAURENT samedi ?\nJ-1 : REFUGE PLAN DE LA LAI\nJ+1 : Hôtel GRAND MONT (Beaufort)\n",
+              "details": " LAURENT lundi \nJ-1 : REFUGE PLAN DE LA LAI\nJ+1 : Hôtel GRAND MONT (Beaufort)\n",
               "heure_rdv": "",
               "depart": "REFUGE LA ROSELETTE",
               "client": "KOUKOUVITAKIS\n",
@@ -3133,13 +3133,13 @@
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 CANTINE DE BARMAZ\n",
+              "details": "!! A FAIRE MARDI \nJ+1 CANTINE DE BARMAZ\n",
               "heure_rdv": "",
               "depart": "CABANE DU VIEUX EMOSSON",
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
@@ -3173,7 +3173,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3188,7 +3188,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3203,7 +3203,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3218,7 +3218,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3233,7 +3233,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3263,7 +3263,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3278,7 +3278,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3293,7 +3293,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3308,7 +3308,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3323,7 +3323,7 @@
               "stockes": "1"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3383,7 +3383,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3398,7 +3398,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3413,7 +3413,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3428,7 +3428,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3443,7 +3443,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3458,8 +3458,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Charlie, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3823,13 +3823,13 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "MONTAGE /DEMONTAGE TENTES",
               "transfert": "–",
-              "details": "!! 3 TENTES\n",
+              "details": "!! 4 TENTES A MONTER\n",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
@@ -3908,13 +3908,13 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "!! BG à déposer à l'HOTEL GRAND MONT (Beaufort)\nJ-2 : REFUGE PLAN DE LA LAI\n",
+              "details": "!! BG à récupérer dans la remorque et à déposer à l'HOTEL GRAND MONT (Beaufort)\nJ-2 : REFUGE PLAN DE LA LAI\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA CROIX DE PIERRE",
               "client": "KOUKOUVITAKIS\n",
@@ -4767,7 +4767,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "MONTAGE /DEMONTAGE TENTES",
               "transfert": "16H ST GUÉRIN > HBG",
-              "details": "–",
+              "details": "!! 4 TENTES\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN MYA",
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
@@ -6518,7 +6518,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 17H00 : TRANSFERT ND Gorge > Centre des Houches\n",
               "heure_rdv": "",
               "depart": "CAMPING LES CHAPIEUX",
               "client": "TREKKER Jacques ANDRE\n +33 06 61 16 09 82\n",
