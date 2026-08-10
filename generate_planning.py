@@ -96,7 +96,6 @@ def main():
     records = fetch_records()
 
     now = datetime.now()
-    # Trouver le samedi de la semaine des données Airtable
     from datetime import timedelta
     dates_prestation = []
     for rec in records:
@@ -117,7 +116,6 @@ def main():
     numero_semaine = f"Semaine {now.isocalendar()[1]}"
     genere_le      = now.strftime("%d/%m/%Y")
 
-    # Trier les enregistrements comme dans Airtable
     def sort_key(rec):
         f = rec.get("fields", {})
         date = get_text(f, "DATE PRESTATION") or "9999"
@@ -148,25 +146,25 @@ def main():
             massif = "Autres"
 
         # ── FILTRES identiques à Airtable ──
-
-        # Inclusion : ARRIVÉE non vide OU TYPE PRODUIT contient "SANS TRANSPORT"
         arrivee = get_text(f, "ARRIVÉE")
         type_produit = get_text(f, "TYPE PRODUIT")
         if not arrivee and "SANS TRANSPORT" not in type_produit.upper():
             continue
 
-        # Exclusion : CLIENT/AEM contient ANNULÉ ou ALTITUDE HAUTE MONTAGNE
         client = get_text(f, "CLIENT /AEM")
         if any(x in client.upper() for x in ("ANNULÉ", "ANNULE", "ALTITUDE HAUTE MONTAGNE")):
             continue
 
-        # Exclusion : MASSIFS_CALC contient ARAVIS, VERCORS, DOLOMITES
         if any(x in massif.upper() for x in ("DOLOMITES", "ARAVIS", "VERCORS")):
             continue
 
-        # Exclusion : SÉJOUR contient GTA 3, GTA 4, RANDOS ET TRAINS, AU COEUR DES FIZ, ANNULE, DOLOMITES
         sejour = get_text(f, "SÉJOUR")
-        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
+        sejour_upper = sejour.upper()
+        import re
+        # Exclure si contient GTA 3 ou GTA 4 mais PAS GTA 1 ni GTA 2
+        if re.search(r'\bGTA [34]\b', sejour_upper) and not re.search(r'\bGTA [12]\b', sejour_upper):
+            continue
+        if any(x in sejour_upper for x in ("RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
             continue
 
         ligne = {
@@ -192,13 +190,10 @@ def main():
         dates[date_prestation][massif].append(ligne)
 
     def sort_massif(m):
-        # Trier par le numéro en début de nom (ex: "3. MONT-BLANC" → 3)
-        # Les noms sans numéro vont à la fin
         import re
         match = re.match(r'^(\d+)[\.\s]', m)
         if match:
             return int(match.group(1))
-        # Noms spéciaux sans numéro en premier
         if "RDV" in m.upper() or "TRANSFERTS" in m.upper():
             return -2
         if "BAGAGES" in m.upper():
@@ -224,7 +219,6 @@ def main():
                 label = date_str
                 date_complete = date_str
 
-        # Groupes de massifs dans l'ordre, avec toutes les lignes
         groupes = []
         for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
             groupes.append({
