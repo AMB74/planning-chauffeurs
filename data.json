@@ -2863,6 +2863,21 @@
               "nbre": "2",
               "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
+            },
+            {
+              "pilote": "Ivan",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "!! Ivan récupère les BG et les dépose au Base Camp Lodge\nJ+2 : HOTEL LE COMMERCE\n\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LE TERRIL BLANC**",
+              "client": "SLUSZAREK\n",
+              "nbre": "2",
+              "arrivee": "REFUGE DU COL DE LA VANOISE",
+              "stockes": "2"
             }
           ]
         },
@@ -3851,6 +3866,21 @@
               "nbre": "2",
               "arrivee": "HOTEL LE TERRIL BLANC**",
               "stockes": "–"
+            },
+            {
+              "pilote": "Jean-Baptiste",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "!! récupérer les BG au Base Camp lodge >HOTEL LE COMMERCE (J+1)\nJ-1 : HOTEL LE TERRIL BLANC\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DU COL DE LA VANOISE",
+              "client": "SLUSZAREK\n",
+              "nbre": "2",
+              "arrivee": "REFUGE DU ROC",
+              "stockes": "–"
             }
           ]
         },
@@ -4758,6 +4788,21 @@
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
               "nbre": "11+1",
               "arrivee": "REFUGE DE ROSUEL",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Jean-Baptiste",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "!! récupérer les BG au Base Camp lodge >HOTEL LE COMMERCE \nJ-2 : HOTEL LE TERRIL BLANC\n",
+              "heure_rdv": "",
+              "depart": "REFUGE DU ROC",
+              "client": "SLUSZAREK\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE COMMERCE ***",
               "stockes": "–"
             },
             {
