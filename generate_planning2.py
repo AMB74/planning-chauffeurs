@@ -17,12 +17,10 @@ CHAUFFEURS = [
     {"prenom": "Charlie",   "nom": "DESMONT",      "vehicule": "MASTER",        "plaque": "GQ-609-ZB"},
     {"prenom": "Damian",    "nom": "TESAURO",      "vehicule": "FIAT FULLBACK", "plaque": "EP-096-RC"},
     {"prenom": "Ivan",      "nom": "VILA",         "vehicule": "MASTER",        "plaque": "GT-479-YM"},
-    {"prenom": "Jean-Baptiste", "nom": "MILLET", "vehicule": "TRAFIC",        "plaque": "GN-881-PK"},
     {"prenom": "Jean-Marc", "nom": "LONNE-PEYRET", "vehicule": "TRAFIC",        "plaque": "HB-471-JL"},
     {"prenom": "Laurent",   "nom": "GOUGAIN",      "vehicule": "MOVANO",        "plaque": "GD-485-GB"},
-    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "TRAFIC",        "plaque": "FN-020-TV"},
+    {"prenom": "Oscar",     "nom": "TESAURO",      "vehicule": "LOCATION",      "plaque": None},
     {"prenom": "Serge",     "nom": "DECLERCK",     "vehicule": "TRAFIC",        "plaque": "HK-583-DV"},
-    {"prenom": "Yan",       "nom": "ANDRE",        "vehicule": "TRAFIC",        "plaque": "Location"},
 ]
 
 JOURS_FR = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
@@ -84,18 +82,12 @@ def fetch_records():
     print(f"{len(records)} enregistrements récupérés au total ({page} page(s)).")
     return records
 
-def format_date_fr(date_str):
-    try:
-        d = datetime.strptime(date_str, "%Y-%m-%d")
-        return f"{JOURS_FR[d.weekday()]} {d.day} {MOIS_FR[d.month-1]}".upper()
-    except:
-        return date_str
-
 def main():
     print(f"Récupération de '{TABLE_NAME}' vue '{VIEW_NAME}'...")
     records = fetch_records()
 
     now = datetime.now()
+    # Trouver le samedi de la semaine suivante
     # Trouver le samedi de la semaine des données Airtable
     from datetime import timedelta
     dates_prestation = []
@@ -111,10 +103,10 @@ def main():
         days_until_saturday = (5 - premiere_date.weekday()) % 7
         saturday = premiere_date + timedelta(days=days_until_saturday)
     else:
-        days_until_saturday = (5 - now.weekday()) % 7
+        days_until_saturday = (5 - now.weekday()) % 7 + 7
         saturday = now + timedelta(days=days_until_saturday)
     date_affichee  = f"SEMAINE du SAMEDI {saturday.day} {MOIS_FR[saturday.month-1]}"
-    numero_semaine = f"Semaine {now.isocalendar()[1]}"
+    numero_semaine = f"Semaine {(now.isocalendar()[1] % 52) + 1}"
     genere_le      = now.strftime("%d/%m/%Y")
 
     # Trier les enregistrements comme dans Airtable
@@ -166,7 +158,12 @@ def main():
 
         # Exclusion : SÉJOUR contient GTA 3, GTA 4, RANDOS ET TRAINS, AU COEUR DES FIZ, ANNULE, DOLOMITES
         sejour = get_text(f, "SÉJOUR")
-        if any(x in sejour.upper() for x in ("GTA 3", "GTA 4", "RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
+        sejour_upper = sejour.upper()
+        import re
+        # Exclure si contient GTA 3 ou GTA 4 mais PAS GTA 1 ni GTA 2
+        if re.search(r'\bGTA [34]\b', sejour_upper) and not re.search(r'\bGTA [12]\b', sejour_upper):
+            continue
+        if any(x in sejour_upper for x in ("RANDOS ET TRAINS", "AU COEUR DES FIZ", "ANNULE", "DOLOMITES", "PANORAMA VALAIS")):
             continue
 
         ligne = {
@@ -175,7 +172,7 @@ def main():
             "alerte":    get_text(f, "!!"),
             "type_transfert": get_text(f, "TYPE TRANSFERT") or "–",
             "type":      get_text(f, "TYPE") or "–",
-            "transfert": get_text(f, "TRANSFERTS") or "–",
+            "transfert": get_text(f, "TRANSFERT") or "–",
             "details":   get_text(f, "DÉTAILS") or "–",
             "heure_rdv": get_text(f, "HEURE RDV"),
             "depart":    get_text(f, "HÉBERGEMENT (from DÉPART)") or "–",
@@ -192,14 +189,11 @@ def main():
         dates[date_prestation][massif].append(ligne)
 
     def sort_massif(m):
-        # Trier par le numéro en début de nom (ex: "3. MONT-BLANC" → 3)
-        # Les noms sans numéro vont à la fin
         import re
         match = re.match(r'^(\d+)[\.\s]', m)
         if match:
             return int(match.group(1))
-        # Noms spéciaux sans numéro en premier
-        if "RDV" in m.upper() or "TRANSFERTS" in m.upper():
+        if "RDV" in m.upper() or "TRANSFERT" in m.upper():
             return -2
         if "BAGAGES" in m.upper():
             return -1
@@ -224,7 +218,6 @@ def main():
                 label = date_str
                 date_complete = date_str
 
-        # Groupes de massifs dans l'ordre, avec toutes les lignes
         groupes = []
         for massif, lignes in sorted(massifs.items(), key=lambda x: sort_massif(x[0])):
             groupes.append({
@@ -255,7 +248,7 @@ def main():
     with open("data2.json", "w", encoding="utf-8") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=2)
 
-    print(f"data.json généré : {len(sections)} sections, {len(records)} lignes total.")
+    print(f"data2.json généré : {len(sections)} sections, {len(records)} lignes total.")
 
 if __name__ == "__main__":
     main()
