@@ -1,6 +1,6 @@
 {
   "meta": {
-    "genere_le": "10/08/2026 17:12"
+    "genere_le": "11/08/2026 14:58"
   },
   "lignes": [
     {
@@ -28,6 +28,19 @@
       "date_fin": "2026-08-10",
       "date_debut_aff": "Mar 04/08",
       "date_fin_aff": "Lun 10/08"
+    },
+    {
+      "jour_semaine": "17-08 - LUNDI",
+      "client": "WAY\n",
+      "chauffeur_debut": "–",
+      "chauffeur_fin": "–",
+      "nbre": "2",
+      "depart": "RDV FLÉGÈRE",
+      "arrivee": "RDV PRARION",
+      "date_debut": "2026-08-17",
+      "date_fin": "2026-08-23",
+      "date_debut_aff": "Lun 17/08",
+      "date_fin_aff": "Dim 23/08"
     }
   ]
 }
