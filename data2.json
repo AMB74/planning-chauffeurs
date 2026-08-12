@@ -209,21 +209,6 @@
               "type": "–",
               "transfert": "–",
               "details": "–",
-              "heure_rdv": "",
-              "depart": "LA CITE MONTJOIE",
-              "client": "TERRIER\n",
-              "nbre": "2",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
               "heure_rdv": "08H00",
               "depart": "LA CITE MONTJOIE",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
@@ -916,13 +901,13 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer les BG à l'HOTEL CONTINENTAL (65 rue Nationale, 74500 Évian-les-Bains)  \nJ+1 : GITE AU GAI SOLEIL\n",
               "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "WIDMANN\n",
               "nbre": "4",
               "arrivee": "LA FERME DU NOYER",
-              "stockes": "{'error': '#ERROR!'}"
+              "stockes": "–"
             }
           ]
         },
@@ -1071,7 +1056,7 @@
               "type_transfert": "–",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "5H50\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
@@ -1086,7 +1071,7 @@
               "type_transfert": "–",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "9H30\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
@@ -1101,7 +1086,7 @@
               "type_transfert": "–",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "9H30\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
@@ -1711,7 +1696,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "Transfert Beaufort > Arêches\nJ+1 ECONDU\n",
+              "details": "8H30 Transfert Beaufort > Arêches\nJ+1 ECONDU\n",
               "heure_rdv": "",
               "depart": "RDV BEAUFORT",
               "client": "TAINTURIER ULRICK\n(- 07 69 11 05 82)",
@@ -1829,7 +1814,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : TELEPHERIQUE THOLLON\n",
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "WIDMANN\n",
@@ -1861,11 +1846,11 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "COULAUD\n",
-              "nbre": "2",
-              "arrivee": "LA FERME DU NOYER",
-              "stockes": "2"
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "FOURCADE\n",
+              "nbre": "3",
+              "arrivee": "AUBERGE DE SALVAGNY",
+              "stockes": "–"
             },
             {
               "pilote": "",
@@ -1874,13 +1859,13 @@
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récupérer 2 BG à stocker à l'HOTEL CONTINENTAL (Evian) > les stocker au Prarion\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "FOURCADE\n",
-              "nbre": "3",
-              "arrivee": "AUBERGE DE SALVAGNY",
-              "stockes": "–"
+              "depart": "HOTEL EVIAN",
+              "client": "COULAUD\n",
+              "nbre": "2",
+              "arrivee": "PRARION LES HOUCHES",
+              "stockes": "2"
             }
           ]
         },
@@ -2062,6 +2047,21 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL DE L'ARVE",
+              "client": "THOUVENOT\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE DAHU**",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL DE L'ARVE",
               "client": "WEAVER\n",
               "nbre": "4",
               "arrivee": "HOTEL LE DAHU**",
@@ -2200,6 +2200,21 @@
               "client": "CHERVET PATRICK\n(04 50 93 83 65 - 06 25 54 02 23)",
               "nbre": "13+1",
               "arrivee": "HOTEL SPLENDIDE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "RDV MONTROC",
+              "client": "GRAVEL\n",
+              "nbre": "2",
+              "arrivee": "LA GRANDE OURSE",
               "stockes": "–"
             },
             {
@@ -2591,36 +2606,6 @@
               "nbre": "7+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "THOUVENOT\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE DAHU**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV HOTEL",
-              "client": "GRAVEL\n",
-              "nbre": "2",
-              "arrivee": "LA GRANDE OURSE",
-              "stockes": "–"
             }
           ]
         },
@@ -2883,21 +2868,6 @@
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
               "nbre": "8+1",
               "arrivee": "REFUGE DE CHARDONNIERE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "WIDMANN\n",
-              "nbre": "4",
-              "arrivee": "HOTEL LE CONCORDE**",
               "stockes": "–"
             }
           ]
@@ -3485,6 +3455,21 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE ELENA",
+              "client": "WATSON\n",
+              "nbre": "11",
+              "arrivee": "CAMPING AIGUILLE NOIRE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE ELENA",
               "client": "FERRAND\n",
               "nbre": "3",
               "arrivee": "REFUGE MONTE BIANCO",
@@ -3587,7 +3572,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\\- RDV 7:45 Taxi Jay retour aux chapieux ou la Raja à reconfirmer la veille\n\n\\- RDV AMB 16:00 Notre Dame de la Gorge >> transfert au Houches \n",
+              "details": "!! 7H45 : HBG >Les Chapieux ou la Raja (à reconfirmer la veille)\n!! 16H00 : Notre Dame de la Gorge >> transfert au Houches \n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
@@ -3623,21 +3608,6 @@
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
               "nbre": "12+1",
               "arrivee": "HOTEL ASTORIA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "WAY\n",
-              "nbre": "2",
-              "arrivee": "HOTEL DU GLACIER",
               "stockes": "–"
             }
           ]
@@ -3886,21 +3856,6 @@
               "client": "WIDMANN\n",
               "nbre": "4",
               "arrivee": "REFUGE DU FOLLY",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "COULAUD\n",
-              "nbre": "2",
-              "arrivee": "REFUGE DE CHARDONNIERE",
               "stockes": "–"
             },
             {
@@ -4450,6 +4405,21 @@
             },
             {
               "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CAMPING AIGUILLE NOIRE",
+              "client": "WATSON\n",
+              "nbre": "11",
+              "arrivee": "REFUGE LES MOTTETS",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -4525,6 +4495,21 @@
             },
             {
               "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE MONTE BIANCO",
+              "client": "POMPER\n",
+              "nbre": "2",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4585,36 +4570,6 @@
             },
             {
               "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ABRUNHOSA\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE LE RENDEZ-VOUS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "USSE\n",
-              "nbre": "3",
-              "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
               "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -4627,20 +4582,25 @@
               "nbre": "4",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
-            },
+            }
+          ]
+        },
+        {
+          "massif": "4. GTA 2",
+          "lignes": [
             {
               "pilote": "",
               "renforts": "TAXI JAY",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "–",
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "CHALET DU BERGER, REFUGE MONTE BIANCO",
-              "client": "POMPER\n",
+              "depart": "CHALET DU BERGER",
+              "client": "JEORGER\n",
               "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
+              "arrivee": "LE PETIT REFUGE - ROSUEL",
               "stockes": "–"
             }
           ]
@@ -4788,9 +4748,9 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "8H15 CHAM > VISAILLE\nJ+1 HOTEL PERRET\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "ALTITUDE TRANSPORT, RDV GARE CHAMONIX",
               "client": "CONNOR\n",
               "nbre": "2",
               "arrivee": "AUBERGE PETIT SAINT BERNARD",
@@ -5534,6 +5494,26 @@
           ]
         },
         {
+          "massif": "4. GTA 2",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "J+2 : HOTEL PEPE GUST\n",
+              "heure_rdv": "",
+              "depart": "LE PETIT REFUGE - ROSUEL",
+              "client": "JEORGER\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE TERRIL BLANC**",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "5. VANOISE",
           "lignes": [
             {
@@ -5661,7 +5641,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 \n",
               "heure_rdv": "",
               "depart": "AUBERGE PETIT SAINT BERNARD",
               "client": "CONNOR\n",
@@ -5716,7 +5696,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1: HOTEL LES CAMPANULES\n",
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "WIDMANN\n",
@@ -5737,21 +5717,6 @@
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
               "nbre": "8+1",
               "arrivee": "REFUGE MOEDE ANTERNE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "COULAUD\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
             }
           ]
@@ -6386,7 +6351,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1  HOTEL PEPE GUST\nJ-1: LE PETIT REFUGE\n",
               "heure_rdv": "",
               "depart": "HOTEL LE TERRIL BLANC**",
               "client": "JEORGER\n",
@@ -6470,6 +6435,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "0. AUCUN",
+              "renforts": "Damian",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "recky9tgd2wxBtd9u",
+              "details": "\n",
+              "heure_rdv": "",
+              "depart": "HOTEL GALISIA",
+              "client": "ROBERT\n",
+              "nbre": "1",
+              "arrivee": "CHALET DE L'EPEE",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
@@ -6482,21 +6462,6 @@
               "client": "DROUX\n",
               "nbre": "2",
               "arrivee": "REFUGE SAVOIA",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ROBERT\n",
-              "nbre": "1",
-              "arrivee": "CHALET DE L'EPEE",
               "stockes": "–"
             }
           ]
