@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 15 AOÛT",
     "numero_semaine": "Semaine 34",
-    "genere_le": "11/08/2026"
+    "genere_le": "12/08/2026"
   },
   "chauffeurs": [
     {
@@ -1791,12 +1791,12 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "BG à récupérer à la réception du Chalet Tissières (159 route des Tissières , Les Bossons)\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SIGURJONSSON\n",
+              "depart": "RDV HOTEL",
+              "client": "PEDERSEN \n",
               "nbre": "2",
-              "arrivee": "HOTEL SPLENDIDE",
+              "arrivee": "HOTEL LE DAHU**",
               "stockes": "–"
             }
           ]
@@ -1890,15 +1890,15 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
-              "alerte": "BAGAGES",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
-              "type": "–",
+              "type": "PAS BESOIN",
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RDV PARKING DE PONT",
+              "depart": "HOSTELLERIE DU PARADIS",
               "client": "DROUX\n",
               "nbre": "2",
               "arrivee": "HOSTELLERIE DU PARADIS",
@@ -2796,21 +2796,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "GISSELBAEK\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE DAHU**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "GRAVEL\n",
               "nbre": "2",
@@ -2955,21 +2940,6 @@
               "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
               "nbre": "8+1",
               "arrivee": "REFUGE BENEVOLO",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "DROUX\n",
-              "nbre": "2",
-              "arrivee": "HOTEL GALISIA",
               "stockes": "–"
             }
           ]
@@ -4950,7 +4920,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "CHALET DE L'EPEE",
               "client": "DROUX\n",
@@ -5883,7 +5853,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1: CHALET DE L'EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "DROUX\n",
@@ -6776,7 +6746,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : HOSTELLERIE DU PARADIS\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "DROUX\n",
