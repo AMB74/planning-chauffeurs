@@ -6790,21 +6790,6 @@
           "massif": "0. AUTRES",
           "lignes": [
             {
-              "pilote": "Oscar",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! 3 BG\n",
-              "heure_rdv": "",
-              "depart": "CHALET COL DE FENETRE",
-              "client": "XIAOWU Su\n(+16504764076)",
-              "nbre": "5",
-              "arrivee": "AUBERGE DE LA VACHEY",
-              "stockes": "–"
-            },
-            {
               "pilote": "Yan A.",
               "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
@@ -7072,6 +7057,21 @@
               "client": "ASHLEIGH\n",
               "nbre": "2",
               "arrivee": "REFUGE ELENA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Oscar",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "CHALET COL DE FENETRE",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "AUBERGE DE LA VACHEY",
               "stockes": "–"
             },
             {
@@ -7615,13 +7615,13 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "Jean-Marc",
+              "pilote": "Jean-Marc, Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "TAXI FREDY\nJ+1\n",
+              "details": "!! DAMIEN récupère les BG à RISTORO SITTEN et les donne à JM à AOSTE\n!! JM récupère les BG et les livre à \nTAXI FREDY\nJ+1\n",
               "heure_rdv": "",
               "depart": "AUBERGE RISTORO SITTEN",
               "client": "TAINTURIER ULRICK\n(- 07 69 11 05 82)",

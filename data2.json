@@ -69,26 +69,6 @@
       "date_complete": "SAMEDI 15 AOÛT 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! 3 BG\n",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE LA VACHEY",
-              "client": "XIAOWU Su\n(+16504764076)",
-              "nbre": "5",
-              "arrivee": "HOTEL LE VIEUX POMMIER",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. DENTS BLANCHES",
           "lignes": [
             {
@@ -513,6 +493,21 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "AUBERGE DE LA VACHEY",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "HOTEL LE VIEUX POMMIER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
               "details": "–",
               "heure_rdv": "",
               "depart": "AUBERGE DE LA VACHEY",
@@ -878,7 +873,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Pont > Gare Chamonix",
-              "details": "Pont > Chamonix Gare SNCF - 8 pax\n",
+              "details": "15H00 : Pont > Chamonix Gare SNCF - 8 pax\n",
               "heure_rdv": "",
               "depart": "REFUGE VICTOR EMMANUEL 2",
               "client": "KOELL SEBASTIEN\n(- 06 19 16 35 23)",
@@ -896,26 +891,6 @@
       "titre": "DIMANCHE 16 AOÛT",
       "date_complete": "DIMANCHE 16 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! 3 BG\n",
-              "heure_rdv": "",
-              "depart": "HOTEL LE VIEUX POMMIER",
-              "client": "XIAOWU Su\n(+16504764076)",
-              "nbre": "5",
-              "arrivee": "CHAMBRES DU SOLEIL ",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -1462,6 +1437,21 @@
               "client": "WATSON\n",
               "nbre": "11",
               "arrivee": "AUBERGE MAYA-JOIE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LE VIEUX POMMIER",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "CHAMBRES DU SOLEIL ",
               "stockes": "–"
             },
             {
@@ -2823,21 +2813,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "!! 3 BG\n",
-              "heure_rdv": "",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "XIAOWU Su\n(+16504764076)",
-              "nbre": "5",
-              "arrivee": "PRARION LES HOUCHES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
@@ -2988,6 +2963,21 @@
               "client": "BOUCHARD\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LA GELINOTTE",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "PRARION LES HOUCHES",
               "stockes": "–"
             },
             {
@@ -4805,7 +4795,7 @@
               "transfert": "–",
               "details": "8H15 CHAM > VISAILLE\nJ+1 HOTEL PERRET\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT, RDV GARE CHAMONIX",
+              "depart": "RDV GARE CHAMONIX",
               "client": "CONNOR\n",
               "nbre": "2",
               "arrivee": "AUBERGE PETIT SAINT BERNARD",
