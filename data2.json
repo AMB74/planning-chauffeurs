@@ -2618,7 +2618,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2633,8 +2633,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
