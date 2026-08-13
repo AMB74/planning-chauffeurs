@@ -7180,7 +7180,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Serge",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -7595,13 +7595,13 @@
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "Damian",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "OT PREVENU\n",
+              "details": "!! RDV a fixer avec l'AEM pour la récup des BG car OT inaccessible (fête)\n",
               "heure_rdv": "",
               "depart": "CABANE BRUNET",
               "client": "ESBRI CARINE\n(- 06 68 60 51 01)",
