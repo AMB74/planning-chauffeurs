@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 15 AOÛT",
     "numero_semaine": "Semaine 34",
-    "genere_le": "12/08/2026"
+    "genere_le": "13/08/2026"
   },
   "chauffeurs": [
     {
@@ -68,6 +68,26 @@
       "titre": "SAMEDI 15 AOÛT",
       "date_complete": "SAMEDI 15 AOÛT 2026",
       "groupes": [
+        {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "AUBERGE DE LA VACHEY",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "HOTEL LE VIEUX POMMIER",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "2. DENTS BLANCHES",
           "lignes": [
@@ -877,6 +897,26 @@
       "date_complete": "DIMANCHE 16 AOÛT 2026",
       "groupes": [
         {
+          "massif": "0. AUTRES",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LE VIEUX POMMIER",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "CHAMBRES DU SOLEIL ",
+              "stockes": "–"
+            }
+          ]
+        },
+        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -1059,7 +1099,7 @@
               "details": "5H50\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
-              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
+              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)\nDayna Dickson +1 (315) 796-4494",
               "nbre": "3",
               "arrivee": "GENEVE AEROPORT",
               "stockes": "–"
@@ -1074,7 +1114,7 @@
               "details": "9H30\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
-              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
+              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)\nMorgan Ziemba +1 (603) 759-2057",
               "nbre": "4",
               "arrivee": "GENEVE AEROPORT",
               "stockes": "–"
@@ -1089,7 +1129,7 @@
               "details": "9H30\n",
               "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
-              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)",
+              "client": "PIHUIT ADELINE\n(- 06 50 76 93 34)\nLaura Savino -+1 (678) 200-2887",
               "nbre": "7",
               "arrivee": "GENEVE CENTRE",
               "stockes": "–"
@@ -1770,6 +1810,21 @@
             {
               "pilote": "",
               "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "CHAMBRES DU SOLEIL ",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "HOTEL LA GELINOTTE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -1788,8 +1843,8 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -1808,13 +1863,13 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 : TELEPHERIQUE THOLLON\n",
+              "details": "DEJA FAIT\nJ-1 : TELEPHERIQUE THOLLON\n",
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "WIDMANN\n",
@@ -1823,13 +1878,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 LE FETO\n",
+              "details": "DEJA FAIT\nJ-1 LE FETO\n",
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
@@ -1838,13 +1893,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "–",
+              "details": "NAVETTE\n",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
               "client": "FOURCADE\n",
@@ -1873,7 +1928,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1888,7 +1943,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1903,7 +1958,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1918,7 +1973,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1933,7 +1988,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1948,7 +2003,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1963,7 +2018,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1978,7 +2033,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1993,7 +2048,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2008,7 +2063,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2023,7 +2078,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2038,7 +2093,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2053,7 +2108,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2068,7 +2123,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2083,7 +2138,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2098,7 +2153,7 @@
               "stockes": "2"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2113,7 +2168,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2128,7 +2183,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2143,7 +2198,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2158,7 +2213,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2173,7 +2228,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2188,8 +2243,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2203,7 +2258,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2218,7 +2273,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2233,7 +2288,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2248,7 +2303,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2263,7 +2318,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2278,7 +2333,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2293,7 +2348,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2668,7 +2723,7 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -2780,6 +2835,21 @@
         {
           "massif": "0. AUTRES",
           "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 3 BG\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LA GELINOTTE",
+              "client": "XIAOWU Su\n(+16504764076)",
+              "nbre": "5",
+              "arrivee": "PRARION LES HOUCHES",
+              "stockes": "–"
+            },
             {
               "pilote": "",
               "renforts": "",
@@ -5806,7 +5876,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "16H30 : FLEGERE > HOTEL OTTOZ (avec BG) // 16 paxI\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER FANNY / MAX\n",
