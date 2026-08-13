@@ -852,13 +852,13 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Serge",
+              "renforts": "Serge, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "Pont > Gare Chamonix",
-              "details": "Pont > Chamonix Gare SNCF 5 pax\n",
+              "details": "Pont > Chamonix Gare SNCF 5 pax\n!! Prendre enveloppe dans remorque aux Gaillands > à déposer à Hostellerie du Paradis\n",
               "heure_rdv": "",
               "depart": "HOSTELLERIE DU PARADIS",
               "client": "MAZZELLA FRANÇOIS\n(- 06 47 80 34 18)",
