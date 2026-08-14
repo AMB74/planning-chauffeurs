@@ -1,34 +1,8 @@
 {
   "meta": {
-    "genere_le": "13/08/2026 15:30"
+    "genere_le": "14/08/2026 09:39"
   },
   "lignes": [
-    {
-      "jour_semaine": "09-08 - DIMANCHE",
-      "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "HOTEL DE L'ARVE",
-      "arrivee": "HOTEL DE L'ARVE",
-      "date_debut": "2026-08-01",
-      "date_fin": "2026-08-09",
-      "date_debut_aff": "Sam 01/08",
-      "date_fin_aff": "Dim 09/08"
-    },
-    {
-      "jour_semaine": "10-08 - LUNDI",
-      "client": "COLES\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Laurent",
-      "nbre": "1",
-      "depart": "RDV PLANPRAZ",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-04",
-      "date_fin": "2026-08-10",
-      "date_debut_aff": "Mar 04/08",
-      "date_fin_aff": "Lun 10/08"
-    },
     {
       "jour_semaine": "17-08 - LUNDI",
       "client": "WAY\n",
