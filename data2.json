@@ -69,56 +69,6 @@
       "date_complete": "SAMEDI 22 AOÛT 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL PERRET",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "REFUGE BEZZI",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GRIVOLA",
-              "client": "ANNULATION\n",
-              "nbre": "–",
-              "arrivee": "OT COGNES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "15h30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ANNULATION\n",
-              "nbre": "–",
-              "arrivee": "ALTITUDE TRANSPORT",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. GTA 1",
           "lignes": [
             {
@@ -805,6 +755,21 @@
               "pilote": "",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL PERRET",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "REFUGE BEZZI",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "16H30",
@@ -844,6 +809,36 @@
               "client": "TRAVEL\n",
               "nbre": "3",
               "arrivee": "HOTEL AIGUILLE DU MIDI",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL GRIVOLA",
+              "client": "ANNULATION\n",
+              "nbre": "–",
+              "arrivee": "OT COGNES",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "PAS BESOIN",
+              "transfert": "15h30",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "ANNULATION\n",
+              "nbre": "–",
+              "arrivee": "ALTITUDE TRANSPORT",
               "stockes": "–"
             }
           ]
@@ -1011,26 +1006,6 @@
       "titre": "DIMANCHE 23 AOÛT",
       "date_complete": "DIMANCHE 23 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE BEZZI",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "REFUGE TETRAS LYRE PONT",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -1688,6 +1663,21 @@
               "pilote": "",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE BEZZI",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "REFUGE TETRAS LYRE PONT",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
@@ -2014,26 +2004,6 @@
       "titre": "LUNDI 24 AOÛT",
       "date_complete": "LUNDI 24 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE TETRAS LYRE PONT",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "HOSTELLERIE DU PARADIS",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "2. GTA 1",
           "lignes": [
@@ -2666,6 +2636,21 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
+              "depart": "REFUGE TETRAS LYRE PONT",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "HOSTELLERIE DU PARADIS",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
               "depart": "TAXI DES COMBINS",
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
               "nbre": "12+1",
@@ -2942,41 +2927,6 @@
       "titre": "MARDI 25 AOÛT",
       "date_complete": "MARDI 25 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOSTELLERIE DU PARADIS",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "OT COGNES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "ALTITUDE TRANSPORT",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
@@ -3554,6 +3504,21 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
+              "depart": "HOSTELLERIE DU PARADIS",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "OT COGNES",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
               "depart": "TAXI DES COMBINS",
               "client": "PERRIER SEBASTIEN\n(- 06 51 90 52 07)",
               "nbre": "14+1",
@@ -3618,6 +3583,21 @@
               "client": "DEVOS REMY\n(06 85 40 02 01 - )",
               "nbre": "3+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "PAS BESOIN",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "ALTITUDE TRANSPORT",
               "stockes": "–"
             }
           ]

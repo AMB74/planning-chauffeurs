@@ -669,6 +669,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "STAMMERS\n",
+              "nbre": "4",
+              "arrivee": "REFUGE PLAN MYA",
+              "stockes": "–"
+            },
+            {
               "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -726,21 +741,6 @@
               "client": "HOLMGAARD\n",
               "nbre": "2",
               "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "STAMMERS\n",
-              "nbre": "4",
-              "arrivee": "REFUGE PLAN MYA",
               "stockes": "–"
             }
           ]
@@ -4342,12 +4342,12 @@
             },
             {
               "pilote": "Yan A.",
-              "renforts": "TAXI JAY",
+              "renforts": "Yan A., Serge, TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 7H45 : HBG >Les Chapieux ou la Raja (à reconfirmer la veille)\n!! 16H00 : Notre Dame de la Gorge >> transfert au Houches \n",
+              "details": "!! 7H45 : TAXI JAY // HBG >Les Chapieux ou la Raja (à reconfirmer la veille)\n!! 16H00 : AMB // Notre Dame de la Gorge >> transfert au Houches\n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
@@ -4514,7 +4514,7 @@
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
-              "pilote": "Charlie",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
@@ -4534,8 +4534,8 @@
           "massif": "1. CHABLAIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "AEM",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -4554,7 +4554,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4569,7 +4569,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yann L.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4584,13 +4584,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "–",
+              "details": "NAVETTE\n",
               "heure_rdv": "",
               "depart": "–",
               "client": "BLANC\n",
@@ -4604,7 +4604,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -4619,7 +4619,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4634,13 +4634,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Bertrand, Charlie",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "11H00",
-              "details": "–",
+              "details": "Charlie avec le bus de Jean-Marc\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
@@ -4649,8 +4649,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4664,7 +4664,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4679,8 +4679,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4694,7 +4694,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5235,6 +5235,21 @@
             },
             {
               "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "BER\n",
+              "nbre": "4",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5270,27 +5285,12 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8h Argentière > Trient\n",
               "heure_rdv": "",
               "depart": "ALTITUDE TRANSPORT",
               "client": "MARSAULT\n",
               "nbre": "3",
               "arrivee": "AUBERGE LE RENDEZ-VOUS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "TAXI JAY",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "BER\n",
-              "nbre": "4",
-              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             }
           ]
@@ -5433,26 +5433,6 @@
       "titre": "JEUDI 20 AOÛT",
       "date_complete": "JEUDI 20 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE",
-              "transfert": "–",
-              "details": "8H15 CHAM > VISAILLE\nJ+1 HOTEL PERRET\n",
-              "heure_rdv": "",
-              "depart": "RDV GARE CHAMONIX",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE PETIT SAINT BERNARD",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "1. CHABLAIS",
           "lignes": [
@@ -6083,6 +6063,21 @@
             },
             {
               "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "17H00 Les Chapieux > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "OT LES CHAPIEUX",
+              "client": "VIDAL\n",
+              "nbre": "4",
+              "arrivee": "CHALET DU BERGER",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -6143,17 +6138,17 @@
             },
             {
               "pilote": "",
-              "renforts": "TAXI JAY",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "type_transfert": "BAGAGES",
+              "type": "NUIT SS BAGAGE",
+              "transfert": "–",
+              "details": "8H15 CHAM > VISAILLE\nJ+1 HOTEL PERRET\n",
               "heure_rdv": "",
-              "depart": "–",
-              "client": "VIDAL\n",
-              "nbre": "4",
-              "arrivee": "CHALET DU BERGER",
+              "depart": "RDV GARE CHAMONIX",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "AUBERGE PETIT SAINT BERNARD",
               "stockes": "–"
             },
             {
@@ -6311,26 +6306,6 @@
       "titre": "VENDREDI 21 AOÛT",
       "date_complete": "VENDREDI 21 AOÛT 2026",
       "groupes": [
-        {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "J-1 \n",
-              "heure_rdv": "",
-              "depart": "AUBERGE PETIT SAINT BERNARD",
-              "client": "CONNOR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL PERRET",
-              "stockes": "–"
-            }
-          ]
-        },
         {
           "massif": "1. CHABLAIS",
           "lignes": [
@@ -6897,6 +6872,21 @@
               "client": "MARTINS\n",
               "nbre": "1",
               "arrivee": "REFUGE PLAN MYA",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "VEILLE SS BAGAGE",
+              "transfert": "–",
+              "details": "J-1 GARE CHAMONIX\n",
+              "heure_rdv": "",
+              "depart": "AUBERGE PETIT SAINT BERNARD",
+              "client": "CONNOR\n",
+              "nbre": "2",
+              "arrivee": "HOTEL PERRET",
               "stockes": "–"
             },
             {
