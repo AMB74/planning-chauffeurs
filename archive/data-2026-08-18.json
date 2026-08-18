@@ -4635,6 +4635,21 @@
             },
             {
               "pilote": "Laurent",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "\n",
+              "heure_rdv": "",
+              "depart": "HOTEL COSMIQUES ",
+              "client": "LAVALLEE\n",
+              "nbre": "2",
+              "arrivee": "LA GRANDE OURSE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Laurent",
               "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -4676,21 +4691,6 @@
               "client": "USSE\n",
               "nbre": "3",
               "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Laurent",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "10H30",
-              "details": "HORAIRE A CHANGER\n",
-              "heure_rdv": "",
-              "depart": "RDV MONTROC",
-              "client": "LAVALLEE\n",
-              "nbre": "2",
-              "arrivee": "LA GRANDE OURSE",
               "stockes": "–"
             },
             {

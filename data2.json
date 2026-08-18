@@ -813,7 +813,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Pont > Gare Chamonix",
-              "details": "–",
+              "details": "9 PAX EN TOUT\nCHAM : 7 PAX\nLES HOUCHES : 1 PAX + 1 AEM\n",
               "heure_rdv": "",
               "depart": "REFUGE VICTOR EMMANUEL 2",
               "client": "PERRIER SEBASTIEN\n(- 06 51 90 52 07)",
@@ -1618,21 +1618,6 @@
               "nbre": "2",
               "arrivee": "AUBERGE DE BELLECOMBE",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "BORNET\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
             }
           ]
         },
@@ -2393,7 +2378,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -2419,21 +2404,6 @@
               "depart": "AUBERGE DE BELLECOMBE",
               "client": "RAMBOER\n",
               "nbre": "4",
-              "arrivee": "AUBERGE DE BELLECOMBE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "AUBERGE DE BELLECOMBE",
-              "client": "BORNET\n",
-              "nbre": "2",
               "arrivee": "AUBERGE DE BELLECOMBE",
               "stockes": "–"
             },
@@ -3194,6 +3164,21 @@
               "nbre": "4+1",
               "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H ST GUÉRIN > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE PLAN DE LA LAI",
+              "client": "BLANC\n",
+              "nbre": "3",
+              "arrivee": "REFUGE DE ROSUEL",
+              "stockes": "–"
             }
           ]
         },
@@ -3847,21 +3832,6 @@
               "nbre": "4+1",
               "arrivee": "REFUGE DU LAISONNAY",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "BLANC\n",
-              "nbre": "3",
-              "arrivee": "REFUGE DE ROSUEL",
-              "stockes": "–"
             }
           ]
         },
@@ -3884,7 +3854,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
