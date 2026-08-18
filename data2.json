@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 22 AOÛT",
     "numero_semaine": "Semaine 35",
-    "genere_le": "17/08/2026"
+    "genere_le": "18/08/2026"
   },
   "chauffeurs": [
     {
@@ -938,12 +938,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : REFUGE BENOVOLO\n",
               "heure_rdv": "",
               "depart": "REFUGE SAVOIA",
               "client": "DROUX\n",
               "nbre": "2",
-              "arrivee": "RDV HOTEL",
+              "arrivee": "HOSTELLERIE DU PARADIS",
               "stockes": "–"
             },
             {
@@ -1222,21 +1222,6 @@
               "client": "COQUILLEAU MARIE\n(- 06 32 05 53 25)",
               "nbre": "13+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "OLLIER\n",
-              "nbre": "2",
-              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
@@ -2705,16 +2690,16 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
+              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "17h00",
-              "details": "–",
+              "type": "–",
+              "transfert": "12H00",
+              "details": "12H00 : 373 Chemin Saint-Antoine (LES HOUCHES) >GENEVA AIRPORT (vol à 17h00) \n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "RDV HOTEL",
               "client": "WATSON\n",
               "nbre": "11",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "GENEVE AEROPORT",
               "stockes": "–"
             }
           ]
@@ -3061,7 +3046,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
