@@ -4540,7 +4540,7 @@
           "lignes": [
             {
               "pilote": "Yann L.",
-              "renforts": "Yann L., Bertrand",
+              "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -4604,7 +4604,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Yan A.",
               "renforts": "Yan A., Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4620,12 +4620,12 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Bertrand, Charlie",
+              "renforts": "Yann L., Yan A.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "11H00",
-              "details": "Charlie avec le bus de Jean-Marc\n",
+              "details": "YANN L. avec le bus de Jean-Marc\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
@@ -4634,7 +4634,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4649,8 +4649,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Laurent",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4664,7 +4664,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4679,8 +4679,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Laurent",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4694,7 +4694,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4709,7 +4709,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4724,7 +4724,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4739,7 +4739,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4754,7 +4754,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4769,7 +4769,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4784,7 +4784,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4799,7 +4799,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4814,7 +4814,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4829,7 +4829,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4844,7 +4844,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4859,7 +4859,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5054,7 +5054,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Charlie",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5069,7 +5069,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Charlie",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5084,7 +5084,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Charlie",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5219,7 +5219,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5234,7 +5234,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -5254,7 +5254,7 @@
           "massif": "4. GTA 2",
           "lignes": [
             {
-              "pilote": "Ivan",
+              "pilote": "Jean-Baptiste",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -5294,7 +5294,7 @@
           "massif": "6. BEAUFORTAIN",
           "lignes": [
             {
-              "pilote": "Yan A.",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
