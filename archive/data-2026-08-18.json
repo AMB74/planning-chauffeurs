@@ -5492,6 +5492,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LA COURONNE",
+              "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
+              "nbre": "3+1",
+              "arrivee": "HOTEL LA PORTE OCTODURE",
+              "stockes": "–"
+            },
+            {
               "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -5864,21 +5879,6 @@
               "client": "GISSELBAEK\n",
               "nbre": "2",
               "arrivee": "HOTEL MAISON SAINT JEAN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "0. AUCUN",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL ASTORIA",
-              "client": "WEAVER\n",
-              "nbre": "4",
-              "arrivee": "HOTEL ASTORIA",
               "stockes": "–"
             },
             {
@@ -6887,6 +6887,21 @@
               "client": "HEITMANN\n",
               "nbre": "2",
               "arrivee": "HOTEL LA GELINOTTE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LA PORTE OCTODURE",
+              "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
+              "nbre": "3+1",
+              "arrivee": "HOTEL DU GLACIER",
               "stockes": "–"
             },
             {
