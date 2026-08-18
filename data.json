@@ -4540,7 +4540,7 @@
           "lignes": [
             {
               "pilote": "Yann L.",
-              "renforts": "",
+              "renforts": "Yann L., Bertrand",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -4610,7 +4610,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H30 HBG > Telephérique de Brévent - 4 pax\n18H Col des Montets > HBG- 4 pax\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
@@ -4821,21 +4821,6 @@
               "type": "–",
               "transfert": "–",
               "details": "8h Argentière > Trient\n",
-              "heure_rdv": "",
-              "depart": "HOTEL DU COL DE LA FORCLAZ",
-              "client": "MARSAULT\n",
-              "nbre": "3",
-              "arrivee": "AUBERGE LE RENDEZ-VOUS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Laurent",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL DU COL DE LA FORCLAZ",
               "client": "MARSAULT\n",
@@ -5289,7 +5274,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
