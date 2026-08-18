@@ -90,7 +90,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "08H25 : Transfert GVA AIRPORT>HOTEL PRIEURE CHAM (N°EYI47 / Etihad) // 12 pax\n",
+              "details": "08H25 : GVA AIRPORT>HOTEL PRIEURE CHAM (N°EYI47 / Etihad) // 12 pax\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "FOURNIER DYLAN\n",
@@ -1735,7 +1735,7 @@
               "heure_rdv": "12H OT THOLLON",
               "depart": "RDV THOLLON",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "LA FERME DU NOYER",
               "stockes": "–"
             },
@@ -2643,7 +2643,7 @@
               "heure_rdv": "",
               "depart": "LA FERME DU NOYER",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "LE FETO",
               "stockes": "–"
             },
@@ -3641,7 +3641,7 @@
               "heure_rdv": "",
               "depart": "LE FETO",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "REFUGE DE CHARDONNIERE",
               "stockes": "–"
             }
@@ -4549,7 +4549,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE CHARDONNIERE",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "REFUGE DE LA VOGEALLE",
               "stockes": "–"
             },
@@ -4815,12 +4815,12 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Bertrand",
+              "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "8h Argentière > Trient\n!! 4 SACS\n",
+              "details": "!! 4 SACS\n",
               "heure_rdv": "",
               "depart": "HOTEL DU COL DE LA FORCLAZ",
               "client": "MARSAULT\n",
@@ -5437,7 +5437,7 @@
               "heure_rdv": "",
               "depart": "REFUGE DE LA VOGEALLE",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
             }
@@ -6033,12 +6033,12 @@
             },
             {
               "pilote": "Jean-Baptiste",
-              "renforts": "TAXI JAY",
+              "renforts": "TAXI JAY, TAXI MONT BLANC",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Chapieux",
-              "details": "!! Transfert à 8H00 !! - Taxi Jay\n+ 17H ND Gorge > HBG \n",
+              "details": "!! Transfert à 8H00 !! - (Taxi Jay)\n!! 17H00 : ND Gorge > HBG (Taxi Mt Blanc) // 13 pax\n",
               "heure_rdv": "",
               "depart": "CHALET DE ROSELEND",
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
@@ -6280,7 +6280,7 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE SALVAGNY",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
-              "nbre": "8+1",
+              "nbre": "9+1",
               "arrivee": "REFUGE MOEDE ANTERNE",
               "stockes": "–"
             }
