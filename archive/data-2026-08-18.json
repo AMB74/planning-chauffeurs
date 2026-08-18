@@ -4499,7 +4499,7 @@
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
@@ -4650,7 +4650,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Bertrand",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4680,7 +4680,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Bertrand",
+              "renforts": "Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",

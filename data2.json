@@ -1625,21 +1625,6 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "11H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PARKING DE PONT",
-              "client": "BORTOLUZZI\n",
-              "nbre": "3",
-              "arrivee": "HOSTELLERIE DU PARADIS",
-              "stockes": "–"
-            },
-            {
               "pilote": "Serge",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
@@ -2486,21 +2471,6 @@
               "nbre": "7+1",
               "arrivee": "REFUGE BENEVOLO",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "08H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "BORTOLUZZI\n",
-              "nbre": "3",
-              "arrivee": "HOTEL GALISIA",
-              "stockes": "–"
             }
           ]
         },
@@ -3242,7 +3212,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "08H30 HBG > Valgrisenche",
-              "details": "–",
+              "details": "J+1 : REFUGE BENEVOLO\n",
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "BORTOLUZZI\n",
@@ -3910,7 +3880,7 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-1 : HOTEL GALISIA\n",
               "heure_rdv": "",
               "depart": "REFUGE BEZZI",
               "client": "BORTOLUZZI\n",
@@ -5131,7 +5101,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J+1 : FIN BG au TETRAS LYRE\n",
               "heure_rdv": "",
               "depart": "REFUGE TETRAS LYRE PONT",
               "client": "BORTOLUZZI\n",
