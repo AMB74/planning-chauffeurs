@@ -782,36 +782,6 @@
             {
               "pilote": "",
               "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "RENAUD\n",
-              "nbre": "2",
-              "arrivee": "CHALET DES CONTAMINES",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL AIGUILLE DU MIDI",
-              "client": "TRAVEL\n",
-              "nbre": "3",
-              "arrivee": "HOTEL AIGUILLE DU MIDI",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -907,41 +877,6 @@
               "client": "DROUX\n",
               "nbre": "2",
               "arrivee": "HOSTELLERIE DU PARADIS",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "PEUTET JEAN MARC\n(06 72 65 42 90 - )",
-              "nbre": "8+1",
-              "arrivee": "ALTITUDE TRANSPORT",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "OBERLAND",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL REGINA",
-              "client": "BLANCHARD\n",
-              "nbre": "2",
-              "arrivee": "BERGHAUS ALPIGLEN",
               "stockes": "–"
             }
           ]
