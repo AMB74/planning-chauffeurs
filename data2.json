@@ -1519,12 +1519,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\\- RDV 7:45 Taxi Jay retour aux chapieux ou la Raja à reconfirmer la veille- RDV AMB 16:00 Notre Dame de la Gorge >> transfert au Houches \n",
+              "details": "!! 7H45 : HBG > Les Chapieux ou la Raja (Taxi Jay) // 16 pax\n!!16H00 : Notre Dame de la Gorge > Les Houches // 16 pax  \n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER MIHAI\n07 66 16 14 81\n",
@@ -4581,7 +4581,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -4596,7 +4596,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -5019,7 +5019,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5049,7 +5049,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5079,7 +5079,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
