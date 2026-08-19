@@ -3960,36 +3960,6 @@
               "nbre": "14+1",
               "arrivee": "CHALET VAL FERRET",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "DAGAN\n",
-              "nbre": "5",
-              "arrivee": "HOTEL DU GLACIER",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "DOWNS\n",
-              "nbre": "1",
-              "arrivee": "HOTEL SPLENDIDE",
-              "stockes": "–"
             }
           ]
         },
@@ -5123,8 +5093,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5413,10 +5383,10 @@
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "08H30",
+              "transfert": "08H30 HBG > Valgrisenche",
               "details": "–",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "HOTEL GALISIA",
               "client": "MACHIN\n",
               "nbre": "4",
               "arrivee": "CHALET DE L'EPEE",
