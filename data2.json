@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 22 AOÛT",
     "numero_semaine": "Semaine 35",
-    "genere_le": "19/08/2026"
+    "genere_le": "20/08/2026"
   },
   "chauffeurs": [
     {
@@ -64,34 +64,6 @@
   "sections": [
     {
       "id": "s0",
-      "label": "21/08",
-      "titre": "VENDREDI 21 AOÛT",
-      "date_complete": "VENDREDI 21 AOÛT 2026",
-      "groupes": [
-        {
-          "massif": "3. MONT-BLANC",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "16H30 transfert à courmayeur AMB\nvers 16H chauffeur recuperent d'abord valises a Rockypop > 16H30 Flegere recupere des clients > Hotel Ottoz Courmayeur (avec valises et clients)\n",
-              "heure_rdv": "",
-              "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER FANNY / MAX\n",
-              "nbre": "15+1",
-              "arrivee": "HOTEL OTTOZ",
-              "stockes": "–"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s1",
       "label": "22/08",
       "titre": "SAMEDI 22 AOÛT",
       "date_complete": "SAMEDI 22 AOÛT 2026",
@@ -125,6 +97,21 @@
               "heure_rdv": "",
               "depart": "REFUGE MOEDE ANTERNE",
               "client": "TSIKIS PIERRE\n(- 06 10 98 74 11)",
+              "nbre": "9+1",
+              "arrivee": "RDV PLANPRAZ",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "BAGAGES GROUPE PIERRE dans la remorque\n",
+              "heure_rdv": "",
+              "depart": "GAILLANDS",
+              "client": "TSIKIS PIERRE\n",
               "nbre": "9+1",
               "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
@@ -460,6 +447,21 @@
               "heure_rdv": "",
               "depart": "AUBERGE DE LA VACHEY",
               "client": "LAVALLEE\n",
+              "nbre": "2",
+              "arrivee": "REFUGE MONTE BIANCO",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 1 SAC\n",
+              "heure_rdv": "",
+              "depart": "AUBERGE DE LA VACHEY",
+              "client": "GAWLIK\n",
               "nbre": "2",
               "arrivee": "REFUGE MONTE BIANCO",
               "stockes": "–"
@@ -884,7 +886,7 @@
       ]
     },
     {
-      "id": "s2",
+      "id": "s1",
       "label": "23/08",
       "titre": "DIMANCHE 23 AOÛT",
       "date_complete": "DIMANCHE 23 AOÛT 2026",
@@ -893,7 +895,7 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1393,13 +1395,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "0. AUCUN",
+              "pilote": "",
               "renforts": "TAXI JAY",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES + TRANSFERT",
+              "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! 1 SAC\n",
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "GAWLIK\n",
@@ -1747,7 +1749,7 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s2",
       "label": "24/08",
       "titre": "LUNDI 24 AOÛT",
       "date_complete": "LUNDI 24 AOÛT 2026",
@@ -2379,6 +2381,21 @@
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 1 SAC\n",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER",
+              "client": "GAWLIK\n",
+              "nbre": "2",
+              "arrivee": "LA CITE MONTJOIE",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
@@ -2610,7 +2627,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s3",
       "label": "25/08",
       "titre": "MARDI 25 AOÛT",
       "date_complete": "MARDI 25 AOÛT 2026",
@@ -2658,6 +2675,21 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "–",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 1 SAC\n",
+              "heure_rdv": "",
+              "depart": "LA CITE MONTJOIE",
+              "client": "GAWLIK\n",
+              "nbre": "2",
+              "arrivee": "PRARION LES HOUCHES",
+              "stockes": "–"
+            },
             {
               "pilote": "",
               "renforts": "",
@@ -3234,7 +3266,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -3353,7 +3385,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s4",
       "label": "26/08",
       "titre": "MERCREDI 26 AOÛT",
       "date_complete": "MERCREDI 26 AOÛT 2026",
@@ -3423,7 +3455,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\\- RDV 8:00 Transfert  en bus de ligne arrêt \"tresse\"  (La Villette)\navec transfert AMB  \n\n\\- Transferts AMB 17H30 Arche TMB > Chalet Hotel Les Campanules - 8 pax                           \n",
+              "details": "17H30 : Arche TMB > Chalet Hotel Les Campanules - 8 pax                           \n",
               "heure_rdv": "",
               "depart": "LA FERME DU PRAZ",
               "client": "TREKKER ERIC\n+33 6 20 19 67 72\n",
@@ -4036,7 +4068,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s5",
       "label": "27/08",
       "titre": "JEUDI 27 AOÛT",
       "date_complete": "JEUDI 27 AOÛT 2026",
@@ -4729,7 +4761,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s6",
       "label": "28/08",
       "titre": "VENDREDI 28 AOÛT",
       "date_complete": "VENDREDI 28 AOÛT 2026",
