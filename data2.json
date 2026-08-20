@@ -882,6 +882,26 @@
               "stockes": "–"
             }
           ]
+        },
+        {
+          "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
+          "lignes": [
+            {
+              "pilote": "0. AUCUN",
+              "renforts": "Jean-Marc",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 13H30 : Transfert retour Tash > Le Châble (6 pax)\n",
+              "heure_rdv": "",
+              "depart": "TASCH",
+              "client": "GISSINGER CECILE\n(06 26 97 11 93 - 06 26 97 11 93)",
+              "nbre": "5+1",
+              "arrivee": "RDV LE CHABLE",
+              "stockes": "–"
+            }
+          ]
         }
       ]
     },
@@ -1446,22 +1466,22 @@
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "JM : 16H00 :  Récupérer 8 pax + BG à HOTEL OTTOZ > App n°1 ) 232 Route des Moenthieux, Chamonix (4 pax)   + App n°2 )  835 Route des Gaillands Chamonix (4 pax)\nJM : 16H00 :  Récupérer 8 pax + BG à HOTEL OTTOZ > App n°1 ) 3- 886 Route des Bossons, 74400, Chamonix, France 7 pers)\n",
+              "details": "**JM** : 16H00 :  Récupérer 8 pax + BG à HOTEL OTTOZ > App n°1 ) 232 Route des Moenthieux, Chamonix (4 pax)   + App n°2 )  835 Route des Gaillands Chamonix (4 pax)\n**SERGE** : 16H00 :  Récupérer 7 pax + BG à HOTEL OTTOZ > App n°3 ) 886 Route des Bossons, Chamonix (7 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL OTTOZ",
               "client": "TREKKER FANNY / MAX\n",
               "nbre": "15+1",
-              "arrivee": "HOTEL OTTOZ",
+              "arrivee": "RDV HOTEL",
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "TAXI JAY",
+              "pilote": "Ivan, Bertrand",
+              "renforts": "Yan A., TAXI JAY, TAXI MONT BLANC",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! 7H45 : HBG > Les Chapieux ou la Raja (Taxi Jay) // 16 pax\n!!16H00 : Notre Dame de la Gorge > Les Houches // 16 pax  \n",
+              "details": "!! 7H45 : HBG > Les Chapieux ou la Raja (Taxi Jay) // 16 pax\n!!16H00 : Notre Dame de la Gorge > Les Houches (Yan A.+Taxi Mt Blanc) // 16 pax  \n",
               "heure_rdv": "",
               "depart": "HOTEL MALGOVERT",
               "client": "TREKKER MIHAI\n07 66 16 14 81\n",
