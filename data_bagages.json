@@ -1,10 +1,10 @@
 {
   "meta": {
-    "genere_le": "21/08/2026 08:38"
+    "genere_le": "21/08/2026 08:49"
   },
   "lignes": [
     {
-      "jour_semaine": "15-08 - SAMEDI",
+      "jour_semaine": "21-08 - VENDREDI",
       "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
       "chauffeur_debut": "–",
       "chauffeur_fin": "–",
@@ -17,22 +17,9 @@
       "date_fin_aff": "Dim 23/08"
     },
     {
-      "jour_semaine": "15-08 - SAMEDI",
-      "client": "BADIN PHILIPPE\n(06 73 36 66 64 - )",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-15",
-      "date_fin": "2026-08-23",
-      "date_debut_aff": "Sam 15/08",
-      "date_fin_aff": "Dim 23/08"
-    },
-    {
-      "jour_semaine": "15-08 - SAMEDI",
+      "jour_semaine": "21-08 - VENDREDI",
       "client": "FERRAND\n",
-      "chauffeur_debut": "Charlie",
+      "chauffeur_debut": "–",
       "chauffeur_fin": "Serge",
       "nbre": "2",
       "depart": "RDV MONTROC",
@@ -41,32 +28,6 @@
       "date_fin": "2026-08-21",
       "date_debut_aff": "Sam 15/08",
       "date_fin_aff": "Ven 21/08"
-    },
-    {
-      "jour_semaine": "17-08 - LUNDI",
-      "client": "WAY\n",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-17",
-      "date_fin": "2026-08-23",
-      "date_debut_aff": "Lun 17/08",
-      "date_fin_aff": "Dim 23/08"
-    },
-    {
-      "jour_semaine": "17-08 - LUNDI",
-      "client": "GRAVEL\n",
-      "chauffeur_debut": "Charlie",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "RDV HOTEL",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-17",
-      "date_fin": "2026-08-23",
-      "date_debut_aff": "Lun 17/08",
-      "date_fin_aff": "Dim 23/08"
     }
   ]
 }
