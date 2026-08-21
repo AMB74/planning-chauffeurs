@@ -2475,7 +2475,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2495,7 +2495,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -2510,7 +2510,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2525,7 +2525,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Aurore",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3248,7 +3248,7 @@
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
@@ -3567,11 +3567,11 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 16H00 : Col des MONTETS > HBG Vallorcine (14 pax) en plusieurs A/R\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "DORMIO RESORT LES PORTES DU MONT BLANC VALLORCINE",
               "stockes": "–"
             },
@@ -4254,7 +4254,7 @@
               "heure_rdv": "",
               "depart": "DORMIO RESORT LES PORTES DU MONT BLANC VALLORCINE",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "HOTEL L'UNION",
               "stockes": "–"
             },
@@ -5007,7 +5007,7 @@
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
             },
@@ -5820,7 +5820,7 @@
               "heure_rdv": "",
               "depart": "HOTEL LES JUMEAUX",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
-              "nbre": "12+1",
+              "nbre": "13+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
             },
