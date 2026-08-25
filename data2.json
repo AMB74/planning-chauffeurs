@@ -602,7 +602,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -681,12 +681,12 @@
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "–",
+              "details": "J-3: LE PETIT REFUGE\n",
               "heure_rdv": "",
               "depart": "REFUGE DU ROC",
               "client": "WIDMANN\n",
               "nbre": "4",
-              "arrivee": "RDV HOTEL",
+              "arrivee": "HOTEL LE COMMERCE ***",
               "stockes": "–"
             },
             {
@@ -1221,7 +1221,7 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1280,8 +1280,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -1358,21 +1358,6 @@
               "pilote": "",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE VICTOR EMMANUEL 2",
-              "client": "BORTOLUZZI\n",
-              "nbre": "3",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
               "transfert": "Pont > Gare Chamonix",
@@ -1381,21 +1366,6 @@
               "depart": "REFUGE VICTOR EMMANUEL 2",
               "client": "MARLEIX FRANCOIS\n(- 06 63 40 80 42)",
               "nbre": "7+1",
-              "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "VEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE VICTOR EMMANUEL 2",
-              "client": "BORTOLUZZI\n",
-              "nbre": "3",
               "arrivee": "RDV PARKING DE PONT",
               "stockes": "–"
             },
@@ -1471,6 +1441,26 @@
               "nbre": "2",
               "arrivee": "–",
               "stockes": "–"
+            }
+          ]
+        },
+        {
+          "massif": "2. GTA 1",
+          "lignes": [
+            {
+              "pilote": "Jean-Baptiste",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "!! BG STOCKE par JB  à déposer à l'hôtel du Commerce. Les clients finissent le 31/08\n",
+              "heure_rdv": "",
+              "depart": "RDV HOTEL",
+              "client": "COULAUD\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE COMMERCE ***",
+              "stockes": "2"
             }
           ]
         },
@@ -2048,6 +2038,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "0. AUCUN",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H30",
+              "details": "16H30 : ND GORGE > CONTAMINES\n",
+              "heure_rdv": "",
+              "depart": "CHALET DU BERGER",
+              "client": "ANDERSON\n",
+              "nbre": "2",
+              "arrivee": "LA CITE MONTJOIE",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -2068,21 +2073,6 @@
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ANDERSON\n",
-              "nbre": "2",
-              "arrivee": "LA CITE MONTJOIE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
@@ -2090,21 +2080,6 @@
               "client": "HENG\n",
               "nbre": "6",
               "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "ROUSSEY\n",
-              "nbre": "2",
-              "arrivee": "RDV MONTROC",
               "stockes": "–"
             }
           ]
@@ -2274,21 +2249,6 @@
               "nbre": "1",
               "arrivee": "CHALET LES MINES D'OR",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "COULAUD\n",
-              "nbre": "2",
-              "arrivee": "–",
-              "stockes": "2"
             }
           ]
         },
@@ -2443,21 +2403,6 @@
               "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
               "nbre": "2+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "ROYER\n",
-              "nbre": "1",
-              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
@@ -2836,7 +2781,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -3111,21 +3056,6 @@
               "client": "MEGUEULE\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "HUMBERT\n",
-              "nbre": "2",
-              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {

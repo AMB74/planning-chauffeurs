@@ -4224,21 +4224,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand, Yan A.",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "16H Hotel Rockypop > HBG Geneve - 15 pax\n",
-              "heure_rdv": "",
-              "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER FANNY +33 6 81 00 04 40 / MAX\n",
-              "nbre": "15+1",
-              "arrivee": "HOTEL IBIS GENEVE",
-              "stockes": "–"
-            },
-            {
               "pilote": "Yan A.",
               "renforts": "Yan A.",
               "alerte": "BAGAGES",
@@ -4656,6 +4641,21 @@
               "client": "HINER\n",
               "nbre": "2",
               "arrivee": "HOTEL GAI SOLEIL***",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Bertrand, Yan A.",
+              "renforts": "",
+              "alerte": "!! TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "15H00 : Gare SNCF Cham > HBG Geneve - 15 pax\n",
+              "heure_rdv": "",
+              "depart": "GARE SNCF CHAMONIX",
+              "client": "TREKKER FANNY - Liz trekker +33 7 57 65 08 06\n",
+              "nbre": "15+1",
+              "arrivee": "HOTEL IBIS GENEVE",
               "stockes": "–"
             }
           ]
@@ -5322,13 +5322,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! à faire avant RDV matin\n",
               "heure_rdv": "",
               "depart": "CHAMBRES DU SOLEIL ",
               "client": "RAMESH\n",
