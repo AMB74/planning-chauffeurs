@@ -4644,16 +4644,31 @@
               "stockes": "–"
             },
             {
+              "pilote": "Yan A.",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 8H15 : Récupérer 7 BG au 886 Route des Bossons (Chamonix) Appeler Liz en bas de l'appart (0663039144)\n!! Puis récupérer 4 BG au 835 Route des Gaillands (Chamonix)\n!! Puis récupérer 4 BG 232 Route des Moenthieux (Chamonix)\nGarder les 15 BG dans le minibus pour le RDV de l'après midi\n",
+              "heure_rdv": "",
+              "depart": "RDV HOTEL",
+              "client": "TREKKER FANNY +33 6 81 00 04 40\n",
+              "nbre": "15+1",
+              "arrivee": "GARE SNCF CHAMONIX",
+              "stockes": "–"
+            },
+            {
               "pilote": "Bertrand, Yan A.",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "15H00 : Gare SNCF Cham > HBG Geneve - 15 pax\n",
+              "details": "15H00 : Gare SNCF Cham > HBG Geneve - 15 pax\n!! BG récupérés le matin par Yan A.\n",
               "heure_rdv": "",
               "depart": "GARE SNCF CHAMONIX",
-              "client": "TREKKER FANNY - Liz trekker +33 7 57 65 08 06\n",
+              "client": "TREKKER FANNY +33 6 81 00 04 40- \n",
               "nbre": "15+1",
               "arrivee": "HOTEL IBIS GENEVE",
               "stockes": "–"
