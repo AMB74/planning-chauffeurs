@@ -1285,26 +1285,6 @@
       "date_complete": "DIMANCHE 30 AOÛT 2026",
       "groupes": [
         {
-          "massif": "0. AUTRES",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "LEFEBVRE\n",
-              "nbre": "2",
-              "arrivee": "–",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "2. GTA 1",
           "lignes": [
             {

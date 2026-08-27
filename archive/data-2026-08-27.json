@@ -5805,13 +5805,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "0. AUCUN",
+              "pilote": "Ivan",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "!! 1 pax à transporter\n",
               "heure_rdv": "",
               "depart": "HOTEL MAISON SAINT JEAN",
               "client": "DAGAN\n",
