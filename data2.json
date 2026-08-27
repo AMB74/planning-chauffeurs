@@ -675,6 +675,21 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE DU FOLLY",
+              "client": "BEISHUIZEN\n",
+              "nbre": "2",
+              "arrivee": "AUBERGE DE SALVAGNY",
+              "stockes": "–"
+            },
+            {
               "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
@@ -687,21 +702,6 @@
               "client": "WIDMANN\n",
               "nbre": "4",
               "arrivee": "RDV HOTEL",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "–",
-              "client": "BEISHUIZEN\n",
-              "nbre": "2",
-              "arrivee": "AUBERGE DE SALVAGNY",
               "stockes": "–"
             }
           ]
@@ -782,21 +782,6 @@
               "client": "GODEFROY JULIEN\n(- 06 08 52 62 75)",
               "nbre": "12+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "CHARLEBOIS\n",
-              "nbre": "2",
-              "arrivee": "–",
               "stockes": "–"
             },
             {
@@ -1217,21 +1202,6 @@
               "client": "CITTERS\n",
               "nbre": "2",
               "arrivee": "HOTEL LE CHRISTIANIA**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "NORDAAS\n",
-              "nbre": "3",
-              "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
             {
@@ -2014,7 +1984,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HOFMANN",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
@@ -4370,6 +4340,36 @@
               "nbre": "14+1",
               "arrivee": "CHALET VAL FERRET",
               "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GENEVE AEROPORT",
+              "client": "TREKKER Cyril \n+33 6 13 93 93 27\n",
+              "nbre": "8+1",
+              "arrivee": "HOTEL ROCKY POP***",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GENEVE AEROPORT",
+              "client": "TREKKER MAUD\n+33 6 13 93 93 27\n",
+              "nbre": "14+1",
+              "arrivee": "HOTEL ROCKY POP***",
+              "stockes": "–"
             }
           ]
         },
@@ -5226,7 +5226,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "NUIT SS BAGAGE",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "J+1 : HOTEL GRAND MONT (Beaufort)\n",
+              "details": "PAS DE TRANSFERT\nJ+1 : HOTEL GRAND MONT (Beaufort)\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA GITTAZ",
               "client": "MOLLARET BRUNO\n(04 50 60 67 25 - 07 61 65 26 85)",
@@ -6054,7 +6054,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI HOFMANN",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "VEILLE SS BAGAGE",
