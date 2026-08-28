@@ -1,33 +1,6 @@
 {
   "meta": {
-    "genere_le": "28/08/2026 10:13"
+    "genere_le": "28/08/2026 10:43"
   },
-  "lignes": [
-    {
-      "jour_semaine": "21-08 - VENDREDI",
-      "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "–",
-      "nbre": "6",
-      "depart": "LE PRIEURE CHAMONIX",
-      "arrivee": "LE PRIEURE CHAMONIX",
-      "date_debut": "2026-08-14",
-      "date_fin": "2026-08-23",
-      "date_debut_aff": "Ven 14/08",
-      "date_fin_aff": "Dim 23/08"
-    },
-    {
-      "jour_semaine": "21-08 - VENDREDI",
-      "client": "FERRAND\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Serge",
-      "nbre": "2",
-      "depart": "RDV MONTROC",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-08-15",
-      "date_fin": "2026-08-21",
-      "date_debut_aff": "Sam 15/08",
-      "date_fin_aff": "Ven 21/08"
-    }
-  ]
+  "lignes": []
 }
