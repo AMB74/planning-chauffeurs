@@ -2131,21 +2131,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "HOTEL SAINT ANTOINE***",
-              "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
-              "nbre": "2+1",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Bertrand",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER  Elie\n+33 6 33 07 28 35\n",
               "nbre": "13+1",
@@ -2938,21 +2923,6 @@
               "client": "LABARTHE\n",
               "nbre": "2",
               "arrivee": "HOTEL DU COL DE LA FORCLAZ",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL DE L'ARVE",
-              "client": "AGBATE VICTOR\n(- 06 75 67 49 55)",
-              "nbre": "2+1",
-              "arrivee": "RDV PRARION",
               "stockes": "–"
             },
             {
