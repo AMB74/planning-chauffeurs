@@ -373,12 +373,12 @@
             },
             {
               "pilote": "",
-              "renforts": "TAXI JAY",
+              "renforts": "0. AUCUN",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "17H00 Les Chapieux > HBG",
-              "details": "–",
+              "details": "PAS TRANSFERT CHAPIEUX\n",
               "heure_rdv": "",
               "depart": "HOTEL LE VIEUX POMMIER",
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
@@ -770,18 +770,18 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "8H00\n",
+              "details": "8H00 : HOTEL LA GELINOTTE > NOTRE DAME DE LA GORGE (1 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "MARKS\n",
               "nbre": "1",
-              "arrivee": "ND GORGE Sans BG",
+              "arrivee": "CHALET DU BERGER",
               "stockes": "–"
             }
           ]
@@ -921,7 +921,7 @@
               "depart": "CHALET DES CONTAMINES",
               "client": "BARBEAU\n",
               "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -937,6 +937,21 @@
               "client": "HAMELIN\n",
               "nbre": "1",
               "arrivee": "GITE LES MEANDRES",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET DES CONTAMINES",
+              "client": "HUA\n",
+              "nbre": "4",
+              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
@@ -1038,21 +1053,6 @@
               "transfert": "–",
               "details": "–",
               "heure_rdv": "",
-              "depart": "RDV PRARION",
-              "client": "BARBEAU\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LES CAMPANULES**",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
               "depart": "HOTEL LES CAMPANULES**",
               "client": "LIBOSSART ERIC\n(06 86 55 16 03 - )",
               "nbre": "13+1",
@@ -1071,7 +1071,7 @@
               "depart": "HOTEL LES CAMPANULES**",
               "client": "LAVOIE\n",
               "nbre": "12",
-              "arrivee": "RDV PLANPRAZ",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
@@ -1435,6 +1435,21 @@
               "stockes": "–"
             },
             {
+              "pilote": "0. AUCUN",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "16H30 ND GORGE > HBG",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "REFUGE LES MOTTETS",
+              "client": "MELSNER\n",
+              "nbre": "2",
+              "arrivee": "CHALET DES CONTAMINES",
+              "stockes": "–"
+            },
+            {
               "pilote": "",
               "renforts": "",
               "alerte": "BAGAGES",
@@ -1507,21 +1522,6 @@
               "client": "FRANZ THIERRY\n(- 06 08 89 82 79)",
               "nbre": "5+1",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "16H30 ND GORGE > HBG\n\n16H30",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MELSNER\n",
-              "nbre": "2",
-              "arrivee": "CHALET DES CONTAMINES",
               "stockes": "–"
             },
             {
@@ -1823,15 +1823,15 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
+              "transfert": "16H ST GUÉRIN > HBG",
               "details": "16H00\n",
               "heure_rdv": "",
-              "depart": "RDV SAINT GUERIN",
+              "depart": "CHALET DU BERGER",
               "client": "MARKS\n",
               "nbre": "1",
               "arrivee": "LE PETIT REFUGE - ROSUEL",
@@ -1843,13 +1843,13 @@
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "16H00\n",
+              "transfert": "16H ST GUÉRIN > HBG",
+              "details": "\n",
               "heure_rdv": "",
-              "depart": "RDV SAINT GUERIN",
+              "depart": "REFUGE PLAN MYA",
               "client": "LALANDE\n",
               "nbre": "2",
-              "arrivee": "HOTEL LE TERRIL BLANC**",
+              "arrivee": "REFUGE DE ROSUEL",
               "stockes": "–"
             }
           ]
@@ -1915,6 +1915,21 @@
               "client": "MARIAGER\n",
               "nbre": "2",
               "arrivee": "HOTEL LES CAMPANULES**",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LES CAMPANULES**",
+              "client": "BARBEAU\n",
+              "nbre": "2",
+              "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
             {
@@ -2715,9 +2730,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL LE CHRISTIANIA**",
-              "client": "BLIVET\n",
+              "client": "SAAD\n",
               "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -2730,9 +2745,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL LE CHRISTIANIA**",
-              "client": "SAAD\n",
+              "client": "BLIVET\n",
               "nbre": "2",
-              "arrivee": "HOTEL LES CAMPANULES**",
+              "arrivee": "HOTEL CHAMONIX LODGE",
               "stockes": "–"
             },
             {
