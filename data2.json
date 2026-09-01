@@ -685,21 +685,6 @@
               "nbre": "2",
               "arrivee": "CHALET HOTEL LA CHEMENAZ****",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "14+1",
-              "arrivee": "RDV MONTROC",
-              "stockes": "–"
             }
           ]
         },
@@ -781,6 +766,26 @@
       "titre": "DIMANCHE 6 SEPTEMBRE",
       "date_complete": "DIMANCHE 6 SEPTEMBRE 2026",
       "groupes": [
+        {
+          "massif": "2. GTA 1",
+          "lignes": [
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "8H00\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LA GELINOTTE",
+              "client": "MARKS\n",
+              "nbre": "1",
+              "arrivee": "ND GORGE Sans BG",
+              "stockes": "–"
+            }
+          ]
+        },
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
@@ -1819,22 +1824,7 @@
           "lignes": [
             {
               "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "8H00\n",
-              "heure_rdv": "",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "MARKS\n",
-              "nbre": "1",
-              "arrivee": "ND GORGE Sans BG",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
+              "renforts": "TAXI JAY",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -1845,6 +1835,21 @@
               "client": "MARKS\n",
               "nbre": "1",
               "arrivee": "LE PETIT REFUGE - ROSUEL",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "TAXI JAY",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "TRANSFERT",
+              "type": "TRANSFERT UNIQUEMENT",
+              "transfert": "–",
+              "details": "16H00\n",
+              "heure_rdv": "",
+              "depart": "RDV SAINT GUERIN",
+              "client": "LALANDE\n",
+              "nbre": "2",
+              "arrivee": "HOTEL LE TERRIL BLANC**",
               "stockes": "–"
             }
           ]
@@ -2620,21 +2625,6 @@
         {
           "massif": "2. GTA 1",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "TRANSFERT",
-              "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "16H00\n",
-              "heure_rdv": "",
-              "depart": "RDV SAINT GUERIN",
-              "client": "LALANDE\n",
-              "nbre": "2",
-              "arrivee": "HOTEL LE TERRIL BLANC**",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
