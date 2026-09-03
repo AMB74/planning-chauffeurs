@@ -5006,7 +5006,7 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -5021,7 +5021,7 @@
             },
             {
               "pilote": "Jean-Marc",
-              "renforts": "Serge",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -5101,7 +5101,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "7H45 : HBG >Le Tour (12 pax) **SERGE + YAN**\n17H30 : LA GRANDE OURSE > HBG (12 pax) **SERGE + J. MARC**\n",
+              "details": "8H45 : HBG >Le Tour (12 pax) **SERGE + YAN**\n17H30 : LA GRANDE OURSE > HBG (12 pax) **SERGE + J. MARC**\n",
               "heure_rdv": "",
               "depart": "HOTEL LA COURONNE",
               "client": "TREKKER valentin\n+33 6 28719160\n",
@@ -5260,13 +5260,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Yan A.",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! VEILLE SANS BG\nJ-1: HOTEL DU STAND\n",
+              "details": "FAIT\n!! VEILLE SANS BG\nJ-1: HOTEL DU STAND\n",
               "heure_rdv": "",
               "depart": "ALPAGE DE LA PEULE ",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
