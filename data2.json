@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 5 SEPTEMBRE",
     "numero_semaine": "Semaine 37",
-    "genere_le": "03/09/2026"
+    "genere_le": "04/09/2026"
   },
   "chauffeurs": [
     {
@@ -198,7 +198,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "09H30",
-              "details": "–",
+              "details": "!! Récupérer 1 road book client BEARD à la récpetion et le faire passer pour qu'il rentre au bureau\n",
               "heure_rdv": "PRARION CAISSES + TRANSFERT AEM",
               "depart": "RDV FLÉGÈRE",
               "client": "PERRIER SEBASTIEN\n(- 06 51 90 52 07)",
@@ -3010,8 +3010,8 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
-              "client": "DELORME\n",
-              "nbre": "10",
+              "client": "LEGAULT\n",
+              "nbre": "1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
@@ -3025,9 +3025,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
-              "client": "LEGAULT\n",
-              "nbre": "1",
-              "arrivee": "RDV PRARION",
+              "client": "DELORME\n",
+              "nbre": "10",
+              "arrivee": "CHAMONIARD VOLANT",
               "stockes": "–"
             },
             {
@@ -5432,18 +5432,18 @@
           "massif": "11. MONT-ROSE",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Damian",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 16H00 : RDV devant le téléphérique PLAN MAISON à BREUIL CERVINIA > MACUGNAGA / 3 pax\n",
               "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
+              "depart": "RDV TELEPHERIQUE CERVINIA",
               "client": "COMBACAL\n",
               "nbre": "3",
-              "arrivee": "ALTITUDE TRANSPORT",
+              "arrivee": "RDV MACUGNAGA",
               "stockes": "–"
             }
           ]
