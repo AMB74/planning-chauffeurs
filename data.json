@@ -1601,7 +1601,7 @@
               "details": "9H30 : GVA > HOTEL ROCKY POP (Vol n° : EI 0680) / 8 pax\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
@@ -1939,7 +1939,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "CHAMONIARD VOLANT",
               "stockes": "–"
@@ -2608,7 +2608,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
@@ -2628,7 +2628,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2643,7 +2643,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2658,7 +2658,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2673,7 +2673,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2688,7 +2688,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2703,7 +2703,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2718,7 +2718,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2733,13 +2733,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "**Bertrand** récupère BG à la Folie douce > Gaillands\n**Laurent** récupère BG aux Gaillands > Hotel le DAHU\n",
               "heure_rdv": "",
               "depart": "HOTEL LA FOLIE DOUCE CHAMONIX",
               "client": "HERRMAN\n",
@@ -2748,28 +2748,28 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! BG prêts pour 7H00 \nROUTE FERMEE\n",
               "heure_rdv": "",
               "depart": "CHAMONIARD VOLANT",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "LES TOURISTES CHATELARD",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "10H00",
-              "details": "–",
+              "details": "**Bertrand** récupère BG à la Flégère  > Gaillands\n**Laurent** récupère BG aux Gaillands > Hotel le DAHU\n",
               "heure_rdv": "",
               "depart": "RDV FLÉGÈRE",
               "client": "JEPPESEN\n",
@@ -2778,13 +2778,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand, Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "10H00",
-              "details": "–",
+              "details": "**Bertrand** récupère BG à la Flégère  > Gaillands\n**Laurent** récupère BG aux Gaillands > Hotel le DAHU\n",
               "heure_rdv": "",
               "depart": "RDV FLÉGÈRE",
               "client": "GRAS\n",
@@ -2793,13 +2793,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent, Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "10H00",
-              "details": "–",
+              "details": "**Bertrand** récupère BG à la Flégère  > Gaillands\n**Laurent** récupère BG aux Gaillands > Hotel le DAHU\n",
               "heure_rdv": "",
               "depart": "RDV FLÉGÈRE",
               "client": "CHATOT\n",
@@ -2808,7 +2808,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2823,7 +2823,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2838,7 +2838,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2853,8 +2853,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Jean-Marc, Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2868,7 +2868,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2883,7 +2883,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2898,7 +2898,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2913,7 +2913,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2928,7 +2928,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2943,7 +2943,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2958,7 +2958,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2973,7 +2973,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2988,7 +2988,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3003,7 +3003,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3018,7 +3018,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3033,8 +3033,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Jean-Marc, Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3048,7 +3048,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3063,7 +3063,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3078,7 +3078,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3093,7 +3093,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3108,8 +3108,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "TAXI MONT BLANC",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3123,8 +3123,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -3138,8 +3138,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -3153,8 +3153,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3168,8 +3168,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3183,7 +3183,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3198,8 +3198,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3213,8 +3213,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3228,7 +3228,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3243,13 +3243,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Yan A., Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "RDV 16:30 Notre Dame de la Gorge Taxi >> transfert H. Deux Gares St Gervais\n",
+              "details": "16H00 : Notre Dame de la Gorge >HBG / 14 pax\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA GITTAZ",
               "client": "TREKKER  Elie\n+33 6 33 07 28 35\n",
@@ -3258,13 +3258,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Yan A., Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "16H30 : Notre Dame de la Gorge Taxi > HBG / 14 pax\n",
+              "details": "17H00 : Notre Dame de la Gorge  > HBG / 14 pax\n",
               "heure_rdv": "",
               "depart": "REFUGE DE LA GITTAZ",
               "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
@@ -3273,13 +3273,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "13H GVA > Hotel Rockypop / 8 pax\n!! Récupérer 6 BG stockés au ROCKYPOP (étiquettes jaunes) > Hôtel du BOIS\n",
+              "details": "13H GVA > Hotel Rockypop / 8 pax\n!! Récupérer 6 BG stockés au ROCKYPOP (étiquettes jaunes TREKKER MAUD ET CYRIL) > Hôtel du BOIS\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "TREKKER Charles\n+33 6 30 99 79 47\n",
@@ -3288,7 +3288,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3297,13 +3297,13 @@
               "details": "13H GVA > Hotel Rockypop - 8 pax\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER ALAN +33 6 84 08 60 35\n",
               "nbre": "11+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3323,7 +3323,7 @@
           "massif": "5. VANOISE",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3343,7 +3343,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3358,7 +3358,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3375,30 +3375,10 @@
           ]
         },
         {
-          "massif": "9. CHAMONIX - ZERMATT / CERVIN / VALAIS",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "NUIT SS BAGAGE\nVEILLE SS BAGAGE",
-              "transfert": "–",
-              "details": "J-1 : DEBUT OT FIONNAY\nJ+1 : HOTEL DU GLACIER AROLLA\n",
-              "heure_rdv": "",
-              "depart": "CABANE DE LOUVIE",
-              "client": "GAGGIOLI CATHERINE\n(06 61 43 95 37 - )",
-              "nbre": "6+1",
-              "arrivee": "CABANE DE PRAFLEURI",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
           "massif": "10. GRANDS COMBINS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Damian",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
@@ -3410,26 +3390,6 @@
               "client": "PATISSIER VINCENT\n(06 63 11 69 66 - )",
               "nbre": "10+1",
               "arrivee": "REFUGE DE CHAMPILLON",
-              "stockes": "–"
-            }
-          ]
-        },
-        {
-          "massif": "OBERLAND",
-          "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "BERGHAUS ALPIGLEN",
-              "client": "BACHAR\n",
-              "nbre": "2",
-              "arrivee": "HOTEL STEINBOCK***",
               "stockes": "–"
             }
           ]
@@ -3675,7 +3635,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER ALAN +33 6 84 08 60 35\n",
               "nbre": "11+1",
               "arrivee": "HOTEL LA COURONNE",
               "stockes": "–"
@@ -3930,7 +3890,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "LES TOURISTES CHATELARD",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "HÔTEL DU STAND",
               "stockes": "–"
@@ -4438,7 +4398,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL LA COURONNE",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
               "nbre": "11+1",
               "arrivee": "HOTEL VATEL - MARTIGNY",
               "stockes": "–"
@@ -4663,7 +4623,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HÔTEL DU STAND",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "HOTEL L'UNION",
               "stockes": "–"
@@ -5226,7 +5186,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL VATEL - MARTIGNY",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
               "nbre": "11+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
@@ -5391,7 +5351,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "HOTEL OTTOZ",
               "stockes": "–"
@@ -6119,7 +6079,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL LES JUMEAUX",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER ALAN\n+33 6 84 08 60 35\n",
               "nbre": "11+1",
               "arrivee": "HOTEL LES JUMEAUX",
               "stockes": "–"
@@ -6209,7 +6169,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL OTTOZ",
-              "client": "TREKKER Anne\n(+33 6 03 65 88 13)",
+              "client": "TREKKER Anne\n(+33 6 82 29 59 52)",
               "nbre": "13+1",
               "arrivee": "HOTEL OTTOZ",
               "stockes": "–"
