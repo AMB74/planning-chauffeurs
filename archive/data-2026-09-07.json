@@ -685,7 +685,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Laurent, Yan A., TAXI MONT BLANC",
+              "renforts": "Laurent, Yan A., TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -700,7 +700,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Yan A., Laurent, TAXI MONT BLANC",
+              "renforts": "Yan A., Laurent, TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -715,7 +715,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Yan A., Laurent, TAXI MONT BLANC",
+              "renforts": "Yan A., Laurent, TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -730,7 +730,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Yan A., Laurent, TAXI MONT BLANC",
+              "renforts": "Yan A., Laurent, TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -745,7 +745,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Yan A., Laurent, TAXI MONT BLANC",
+              "renforts": "Yan A., Laurent, TAXI PEAKPLUS",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -3124,7 +3124,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "TAXI MONT BLANC",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3229,7 +3229,7 @@
             },
             {
               "pilote": "Charlie",
-              "renforts": "Charlie",
+              "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3421,7 +3421,7 @@
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
@@ -3442,7 +3442,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Yann L.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -3461,7 +3461,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Aurore",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3476,8 +3476,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3491,8 +3491,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3506,8 +3506,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Marc",
+              "renforts": "Bertrand, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3521,7 +3521,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3536,13 +3536,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! TRANSFERT DEMANDÉ\n8H30 HBG > La Villette\n",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
               "client": "THOMAS\n",
@@ -3551,7 +3551,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3566,7 +3566,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3581,7 +3581,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3596,13 +3596,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Bertrand",
+              "renforts": "Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "8H15 HBG > La Villette\n",
+              "details": "!! TRANSFERT DEMANDÉ\n8H15 HBG > La Villette\n",
               "heure_rdv": "",
               "depart": "HOTEL LE CHRISTIANIA**",
               "client": "SAAD\n",
@@ -3611,7 +3611,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3626,7 +3626,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3641,7 +3641,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3656,7 +3656,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3671,13 +3671,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Récup bagages à 07H15\n",
               "heure_rdv": "",
               "depart": "CHAMONIARD VOLANT",
               "client": "TREKKER Salomé\n+33 6 76 74 92 79\n",
@@ -3686,7 +3686,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3701,7 +3701,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3716,7 +3716,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3731,7 +3731,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3746,7 +3746,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3761,7 +3761,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -4082,7 +4082,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "REFUGE ELENA",
               "client": "ROY\n",
@@ -4157,7 +4157,7 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "TAXI REFUGE DES BARMETTES",
+              "renforts": "0. AUCUN, TAXI REFUGE DES BARMETTES",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -4905,7 +4905,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "REFUGE MONTE BIANCO",
               "client": "ROY\n",
@@ -5618,7 +5618,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "ROY\n",
@@ -5776,7 +5776,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "+ 1 PAX A TRANSFERER\n",
               "heure_rdv": "",
               "depart": "CHALET DES CONTAMINES",
               "client": "ROY\n",
