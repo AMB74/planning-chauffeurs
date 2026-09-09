@@ -5088,12 +5088,12 @@
             },
             {
               "pilote": "Jean-Marc",
-              "renforts": "",
+              "renforts": "Jean Jacques",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "7H50 : Transfert conta\n",
               "heure_rdv": "",
               "depart": "HOTEL GAI SOLEIL***",
               "client": "HAN\n",
@@ -5103,7 +5103,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Jean-Marc",
+              "renforts": "Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -6141,7 +6141,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Yan A., Laurent",
+              "renforts": "Yan A., Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6156,7 +6156,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Yan A., Laurent",
+              "renforts": "Yan A., Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6171,7 +6171,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Yan A., Laurent",
+              "renforts": "Yan A., Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6186,7 +6186,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "AEM, Laurent, Yan A.",
+              "renforts": "Laurent, Yan A.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -6201,7 +6201,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "AEM, Laurent, Yan A.",
+              "renforts": "Laurent, Yan A.",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -6216,7 +6216,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Laurent, Yan A.",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6231,7 +6231,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Yan A., Laurent",
+              "renforts": "Yan A., Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -6246,7 +6246,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "AEM, Laurent, Yan A.",
+              "renforts": "Laurent, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
