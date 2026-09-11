@@ -742,7 +742,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -757,7 +757,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -772,7 +772,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -787,7 +787,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -802,7 +802,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -817,7 +817,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -832,7 +832,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Bertrand, Serge",
               "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -862,7 +862,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Serge",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2088,13 +2088,13 @@
           "massif": "2. GTA 1",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "17H00 Les Chapieux > HBG\n\n13H15",
-              "details": "13H15 : Parking près REFUGE DU PLAN DE LA LAI > GARE SNCF BOURG ST MAURICE (3 pax)\n",
+              "details": "Bertrand : récupère13H15 : Parking près REFUGE DU PLAN DE LA LAI > GARE SNCF BOURG ST MAURICE (3 pax)\n",
               "heure_rdv": "",
               "depart": "REFUGE PLAN DE LA LAI",
               "client": "DUPAIN\n",
