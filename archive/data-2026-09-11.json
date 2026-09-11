@@ -2010,7 +2010,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "VOYAGE GAL",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -2040,13 +2040,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Yan A.",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Hôtel le Labrador, Chamonix\n",
               "heure_rdv": "",
               "depart": "RDV HOTEL",
               "client": "MENARD\n",
