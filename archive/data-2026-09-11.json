@@ -743,7 +743,7 @@
           "lignes": [
             {
               "pilote": "Bertrand",
-              "renforts": "Serge, Laurent",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -758,7 +758,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -773,7 +773,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "Serge, Laurent",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -788,7 +788,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -803,7 +803,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "Serge, Laurent",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -818,7 +818,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -833,12 +833,12 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Serge, Laurent, Bertrand",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "BG à déposer à l'Hôtel LA FONTAINE (Les Houches)\n",
+              "details": "!! BG à déposer à l'Hôtel LA FONTAINE (Les Houches)\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "GREVENDONK\n",
@@ -847,7 +847,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1193,7 +1193,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent, TAXI JAY",
+              "renforts": "Jean-Marc, Laurent, TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1208,7 +1208,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1238,7 +1238,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1253,7 +1253,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1268,7 +1268,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1283,7 +1283,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -1313,7 +1313,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1328,7 +1328,7 @@
             },
             {
               "pilote": "Laurent",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1343,7 +1343,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -1358,7 +1358,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Charlie, Jean-Marc, Laurent",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
@@ -1377,7 +1377,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "Oscar",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -2011,12 +2011,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "VOYAGE GAL",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "!! Arrivée à 7H10 : GVA > ROCKY POP (vol EY145) **37 pax** \n\n",
+              "details": "10H30 : GVA > ROCKY POP (vol EY145) **37 pax** \n\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
