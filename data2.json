@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 12 SEPTEMBRE",
     "numero_semaine": "Semaine 38",
-    "genere_le": "10/09/2026"
+    "genere_le": "11/09/2026"
   },
   "chauffeurs": [
     {
@@ -243,7 +243,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "10H00",
-              "details": "–",
+              "details": "!! + 1 BG à stocker\n",
               "heure_rdv": "",
               "depart": "RDV FLÉGÈRE",
               "client": "LOCZY\n",
@@ -643,12 +643,12 @@
             },
             {
               "pilote": "",
-              "renforts": "",
+              "renforts": "0. AUCUN",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "!! 2 Pax à transporter\n!! transfert de 16H30\n",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "KRUSE\n",

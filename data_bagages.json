@@ -1,33 +1,20 @@
 {
   "meta": {
-    "genere_le": "10/09/2026 17:46"
+    "genere_le": "11/09/2026 13:46"
   },
   "lignes": [
     {
-      "jour_semaine": "06-09 - DIMANCHE",
-      "client": "TREPANIER\n",
-      "chauffeur_debut": "Laurent",
+      "jour_semaine": "12-09 - SAMEDI",
+      "client": "LOCZY\n",
+      "chauffeur_debut": "Charlie",
       "chauffeur_fin": "–",
-      "nbre": "2",
+      "nbre": "1",
       "depart": "RDV FLÉGÈRE",
       "arrivee": "RDV PRARION",
-      "date_debut": "2026-09-06",
-      "date_fin": "2026-09-14",
-      "date_debut_aff": "Dim 06/09",
-      "date_fin_aff": "Lun 14/09"
-    },
-    {
-      "jour_semaine": "06-09 - DIMANCHE",
-      "client": "FESTEAU ROMAIN\n(- 06 76 72 00 84)",
-      "chauffeur_debut": "Laurent",
-      "chauffeur_fin": "–",
-      "nbre": "2",
-      "depart": "HOTEL SAINT ANTOINE***",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-09-06",
-      "date_fin": "2026-09-12",
-      "date_debut_aff": "Dim 06/09",
-      "date_fin_aff": "Sam 12/09"
+      "date_debut": "2026-09-12",
+      "date_fin": "2026-09-20",
+      "date_debut_aff": "Sam 12/09",
+      "date_fin_aff": "Dim 20/09"
     }
   ]
 }
