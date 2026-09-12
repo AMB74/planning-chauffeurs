@@ -1455,7 +1455,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Bertrand",
+              "pilote": "Ivan",
               "renforts": "Bertrand, Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1951,7 +1951,7 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "Yan A., Charlie",
+              "renforts": "Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1981,7 +1981,7 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "Yan A., Charlie",
+              "renforts": "Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -1996,7 +1996,7 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "Yan A., Charlie",
+              "renforts": "Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -2011,7 +2011,7 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "Yan A., Charlie",
+              "renforts": "Jean-Marc, Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -2026,7 +2026,7 @@
             },
             {
               "pilote": "Ivan",
-              "renforts": "Yan A., Charlie",
+              "renforts": "Yan A.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
