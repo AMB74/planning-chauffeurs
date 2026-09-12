@@ -2119,14 +2119,14 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "0. AUCUN, TAXI JAY",
+              "renforts": "Charlie, TAXI JAY",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "TRANSFERT",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "17H00 Les Chapieux > HBG\n\n13H15",
-              "details": "13H15 : Parking près REFUGE DU PLAN DE LA LAI > GARE SNCF BOURG ST MAURICE (3 pax)\n",
+              "transfert": "13H15",
+              "details": "8H00 : HBG > NOTRE DALME DE LA GORGE\n13H15 : Parking près REFUGE DU PLAN DE LA LAI > GARE SNCF BOURG ST MAURICE (3 pax)\n",
               "heure_rdv": "",
-              "depart": "REFUGE PLAN DE LA LAI",
+              "depart": "HOTEL LA GELINOTTE",
               "client": "DUPAIN\n",
               "nbre": "3",
               "arrivee": "RDV GARE SNCF BOURG SAINT MAURICE",
