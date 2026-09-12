@@ -1158,7 +1158,7 @@
               "depart": "HOTEL LES JUMEAUX",
               "client": "TREKKER ALAN +33 6 84 08 60 35\n",
               "nbre": "12+1",
-              "arrivee": "HOTEL BELVEDERE SEEZ",
+              "arrivee": "HOTEL MALGOVERT",
               "stockes": "–"
             },
             {
@@ -1466,21 +1466,6 @@
               "depart": "HOTEL BELVEDERE SEEZ",
               "client": "TREKKER Charles\n+33 6 30 99 79 47\n",
               "nbre": "10+1",
-              "arrivee": "HOTEL ROCKY POP***",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Ivan",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "16H00 : Notre Dame de la Gorge >HBG (13pax)\n",
-              "heure_rdv": "",
-              "depart": "HOTEL BELVEDERE SEEZ",
-              "client": "TREKKER ALAN +33 6 84 08 60 35\n",
-              "nbre": "12+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
@@ -1947,6 +1932,21 @@
               "client": "TREKKER Guide Anne\n+33 6 82 29 59 52\n",
               "nbre": "13+1",
               "arrivee": "GITE ET CAMPING DU PONTET",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Ivan",
+              "renforts": "Jean-Marc, Serge",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "16H00 : Notre Dame de la Gorge >HBG (13pax)\n",
+              "heure_rdv": "",
+              "depart": "HOTEL MALGOVERT",
+              "client": "TREKKER ALAN +33 6 84 08 60 35\n",
+              "nbre": "12+1",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
