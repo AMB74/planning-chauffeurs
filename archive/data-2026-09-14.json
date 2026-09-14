@@ -3312,7 +3312,7 @@
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "OSCAR MERCREDI\nJ+1 : CHALET DE L'EPEE\n",
+              "details": "BERTRAND MERCREDI\nJ+1 : CHALET DE L'EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -3630,7 +3630,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "15H30 ARNOUVA > HBG",
-              "details": "–",
+              "details": "Trekker se débrouille pour le transfert\n",
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
               "client": "TREKKER ELIE\n+33 6 30 99 79 47\n",
@@ -3809,7 +3809,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "Oscar",
+              "pilote": "Bertrand",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
