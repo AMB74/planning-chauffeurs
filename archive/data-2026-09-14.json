@@ -2837,7 +2837,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Bertrand, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -2867,7 +2867,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Bertrand, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -2882,7 +2882,7 @@
             },
             {
               "pilote": "Bertrand",
-              "renforts": "",
+              "renforts": "Bertrand, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3354,8 +3354,8 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3369,8 +3369,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -3384,13 +3384,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H00 HBG > Trient",
-              "details": "–",
+              "details": "!! Transfert décalé à 08H15 !!\n",
               "heure_rdv": "",
               "depart": "HOTEL LA COURONNE",
               "client": "GRATALON\n",
@@ -3399,7 +3399,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3414,7 +3414,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3429,7 +3429,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3440,11 +3440,11 @@
               "depart": "HOTEL LA POSTE - MARTIGNY",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
               "nbre": "15+1",
-              "arrivee": "ALPAGE DE LA PEULE ",
+              "arrivee": "CHALET COL DE FENETRE",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3455,11 +3455,11 @@
               "depart": "HOTEL LA POSTE - MARTIGNY",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
               "nbre": "15+1",
-              "arrivee": "ALPAGE DE LA PEULE ",
+              "arrivee": "CHALET COL DE FENETRE",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3470,11 +3470,11 @@
               "depart": "HOTEL LA POSTE - MARTIGNY",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
               "nbre": "15+1",
-              "arrivee": "ALPAGE DE LA PEULE ",
+              "arrivee": "CHALET COL DE FENETRE",
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3489,7 +3489,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3504,7 +3504,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3519,7 +3519,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3534,7 +3534,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3549,7 +3549,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3564,7 +3564,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3579,7 +3579,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3594,7 +3594,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3609,7 +3609,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3624,7 +3624,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -3639,7 +3639,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3654,7 +3654,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3669,7 +3669,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3684,8 +3684,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Ivan",
+              "renforts": "Oscar",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3699,8 +3699,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Ivan",
+              "renforts": "Oscar",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -3714,7 +3714,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3729,7 +3729,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3744,7 +3744,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3759,7 +3759,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -3774,7 +3774,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Ivan",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
