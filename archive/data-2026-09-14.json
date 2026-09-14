@@ -3151,6 +3151,36 @@
               "stockes": "–"
             },
             {
+              "pilote": "Laurent",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 10 sacs à déplacer\n",
+              "heure_rdv": "",
+              "depart": "HOTEL LA POSTE - MARTIGNY",
+              "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
+              "nbre": "16+1",
+              "arrivee": "HÔTEL DU STAND",
+              "stockes": "–"
+            },
+            {
+              "pilote": "Laurent",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "!! 10 sacs à déplacer\n",
+              "heure_rdv": "",
+              "depart": "HÔTEL DU STAND",
+              "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
+              "nbre": "29+1",
+              "arrivee": "HOTEL LA POSTE - MARTIGNY",
+              "stockes": "–"
+            },
+            {
               "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
