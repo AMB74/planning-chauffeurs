@@ -3321,13 +3321,13 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "Damian",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "NUIT SS BAGAGE",
               "transfert": "–",
-              "details": "J+1 : CHALET DE L'EPEE\n",
+              "details": "OSCAR MERCREDI\nJ+1 : CHALET DE L'EPEE\n",
               "heure_rdv": "",
               "depart": "REFUGE BENEVOLO",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
@@ -3839,7 +3839,7 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
