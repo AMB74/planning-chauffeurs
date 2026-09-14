@@ -2594,7 +2594,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\n",
+              "details": "Pas de bagages > Annulation clients\n",
               "heure_rdv": "",
               "depart": "HOTEL SPLENDIDE",
               "client": "BOON\n",
@@ -3286,21 +3286,6 @@
               "stockes": "–"
             },
             {
-              "pilote": "Bertrand",
-              "renforts": "TAXI JAY",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "08H00 HBG > BONATTI\n17H00 Les Chapieux > HBG",
-              "details": "08H00 : Bus\n17H00 : Taxi JAY\n",
-              "heure_rdv": "",
-              "depart": "HOTEL MAISON SAINT JEAN",
-              "client": "BOON\n",
-              "nbre": "2",
-              "arrivee": "CHALET DU BERGER",
-              "stockes": "–"
-            },
-            {
               "pilote": "0. AUCUN",
               "renforts": "Yann L., TAXI CVT",
               "alerte": "!! TRANSFERT UNIQUEMENT",
@@ -3817,21 +3802,6 @@
               "nbre": "1",
               "arrivee": "CHALET DU BERGER",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET DU BERGER",
-              "client": "BOON\n",
-              "nbre": "2",
-              "arrivee": "HOTEL GAI SOLEIL***",
-              "stockes": "–"
             }
           ]
         },
@@ -3866,21 +3836,6 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL GAI SOLEIL***",
-              "client": "BOON\n",
-              "nbre": "2",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
