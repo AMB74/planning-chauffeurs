@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 19 SEPTEMBRE",
     "numero_semaine": "Semaine 39",
-    "genere_le": "14/09/2026"
+    "genere_le": "15/09/2026"
   },
   "chauffeurs": [
     {
@@ -438,7 +438,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "CHALET DU BERGER",
               "client": "CORMIER\n",
@@ -681,13 +681,13 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! 1 BG stocké\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "LOCZY\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
-              "stockes": "–"
+              "stockes": "1"
             },
             {
               "pilote": "",
