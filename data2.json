@@ -123,12 +123,12 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Déposer BG au Chalet Alpine Rose central (535 Clos des Érables, Chamonix)\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "BILODEAU\n",
               "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "arrivee": "RDV HOTEL",
               "stockes": "–"
             },
             {
@@ -480,6 +480,21 @@
               "nbre": "11+1",
               "arrivee": "RDV PARKING DE PONT",
               "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "TRANSFERT UNIQUEMENT",
+              "type_transfert": "BAGAGES",
+              "type": "PAS BESOIN",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "ALTITUDE TRANSPORT",
+              "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
+              "nbre": "11+1",
+              "arrivee": "ALTITUDE TRANSPORT",
+              "stockes": "–"
             }
           ]
         }
@@ -494,21 +509,6 @@
         {
           "massif": "3. MONT-BLANC",
           "lignes": [
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "CHALET L'AVENIERE",
-              "client": "CARMICHAEL\n",
-              "nbre": "3",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
             {
               "pilote": "",
               "renforts": "",
@@ -537,6 +537,21 @@
               "client": "MURDOCH\n",
               "nbre": "1",
               "arrivee": "RDV PRARION",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "CHALET L'AVENIERE",
+              "client": "CARMICHAEL\n",
+              "nbre": "3",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -580,21 +595,6 @@
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "RIZZI\n",
-              "nbre": "2",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "DAVIS\n",
               "nbre": "2",
               "arrivee": "RDV PRARION",
               "stockes": "–"
@@ -984,7 +984,7 @@
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "MENARD\n",
               "nbre": "2",
-              "arrivee": "RDV HOTEL",
+              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
@@ -1118,6 +1118,21 @@
               "client": "SCHEPERS\n",
               "nbre": "2",
               "arrivee": "GITE LES MEANDRES",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "HOTEL LES CAMPANULES**",
+              "client": "FINN\n",
+              "nbre": "4",
+              "arrivee": "HOTEL COSMIQUES ",
               "stockes": "–"
             },
             {
