@@ -352,22 +352,7 @@
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "VAUDEY CECILIA\n(- 06 18 60 24 62)",
-              "nbre": "8+1",
-              "arrivee": "HOTEL LA GELINOTTE",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "REFUGE LES MOTTETS",
-              "client": "VAUDEY CECILIA\n(- 06 18 60 24 62)",
-              "nbre": "6+1",
+              "nbre": "14+1",
               "arrivee": "HOTEL LA GELINOTTE",
               "stockes": "–"
             },
@@ -475,21 +460,6 @@
               "nbre": "3",
               "arrivee": "CHALET L'AVENIERE",
               "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES",
-              "type": "–",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
-              "nbre": "12+1",
-              "arrivee": "RDV MONTROC",
-              "stockes": "–"
             }
           ]
         },
@@ -509,21 +479,6 @@
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
               "nbre": "11+1",
               "arrivee": "RDV PARKING DE PONT",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "TRANSFERT UNIQUEMENT",
-              "type_transfert": "BAGAGES",
-              "type": "PAS BESOIN",
-              "transfert": "–",
-              "details": "–",
-              "heure_rdv": "",
-              "depart": "ALTITUDE TRANSPORT",
-              "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
-              "nbre": "11+1",
-              "arrivee": "ALTITUDE TRANSPORT",
               "stockes": "–"
             }
           ]
@@ -655,22 +610,7 @@
               "heure_rdv": "08H00",
               "depart": "HOTEL LA GELINOTTE",
               "client": "VAUDEY CECILIA\n(- 06 18 60 24 62)",
-              "nbre": "6+1",
-              "arrivee": "RDV PRARION",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "BAGAGES",
-              "type_transfert": "BAGAGES + TRANSFERT",
-              "type": "–",
-              "transfert": "HBG > LA VILLETTE",
-              "details": "–",
-              "heure_rdv": "08H00",
-              "depart": "HOTEL LA GELINOTTE",
-              "client": "VAUDEY CECILIA\n(- 06 18 60 24 62)",
-              "nbre": "8+1",
+              "nbre": "14+1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
