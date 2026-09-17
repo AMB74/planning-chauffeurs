@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 19 SEPTEMBRE",
     "numero_semaine": "Semaine 39",
-    "genere_le": "16/09/2026"
+    "genere_le": "17/09/2026"
   },
   "chauffeurs": [
     {
@@ -802,9 +802,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
-              "client": "FAYOLLE\n",
-              "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "client": "FINN\n",
+              "nbre": "4",
+              "arrivee": "HOTEL LES CAMPANULES**",
               "stockes": "–"
             },
             {
@@ -817,9 +817,9 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
-              "client": "FINN\n",
-              "nbre": "4",
-              "arrivee": "HOTEL LES CAMPANULES**",
+              "client": "FAYOLLE\n",
+              "nbre": "2",
+              "arrivee": "GITE LES MEANDRES",
               "stockes": "–"
             },
             {
@@ -1058,6 +1058,21 @@
               "client": "FINN\n",
               "nbre": "4",
               "arrivee": "HOTEL COSMIQUES ",
+              "stockes": "–"
+            },
+            {
+              "pilote": "",
+              "renforts": "",
+              "alerte": "BAGAGES",
+              "type_transfert": "BAGAGES",
+              "type": "–",
+              "transfert": "–",
+              "details": "–",
+              "heure_rdv": "",
+              "depart": "GITE LES MEANDRES",
+              "client": "FAYOLLE\n",
+              "nbre": "2",
+              "arrivee": "RDV PLANPRAZ",
               "stockes": "–"
             },
             {
