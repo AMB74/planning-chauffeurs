@@ -4290,8 +4290,8 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "Laurent",
-              "renforts": "Jean-Marc, Laurent",
+              "pilote": "Serge",
+              "renforts": "Laurent, Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -4305,8 +4305,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Serge",
+              "pilote": "Serge",
+              "renforts": "Laurent, Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -4320,13 +4320,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Serge",
+              "pilote": "Serge",
+              "renforts": "Laurent, Serge",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Transfert 8H00\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "MOXHAM\n",
@@ -4620,13 +4620,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Serge",
-              "renforts": "Serge, Jean-Marc",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Serge, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "16H30 ND GORGE > HBG",
-              "details": "–",
+              "details": "**!! JB et LAURENT échangent véhicules**\n",
               "heure_rdv": "",
               "depart": "REFUGE LES MOTTETS",
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
@@ -4635,8 +4635,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Serge",
-              "renforts": "Serge, Jean-Marc",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Serge, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4650,8 +4650,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Serge",
-              "renforts": "Serge, Jean-Marc",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Serge, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4665,8 +4665,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Serge",
-              "renforts": "Serge, Jean-Marc",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Serge, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -4700,13 +4700,13 @@
           "massif": "8. GRAND PARADIS",
           "lignes": [
             {
-              "pilote": "Jean-Marc",
+              "pilote": "Jean-Marc, Oscar",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "!! Déplacement 4x4 à PONT\n",
               "heure_rdv": "",
               "depart": "HOTEL GALISIA",
               "client": "MONIER NICOLAS\n(06 49 62 00 00 - )",
