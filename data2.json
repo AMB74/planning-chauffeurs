@@ -78,7 +78,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "HBG > LA VILLETTE",
-              "details": "2 Taxis du Mont Blanc\n",
+              "details": "7H30 : 2 Taxis du Mont Blanc\n",
               "heure_rdv": "07H30",
               "depart": "CHALET DES CONTAMINES",
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
@@ -108,7 +108,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "HBG > LA VILLETTE",
-              "details": "–",
+              "details": "8H00\n",
               "heure_rdv": "08H00",
               "depart": "HOTEL LA GELINOTTE",
               "client": "SOUSTELLE MARION\n(- 06 09 55 21 36)",
@@ -123,7 +123,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\n",
+              "details": "8H00\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "BILODEAU\n",
@@ -147,7 +147,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Charlie",
+              "pilote": "Jean Jacques",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -282,7 +282,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Jean-Baptiste",
               "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -297,7 +297,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Jean-Baptiste",
               "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -312,13 +312,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "TAXI JAY",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste, TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "08H30 HBG > Chapieux\n16H30 ND GORGE > HBG",
-              "details": "8H30 : Taxi JAY\n16H30 : AMB\n",
+              "details": "8H30 : HBG> Chapieux (**Taxi JAY)**\n16H30 : ND G > HBG Chemenaz (**JB)**\n",
               "heure_rdv": "",
               "depart": "HOTEL L'AUTANTIC***",
               "client": "RIZZI\n",
@@ -327,8 +327,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -342,8 +342,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -357,8 +357,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Laurent",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -372,7 +372,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -387,8 +387,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Laurent",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -402,8 +402,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
-              "renforts": "Laurent",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -417,7 +417,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "Laurent",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -438,7 +438,7 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "Jean-Marc",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -471,7 +471,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H00\n",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
               "client": "VIAL\n",
@@ -486,7 +486,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H00\n",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
               "client": "CARMICHAEL\n",
@@ -501,7 +501,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H00\n",
               "heure_rdv": "",
               "depart": "CHALET L'AVENIERE",
               "client": "MURDOCH\n",
@@ -516,7 +516,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H20\n",
               "heure_rdv": "",
               "depart": "CHALET NANT ROUGE",
               "client": "CORMIER\n",
@@ -531,7 +531,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H40\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "GRATALON\n",
@@ -546,7 +546,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H40\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "RIZZI\n",
@@ -561,7 +561,7 @@
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
               "transfert": "HBG > LA VILLETTE",
-              "details": "–",
+              "details": "8H00\n",
               "heure_rdv": "08H00",
               "depart": "HOTEL LA GELINOTTE",
               "client": "VAUDEY CECILIA\n(- 06 18 60 24 62)",
@@ -576,7 +576,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "8H00",
-              "details": "!! 1 BG stocké à récupérer au PRARION +2 BG > Lykke Hotel spa à Chamonix\n",
+              "details": "!! 1 BG stocké à récupérer au PRARION +2 BG > Lykke Hotel spa à Chamonix\n8H00\n",
               "heure_rdv": "",
               "depart": "HOTEL LA GELINOTTE",
               "client": "LOCZY\n",
@@ -843,8 +843,8 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "8H00",
-              "details": "\n",
+              "transfert": "7H50",
+              "details": "07H50\n",
               "heure_rdv": "",
               "depart": "GITE ET CAMPING DU PONTET",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
@@ -858,8 +858,8 @@
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
-              "transfert": "8H15",
-              "details": " \n",
+              "transfert": "8H10",
+              "details": " 08H10\n",
               "heure_rdv": "",
               "depart": "GITE ET CAMPING DU PONTET",
               "client": "TREKKER MIHAI 0766161481\nERIC +33 6 20 19 67 72\nMAXIME +33 6 02 66 02 89 \n",
@@ -889,7 +889,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "08H30\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "BORDELEAU\n",
@@ -904,7 +904,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "08H30\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
               "client": "MENARD\n",
@@ -1270,7 +1270,7 @@
               "depart": "GITE LES MEANDRES",
               "client": "SCHEPERS\n",
               "nbre": "2",
-              "arrivee": "RDV PLANPRAZ",
+              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
