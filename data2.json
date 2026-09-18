@@ -892,9 +892,9 @@
               "details": "08H30\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
-              "client": "BORDELEAU\n",
+              "client": "MENARD\n",
               "nbre": "2",
-              "arrivee": "RDV PRARION",
+              "arrivee": "HOTEL SAINT ANTOINE***",
               "stockes": "–"
             },
             {
@@ -907,9 +907,9 @@
               "details": "08H30\n",
               "heure_rdv": "",
               "depart": "CHALET HOTEL LA CHEMENAZ****",
-              "client": "MENARD\n",
+              "client": "BORDELEAU\n",
               "nbre": "2",
-              "arrivee": "HOTEL SAINT ANTOINE***",
+              "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
             },
             {
