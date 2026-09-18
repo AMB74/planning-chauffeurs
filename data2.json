@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 19 SEPTEMBRE",
     "numero_semaine": "Semaine 39",
-    "genere_le": "17/09/2026"
+    "genere_le": "18/09/2026"
   },
   "chauffeurs": [
     {
@@ -82,7 +82,7 @@
               "heure_rdv": "07H30",
               "depart": "CHALET DES CONTAMINES",
               "client": "SARDA ALAIN\n(- 06 88 06 79 49)",
-              "nbre": "14+1",
+              "nbre": "13+1",
               "arrivee": "RDV PRARION",
               "stockes": "–"
             },
