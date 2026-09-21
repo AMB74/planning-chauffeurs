@@ -1649,37 +1649,7 @@
           "massif": "0. RDV & TRANSFERT",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "–",
-              "type": "PAIN",
-              "transfert": "–",
-              "details": "VERIF PLANNING SEVERINE\n",
-              "heure_rdv": "",
-              "depart": "CHEZ PINPIN",
-              "client": "RÉASSORT GROUPES 7J\n",
-              "nbre": "–",
-              "arrivee": "CHEZ PINPIN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "",
-              "renforts": "",
-              "alerte": "!! TRANSFERT UNIQUEMENT",
-              "type_transfert": "–",
-              "type": "PAIN",
-              "transfert": "–",
-              "details": "VERIF PLANNING SEVERINE\n",
-              "heure_rdv": "",
-              "depart": "CHEZ PINPIN",
-              "client": "RÉASSORT GROUPES 7J\n",
-              "nbre": "–",
-              "arrivee": "CHEZ PINPIN",
-              "stockes": "–"
-            },
-            {
-              "pilote": "Charlie",
+              "pilote": "Jean Jacques",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "–",
@@ -1699,7 +1669,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean Jacques",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1714,8 +1684,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -1729,7 +1699,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -1744,13 +1714,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "0. AUCUN",
               "renforts": "",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "VEILLE SS BAGAGE",
               "transfert": "–",
-              "details": "J-1 : GITE BON ABRI\n",
+              "details": "DEJA FAIT\nJ-1 : GITE BON ABRI\n",
               "heure_rdv": "",
               "depart": "REFUGE BONATTI",
               "client": "FOURNIER DYLAN\n(- 06 51 92 89 58 )",
@@ -1759,13 +1729,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "bus ou AMB ?\n",
+              "details": "\n",
               "heure_rdv": "",
               "depart": "HOTEL VALLÉE BLANCHE LA PALUD",
               "client": "BRUNET SEBASTIEN\n(06 03 75 21 74 - )",
@@ -1774,7 +1744,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
