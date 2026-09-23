@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 26 SEPTEMBRE",
     "numero_semaine": "Semaine 40",
-    "genere_le": "22/09/2026"
+    "genere_le": "23/09/2026"
   },
   "chauffeurs": [
     {
@@ -360,7 +360,7 @@
               "details": "13H00 : GVA > Hotel Rockypop (5 pax)\n14H00 : Chamonix Plan B Hotel > Hotel Rockypop (5 pax)\n\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER MARIO +33 6 69 42 45 86\n",
               "nbre": "10+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
@@ -408,7 +408,7 @@
               "details": "8H30 : Hotel Rockypop > Col des montets (11 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER MARIO +33 6 69 42 45 86\n",
               "nbre": "10+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
@@ -516,7 +516,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER MARIO +33 6 69 42 45 86\n",
               "nbre": "10+1",
               "arrivee": "HOTEL L'UNION",
               "stockes": "–"
@@ -669,7 +669,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "HOTEL L'UNION",
-              "client": "TREKKER ...\n",
+              "client": "TREKKER MARIO +33 6 69 42 45 86\n",
               "nbre": "10+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
