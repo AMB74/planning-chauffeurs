@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 26 SEPTEMBRE",
     "numero_semaine": "Semaine 40",
-    "genere_le": "23/09/2026"
+    "genere_le": "24/09/2026"
   },
   "chauffeurs": [
     {
@@ -345,7 +345,7 @@
               "details": "13H00 : GVA > Hotel Rockypop (4 pax)\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
-              "client": "TREKKER FRANCK \n+33 6 12 38 85 02\n",
+              "client": "TREKKER MIHAI 0766161481\n",
               "nbre": "10+1",
               "arrivee": "HOTEL ROCKY POP***",
               "stockes": "–"
@@ -423,7 +423,7 @@
               "details": "8H30 : Hotel Rockypop > Col des montets (11 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
-              "client": "TREKKER FRANCK \n+33 6 12 38 85 02\n",
+              "client": "TREKKER MIHAI 0766161481\n",
               "nbre": "10+1",
               "arrivee": "REFUGE DE LA BOERNE",
               "stockes": "–"
@@ -546,7 +546,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "REFUGE DE LA BOERNE",
-              "client": "TREKKER FRANCK \n+33 6 12 38 85 02\n",
+              "client": "TREKKER MIHAI 0766161481\n",
               "nbre": "10+1",
               "arrivee": "AUBERGE DES GLACIERS",
               "stockes": "–"
@@ -684,7 +684,7 @@
               "details": "–",
               "heure_rdv": "",
               "depart": "AUBERGE DES GLACIERS",
-              "client": "TREKKER FRANCK \n+33 6 12 38 85 02\n",
+              "client": "TREKKER MIHAI 0766161481\n",
               "nbre": "10+1",
               "arrivee": "HOTEL MAISON SAINT JEAN",
               "stockes": "–"
