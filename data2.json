@@ -72,8 +72,8 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
               "type": "–",
@@ -87,8 +87,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Charlie, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -102,8 +102,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Jean-Marc, Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -117,7 +117,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "TAXI JAY",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES + TRANSFERT",
@@ -132,8 +132,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -147,8 +147,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Charlie, Jean-Marc",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -175,7 +175,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -191,7 +191,7 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
@@ -205,8 +205,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "TAXI CVT",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -233,7 +233,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -248,7 +248,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Laurent",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -263,8 +263,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Yann L.",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
