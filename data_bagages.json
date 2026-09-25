@@ -1,20 +1,6 @@
 {
   "meta": {
-    "genere_le": "24/09/2026 18:31"
+    "genere_le": "25/09/2026 12:44"
   },
-  "lignes": [
-    {
-      "jour_semaine": "20-09 - DIMANCHE",
-      "client": "LOCZY\n",
-      "chauffeur_debut": "–",
-      "chauffeur_fin": "Yan A.",
-      "nbre": "1",
-      "depart": "RDV FLÉGÈRE",
-      "arrivee": "RDV PRARION",
-      "date_debut": "2026-09-12",
-      "date_fin": "2026-09-20",
-      "date_debut_aff": "Sam 12/09",
-      "date_fin_aff": "Dim 20/09"
-    }
-  ]
+  "lignes": []
 }

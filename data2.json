@@ -3,7 +3,7 @@
     "semaine": "SEMAINE 2",
     "date_affichee": "SEMAINE DU SAMEDI 26 SEPTEMBRE",
     "numero_semaine": "Semaine 40",
-    "genere_le": "24/09/2026"
+    "genere_le": "25/09/2026"
   },
   "chauffeurs": [
     {
@@ -711,7 +711,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "16H00 : N.D GORGE > HBG (15pax)\n",
               "heure_rdv": "",
               "depart": "BASE CAMP LODGE HOTEL",
               "client": "TREKKER ELIE\n+33 6 33 07 28 35\n",
@@ -726,7 +726,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "16H00 : N.D GORGE > HBG (15pax)\n",
               "heure_rdv": "",
               "depart": "BASE CAMP LODGE HOTEL",
               "client": "TREKKER Charles\n+33 6 33 07 28 35\n",
