@@ -376,8 +376,8 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Laurent",
+              "renforts": "Laurent, Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -391,7 +391,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -406,7 +406,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -421,13 +421,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Yann L., Laurent, Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "13H00 : GVA > Hotel Rockypop (5 pax)\n14H00 : Chamonix Plan B Hotel > Hotel Rockypop (5 pax)\n\n",
+              "details": "13H00 : GVA > Hotel Rockypop (5 pax) → Yann + Laurent (avec groupe Mihai)\n14H00 : Chamonix Plan B Hotel > Hotel Rockypop (5 pax) → Charlie\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "TREKKER MARIO +33 6 69 42 45 86\n",
@@ -436,13 +436,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "0. AUCUN",
+              "renforts": "Yann L., Laurent",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
               "transfert": "13H00",
-              "details": "13H00 : GVA > Hotel Rockypop (4 pax)\n",
+              "details": "13H00 : GVA > Hotel Rockypop (4 pax) (avec groupe Mario)\n",
               "heure_rdv": "",
               "depart": "GENEVE AEROPORT",
               "client": "TREKKER MIHAI 0766161481\n",
@@ -470,7 +470,7 @@
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "\n",
+              "details": "Oscar AMB si Yann ne peut pas\n",
               "heure_rdv": "",
               "depart": "HOTEL LE PLEIN SOLEIL",
               "client": "JEANNE\n",
@@ -485,12 +485,12 @@
           "lignes": [
             {
               "pilote": "0. AUCUN",
-              "renforts": "",
+              "renforts": "Laurent, Charlie",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "PAS BESOIN",
               "transfert": "–",
-              "details": "8H30 : Hotel Rockypop > Col des montets (11 pax)\n",
+              "details": "8H00 : Hotel Rockypop > Col des montets (11 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER MARIO +33 6 69 42 45 86\n",
@@ -499,13 +499,13 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Charlie",
+              "renforts": "Laurent, Charlie",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "8H30 : Hotel Rockypop > Col des montets (11 pax)\n",
+              "details": "8H45 : Hotel Rockypop > Col des montets (11 pax)\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER MIHAI 0766161481\n",
@@ -514,7 +514,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Charlie",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -592,7 +592,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -607,7 +607,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -622,7 +622,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -637,7 +637,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -652,7 +652,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Baptiste",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -700,7 +700,7 @@
           "massif": "3. MONT-BLANC",
           "lignes": [
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -715,7 +715,7 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
+              "pilote": "Jean-Marc",
               "renforts": "",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
@@ -745,8 +745,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Baptiste",
+              "renforts": "Jean-Marc, Jean-Baptiste",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
@@ -760,8 +760,8 @@
               "stockes": "–"
             },
             {
-              "pilote": "",
-              "renforts": "",
+              "pilote": "Jean-Baptiste",
+              "renforts": "TAXI PEAKPLUS",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
