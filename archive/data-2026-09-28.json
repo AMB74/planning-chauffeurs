@@ -593,12 +593,12 @@
           "lignes": [
             {
               "pilote": "Jean-Marc",
-              "renforts": "",
+              "renforts": "Jean-Marc, Laurent",
               "alerte": "BAGAGES",
               "type_transfert": "BAGAGES",
               "type": "–",
               "transfert": "–",
-              "details": "–",
+              "details": "8H00 HBG > Le Tour\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER MARIO +33 6 69 42 45 86\n",
