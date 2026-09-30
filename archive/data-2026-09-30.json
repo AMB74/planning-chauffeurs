@@ -978,16 +978,16 @@
             },
             {
               "pilote": "0. AUCUN",
-              "renforts": "Jean-Marc, TAXI CVT",
+              "renforts": "TAXI CVT",
               "alerte": "!! TRANSFERT UNIQUEMENT",
               "type_transfert": "BAGAGES",
               "type": "TRANSFERT UNIQUEMENT",
-              "transfert": "–",
-              "details": "Attente de l'horaire\n",
+              "transfert": "11H00",
+              "details": "11H Hotel Rockypop > GVA - 6 pax\n",
               "heure_rdv": "",
               "depart": "HOTEL ROCKY POP***",
               "client": "TREKKER MARIO +33 6 69 42 45 86\n",
-              "nbre": "12",
+              "nbre": "6",
               "arrivee": "GENEVE AEROPORT",
               "stockes": "–"
             }
