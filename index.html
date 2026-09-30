@@ -563,7 +563,7 @@ function restaurerSections() {
 // ── CSS IMPRESSION COMPLET (avec couleurs) ──
 const PRINT_CSS = `
   @page { size: A4 portrait; margin: 8mm 10mm; }
-  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 9px; }
+  body { font-family: 'DM Sans', sans-serif; background: white; font-size: 10px; }
   .page { padding: 0; max-width: 100%; }
   .header { display: none !important; }
   .section { margin-bottom: 12px; break-inside: avoid-page; }
@@ -571,20 +571,20 @@ const PRINT_CSS = `
   .page-break { break-before: page; }
   .jour-bloc { break-inside: avoid; margin-bottom: 8px; }
   .entete-jour { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E8263A; padding-bottom: 3px; margin-bottom: 8px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .entete-date { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; text-transform: uppercase; }
-  .entete-societe { font-family: 'DM Mono', monospace; font-size: 8px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
-  .section-title { font-size: 12px; font-weight: 600; }
-  .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
+  .entete-date { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; text-transform: uppercase; }
+  .entete-societe { font-family: 'DM Mono', monospace; font-size: 9px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
+  .section-title { font-size: 13px; font-weight: 600; }
+  .section-massif { font-size: 10px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 7px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555 !important; padding: 2px 6px; border-left: 2px solid #E8263A !important; text-decoration: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .section-count { font-size: 10px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
+  tr.massif-separator td.massif-sep-cell { background: #f0f0ee !important; font-family: monospace; font-size: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555 !important; padding: 2px 6px; border-left: 2px solid #E8263A !important; text-decoration: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .section-count { font-size: 11px; background: #1a1a1a; color: white; border-radius: 20px; padding: 1px 7px; font-family: monospace; }
   .chevron, .btn-print, .btn-retour, .btn-general, .btn-bagages, .legende, .badge-maj, td.check, th.check { display: none !important; }
   .section.collapsed .table-wrapper { display: block !important; }
   .table-wrapper { border: 1px solid #ccc; border-radius: 0; overflow: visible; }
   table { width: 100%; border-collapse: collapse; min-width: 0; table-layout: fixed; }
   thead tr { background: #f4f4f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  th { font-size: 7.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #666; padding: 3px 3px; white-space: nowrap; border-bottom: 1px solid #ccc; overflow: hidden; }
-  td { padding: 3px 3px; font-size: 8px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; overflow: hidden; }
+  th { font-size: 8.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #666; padding: 3px 3px; white-space: nowrap; border-bottom: 1px solid #ccc; overflow: hidden; }
+  td { padding: 3px 3px; font-size: 9px; vertical-align: top; border-bottom: 1px solid #eee; word-break: break-word; white-space: normal; overflow: hidden; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr.hl-pilote { background: #fff5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.hl-renfort { background: #f0f4ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -620,23 +620,23 @@ const PRINT_CSS = `
   td:nth-child(12) { width: 4%; }
   td:nth-child(13) { width: 13%; }
   td:nth-child(14) { width: 4%; }
-  td.pilote { font-weight: 600; white-space: nowrap; font-size: 8px; }
-  td.renforts { color: #1565C0; font-size: 7.5px; }
-  td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 7.5px; }
-  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; font-size: 7.5px; }
-  td.nbre { text-align: center; font-family: monospace; font-weight: 500; font-size: 7.5px; }
-  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; font-size: 7.5px; }
-  td.client { font-weight: 600; text-transform: uppercase; font-size: 7.5px; }
-  td.transfert { font-size: 7.5px; color: #555; white-space: normal; word-break: break-word; }
-  td.depart, td.arrivee { font-size: 8px; font-weight: 500; white-space: normal; word-break: break-word; }
-  .badge { display: inline-block; font-size: 7px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 3px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  td.pilote { font-weight: 600; white-space: nowrap; font-size: 9px; }
+  td.renforts { color: #1565C0; font-size: 8.5px; }
+  td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 8.5px; }
+  td.heure-rdv { color: #1565C0; font-weight: 600; font-family: monospace; text-align: center; font-size: 8.5px; }
+  td.nbre { text-align: center; font-family: monospace; font-weight: 500; font-size: 8.5px; }
+  td.stockes { color: #2e7d32; font-weight: 600; text-align: center; font-family: monospace; font-size: 8.5px; }
+  td.client { font-weight: 600; text-transform: uppercase; font-size: 8.5px; }
+  td.transfert { font-size: 8.5px; color: #555; white-space: normal; word-break: break-word; }
+  td.depart, td.arrivee { font-size: 9px; font-weight: 500; white-space: normal; word-break: break-word; }
+  .badge { display: inline-block; font-size: 8px; font-family: monospace; font-weight: 500; text-transform: uppercase; border-radius: 2px; padding: 1px 3px; border: 1px solid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .badge-remorque    { background: #FFEBEE !important; color: #C62828; border-color: #EF9A9A; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .badge-bagages     { background: #FFF8E1 !important; color: #F57F17; border-color: #FFE082; }
   .badge-bagages-trf { background: #E8F5E9 !important; color: #2E7D32; border-color: #A5D6A7; }
   .badge-transfert   { background: #E3F2FD !important; color: #1565C0; border-color: #90CAF9; }
   .badge-rdv         { background: #F3E5F5 !important; color: #6A1B9A; border-color: #CE93D8; }
   .badge-default     { background: #f4f4f4 !important; color: #555; border-color: #ddd; }
-  .footer { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: space-between; color: #999; font-size: 8px; font-family: monospace; }
+  .footer { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: space-between; color: #999; font-size: 9px; font-family: monospace; }
 `;
 
 function getHeaderHTML() {
