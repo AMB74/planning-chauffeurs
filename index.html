@@ -377,7 +377,7 @@ function badgeClass(type) {
   if (t.includes('REMORQUE'))  return 'badge-remorque';
   if (t.includes('BAGAGES +') || t.includes('BAGAGES+')) return 'badge-bagages-trf';
   if (t.includes('BAGAGES'))   return 'badge-bagages';
-  if (t.includes('TRANSFERTS')) return 'badge-transfert';
+  if (t.includes('TRANSFERT')) return 'badge-transfert';
   if (t.includes('RDV'))       return 'badge-rdv';
   if (t.includes('SANS'))      return 'badge-sans';
   return 'badge-default';
@@ -569,7 +569,7 @@ const PRINT_CSS = `
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; break-after: avoid; }
   .page-break { break-before: page; }
-  .jour-bloc { margin-bottom: 0; }
+  .jour-bloc { break-inside: avoid; margin-bottom: 8px; }
   .entete-jour { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E8263A; padding-bottom: 3px; margin-bottom: 8px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .entete-date { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; text-transform: uppercase; }
   .entete-societe { font-family: 'DM Mono', monospace; font-size: 8px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -743,9 +743,9 @@ function lancerImpression(conteneurId) {
     }
   });
 
-  // Générer HTML avec saut de page entre jours uniquement
+  // Générer HTML sans saut de page forcé — le navigateur gère naturellement
   let contenuHTML = groupes.map((g, idx) => `
-    <div class="jour-bloc${idx > 0 ? ' page-break' : ''}">
+    <div class="jour-bloc">
       ${g.html}
     </div>
   `).join('');
