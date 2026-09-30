@@ -202,7 +202,7 @@ function badgeClass(type) {
   if (t.includes('REMORQUE'))  return 'badge-remorque';
   if (t.includes('BAGAGES +') || t.includes('BAGAGES+')) return 'badge-bagages-trf';
   if (t.includes('BAGAGES'))   return 'badge-bagages';
-  if (t.includes('TRANSFERTS')) return 'badge-transfert';
+  if (t.includes('TRANSFERT')) return 'badge-transfert';
   if (t.includes('RDV'))       return 'badge-rdv';
   if (t.includes('SANS'))      return 'badge-sans';
   return 'badge-default';
@@ -331,7 +331,7 @@ const PRINT_CSS = `
   .section { margin-bottom: 12px; break-inside: avoid-page; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; break-after: avoid; }
   .page-break { break-before: page; }
-  .jour-bloc { margin-bottom: 0; }
+  .jour-bloc { break-inside: avoid; margin-bottom: 8px; }
   .section-title { font-size: 12px; font-weight: 600; }
   .section-massif { font-size: 9px; font-weight: 500; color: #888; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; }
   tr.massif-separator { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -425,7 +425,7 @@ function lancerImpression() {
   });
 
   let contenuHTML = groupes.map((g, idx) => `
-    <div class="jour-bloc${idx > 0 ? ' page-break' : ''}">${g.html}</div>
+    <div class="jour-bloc">${g.html}</div>
   `).join('');
 
   ouvrirFenetreImpression(contenuHTML);
