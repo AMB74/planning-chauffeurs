@@ -138,7 +138,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
 .print-trf-badge { display: inline-block; }
 .print-hide-if-trf { display: none; }
 .col-type-transfert .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
-.col-type-transfert { display: none; }
+.col-type-transfert { min-width: 70px; }
 .badge-remorque    { background: #FFEBEE; color: #C62828; border-color: #EF9A9A; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
@@ -436,8 +436,8 @@ function ligneHTMLWithHr(l, prenom, showHr) {
     <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
-    <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)}">${typeTransfertDisplay}</span></td>
-    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)} print-hide-if-trf">${typeDisplay}</span>${typeTransfertDisplay !== '–' ? `<span class="badge ${badgeClass(typeTransfertDisplay)} print-trf-badge">${typeTransfertDisplay}</span>` : ''}</td>
+    <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)} print-hide-if-trf">${typeTransfertDisplay}</span>${typeDisplay !== '–' ? `<span class="badge ${badgeClass(typeDisplay)} print-trf-badge">${typeDisplay}</span>` : ''}</td>
+    <td class="col-type" style="display:none"></td>
     <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
     <td class="${trfCls}">${trfTxt}</td>
@@ -598,8 +598,8 @@ const PRINT_CSS = `
   th:nth-child(2) { width: 3%; }
   th:nth-child(3) { width: 7%; }
   th:nth-child(4) { width: 4%; }
-  th:nth-child(5) { width: 0; display: none; }
-  th:nth-child(6) { width: 13%; }
+  th:nth-child(5) { width: 13%; }
+  th:nth-child(6) { width: 0; display: none; }
   th:nth-child(7) { width: 17%; }
   th:nth-child(8) { width: 4%; }
   th:nth-child(9) { width: 12%; }
@@ -612,8 +612,8 @@ const PRINT_CSS = `
   td:nth-child(2) { width: 3%; text-align: center; font-size: 10px; }
   td:nth-child(3) { width: 7%; }
   td:nth-child(4) { width: 4%; }
-  td:nth-child(5) { width: 0; display: none; }
-  td:nth-child(6) { width: 13%; }
+  td:nth-child(5) { width: 13%; }
+  td:nth-child(6) { width: 0; display: none; }
   td:nth-child(7) { width: 17%; }
   td:nth-child(8) { width: 4%; }
   td:nth-child(9) { width: 12%; }
