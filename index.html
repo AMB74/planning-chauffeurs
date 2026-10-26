@@ -133,11 +133,8 @@ td.arrivee { font-size: 12px; font-weight: 500; min-width: 160px; white-space: n
 td.stockes { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 600; color: #2e7d32; text-align: center; white-space: nowrap; }
 td.stockes.empty { color: #ddd; text-align: center; }
 .badge { display: inline-block; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; border: 1px solid; }
-.col-type .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
-.col-type { min-width: 70px; }
-.print-trf-badge { display: inline-block; }
-.print-hide-if-trf { display: none; }
-.col-type-transfert .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
+.col-type { display: none; }
+.col-type-transfert .badge { font-size: 7px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
 .col-type-transfert { min-width: 70px; }
 .badge-remorque    { background: #FFEBEE; color: #C62828; border-color: #EF9A9A; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
@@ -436,8 +433,8 @@ function ligneHTMLWithHr(l, prenom, showHr) {
     <td class="alerte-stock">${(l.stockes && l.stockes !== '–' && l.stockes !== '') ? '🧳' : ''}</td>
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
-    <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)} print-hide-if-trf">${typeTransfertDisplay}</span>${typeDisplay !== '–' ? `<span class="badge ${badgeClass(typeDisplay)} print-trf-badge">${typeDisplay}</span>` : ''}</td>
-    <td class="col-type" style="display:none"></td>
+    <td class="col-type-transfert">${(() => { const v = typeDisplay !== '–' ? typeDisplay : typeTransfertDisplay; return v !== '–' ? `<span class="badge ${badgeClass(v)}">${v}</span>` : '–'; })()}</td>
+    <td class="col-type"></td>
     <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
     <td class="${trfCls}">${trfTxt}</td>
@@ -622,8 +619,6 @@ const PRINT_CSS = `
   td:nth-child(12) { width: 4%; }
   td:nth-child(13) { width: 12%; }
   td:nth-child(14) { width: 4%; }
-  .print-trf-badge { display: inline-block !important; }
-  .print-hide-if-trf { display: none !important; }
   td.pilote { font-weight: 600; white-space: nowrap; font-size: 9px; }
   td.renforts { color: #1565C0; font-size: 8.5px; }
   td.details { color: #E8263A; font-weight: 500; font-family: monospace; font-size: 8.5px; }
