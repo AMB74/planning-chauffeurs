@@ -76,7 +76,9 @@ td.stockes.empty { color: #ddd; text-align: center; }
 .col-type .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
 .col-type { min-width: 70px; }
 .col-type-transfert .badge { font-size: 8px; padding: 2px 4px; white-space: normal; word-break: break-word; display: inline-block; text-align: center; }
-.col-type-transfert { min-width: 70px; }
+.col-type-transfert { display: none; }
+.print-trf-badge { display: inline-block; }
+.print-hide-if-trf { display: none; }
 .badge-remorque    { background: #FFEBEE; color: #C62828; border-color: #EF9A9A; }
 .badge-bagages     { background: #FFF8E1; color: #F57F17; border-color: #FFE082; }
 .badge-bagages-trf { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
@@ -102,7 +104,7 @@ td.stockes.empty { color: #ddd; text-align: center; }
   td { padding: 7px 6px; font-size: 11px; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 5mm 6mm; }
+  @page { size: A4 portrait; margin: 3mm 4mm; }
   body { background: white; font-size: 10px; }
   .page { padding: 0; max-width: 100%; }
   .header { padding-bottom: 6px; margin-bottom: 10px; }
@@ -244,7 +246,7 @@ function ligneHTML(l, showHr) {
     <td class="${l.pilote ? 'pilote' : 'pilote empty'}">${l.pilote || '–'}</td>
     <td class="${l.renforts ? 'renforts' : 'renforts empty'}">${l.renforts || '–'}</td>
     <td class="col-type-transfert"><span class="badge ${badgeClass(typeTransfertDisplay)}">${typeTransfertDisplay}</span></td>
-    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)}">${typeDisplay}</span></td>
+    <td class="col-type"><span class="badge ${badgeClass(typeDisplay)} print-hide-if-trf">${typeDisplay}</span>${typeTransfertDisplay !== '–' ? `<span class="badge ${badgeClass(typeTransfertDisplay)} print-trf-badge">${typeTransfertDisplay}</span>` : ''}</td>
     <td class="${(l.details && l.details !== '–') ? 'details' : 'details empty'}">${(l.details || '–').replace(/\n/g, '<br>')}</td>
     <td class="${(l.heure_rdv && l.heure_rdv !== '–') ? 'heure-rdv' : 'heure-rdv empty'}"${showHr ? '' : ' style="display:none"'}>${(l.heure_rdv && l.heure_rdv !== '–') ? l.heure_rdv.replace(/\n/g, '<br>') : '–'}</td>
     <td class="${trfCls}">${trfTxt}</td>
@@ -324,7 +326,7 @@ function restaurerSections() {
 }
 
 const PRINT_CSS = `
-  @page { size: A4 portrait; margin: 5mm 6mm; }
+  @page { size: A4 portrait; margin: 3mm 4mm; }
   body { font-family: 'DM Sans', sans-serif; background: white; font-size: 10px; }
   .page { padding: 0; max-width: 100%; }
   .header { display: none !important; }
@@ -348,8 +350,9 @@ const PRINT_CSS = `
   tbody tr.valide { background: #f0faf0 !important; opacity: 0.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   tbody tr.valide td { text-decoration: line-through; color: #888; }
   tbody tr.has-pilote td:first-child { border-left: 2px solid #E8263A; }
-  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:7%} th:nth-child(4){width:4%} th:nth-child(5){width:7%} th:nth-child(6){width:9%} th:nth-child(7){width:9%} th:nth-child(8){width:4%} th:nth-child(9){width:10%} th:nth-child(10){width:14%} th:nth-child(11){width:12%} th:nth-child(12){width:4%} th:nth-child(13){width:13%} th:nth-child(14){width:4%}
-  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:7%} td:nth-child(4){width:4%} td:nth-child(5){width:7%} td:nth-child(6){width:9%} td:nth-child(7){width:9%} td:nth-child(8){width:4%} td:nth-child(9){width:10%} td:nth-child(10){width:14%} td:nth-child(11){width:12%} td:nth-child(12){width:4%} td:nth-child(13){width:13%} td:nth-child(14){width:4%}
+  th:nth-child(1){display:none} th:nth-child(2){width:3%} th:nth-child(3){width:7%} th:nth-child(4){width:4%} th:nth-child(5){display:none;width:0} th:nth-child(6){width:13%} th:nth-child(7){width:17%} th:nth-child(8){width:4%} th:nth-child(9){width:12%} th:nth-child(10){width:13%} th:nth-child(11){width:11%} th:nth-child(12){width:4%} th:nth-child(13){width:12%} th:nth-child(14){width:4%}
+  td:nth-child(1){display:none} td:nth-child(2){width:3%;text-align:center;font-size:10px} td:nth-child(3){width:7%} td:nth-child(4){width:4%} td:nth-child(5){display:none;width:0} td:nth-child(6){width:13%} td:nth-child(7){width:17%} td:nth-child(8){width:4%} td:nth-child(9){width:12%} td:nth-child(10){width:13%} td:nth-child(11){width:11%} td:nth-child(12){width:4%} td:nth-child(13){width:12%} td:nth-child(14){width:4%}
+  .print-trf-badge{display:inline-block!important} .print-hide-if-trf{display:none!important}
   td.pilote{font-weight:600;font-size:9px} td.renforts{color:#0D47A1;font-size:9px} td.details{color:#B71C1C;font-weight:500;font-family:monospace;font-size:9px} td.heure-rdv{color:#1565C0;font-weight:600;font-family:monospace;text-align:center;font-size:9px} td.nbre{text-align:center;font-family:monospace;font-weight:500;font-size:9px} td.client{font-weight:600;text-transform:uppercase;font-size:9px} td.transfert{font-size:9px;color:#555} td.depart,td.arrivee{font-size:9.5px;font-weight:500} td.stockes{color:#2e7d32;font-weight:600;text-align:center;font-family:monospace;font-size:9px}
   .badge{display:inline-block;font-size:7px;font-family:monospace;font-weight:500;text-transform:uppercase;border-radius:2px;padding:1px 3px;border:1px solid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .col-type-transfert .badge { font-size: 7px; padding: 1px 3px; border: 1px solid; }
